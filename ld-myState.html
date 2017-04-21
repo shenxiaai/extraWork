@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0,minimum-scale=1.0, maximum-scale=1.0, user-scalable=0">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<meta name="format-detection" content="telephone=no">
+		<title>力多社区-我的动态</title>
+		<link rel="stylesheet" href="css/base.css" />
+		<link rel="stylesheet" href="css/style.css" />
+		<script src="js/reset.js"></script>	
+	</head>
+	<body ontouchstart="">
+		<div class="ui-wrap myState">
+			<header class="ld-header ui-border-b">
+				<a class="ui-back" href=""></a>
+				<div class="ui-title">芝麻分</div>
+			</header>
+
+			<div class="content">
+				<ul>
+					<li class="ui-border-b">
+						<div class="tit">
+							<img class="pic" src="images/ld-pic.png" alt="">昵称<img class="sex" src="images/ld-female.png" alt=""><em>03-26 12:03</em><img class="del" src="images/ld-delIcon.png"></img>
+						</div>
+						<p>亲身试吃的男士保健的效果／老蘭画说嘚啵嘚：亲身试吃的男士保健的效果对国足功臣于大宝最有创意的表白……老蘭画说嘚啵嘚：对国足功臣于大包最有创意的表白……亲身试吃的男士保健的效果／老蘭画说嘚啵嘚：亲身试吃的男士保健的效果对国足功臣于大宝最有创意的表白……老蘭画说嘚啵嘚：对国足功臣于大包最有创意的</p>
+						<div class="info">阅读888 . 评论45 . 喜欢0<span class="more">查看全文</span></div>
+					</li>
+					<li class="ui-border-b">
+						<div class="tit">
+							<img class="pic" src="images/ld-pic.png" alt="">昵称<img class="sex" src="images/ld-female.png" alt=""><em>03-26 12:03</em><img class="del" src="images/ld-delIcon.png"></img>
+						</div>
+						<p>亲身试吃的男士保健的效果／老蘭画说嘚啵嘚：亲身试吃的男士保健的效果对国足功臣于大宝最有创意的表白……老蘭画说嘚啵嘚：对国足功臣于大包最有创意的表白……亲身试吃的男士保健的效果／老蘭画说嘚啵嘚：亲身试吃的男士保健的效果对国足功臣于大宝最有创意的表白……老蘭画说嘚啵嘚：对国足功臣于大包最有创意的</p>
+						<div class="info">阅读888 . 评论45 . 喜欢0<span class="more">查看全文</span></div>
+					</li>
+					<li class="ui-border-b">
+						<div class="tit">
+							<img class="pic" src="images/ld-pic.png" alt="">昵称<img class="sex" src="images/ld-female.png" alt=""><em>03-26 12:03</em><img class="del" src="images/ld-delIcon.png"></img>
+						</div>
+						<p>亲身试吃的男士保健的效果／老蘭画说嘚啵嘚：亲身试吃的男士保健的效果对国足功臣于大宝最有创意的表白……老蘭画说嘚啵嘚：对国足功臣于大包最有创意的表白……亲身试吃的男士保健的效果／老蘭画说嘚啵嘚：亲身试吃的男士保健的效果对国足功臣于大宝最有创意的表白……老蘭画说嘚啵嘚：对国足功臣于大包最有创意的</p>
+						<div class="info">阅读888 . 评论45 . 喜欢0<span class="more">查看全文</span></div>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+		<script type="text/javascript" src="js/text_overflow.js"></script>
+		<script>
+			var more = document.querySelectorAll('.more');
+
+			for(var i = 0; i < more.length; i++) {
+				var word = more[i].parentNode.parentNode.getElementsByTagName('p')[0].innerText;
+				console.log('word = ' + word);
+				// if(word)
+			}
+
+
+
+
+
+			$(function(){
+				$('.more').click(function(){
+					$(this).parent().prev().attr('displayLength','150');
+					$(this).parent().prev().un_displayPart();
+				})
+			});
+
+			function isEllipsis(dom) {
+				var checkDom = dom.cloneNode(), parent, flag;
+				checkDom.style.width = dom.offsetWidth + 'px';
+				checkDom.style.height = dom.offsetHeight + 'px';
+				checkDom.style.overflow = 'auto';
+				checkDom.style.position = 'absolute';
+				checkDom.style.zIndex = -1;
+				checkDom.style.opacity = 0;
+				checkDom.style.whiteSpace = 'nowrap';
+				checkDom.innerHTML = dom.innerHTML;
+
+				parent = dom.parentNode;
+				parent.appendChild(checkDom);
+				flag = checkDom.scrollWidth > checkDom.offsetWidth;
+				parent.removeChild(checkDom);
+				console.log('flag = ');
+				console.log(flag);
+				return flag;
+			}
+		</script>
+	</body>
+</html>
