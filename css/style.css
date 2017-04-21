@@ -15,6 +15,9 @@ html,body{background: #f2f2f2;}
 .ui-checkbox-round {-webkit-appearance: none;padding: 0.5rem 0 0.5rem 0.2rem;border: none;}
 .ui-checkbox-round:after{width: 1.4rem;height: 1.4rem;background: url(images/btn_check_a@2x.png) 0 0 no-repeat;background-size: 1.4rem auto;}
 
+.ui-dialog .dilgBtnFirst{border-right: 1px solid #d1d1d1!important;border-top-right-radius: 0;border-bottom-right-radius: 0;}
+.ui-dialog .cancelBtn{color: #000;}
+
 
 /*我的动态*/
 .myState .content{padding: 0 1.2rem;width: 100%;background: #fff;box-sizing: border-box;}

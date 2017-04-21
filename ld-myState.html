@@ -15,7 +15,7 @@
 		<div class="ui-wrap myState">
 			<header class="ld-header ui-border-b">
 				<a class="ui-back" href=""></a>
-				<div class="ui-title">芝麻分</div>
+				<div class="ui-title">我的动态</div>
 			</header>
 
 			<div class="content">
@@ -43,6 +43,19 @@
 					</li>
 				</ul>
 			</div>
+
+			<!-- dialog -->
+			<div class="ui-dialog show">
+				<div class="ui-dialog-cnt">
+					<!-- <h1 class="dialog-title">对话框标题栏</h1> -->
+					<div class="dialog-main-cnt">确定不再删除？</div>
+					<!--有2个按钮-->
+					<div class="ui-dialog-ft">
+						<button class="ui-btn-s ui-btn-primary-s dilgBtnFirst cancelBtn">取消</button>
+						<button class="ui-btn-s ui-btn-primary-s">确定</button>
+					</div>
+				</div>
+			</div>
 		</div>
 		<script>
 			var more = document.querySelectorAll('.more'),
@@ -53,7 +66,7 @@
 					pre 	= '',
 					cut		= '',
 					len 	= 0;
-					
+
 				//判断中英文字符
 				for(var x = 0; x < word.length; x++) {
 					if(word.charCodeAt(x) < 128)
