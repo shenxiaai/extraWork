@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1,minimum-scale=1 maximum-scale=1, user-scalable=0">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="format-detection" content="telephone=no">
+	<title>账号登陆</title>
+	<link rel="stylesheet" href="css/base.css" />
+	<link rel="stylesheet" href="css/style.css" />
+	<script src="js/reset.js"></script>
+	<style>
+		.demo-block {padding: 1rem;}
+		.dialog-btn,.demo-tip,.demo-tip2 {width: 200px;padding: 20px;margin: 10px auto;border: 1px solid #ccc;background: #fff;}
+	</style>
+</head>
+
+<body ontouchstart="">
+	<div class="ui-wrap">
+		<header class="jie1000-header">
+			<!-- <a class="ui-back iconfont iconjlback">&#xe612;</a> -->
+			<div class="ui-title">账号登陆</div>
+		</header>
+		<br />
+
+		<div class="ui-form-wrap login">
+			<img src="images/Group@2x.png" alt="" />
+
+			<div class="ui-form">
+				<form action="#">
+					<div class="ui-form-item ui-form-item-show ui-nowrap-flex ui-border-b flex-between">
+						<label for="#"><img src="images/icon_phone@2x.png"/></label>
+						<div class="ui-flex-1">
+							<input type="text" placeholder="请输入本人常用手机号">
+						</div>
+					</div>
+					<div class="ui-form-item ui-form-item-show ui-nowrap-flex ui-border-b flex-between">
+						<label for="#"><img src="images/icon_code@2x.png"/></label>
+						<div class="ui-flex-1">
+							<input type="text" placeholder="获取短信验证码">
+						</div>
+						<div class="ui-flex-1">
+							<button class="tar">发送</button>
+						</div>
+					</div>
+
+					<div class="ui-btn-wrap ddh-btn-footer">
+						<p class="ui-deal-box">
+							<input type="checkbox" class="ui-checkbox-round" />阅读并同意<span class="mintGreen js-diolog-deal">《借1000注册与服务协议》</span>
+						</p>
+					</div>
+
+					<div class="ui-btn-wrapper">
+						<div class="ui-btn-normal ui-btn-primary">登录</div>
+					</div>
+
+				</form>
+			</div>
+
+		</div>
+
+	</div>
+
+
+
+	<script src="js/zepto.min.js"></script>
+	<script src="js/touch.js"></script>
+	<script src="js/common.js"></script>
+	<script>
+		$(function() {
+
+
+			// 弹窗
+			var dia = null;
+
+			$(".dialog-btn1").on("click", function() {
+				dia = $("#ui-dialog1").dialog("show");
+			});
+			$(".dialog-close-icon").on("click", function() {
+				dia = $("#ui-dialog1").dialog("hide");
+			});
+
+			//浮层提示
+			$(".demo-tip").on("click", function() {
+				var el = $.tips({
+					content: '温馨提示内容',
+					stayTime: 2000,
+					type: "warn"
+				});
+				el.on("tips:hide", function() {
+					console.log("tips hide");
+				});
+			});
+			//浮层居中提示
+			$('.demo-tip2').on("click", function() {
+				$('.ui-popcenter').addClass('show');
+				window.setTimeout(function() {
+					$('.ui-popcenter').removeClass('show');
+				}, 2000);
+			})
+
+		});
+	</script>
+
+
+
+</body>
+
+</html>

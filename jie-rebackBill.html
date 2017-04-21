@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1,minimum-scale=1 maximum-scale=1, user-scalable=0">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="format-detection" content="telephone=no">
+	<title>还款账单</title>
+	<link rel="stylesheet" href="css/base.css" />
+	<link rel="stylesheet" href="css/style.css" />
+	<script src="js/reset.js"></script>
+	<style>
+		.demo-block {padding: 1rem;}
+		.dialog-btn,.demo-tip,.demo-tip2 {width: 200px;padding: 20px;margin: 10px auto;border: 1px solid #ccc;background: #fff;}
+	</style>
+</head>
+
+<body ontouchstart="">
+	<div class="ui-wrap">
+		<header class="jie1000-header ui-border-b">
+			<!-- <a class="ui-back iconfont iconjlback">&#xe612;</a> -->
+			<div class="ui-title">还款账单</div>
+		</header>
+
+		<div class="ui-form-wrap rebackBill">
+			<div class="bills">
+				<div class="bill billBlock billLeft">
+					<p>还款金额</p>
+					<h5>1140<em>元</em></h5>
+				</div>
+				<div class="bill billLine"></div>
+				<div class="bill billBlock billRight">
+					<p>最晚还款日</p>
+					<p class="red">2016/11/30</p>
+					<p class="red">(周三)</p>
+				</div>
+			</div>
+
+			<div class="autoRebackBtn">
+				<button>自动还款</button>
+			</div>
+
+			<div class="autoRebackBtn tipInfo">
+				<p>提前将钱存入绑定银行卡，到期自动扣款</p>
+				<img src="images/img_card@2x.png" alt="" />
+				<p class="tinyTip">扣款可能会有延迟，成功前请勿取出</p>
+				<button>更多还款方式，请下载APP</button>
+			</div>
+
+			<div class="tool-bar">
+				<div class="tool">
+					<img src="images/btn_loan_a@2x.png" width="22%" alt="">
+					<p>借钱</p>
+				</div>
+				<div class="tool">
+					<img src="images/btn_return_b@2x.png" width="22%" alt="">
+					<p>还钱</p>
+				</div>
+				<div class="tool">
+					<img src="images/btn_me_a@2x.png" width="22%" alt="">
+					<p>我的</p>
+				</div>
+			</div>
+		</div>
+
+	</div>
+
+	<script src="js/zepto.min.js"></script>
+	<script src="js/touch.js"></script>
+	<script src="js/common.js"></script>
+</body>
+
+</html>

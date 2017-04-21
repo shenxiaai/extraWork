@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0,minimum-scale=1.0, maximum-scale=1.0, user-scalable=0">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<meta name="format-detection" content="telephone=no">
+		<title>手机实名</title>
+		<link rel="stylesheet" href="css/base.css" />
+		<link rel="stylesheet" href="css/style.css" />
+		<link rel="stylesheet" href="css/style01.css" />
+		<script src="js/reset.js"></script>	
+	</head>
+	<body ontouchstart="">
+		<div class="ui-wrap">
+			<div class="jie1000-header ui-border-b">
+				<a class="ui-back" href=""></a>
+				<div class="ui-title">手机实名</div>
+			</div>
+			<div class="sub-nav">
+				<div class="nav-icon nav-icon-01 cur">
+					<span>个人信息</span>
+				</div>
+				<div class="nav-icon nav-icon-02 cur">
+					<span>手机实名</span>
+				</div>
+				<div class="nav-icon nav-icon-03">
+					<span>芝麻分</span>
+				</div>
+			</div>
+			<p class="tip-text">手机信息将作为审核重要依据，请用<span class="red-color">本人常用</span>手机号</p>
+			<div class="ui-form mt20">
+				<form action="#">
+					<div class="ui-form-item ui-nowrap-flex ui-border-b">
+						<label class="colorLabel">手机号</label>
+						<div class="ui-flex-1">
+							<input class="tar" type="text" placeholder="请输入手机号">
+						</div>
+					</div>
+					<div class="ui-form-item ui-nowrap-flex ui-border-b">
+						<label class="colorLabel">服务密码</label>
+						<div class="ui-flex-1">
+							<input class="tar" type="text" placeholder="请填写营业厅服务密码">
+						</div>
+					</div>
+					<p class="forget-text tar">
+						<span class="blue-color">忘记密码</span>
+					</p>
+				</form>
+				<div class="ui-btn-wrapper">
+					<div class="ui-btn-normal ui-btn-primary demo-tip">提交</div>
+				</div>
+			</div>
+		</div>
+		<script src="js/zepto.min.js"></script>
+		<script src="js/common.js"></script>
+		<script type="text/javascript">
+		$(document).ready(function(){
+			//浮层提示
+			$(".demo-tip").on("click", function() {
+				var el = $.tips({
+					content: '服务密码错误',
+					stayTime: 0,
+					type: "warn"
+				});
+				el.on("tips:hide", function() {
+					console.log("tips hide");
+				});
+			});
+    	});	
+		</script>
+	</body>
+</html>
