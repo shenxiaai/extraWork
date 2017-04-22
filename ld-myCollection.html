@@ -45,13 +45,13 @@
 			</div>
 
 			<!-- dialog -->
-			<div class="ui-dialog show">
+			<div class="ui-dialog show" id="dialog">
 				<div class="ui-dialog-cnt">
 					<!-- <h1 class="dialog-title">对话框标题栏</h1> -->
 					<div class="dialog-main-cnt">确定不再删除？</div>
 					<!--有2个按钮-->
 					<div class="ui-dialog-ft">
-						<button class="ui-btn-s ui-btn-primary-s dilgBtnFirst cancelBtn">取消</button>
+						<button class="ui-btn-s ui-btn-primary-s dilgBtnFirst cancelBtn" id="cancelBtn">取消</button>
 						<button class="ui-btn-s ui-btn-primary-s">确定</button>
 					</div>
 				</div>
@@ -91,6 +91,13 @@
 						flag = 1;
 					}
 				}
+			}
+
+			var cancelBtn = document.getElementById('cancelBtn'),
+				dialog = document.getElementById('dialog');
+				
+			cancelBtn.onclick = function () {
+				dialog.className = 'ui-dialog';
 			}
 		</script>
 	</body>
