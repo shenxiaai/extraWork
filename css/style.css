@@ -24,6 +24,7 @@ html,body{background: #f2f2f2;}
 .bgfff{background: #fff!important;}
 .orangeColor{color: #ffa000!important;}
 .blueColor{color: #009afb!important;}
+.color3{color: #333!important;}
 .color6{color: #666!important;}
 .color9{color: #999!important;}
 .plr12{padding: 0 1.2rem;}
@@ -35,6 +36,7 @@ html,body{background: #f2f2f2;}
 .fz10{font-size: 1rem;}
 .fz11{font-size: 1.1rem;}
 .fz12{font-size: 1.2rem;}
+.fz13{font-size: 1.3rem;}
 
 
 /*我的动态*/
@@ -110,4 +112,20 @@ html,body{background: #f2f2f2;}
 .examine .block .tit .pic{margin-right: .8rem;width: 2.2rem;height: 2.2rem;}
 .examine .block .tit .sex{margin: 0 .5rem 0 .4rem;width: 1.1rem;height: 1.1rem;}
 .examine .block .tit em{font-size: 1.1rem;color: #999;}
-.myState .block p{font-size: 1.2rem;color: #000;line-height: 2rem;}
+.examine .block p{font-size: 1.2rem;color: #070707;line-height: 2rem;}
+.examine .block .info{font-size: 1rem;color: #999;height: 1.4rem;}
+.examine .block .info span{float: right;font-size: 1rem;color: #ffa000;}
+.examine .block .comp{padding: 1.1rem 0;height: 3rem;box-sizing: border-box;}
+.examine .block .comp .part{position: relative;width: 5.9rem;height: 2rem;line-height: 2rem;background: #ffa000;color: #fff;font-size: 1rem;box-sizing: border-box;}
+.examine .block .comp .part span{position: absolute;top: 50%;margin-top: -.7rem;display: inline-block;width: 1.5rem;height: 1.5rem;line-height: 1.5rem;border-radius: 50%;background: #fff;text-align: center;}
+.examine .block .comp .part span img{width: 1rem;height: 1.1rem;vertical-align: sub;}
+.examine .block .comp .part1{float: left;margin-left: -1.2rem;padding-left: .4rem;border-top-right-radius: 2rem;border-bottom-right-radius: 2rem;}
+.examine .block .comp .part2{float: right;margin-right: -1.2rem;padding-right: .4rem;text-align: right;border-top-left-radius: 2rem;border-bottom-left-radius: 2rem;}
+.examine .block .comp .part1 span{right: .6rem;}
+.examine .block .comp .part2 span{left: .6rem;}
+.examine .warn{padding: 1.5rem 0;display: -webkit-box;-webkit-box-pack: center;-webkit-box-align: center;box-sizing: border-box;}
+.examine .warn .part{-webkit-box-flex: 1;text-align: center;}
+.examine .warn .part img{width: 4rem;height: 4rem;}
+
+/*我的消息*/
+.myMsg{}
