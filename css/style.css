@@ -28,6 +28,8 @@ html,body{background: #f2f2f2;}
 .ptb12{padding: 1.2rem 0;}
 .dib{display: inline-block;}
 .fr{float: right;}
+.boxPackJust{-webkit-box-pack:justify;}
+.boxalgcent{-webkit-box-align:center;}
 
 
 /*我的动态*/
@@ -72,3 +74,6 @@ html,body{background: #f2f2f2;}
 .article .cont .community .part em{margin-right: .4rem;}
 .article .cont .community .part1{height: 2rem;line-height: 2rem;font-size: 1.1rem;}
 .article .cont .community .part2{font-size: 1rem;color: #999;}
+.article .cont .text{position: fixed;left: 0;bottom: 0;width: 100%;padding: 0 1.2rem;background: #fff;border-top: 1px solid #f5f5f5;height: 2.8rem;line-height: 2.8rem;box-sizing: border-box;}
+.article .cont .text input{display: block;height: 2.8rem;border: none;-webkit-box-flex: 1;}
+.article .cont .text .submit{display: block;background: url(../images/ld-submitIcon.png);width: 1.6rem;height: 1.4rem;background-size: 1.6rem auto;border: none;}
