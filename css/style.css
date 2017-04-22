@@ -2,7 +2,8 @@
 html,body{background: #f2f2f2;}
 .ld-header{height: 4.4rem;line-height: 4.4rem;font-size: 1.6rem;color: #fff;position: relative;background: #ffa000;}
 .ld-header .ui-title{display: inline-block;width: 100%;text-align: center;}
-.ld-header a.ui-back{position: absolute;color: #333;width: .9rem;height: 1.6rem;top: 50%;margin-top: -.8rem;left: 2rem;background: url(../images/btn_back.png) no-repeat;background-size: 100% auto;}
+.ld-header a.ui-back{position: absolute;color: #333;width: .9rem;height: 1.6rem;top: 50%;margin-top: -.8rem;left: 1.2rem;background: url(../images/btn_back.png) no-repeat;background-size: 100% auto;}
+.ld-header a.ui-rigIcon{position: absolute;top: 50%;-webkit-transform: translateY(-50%);right: 1.2rem;color: #fff;font-size: 1.6rem;}
 
 .ui-form{font-size: 1.4rem;}
 .ui-form-item{}
@@ -51,3 +52,5 @@ html,body{background: #f2f2f2;}
 .myself .cont .rightData .socialData .part:first-child{width: 4.5rem;text-align: left;}
 .myself .cont .rightData .socialData .part:last-child{width: 5rem;text-align: right;}
 .myself .ui-form-item img{margin-right: .8rem;width: 1.3rem;height: 1.3rem;vertical-align: sub;}
+.myself .ui-form-item  .ui-flex-1 span{font-size: 1.1rem;color: #999;}
+.myself .ui-form-item  .ui-flex-1 span img{margin-right: 0;width: 1.6rem;height: 1.6rem;}
