@@ -100,6 +100,7 @@ html,body{background: #f2f2f2;}
 .menu{position: fixed;left: 0;bottom: 0;display: -webkit-box;-webkit-box-align: center;-webkit-box-pack: justify;width: 100%;height: 4.9rem;background: #fff;}
 .menu .item{-webkit-box-flex: 1;text-align: center;font-size: 1rem;color: #999;}
 .menu .item img{width: 2.2rem;height: 2.25rem;}
+.menu .active{color: #ffa000;}
 
 /*发布*/
 .edit .ui-form-item textarea{display: block;padding: 1.5rem 0;width: 100%;height: 100%;box-sizing: border-box;}
@@ -138,3 +139,13 @@ html,body{background: #f2f2f2;}
 .myMsg .dailog .conts{margin: .8rem 0 0 2.2rem;padding: 1.1rem;background: #fff;color: #333;border-radius: 5px;max-width: 19.3rem;box-sizing: border-box;}
 .myMsg .dailog .conts p{font-size: 1.2rem;line-height: 1.8rem;}
 .myMsg .rigDalg .conts{float: right;margin: .8rem 2.2rem 0 0;padding: 1.1rem;background: #fff;border-radius: 5px;max-width: 19.3rem;box-sizing: border-box;}
+
+/*首页*/
+.home .tab{position: relative;width: 100%;height: 4.4rem;line-height: 4.4rem;background: #fff;text-align: center;}
+.home .tab span{padding: 0 1.9rem;font-size: 1.6rem;color: #333;}
+.home .tab span:first-child{border-right: 1px solid #f1f1f1;}
+.home .tab span.active{color: #ffa000;}
+.home .tab .mall{position: absolute;right: 1rem;top: 50%;margin-top: -.8rem;display: inline-block;font-size: 1.1rem;color: #e62129;border: 1px solid #e62129;border-radius: 3px;text-align: center;width: 6rem;height: 1.6rem;line-height: 1.6rem;}
+.home .contents .cont{margin: 6.2rem 0;}
+.home .contents .banner{width: 100%;height: 16.5rem;}
+.home .contents .banner img{width: 100%;height: 100%;}
