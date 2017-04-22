@@ -155,3 +155,4 @@ html,body{background: #f2f2f2;}
 .home .contents .cont .talk{padding: .1rem 0;font-size: 1rem;color: #999;}
 .home .contents .cont .talk img{width: 1rem;height: .9rem;margin-right: .8rem;vertical-align: middle;}
 .home .contents .content2{display: none;}
+.home .fixBall{position: fixed;bottom: 11.3rem;right: 1.2rem;display: block;width: 4rem;height: 4rem;border-radius: 50%;background: rgba(255, 160, 0, .8);line-height: 4rem;text-align: center;color: #fff;font-size: 1.6rem;}
