@@ -982,7 +982,7 @@ input::-webkit-input-placeholder{
 }
 .ui-nowrap-flex label{display: block}
 .ui-nowrap-flex .ui-flex-1{-webkit-box-flex: 1;}
-.ui-arrow{padding-right: 2rem;}
+.ui-arrow{padding-right: 1.5rem;}
 /*.ui-arrow:after{content: "\e602"; color: #763F01; font-family:"iconfont" !important;  position: absolute; right:1rem; top: 0; text-align: right; height: 100%;}*/
 .ui-flex-1 a{color: #999;}
 .ui-flex-1 a.active{color: #181818;}

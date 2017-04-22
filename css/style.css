@@ -7,19 +7,21 @@ html,body{background: #f2f2f2;}
 .ui-form{font-size: 1.4rem;}
 .ui-form-item{}
 .ui-form-item label:not(.ui-switch):not(.ui-checkbox):not(.ui-radio){color: #666;}
-.ui-form-item .ui-arrow:after{background: url(../images/ld-rig_arr_light.png) 0 0 no-repeat;width: .8rem;height: 1.3rem;-webkit-background-size: .8rem auto;background-size: .8rem auto;}
+.ui-form-item .ui-arrow{position: relative;height: 100%;}
+.ui-form-item .ui-arrow:after{content: "";position: absolute;right: 0;top: 1.6rem;height: 1.3rem;background: url(../images/ld-rig_arr_light.png) 0 0 no-repeat;width: .8rem;background-size: .8rem auto;}
 .ui-btn-normal{margin: 2rem auto;width: 17rem;height: 4rem;line-height: 4rem;border-radius: 4px;background: #f15657;color: #fff;font-size: 1.6rem;text-align: center;}
 .red-color{color: #f15657;}
 
 .ui-btn-primary:not(.disabled):not(:disabled):active, .ui-btn-primary.active, .ui-btn-s:not(.disabled):not(:disabled):active, .ui-btn-s.active{background: #cc3b3c;color: #fff;}
 
 .ui-checkbox-round {-webkit-appearance: none;padding: 0.5rem 0 0.5rem 0.2rem;border: none;}
-.ui-checkbox-round:after{width: 1.4rem;height: 1.4rem;background: url(images/btn_check_a@2x.png) 0 0 no-repeat;background-size: 1.4rem auto;}
+.ui-checkbox-round:after{width: 1.4rem;height: 1.4rem;background: url(images/btn_check_a@2x.png) right 0 no-repeat;background-size: 1.4rem auto;}
 
 .ui-dialog .dilgBtnFirst{border-right: 1px solid #d1d1d1!important;border-top-right-radius: 0;border-bottom-right-radius: 0;}
 .ui-dialog .cancelBtn{color: #000;}
 
 .bgfff{background: #fff!important;}
+.orangeColor{color: #ffa000!important;}
 
 
 /*我的动态*/
@@ -48,3 +50,4 @@ html,body{background: #f2f2f2;}
 .myself .cont .rightData .socialData .part{float: left;width: 6.5rem;text-align: center;font-size: 1.3rem;color: #999;}
 .myself .cont .rightData .socialData .part:first-child{width: 4.5rem;text-align: left;}
 .myself .cont .rightData .socialData .part:last-child{width: 5rem;text-align: right;}
+.myself .ui-form-item img{margin-right: .8rem;width: 1.3rem;height: 1.3rem;vertical-align: sub;}
