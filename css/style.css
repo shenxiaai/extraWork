@@ -23,8 +23,11 @@ html,body{background: #f2f2f2;}
 
 .bgfff{background: #fff!important;}
 .orangeColor{color: #ffa000!important;}
+.blueColor{color: #009afb!important;}
 .plr12{padding: 0 1.2rem;}
 .ptb12{padding: 1.2rem 0;}
+.dib{display: inline-block;}
+.fr{float: right;}
 
 
 /*我的动态*/
@@ -61,3 +64,11 @@ html,body{background: #f2f2f2;}
 /*详情*/
 .article .cont .info{font-size: 1.1rem;color: #666;}
 .article .cont .info img{margin: 0 .5rem 0 1.1rem;width: 1.2rem;height: 1.2rem;vertical-align: sub;}
+.article .cont .comment{padding-top: .4rem;}
+.article .cont .comment .tit b{margin: 0 .5rem 0 .8rem;font-size: 1.2rem;color: #f41537;}
+.article .cont .comment .tit .commentIcon{margin-right: .45rem;width: 1rem;height: .85rem;}
+.article .cont .community{padding: 0 1rem;}
+.article .cont .community dd{padding: .3rem 0 .6rem;}
+.article .cont .community .part em{margin-right: .4rem;}
+.article .cont .community .part1{height: 2rem;line-height: 2rem;font-size: 1.1rem;}
+.article .cont .community .part2{font-size: 1rem;color: #999;}
