@@ -72,6 +72,10 @@ html,body{background: #f2f2f2;}
 .myself .ui-form-item label{font-size: 1.3rem;color: #333;}
 .myself .ui-form-item img{margin-right: .8rem;width: 1.3rem;height: 1.3rem;vertical-align: sub;}
 .myself .ui-form-item  .ui-flex-1 input{font-size: 1.1rem;color: #999;}
+.myself .ui-form-item  .ui-flex-1 input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {font-size: 1.1rem;color: #999;}
+.myself .ui-form-item  .ui-flex-1 input:-moz-placeholder, textarea:-moz-placeholder {font-size: 1.1rem;color: #999;}
+.myself .ui-form-item  .ui-flex-1 input::-moz-placeholder, textarea::-moz-placeholder {font-size: 1.1rem;color: #999;}
+.myself .ui-form-item  .ui-flex-1 input:-ms-input-placeholder, textarea:-ms-input-placeholder {font-size: 1.1rem;color: #999;}
 .myself .ui-form-item  .ui-flex-1 span img{margin-right: 0;width: 1.6rem;height: 1.6rem;}
 
 /*详情*/
@@ -86,7 +90,7 @@ html,body{background: #f2f2f2;}
 .article .cont .community .part em{margin-right: .4rem;}
 .article .cont .community .part1{height: 2rem;line-height: 2rem;font-size: 1.1rem;}
 .article .cont .community .part2{font-size: 1rem;color: #999;}
-.text{position: fixed;left: 0;bottom: -2.8rem;width: 100%;padding: 0 1.2rem;background: #fff;border-top: 1px solid #f5f5f5;height: 2.8rem;line-height: 2.8rem;box-sizing: border-box;}
+.text{position: fixed;left: 0;bottom: 0;width: 100%;padding: 0 1.2rem;background: #fff;border-top: 1px solid #f5f5f5;height: 2.8rem;line-height: 2.8rem;box-sizing: border-box;}
 .text input{display: block;height: 2.8rem;border: none;-webkit-box-flex: 1;}
 .text .submit{display: block;background: url(../images/ld-submitIcon1.png);width: 1.6rem;height: 1.4rem;background-size: 1.6rem auto;border: none;}
 

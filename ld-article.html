@@ -118,16 +118,16 @@
 						}else{
 							userName = this.parentNode.parentNode.children[1].innerHTML;
 						}
-						showTxtIpt(text, userName);
+						// showTxtIpt(text, userName);		//展开 txtIpt
 						replyIpt.placeholder = '回复@' + userName;
 						event.stopPropagation();
 					}
 				}
 
 				//收起 txtIpt
-				document.documentElement.addEventListener('click', function () {
-					moveAction(text, 'bottom', -text.offsetHeight);
-				});
+				// document.documentElement.addEventListener('click', function () {
+				// 	moveAction(text, 'bottom', -text.offsetHeight);
+				// });
 
 				// show textInput
 				function showTxtIpt (obj, attr) {
