@@ -50,7 +50,7 @@
 			</div>
 
 				<!-- dialog -->
-			<div class="ui-dialog show" id="dialog">
+			<div class="ui-dialog" id="dialog">
 				<div class="ui-dialog-cnt">
 					<!-- <h1 class="dialog-title">对话框标题栏</h1> -->
 					<div class="dialog-main-cnt">确定不再关注此人？</div>
@@ -64,11 +64,20 @@
 		</div>
 		<script>
 			window.onload = function () {
+				//dialog cancel button function
 				var cancelBtn = document.getElementById('cancelBtn'),
 					dialog = document.getElementById('dialog');
-					
 				cancelBtn.onclick = function () {
 					dialog.className = 'ui-dialog';
+				}
+
+
+				//del icon function
+				var delIcons = document.querySelectorAll('.focus');
+				for(var y = 0; y < delIcons.length; y++) {
+					delIcons[y].onclick = function () {
+						dialog.className = 'ui-dialog show';
+					}
 				}
 			}
 		</script>
