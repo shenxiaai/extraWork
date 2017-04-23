@@ -107,19 +107,24 @@
 					}
 				}
 
-
+				//Zan
 				var comp = document.querySelectorAll('.comp');
-
 				for(var w = 0; w < comp.length; w++) {
-					var part = comp[w].querySelectorAll('.part');
+					var part = comp[w].querySelectorAll('.part'),
+						flag = 1;
 
 					for(var u = 0; u < part.length; u++) {
 						part[u].onclick = function () {
-							var url = '',
-								strArr = this.children[0].innerHTML.split("."),
-								s1 = strArr[0].substring(0, strArr[0].length - 1);
-							url = s1 + '2.' + strArr[1];
-							this.children[0].innerHTML = url;
+							if(flag){
+								var url = '',
+									strArr = this.children[0].innerHTML.split("."),
+									s1 = strArr[0].substring(0, strArr[0].length - 1);
+								url = s1 + '2.' + strArr[1];
+								this.children[0].innerHTML = url;
+								flag = 0;
+							}else{
+								alert('这里放你们想放的警示语就好啦！');
+							}
 						}
 					}
 				}
