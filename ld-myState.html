@@ -45,7 +45,7 @@
 			</div>
 
 			<!-- dialog -->
-			<div class="ui-dialog show" id="dialog">
+			<div class="ui-dialog" id="dialog">
 				<div class="ui-dialog-cnt">
 					<!-- <h1 class="dialog-title">对话框标题栏</h1> -->
 					<div class="dialog-main-cnt">确定不再删除？</div>
@@ -58,6 +58,8 @@
 			</div>
 		</div>
 		<script>
+		window.onload = function () {
+			//show more and hide more
 			var more = document.querySelectorAll('.more'),
 				flag = 0;
 			for(var i = 0; i < more.length; i++) {
@@ -93,12 +95,22 @@
 				}
 			}
 
+
+			//dialog cancel button function
 			var cancelBtn = document.getElementById('cancelBtn'),
 				dialog = document.getElementById('dialog');
-				
 			cancelBtn.onclick = function () {
 				dialog.className = 'ui-dialog';
 			}
+
+
+			//del icon function
+			var delIcons = document.querySelectorAll('.del');
+			for(var y = 0; y < delIcons.length; y++) {
+				dialog.className = 'ui-dialog show';
+			}
+
+		}
 		</script>
 	</body>
 </html>

@@ -116,9 +116,10 @@
 					for(var u = 0; u < part.length; u++) {
 						part[u].onclick = function () {
 							var url = '',
-								strArr = this.children[0].innerHTML.split(".");
-
-							strArr[0].substring(0, strArr[0].length - 1);
+								strArr = this.children[0].innerHTML.split("."),
+								s1 = strArr[0].substring(0, strArr[0].length - 1);
+							url = s1 + '2.' + strArr[1];
+							this.children[0].innerHTML = url;
 						}
 					}
 				}
