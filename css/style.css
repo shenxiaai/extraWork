@@ -150,6 +150,7 @@ html,body{background: #f2f2f2;}
 .home .tab span:first-child{border-right: 1px solid #f1f1f1;}
 .home .tab span.active{color: #ffa000;}
 .home .tab .mall{position: absolute;right: 1rem;top: 50%;margin-top: -.8rem;display: inline-block;font-size: 1.1rem;color: #e62129;border: 1px solid #e62129;border-radius: 3px;text-align: center;width: 6rem;height: 1.6rem;line-height: 1.6rem;}
+.home .contents{width: 100%;overflow: hidden;}
 .home .contents .banner{width: 100%;height: 16.5rem;}
 .home .contents .banner img{width: 100%;height: 100%;}
 .home .cont{margin: 1.2rem 0 6.2rem;padding: 0;}

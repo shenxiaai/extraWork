@@ -40,8 +40,8 @@
 					<p>亲身试吃的男士保健的效果／老蘭画说嘚啵嘚：亲身试吃的男士保健的效果对国足功臣于大宝最有创意的表白老蘭画说嘚啵嘚：对国足功臣于大包最有创意的表白亲身试吃的男士保健的效果／老蘭画说嘚啵嘚：亲身试吃的男士保健的效果对国足功臣于大宝最有创意的表白老蘭画说嘚啵嘚：对国足功臣于大包最有创意的</p>
 					<div class="info"><span class="more">查看全文</span></div>
 					<div class="comp">
-						<div class="part part1">什么鬼<span><img src="images/ld-lowIcon.png" alt=""></span></div>
-						<div class="part part2"><span><img src="images/ld-greatIcon.png" alt=""></span>点赞</div>
+						<div class="part part1">什么鬼<span><img src="images/ld-lowIcon1.png" alt=""></span></div>
+						<div class="part part2"><span><img src="images/ld-greatIcon1.png" alt=""></span>点赞</div>
 					</div>
 				</div>
 
@@ -52,8 +52,8 @@
 					<p>亲身试吃的男士保健的效果／老蘭画说嘚啵嘚：亲身试吃的男士保健的效果对国足功臣于大宝最有创意的表白老蘭画说嘚啵嘚：对国足功臣于大包最有创意的表白亲身试吃的男士保健的效果／老蘭画说嘚啵嘚：亲身试吃的男士保健的效果对国足功臣于大宝最有创意的表白老蘭画说嘚啵嘚：对国足功臣于大包最有创意的</p>
 					<div class="info"><span class="more">查看全文</span></div>
 					<div class="comp">
-						<div class="part part1">什么鬼<span><img src="images/ld-lowIcon.png" alt=""></span></div>
-						<div class="part part2"><span><img src="images/ld-greatIcon.png" alt=""></span>点赞</div>
+						<div class="part part1">什么鬼<span><img src="images/ld-lowIcon1.png" alt=""></span></div>
+						<div class="part part2"><span><img src="images/ld-greatIcon1.png" alt=""></span>点赞</div>
 					</div>
 				</div>
 
@@ -64,44 +64,62 @@
 					<p>亲身试吃的男士保健的效果／老蘭画说嘚啵嘚：亲身试吃的男士保健的效果对国足功臣于大宝最有创意的表白老蘭画说嘚啵嘚：对国足功臣于大包最有创意的表白亲身试吃的男士保健的效果／老蘭画说嘚啵嘚：亲身试吃的男士保健的效果对国足功臣于大宝最有创意的表白老蘭画说嘚啵嘚：对国足功臣于大包最有创意的</p>
 					<div class="info"><span class="more">查看全文</span></div>
 					<div class="comp">
-						<div class="part part1">什么鬼<span><img src="images/ld-lowIcon.png" alt=""></span></div>
-						<div class="part part2"><span><img src="images/ld-greatIcon.png" alt=""></span>点赞</div>
+						<div class="part part1">什么鬼<span><img src="images/ld-lowIcon1.png" alt=""></span></div>
+						<div class="part part2"><span><img src="images/ld-greatIcon1.png" alt=""></span>点赞</div>
 					</div>
 				</div>
 			</div>
 		</div>
 		<script>
-			var more = document.querySelectorAll('.more'),
-				flag = 0;
-			for(var i = 0; i < more.length; i++) {
-				var wordBox = more[i].parentNode.parentNode.getElementsByTagName('p')[0],
-					word 	= wordBox.innerText,
-					pre 	= '',
-					cut		= '',
-					len 	= 0;
+			window.onload = function () {
+				var more = document.querySelectorAll('.more'),
+					flag = 0;
+				for(var i = 0; i < more.length; i++) {
+					var wordBox = more[i].parentNode.parentNode.getElementsByTagName('p')[0],
+						word 	= wordBox.innerText,
+						pre 	= '',
+						cut		= '',
+						len 	= 0;
 
-				//判断中英文字符
-				for(var x = 0; x < word.length; x++) {
-					if(word.charCodeAt(x) < 128)
-						len++;
-					else len += 2;
-				}
-				if(len > 150) {
-					pre = word.substring(0,75);
-					cut = word.substring(75);
-					wordBox.innerHTML = pre + '...';
-					flag = 1;
-				}
-
-				more[i].onclick = function () {
-					if(flag){
-						this.parentNode.parentNode.getElementsByTagName('p')[0].innerHTML = pre + cut;
-						this.innerHTML = '收起';
-						flag = 0;
-					}else{
-						this.parentNode.parentNode.getElementsByTagName('p')[0].innerHTML = pre + '...';
-						this.innerHTML = '查看全文';
+					//判断中英文字符
+					for(var x = 0; x < word.length; x++) {
+						if(word.charCodeAt(x) < 128)
+							len++;
+						else len += 2;
+					}
+					if(len > 150) {
+						pre = word.substring(0,75);
+						cut = word.substring(75);
+						wordBox.innerHTML = pre + '...';
 						flag = 1;
+					}
+
+					more[i].onclick = function () {
+						if(flag){
+							this.parentNode.parentNode.getElementsByTagName('p')[0].innerHTML = pre + cut;
+							this.innerHTML = '收起';
+							flag = 0;
+						}else{
+							this.parentNode.parentNode.getElementsByTagName('p')[0].innerHTML = pre + '...';
+							this.innerHTML = '查看全文';
+							flag = 1;
+						}
+					}
+				}
+
+
+				var comp = document.querySelectorAll('.comp');
+
+				for(var w = 0; w < comp.length; w++) {
+					var part = comp[w].querySelectorAll('.part');
+
+					for(var u = 0; u < part.length; u++) {
+						part[u].onclick = function () {
+							var url = '',
+								strArr = this.children[0].innerHTML.split(".");
+
+							strArr[0].substring(0, strArr[0].length - 1);
+						}
 					}
 				}
 			}
