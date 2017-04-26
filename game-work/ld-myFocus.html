@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0,minimum-scale=1.0, maximum-scale=1.0, user-scalable=0">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<meta name="format-detection" content="telephone=no">
+		<title>力多社区-我的关注</title>
+		<link rel="stylesheet" href="css/base.min.css" />
+		<link rel="stylesheet" href="css/style.css" />
+		<script src="js/reset.js"></script>	
+	</head>
+	<body ontouchstart="">
+		<div class="ui-wrap myFocus">
+			<header class="ld-header ui-border-b">
+				<a class="ui-back" href=""></a>
+				<div class="ui-title">我的关注</div>
+			</header>
+	
+			<div class="ui-form-wrap bgfff">
+				<div class="ui-form">
+					<form action="#">
+						<div class="ui-form-item ui-form-item-show ui-nowrap-flex flex-between ui-border-b">
+							<label for="#" class="colorLabel">
+								<img class="pic" src="images/ld-pic2.png" alt="">昵称<img class="sex" src="images/ld-male.png" alt="">
+							</label>
+							<div class="ui-flex-1 tar">
+								<span class="focus">已关注</span>
+							</div>
+						</div>
+						<div class="ui-form-item ui-form-item-show ui-nowrap-flex flex-between ui-border-b">
+							<label for="#" class="colorLabel">
+								<img class="pic" src="images/ld-pic2.png" alt="">昵称<img class="sex" src="images/ld-male.png" alt="">
+							</label>
+							<div class="ui-flex-1 tar">
+								<span class="focus">已关注</span>
+							</div>
+						</div>
+						<div class="ui-form-item ui-form-item-show ui-nowrap-flex flex-between ui-border-b">
+							<label for="#" class="colorLabel">
+								<img class="pic" src="images/ld-pic2.png" alt="">昵称<img class="sex" src="images/ld-male.png" alt="">
+							</label>
+							<div class="ui-flex-1 tar">
+								<span class="focus">已关注</span>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+
+				<!-- dialog -->
+			<div class="ui-dialog" id="dialog">
+				<div class="ui-dialog-cnt">
+					<!-- <h1 class="dialog-title">对话框标题栏</h1> -->
+					<div class="dialog-main-cnt">确定不再关注此人？</div>
+					<!--有2个按钮-->
+					<div class="ui-dialog-ft">
+						<button class="ui-btn-s ui-btn-primary-s dilgBtnFirst cancelBtn" id="cancelBtn">取消</button>
+						<button class="ui-btn-s ui-btn-primary-s">确定</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script>
+			window.onload = function () {
+				//dialog cancel button function
+				var cancelBtn = document.getElementById('cancelBtn'),
+					dialog = document.getElementById('dialog');
+				cancelBtn.onclick = function () {
+					dialog.className = 'ui-dialog';
+				}
+
+
+				//del icon function
+				var delIcons = document.querySelectorAll('.focus');
+				for(var y = 0; y < delIcons.length; y++) {
+					delIcons[y].onclick = function () {
+						dialog.className = 'ui-dialog show';
+					}
+				}
+			}
+		</script>
+	</body>
+</html>

@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html style="background: #fff;">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0,minimum-scale=1.0, maximum-scale=1.0, user-scalable=0">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<meta name="format-detection" content="telephone=no">
+		<title>力多社区-详情</title>
+		<link rel="stylesheet" href="css/base.min.css" />
+		<link rel="stylesheet" href="css/style.css" />
+		<script src="js/reset.js"></script>	
+	</head>
+	<body ontouchstart="">
+		<div class="ui-wrap myState article">
+			<header class="ld-header ui-border-b">
+				<a class="ui-back" href=""></a>
+				<div class="ui-title">详情</div>
+			</header>
+
+			<div class="cont">
+				<div class="ptb12 ui-border-b">
+					<div class="tit">
+						<img class="pic" src="images/ld-pic2.png" alt="">昵称<img class="sex" src="images/ld-male.png" alt=""><em>03-26 12:03</em>
+						<span class="focus" style="display: none;" id="focused">已关注</span>
+						<span class="focus focused" id="addFocus">+关注</span>
+					</div>
+					<p>老蘭画说嘚啵嘚：对国足功臣于大宝最有创意的表白……亲身试吃的男士保健的效果老蘭画说嘚啵嘚：对国足功臣于大包最有创意的表白……今年29岁了，作为一个毕业五年的工作狗，毕业之后就染上了手淫的恶习。开始感觉很有快感，认为手淫很正常的，可是时间长了每天都控制不住自己。后来导致自己阳痿早泄，每次就几分钟，晚上睡觉出还出虚汗，也吃过中药调理过，但是并没什么卵用。后来自己接触到了libido，也想试试效果，就买了一个月的。刚吃三四天，就觉得自己有劲儿了。吃到快2周的时候，感觉不怎么出虚汗了。而且每天吃一次，不麻烦，打算继续吃下去，好好调理一下自己的身体吧。</p>
+					<div class="info tar">
+						<em class="">
+							<img src="images/ld-art_icon1_1.png" alt="">88
+						</em>
+						<em class="artAttitude">
+							<img src="images/ld-art_icon2_1.png" alt="">32
+						</em>
+						<em class="artAttitude">
+							<img src="images/ld-art_icon3_1.png" alt="">155
+						</em>
+					</div>
+				</div>
+
+				<div class="comment">
+					<ul>
+						<li>
+							<div class="tit">
+								<img class="pic" src="images/ld-pic2.png" alt="">昵称<b>PanPan</b><em>03-26 12:03</em>
+								<span class="fr"><img class="commentIcon" src="images/ld-art_icon1_1.png" alt=""><i class="reply">回复</i></span>
+							</div>
+							<p>老蘭画说嘚啵嘚：对国足功臣于大宝最有创意的表白……对国足功臣于大包最有创意的表白……</p>
+							<dl class="community">
+								<dd class="ui-border-b">
+									<div class="part part1">
+										<em class="blueColor">向日葵花向阳开：@PanPan</em> 恭喜恭喜！
+									</div>
+									<div class="part part2">
+										<em>01-02 3:06</em><i class="reply">回复</i>
+									</div>
+								</dd>
+								<dd class="ui-border-b">
+									<div class="part part1">
+										<em class="blueColor">PanPan：@向日葵花向阳开</em> 恭喜恭喜！
+									</div>
+									<div class="part part2">
+										<em>01-02 3:06</em><i class="reply">回复</i>
+									</div>
+								</dd>
+							</dl>
+						</li>
+					</ul>
+				</div>
+
+				<div class="text" id="text">
+					<form action="">
+					<div class="ui-nowrap-flex flex-between boxalgcent boxPackJust">
+							<input id="replyIpt" type="text" placeholder="说点什么吧～">
+							<button class="submit"></button>
+						</div>
+					</form>
+				</div>
+
+				<!-- dialog -->
+				<div class="ui-dialog" id="dialog">
+					<div class="ui-dialog-cnt">
+						<!-- <h1 class="dialog-title">对话框标题栏</h1> -->
+						<div class="dialog-main-cnt">确定关注？</div>
+						<!--有2个按钮-->
+						<div class="ui-dialog-ft">
+							<button class="ui-btn-s ui-btn-primary-s dilgBtnFirst cancelBtn" id="cancelBtn">取消</button>
+							<button class="ui-btn-s ui-btn-primary-s">确定</button>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+		<script>
+			window.onload = function () {
+				//dialog cancel button function
+				var cancelBtn = document.getElementById('cancelBtn'),
+					dialog = document.getElementById('dialog');
+				cancelBtn.onclick = function () {
+					dialog.className = 'ui-dialog';
+				}
+
+				// add focus
+				var addFocus = document.getElementById('addFocus'),
+					focused = document.getElementById('focused');
+				addFocus.onclick = function () {
+					this.style.display = 'none';
+					focused.style.display = 'inline-block';
+				}
+
+
+				//cancel focus
+				focused.onclick = function () {
+					dialog.className = 'ui-dialog show';
+				}
+
+				//reply someone
+				var replys = document.querySelectorAll('.reply'),
+					text = document.getElementById('text'),
+					replyIpt = document.getElementById('replyIpt');
+
+				for(var e = 0; e < replys.length; e ++) {
+					replys[e].onclick = function (event) {
+						var userName = '';
+						if(this.parentNode.nodeName == 'DIV') {
+							userName = this.parentNode.parentNode.children[0].children[0].innerHTML.split("：")[0];
+						}else{
+							userName = this.parentNode.parentNode.children[1].innerHTML;
+						}
+						// showTxtIpt(text, userName);		//展开 txtIpt
+						replyIpt.placeholder = '回复@' + userName;
+						event.stopPropagation();
+					}
+				}
+
+				//收起 txtIpt
+				// document.documentElement.addEventListener('click', function () {
+				// 	moveAction(text, 'bottom', -text.offsetHeight);
+				// });
+
+				// show textInput
+				function showTxtIpt (obj, attr) {
+					moveAction(obj, 'bottom', 0);
+				}
+
+
+				//star&like
+				var comp = document.querySelectorAll('.artAttitude');
+				for(var u = 0; u < comp.length; u++) {
+					var flag = 1;
+					comp[u].onclick = function () {
+						var url = '',
+							strArr = this.children[0].src.split(".png"),
+							s1 = strArr[0].substring(0, strArr[0].length - 1);
+						if(flag){	//点亮
+							url = s1 + '2.png';
+							flag = 0;
+						}else{		//置灰
+							url = s1 + '1.png';
+							flag = 1;
+						}
+						this.children[0].src = url;
+					}
+				}
+
+
+
+
+
+
+			}
+
+
+			function getStyle(obj, css) {
+				if(obj.currentStyle){
+					return obj.currentStyle[css];
+				}else{
+					return getComputedStyle(obj, false)[css];
+				}
+			}
+
+			function moveAction(obj, attr, target) {
+				target = parseInt(target);
+				clearInterval(obj.timer);
+				obj.timer = setInterval(function () {
+					var curr = 0;
+					if(attr == 'opacity'){
+						curr = Math.round(parseFloat(getStyle(obj, attr))) * 100;
+					}else{
+						curr = parseInt(getStyle(obj, attr));
+					}
+					var speed = (target - curr) / 6;
+					speed = speed > 0 ? Math.ceil(speed) : Math.floor(speed);
+					if(curr == target){
+						clearInterval(obj.timer);
+					}else{
+						if(attr == 'opacity'){
+							obj.style.filter = 'alpha(opacity: ' + (curr + speed) + ')';
+							obj.style.opacity = (curr + speed) / 100;
+							text.value = obj.style.opacity;
+						}else{
+							obj.style[attr] = curr + speed + 'px';
+						}
+					}
+				}, 30);
+			}
+		</script>
+	</body>
+</html>
