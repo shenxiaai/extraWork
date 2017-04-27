@@ -11,8 +11,10 @@
 		<title>主页</title>
 		<link rel="stylesheet" href="css/standard.css" />
 		<link rel="stylesheet" href="css/style.css" />
-		<script src="js/reset.js"></script>
 		<script src="js/jquery-1.8.3.min.js"></script>
+		<script src="js/reset.js"></script>
+		<script src="js/modernizr-2.6.2.min.js"></script>
+		<script src="js/polyfills.js"></script>
 	</head>
 	<body ontouchstart="">
 		<div class="home" id="home">
@@ -81,10 +83,25 @@
 			<!-- 瀑布 -->
             <div class="water"><img src="images/rst_water.gif" width="100%" alt=""></div>
 
-			<!-- 转换中心 -->
-			<div class="turn">
+			<!-- 弹窗-转换中心 -->
+			<div class="popup turn">
 				<div class="reback"><img src="images/a (3).png" width="100%" alt="返回"></div>
+				
+			</div>
 
+			<!-- 弹窗-参苗成长记录 -->
+			<div class="popup record">
+				<div class="reback"><img src="images/a (3).png" width="100%" alt="返回"></div>
+			</div>
+
+			<!-- 弹窗-原点复投 -->
+			<div class="popup originRet">
+				<div class="reback"><img src="images/a (3).png" width="100%" alt="返回"></div>
+			</div>
+
+			<!-- 弹窗-公告 -->
+			<div class="popup announcement">
+				<div class="reback"><img src="images/a (3).png" width="100%" alt="返回"></div>
 			</div>
 
 
@@ -97,19 +114,67 @@
 					scrH = document.documentElement.scrollHeight,
 					home = document.getElementById('home');
 
-				alert('ch = ' + ch);
+				console.log('ch = ' + ch);
 				
                 home.style.height = ch + 'px';
 
-
-                $('.house1').on('click', function() {
+                // 弹出 转换中心
+                $('.house1').on('click', function(e) {
+                	e.stopPropagation('');
                 	$('.turn').fadeIn();
                 });
 
-                $('.reback').on('click', function() {
+                // 弹出 参苗成长记录
+                $('.house2').on('click', function(e) {
+                	e.stopPropagation('');
+                	$('.record').fadeIn();
+                });
+
+                // 弹出 原点复投
+                $('.reset').on('click', function(e) {
+                	e.stopPropagation('');
+                	$('.originRet').fadeIn();
+                });
+
+                // 弹出 公告
+                $('.topNotice').on('click', function(e) {
+                	e.stopPropagation('');
+                	$('.originRet').fadeIn();
+                });
+
+                $('.reback').on('click', function(e) {
+                	e.stopPropagation('');
                 	$(this).parent('div').fadeOut();
                 });
 			}
+
+
+
+			// 扇形 导航栏
+			(function(){
+				var button = document.getElementById('cn-button'),
+			    wrapper = document.getElementById('cn-wrapper');
+
+			    //open and close menu when the button is clicked
+				var open = false;
+				button.addEventListener('click', handler, false);
+
+				function handler(){
+				  if(!open){
+				    this.innerHTML = "Close";
+				    classie.add(wrapper, 'opened-nav');
+				  }
+				  else{
+				    this.innerHTML = "Menu";
+					classie.remove(wrapper, 'opened-nav');
+				  }
+				  open = !open;
+				}
+				function closeWrapper(){
+					classie.remove(wrapper, 'opened-nav');
+				}
+
+			})();
 		</script>
 	</body>
 </html>
