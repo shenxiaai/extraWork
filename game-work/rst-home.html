@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html style="background: #fff;">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+		<meta name="apple-touch-fullscreen" content="yes">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<meta name="format-detection" content="telephone=no">
+		<meta name="x5-fullscreen" content="true">
+		<title>主页</title>
+		<link rel="stylesheet" href="css/standard.css" />
+		<link rel="stylesheet" href="css/style.css" />
+		<script src="js/reset.js"></script>
+		<script src="js/jquery-1.8.3.min.js"></script>
+	</head>
+	<body ontouchstart="">
+		<div class="home" id="home">
+            <div class="leftTopNav"><img src="images/rst_state.png" width="100%"></div>
+            <div class="topNotice"><img src="images/rst_notice.png" width="100%"></div>
+            <div class="topExit"><img src="images/rst_exit.png" width="100%"></div>
+            <div class="house1"><img src="images/rts_transaction.png" width="100%"></div>
+            <div class="settings"><img src="images/u52.png" width="100%"></div>
+			
+			<!-- 树 -->
+			<div class="trees">
+				<div class="tree tree1"><img src="images/rst_tree_1.png" width="100%" alt=""></div>
+				<div class="tree tree2"><img src="images/rst_tree_2.png" width="100%" alt=""></div>
+				<div class="tree tree3"><img src="images/rst_tree_3.png" width="100%" alt=""></div>
+				<div class="tree tree4"><img src="images/rst_tree_4.png" width="100%" alt=""></div>
+			</div>
+
+            <div class="fence">
+	            <img src="images/rst_fence.png" width="100%">
+				<div class="xw_land_box">
+					<div class="xw_land_a xw_land">		<!--增种后的土地命名改为复数xw_land_aa 以下七块土地相同-->
+						<img src="images/rst_land.png" alt="土地" width="100%">
+					</div>
+					<div class="xw_land_b xw_land">
+						<img src="images/rst_land.png" alt="土地" width="100%">
+					</div>
+					<div class="xw_land_c xw_land">
+						<img src="images/rst_land.png" alt="土地" width="100%">
+					</div>
+					<div class="xw_land_d xw_land">
+						<img src="images/rst_land.png" alt="土地" width="100%">
+					</div>
+					<div class="xw_land_e xw_land">
+						<img src="images/z6.png" alt="土地" width="100%">
+					</div>
+					<div class="xw_land_f xw_land">
+						<img src="images/z5.png" alt="土地" width="100%">
+					</div>
+					<div class="xw_land_g xw_land">
+						<img src="images/z4.png" alt="土地" width="100%">
+					</div>
+					<div class="xw_land_h xw_land">
+						<img src="images/z3.png" alt="土地" width="100%">
+					</div>
+					<div class="xw_land_i xw_land">
+						<img src="images/z2.png" alt="土地" width="100%">
+					</div>
+					<div class="xw_land_j xw_land">
+						<img src="images/z1.png" alt="土地" width="100%">
+					</div>
+				</div>
+            </div>
+            <div class="house2"><img src="images/rst_home.png" width="100%"></div>
+
+			<!-- 原点复投 -->
+            <div class="reset"></div>
+			
+			<!-- 级期 -->
+            <div class="schedule">
+            	<div class="schd sch1"><img src="images/rst_btn_4.png" width="100%"></div>
+            	<div class="schd sch2"><img src="images/rst_btn_5.png" width="100%"></div>
+            	<div class="schd sch3"><img src="images/rst_btn_6.png" width="100%"></div>
+            	<div class="schd sch4"><img src="images/rst_btn_7.png" width="100%"></div>
+            </div>
+
+			<!-- 瀑布 -->
+            <div class="water"><img src="images/rst_water.gif" width="100%" alt=""></div>
+
+			<!-- 转换中心 -->
+			<div class="turn">
+				<div class="reback"><img src="images/a (3).png" width="100%" alt="返回"></div>
+
+			</div>
+
+
+
+        </div>
+		<script>
+			window.onload = function() {
+				var cw = document.documentElement.clientWidth,
+					ch = document.documentElement.clientHeight,
+					scrH = document.documentElement.scrollHeight,
+					home = document.getElementById('home');
+
+				alert('ch = ' + ch);
+				
+                home.style.height = ch + 'px';
+
+
+                $('.house1').on('click', function() {
+                	$('.turn').fadeIn();
+                });
+
+                $('.reback').on('click', function() {
+                	$(this).parent('div').fadeOut();
+                });
+			}
+		</script>
+	</body>
+</html>
