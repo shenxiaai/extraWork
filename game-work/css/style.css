@@ -10,6 +10,13 @@
 .home .house1{position: absolute;left: 0%;top: 35.5%;width: 19.3%;height: 18.4%;}
 .home .house1:hover{transform: scale(1.1);-webkit-transform: scale(1.1);-moz-transform: scale(1.1);-o-transform: scale(1.1);}
 .home .settings{position: absolute;bottom: 4.5%;left: 2.9%;width: 4.5%;height: 6.9%;}
+.home .settings .setBox{display: none;}
+.home .settings .set{position: absolute;left: 0;top: 0;width: 85%;height: 85%;}
+.home .settings .set1{margin-top: -153%;left: -27%;}
+.home .settings .set2{margin-top: -120%;left: 83%;width: 70%;}
+.home .settings .set3{margin-top: -60%;left: 153%;}
+.home .settings .set4{margin-top: 40%;left: 185%;}
+
 .home .fence{position: absolute;left: 17%;top: 32%;width: 55.6%;height: 40.2%;}
 .home .house2{position: absolute;left: 64.9%;top: 23.3%;width: 27.9%;height: 18.4%;}
 .home .house2:hover{transform: scale(1.1);-webkit-transform: scale(1.1);-moz-transform: scale(1.1);-o-transform: scale(1.1);}
@@ -40,11 +47,25 @@
 .home .water{position: absolute;right: 0%;top: 25%;width: 11.3%;height: 10.8%;}
 
 .home .popup{display: none;position: absolute;left: 50%;top: 50%;transform: translate(-50%, -50%);-webkit-transform: translate(-50%, -50%);-moz-transform: translate(-50%, -50%);-o-transform: translate(-50%, -50%);}
-.home .turn{width: 76.61%;height: 80.74%;background: url(../images/aaac.png) 0 0 no-repeat;-webkit-background-size: 100% auto;background-size: 100% auto;}
 .home .popup .reback{position: absolute;top: 1.8%;left: 1.5%;width: 5%;}
+
+.home .turn{width: 76.61%;height: 80.74%;background: url(../images/aaac.png) 0 0 no-repeat;-webkit-background-size: 100% auto;background-size: 100% auto;padding-top: 7%;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;}
+.home .turn .title_box{margin: 0 auto;display: box;display: -webkit-box;-moz-display: box;box-pack: justify;-webkit-box-pack: justify;-moz-box-pack: justify;box-align: center;-webkit-box-align: center;-moz-box-align: center;width: 80%;height: 11%;}
+.home .turn .title_box div{width: 20%;height: 100%;;background: url(../images/ac.png) 0 0 no-repeat;background-size: 100% auto;text-align: center;font-size: 70%;}
+.home .turn .xx{margin: 0 auto;padding: 1% 1.5%;width: 90%;background: #fff;border-radius: 5px;font-size: 70%;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;}
+.home .turn .formBox{height: 40%;}
+.home .turn .form{margin-top: 2%;display: box;display: -webkit-box;display: -moz-box;display: -o-box;box-pack: center;-webkit-box-pack: center;-moz-box-pack: center;-o-box-pack: center;box-align: center;-webkit-box-align: center;-moz-box-align: center;-o-box-align: center;height: 18%;}
+.home .turn .form:last-child{margin-top: 4%;}
+.home .turn .form-item{box-flex: 1;-webkit-box-flex: 1;-moz-box-flex: 1;-o-box-flex: 1;width: 50%;height: 80%;}
+.home .turn .form-item:last-child{height: 150%;}
+.home .turn .form-item input{margin-left: 4%;background: url(../images/rst_inputbj.png) 0 0 no-repeat;-webkit-background-size: auto 100%;background-size: auto 100%;border: none;height: 90%;}
+.home .turn .form button{background: none;border: none;width: 45%;}
 
 .home .record{width: 68.96%;height: 73.2%;background: url(../images/bj.png) 0 0 no-repeat;-webkit-background-size: 100% auto;background-size: 100% auto;}
 
-.home .originRet{width: 49.5%;height: 52.6%;background: url(../images/ydft.png) 0 0 no-repeat;-webkit-background-size: 100% auto;background-size: 100% auto;}
+.home .originRet{width: 68.5%;height: 72.6%;background: url(../images/ydft.png) 0 0 no-repeat;-webkit-background-size: 100% auto;background-size: 100% auto;}
 
-.home .announcement{width: 26%;height: 38.15%;background: url(../images/gg_img_02.png) 0 0 no-repeat;-webkit-background-size: 100% auto;background-size: 100% auto;}
+.home .announcement{padding-top: 3%;width: 47%;height: 69%;background: url(../images/gg_img_02.png) 0 0 no-repeat;-webkit-background-size: 100% auto;background-size: 100% auto;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;}
+.home .announcement b{padding: .7% 1%;border: #6d380e 2px solid;text-align: center;color: #6d380e;font-size: 35%;border-radius: 3px;}
+
+.block{position: absolute;left: 0;top: 0;z-index: 0;display: none;background: rgba(0,0,0,.3);}

@@ -13,8 +13,6 @@
 		<link rel="stylesheet" href="css/style.css" />
 		<script src="js/jquery-1.8.3.min.js"></script>
 		<script src="js/reset.js"></script>
-		<script src="js/modernizr-2.6.2.min.js"></script>
-		<script src="js/polyfills.js"></script>
 	</head>
 	<body ontouchstart="">
 		<div class="home" id="home">
@@ -22,7 +20,15 @@
             <div class="topNotice"><img src="images/rst_notice.png" width="100%"></div>
             <div class="topExit"><a href="http://www.juheweb.com/js/dh/135.html"><img src="images/rst_exit.png" width="100%"></a></div>
             <div class="house1"><img src="images/rts_transaction.png" width="100%"></div>
-            <div class="settings"><img src="images/u52.png" width="100%"></div>
+            <div class="settings">
+	            <img src="images/u52.png" width="100%">
+	            <div class="setBox">
+		            <div class="set set1"><img src="images/rst_team.png" width="100%"></div>
+		            <div class="set set2"><img src="images/rst_register.png" width="100%"></div>
+		            <div class="set set3"><img src="images/rst_activation.png" width="100%"></div>
+		            <div class="set set4"><img src="images/rst_btn_3.png" width="100%"></div>
+		        </div>
+            </div>
 			
 			<!-- 树 -->
 			<div class="trees">
@@ -83,9 +89,49 @@
 			<!-- 瀑布 -->
             <div class="water"><img src="images/rst_water.gif" width="100%" alt=""></div>
 
+
+			<!-- 遮罩层 -->
+			<div class="block" id="block"></div>
+
+
 			<!-- 弹窗-转换中心 -->
 			<div class="popup turn">
 				<div class="reback"><img src="images/a (3).png" width="100%" alt="返回"></div>
+				<div class="title_box">
+						<div class="current">转出</div>
+						<div>转入记录</div>
+						<div>转出记录</div>
+				</div>
+				<div class="xx">
+					<p>1、根据板块的不同，您当日可转总量的40%，30%，20%，10%</p>
+					<p>2、系统自动损耗转换数量的10%为参苗转换损耗数量。</p>
+				</div>
+
+				<div class="formBox">
+					<div class="form">
+						<div class="form-item tar"><img src="images/rst_title_1.png" height="100%"></div>
+						<div class="form-item"><input type="" name="" value="1111" disabled></div>
+					</div>
+					<div class="form">
+						<div class="form-item tar"><img src="images/rst_title_2.png" height="100%" value="23" disabled></div>
+						<div class="form-item"><input type="" name=""></div>
+					</div>
+					<div class="form">
+						<div class="form-item tar"><img src="images/rst_title_3.png" height="100%"></div>
+						<div class="form-item"><input type="" name=""></div>
+					</div>
+					<div class="form">
+						<div class="form-item tar"><img src="images/rst_title_4.png" height="100%"></div>
+						<div class="form-item"><input type="" name=""></div>
+					</div>
+					<div class="form tac">
+						<button><img src="images/rst_confirm_btn.png" width="100%" alt=""></button>
+					</div>
+				</div>
+
+
+
+
 				
 			</div>
 
@@ -100,8 +146,54 @@
 			</div>
 
 			<!-- 弹窗-公告 -->
-			<div class="popup announcement">
+			<div class="popup announcement tac">
 				<div class="reback"><img src="images/a (3).png" width="100%" alt="返回"></div>
+				<b>说明：请会员留意发布的公告</b><br>
+				<table title="测试" cellspacing="1">
+					<tbody>
+					<tr class="gl_top">
+						<th>标题</th>
+						<th>简介</th>
+						<th>发布日期</th>
+						<th>查看详情</th>
+					</tr>
+					<tr class="gl_congter">
+						<td>TG 3月27日 公告</td>
+						<td>TG 3月27日 公告</td>
+						<td>2017.03.27</td>
+						<td><input type="button" value="查看详情"></td>
+					</tr>
+					<tr class="gl_congter1">
+						<td>TG 3月27日 公告</td>
+						<td>TG 3月27日 公告</td>
+						<td>2017.03.27</td>
+						<td><input type="button" value="查看详情"></td>
+					</tr>
+					<tr class="gl_congter">
+						<td>TG 3月27日 公告</td>
+						<td>TG 3月27日 公告</td>
+						<td>2017.03.27</td>
+						<td><input type="button" value="查看详情"></td>
+					</tr>
+					 <tr class="gl_congter1">
+						<td>TG 3月27日 公告</td>
+						<td>TG 3月27日 公告</td>
+						<td>2017.03.27</td>
+						<td><input type="button" value="查看详情"></td>
+					</tr>
+					<tr class="gl_congter">
+						<td>TG 3月27日 公告</td>
+						<td>TG 3月27日 公告</td>
+						<td>2017.03.27</td>
+						<td><input type="button" value="查看详情"></td>
+					</tr>
+					<tr class="gl_congter1">
+						<td>TG 3月27日 公告</td>
+						<td>TG 3月27日 公告</td>
+						<td>2017.03.27</td>
+						<td><input type="button" value="查看详情"></td>
+					</tr>  
+				</tbody></table>
 			</div>
 
 
@@ -113,68 +205,50 @@
 					ch = document.documentElement.clientHeight,
 					scrH = document.documentElement.scrollHeight,
 					home = document.getElementById('home');
-
-				console.log('ch = ' + ch);
-				
+					block = document.getElementById('block');
                 home.style.height = ch + 'px';
+                block.style.width = cw + 'px';
+                block.style.height = ch + 'px';
+
+                // 展开设置
+                $('.settings').on('click', function() {
+                	$('.setBox').slideToggle();
+                });
 
                 // 弹出 转换中心
                 $('.house1').on('click', function(e) {
                 	e.stopPropagation('');
+                	$('#block').show();
                 	$('.turn').fadeIn();
                 });
 
                 // 弹出 参苗成长记录
                 $('.house2').on('click', function(e) {
                 	e.stopPropagation('');
+                	$('#block').show();
                 	$('.record').fadeIn();
                 });
 
                 // 弹出 原点复投
                 $('.reset').on('click', function(e) {
                 	e.stopPropagation('');
+                	$('#block').show();
                 	$('.originRet').fadeIn();
                 });
 
                 // 弹出 公告
                 $('.topNotice').on('click', function(e) {
                 	e.stopPropagation('');
-                	$('.originRet').fadeIn();
+                	$('#block').show();
+                	$('.announcement').fadeIn();
                 });
 
                 $('.reback').on('click', function(e) {
                 	e.stopPropagation('');
                 	$(this).parent('div').fadeOut();
+                	$('#block').hide();
                 });
 			}
-
-
-
-			// 扇形 导航栏
-			(function(){
-				var button = document.getElementById('cn-button'),
-			    wrapper = document.getElementById('cn-wrapper');
-
-			    //open and close menu when the button is clicked
-				var open = false;
-				button.addEventListener('click', handler, false);
-
-				function handler(){
-				  if(!open){
-				    this.innerHTML = "Close";
-				    classie.add(wrapper, 'opened-nav');
-				  }
-				  else{
-				    this.innerHTML = "Menu";
-					classie.remove(wrapper, 'opened-nav');
-				  }
-				  open = !open;
-				}
-				function closeWrapper(){
-					classie.remove(wrapper, 'opened-nav');
-				}
-
-			})();
 		</script>
 	</body>
 </html>
