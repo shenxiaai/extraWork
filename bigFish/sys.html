@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<div class="box">
+		<div class="head">
+			<h4>大鱼刷量</h4>
+			<p>自助投放平台</p>
+			<div class="log">
+				<a href="" class="fr big">登录用户名</a>
+				<a href="" class="fr">退出登录</a>
+			</div>
+		</div>
+
+		<div class="tab">
+			<div class="tabTitle">
+				<ul id="myTab1">
+					<li onclick="nTabs(this,0);" class="active">报价单</li>
+					<li onclick="nTabs(this,1);" class="normal">投放管理</li>
+					<li onclick="nTabs(this,2);" class="normal">财务管理</li>
+					<li onclick="nTabs(this,3);" class="normal">账户管理</li>
+				</ul>
+				<div class="info">
+					<h4>联系我们</h4>
+					<p>微信：iostg88</p>
+					<p>邮箱：861111328@qq.com</p>
+					<p>QQ：861111328</p>
+				</div>
+			</div>
+
+			<div class="tabContent">
+				<div id="myTab1_Content0" style="display: block;">
+					<div class="childTab">
+						<div class="childTabTitle">
+							<ul id="myTab2">
+								<li onclick="nTabs(this,0);" class="active">微信报价单</li>
+								<li onclick="nTabs(this,1);" class="normal">微博报价单</li>
+								<li onclick="nTabs(this,2);" class="normal">新闻客户端报价单</li>
+								<li onclick="nTabs(this,3);" class="normal">IOS用户下载报价单</li>
+								<li onclick="nTabs(this,4);" class="normal">投票报价单</li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="childTabCont">
+						<div id="myTab2_Content0" style="display: block;"></div>
+						<div id="myTab2_Content1" style="display: none;"></div>
+					</div>
+					
+
+
+				</div>
+				<div id="myTab1_Content1" class="none" style="display: none;">
+					<a href="http://www.mofang.com/dmyx/list_14757_1.html" class="more" title="" target="_blank">更多</a>
+				</div>
+				<div id="myTab1_Content2" class="none" style="display: none;">
+					<a href="http://www.mofang.com/dmyx/list_14757_1.html" class="more" title="" target="_blank">更多</a>
+				</div>
+				<div id="myTab1_Content3" class="none" style="display: none;">
+					<a href="http://www.mofang.com/dmyx/list_14757_1.html" class="more" title="" target="_blank">更多</a>
+				</div>
+			</div>
+
+
+
+
+		</div>
+	</div>
+	<script>
+		function nTabs(thisObj, Num) {
+			if (thisObj.className == 'active') return;
+			var tabObj = thisObj.parentNode.id;
+			var tabList = document.getElementById(tabObj).getElementsByTagName('li');
+			for (i = 0; i < tabList.length; i++) {
+				if (i == Num) {
+					thisObj.className = 'active';
+					document.getElementById(tabObj + '_Content' + i).style.display = 'block';
+				} else {
+					tabList[i].className = 'normal';
+					document.getElementById(tabObj + '_Content' + i).style.display = 'none';
+				}
+			}
+		}
+	</script>
+</body>
+</html>
