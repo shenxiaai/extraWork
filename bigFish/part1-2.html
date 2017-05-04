@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>IOS用户下载报价单</title>
+	<title>微博报价单</title>
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="css/style.css">
 </head>
@@ -39,9 +39,9 @@
 						<div class="childTabTitle">
 							<ul id="myTab2">
 								<li onclick="nTabs(this,0);" class="normal">微信报价单</li>
-								<li onclick="nTabs(this,1);" class="normal">微博报价单</li>
+								<li onclick="nTabs(this,1);" class="active">微博报价单</li>
 								<li onclick="nTabs(this,2);" class="normal">新闻客户端报价单</li>
-								<li onclick="nTabs(this,3);" class="active">IOS用户下载报价单</li>
+								<li onclick="nTabs(this,3);" class="normal">IOS用户下载报价单</li>
 								<li onclick="nTabs(this,4);" class="normal">投票报价单</li>
 							</ul>
 						</div>
@@ -49,9 +49,33 @@
 
 					<div class="childTabCont">
 						<div id="myTab2_Content0" style="display: none;"></div>
-						<div id="myTab2_Content1" style="display: none;"></div>
+						<div id="myTab2_Content1" style="display: block;">
+							<div class="part1Weibo">
+								<div class="weibo">
+									<h3>微博粉丝</h3>
+									<p>优质粉丝**.00/万</p>
+									<p>一般粉丝**.00/万<em>40%有头像，掉粉可补3次。</em></p>
+									<p>劣质粉丝**.00/万<em>无头像，掉粉不补量。</em></p>
+								</div>
+								<div class="weibo">
+									<h3>微博转发</h3>
+									<p>**.00/万转发</p>
+									<p>**.00/万高质量转发</p>
+								</div>
+								<div class="weibo">
+									<h3>微博点赞</h3>
+									<p>一般点赞**.00/万</p>
+									<p>高级点赞**.00/万</p>
+									<p>急速点赞**.00/万</p>
+								</div>
+								<div class="weibo">
+									<h3>微博评论</h3>
+									<p>**.00/万评论</p>
+								</div>
+							</div>
+						</div>
 						<div id="myTab2_Content2" style="display: none;"></div>
-						<div id="myTab2_Content3" style="display: block;">
+						<div id="myTab2_Content3" style="display: none;">
 							<div class="noData">
 								<img src="images/noData.png">
 								<p>暂未开放</p>
@@ -73,7 +97,6 @@
 					<a href="http://www.mofang.com/dmyx/list_14757_1.html" class="more" title="" target="_blank">更多</a>
 				</div>
 			</div>
-
 
 
 

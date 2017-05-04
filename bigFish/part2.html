@@ -20,10 +20,10 @@
 		<div class="tab">
 			<div class="tabTitle">
 				<ul id="myTab1">
-					<li onclick="nTabs(this,0);" class="normal">报价单</li>
-					<li onclick="nTabs(this,1);" class="active">投放管理</li>
-					<li onclick="nTabs(this,2);" class="normal">财务管理</li>
-					<li onclick="nTabs(this,3);" class="normal">账户管理</li>
+					<li onclick="nTabs(this,0);" class="normal"><i class="icon icon1"></i><em>报价单</em></li>
+					<li onclick="nTabs(this,1);" class="active"><i class="icon icon2"></i><em>投放管理</em></li>
+					<li onclick="nTabs(this,2);" class="normal"><i class="icon icon3"></i><em>财务管理</em></li>
+					<li onclick="nTabs(this,3);" class="normal"><i class="icon icon4"></i><em>账户管理</em></li>
 				</ul>
 				<div class="info">
 					<h4>联系我们</h4>
@@ -97,6 +97,41 @@
 					tabList[i].className = 'normal';
 					document.getElementById(tabObj + '_Content' + i).style.display = 'none';
 				}
+			}
+		}
+
+		function getPrevElementSibling(el) {
+			do {
+				el = el.previousSbiling || el.previousElementSibling;
+			}while(el && el.nodeType !== 1);
+			return el;
+		}
+
+		function getNextElementSibling(el) {
+			do {
+				el = el.nextSibling;
+			}while(el && el.nodeType !== 1);
+			return el;
+		}
+		window.onload = function() {
+			var active = document.getElementById('myTab1').getElementsByClassName('active')[0];
+			// var prev = active.previousElementSibling || active.previousSbiling;
+			// var next = active.nextElementSibling || active.nextSibling;
+			var prev = getPrevElementSibling(active),
+				next = getNextElementSibling(active);
+
+			console.log('active = ');
+			console.log(active);
+			console.log('prev = ');
+			console.log(prev);
+			console.log('next = ');
+			console.log(next);
+
+			if(prev){
+				prev.style.borderBottomRightRadius = '5px';
+			}
+			if (next) {
+				next.style.borderTopRightRadius = '5px';
 			}
 		}
 	</script>

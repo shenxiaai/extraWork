@@ -11,7 +11,7 @@ td, th, input {
   padding: 0; }
 
 input, select, textarea, button {
-  vertical-align: middle; }
+  vertical-align: middle;outline: none;}
 
 br {
   line-height: 0;
