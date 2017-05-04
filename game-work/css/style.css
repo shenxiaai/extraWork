@@ -67,5 +67,14 @@
 
 .home .announcement{padding-top: 3%;width: 47%;height: 69%;background: url(../images/gg_img_02.png) 0 0 no-repeat;-webkit-background-size: 100% auto;background-size: 100% auto;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;}
 .home .announcement b{padding: .7% 1%;border: #6d380e 2px solid;text-align: center;color: #6d380e;font-size: 35%;border-radius: 3px;}
+.home .announcement table{margin: 2% auto 0;width: 99%;border: none;height: 70%;color: #333;}
+.home .announcement table a{color: #333;}
+.home .announcement thead tr{height: 4%;font-size: 60%;}
+.home .announcement td{text-align: center;font-size: 100%;}
+.home .announcement th{background: #fad27a;}
+.home .announcement tbody tr{background: #f6dea9;font-size: 60%;}
+.home .announcement tbody tr:nth-child(2n){background: #fad27a;}
+.home .announcement tbody td{border-right: 1px solid #fff;}
+.home .announcement tbody td:nth-child(4){border-right: none;}
 
 .block{position: absolute;left: 0;top: 0;z-index: 0;display: none;background: rgba(0,0,0,.3);}
