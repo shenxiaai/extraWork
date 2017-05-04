@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>账户管理</title>
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<div class="box">
+		<div class="head">
+			<h4>大鱼刷量</h4>
+			<p>自助投放平台</p>
+			<div class="log">
+				<a href="" class="fr big">登录用户名</a>
+				<a href="" class="fr">退出登录</a>
+			</div>
+		</div>
+
+		<div class="tab">
+			<div class="tabTitle">
+				<ul id="myTab1">
+					<li onclick="nTabs(this,0);" class="normal">报价单</li>
+					<li onclick="nTabs(this,1);" class="normal">投放管理</li>
+					<li onclick="nTabs(this,2);" class="normal">财务管理</li>
+					<li onclick="nTabs(this,3);" class="active">账户管理</li>
+				</ul>
+				<div class="info">
+					<h4>联系我们</h4>
+					<p>微信：iostg88</p>
+					<p>邮箱：861111328@qq.com</p>
+					<p>QQ：861111328</p>
+				</div>
+			</div>
+
+			<div class="tabContent">
+				<div id="myTab1_Content0" class="tab1ContBox none" style="display: none;">
+					<a href="http://www.mofang.com/dmyx/list_14757_1.html" class="more" title="" target="_blank">更多</a>
+				</div>
+				<div id="myTab1_Content1" class="tab1ContBox none" style="display: none;">
+					<a href="http://www.mofang.com/dmyx/list_14757_1.html" class="more" title="" target="_blank">更多</a>
+				</div>
+				<div id="myTab1_Content2" class="tab1ContBox none" style="display: none;">
+					<a href="http://www.mofang.com/dmyx/list_14757_1.html" class="more" title="" target="_blank">更多</a>
+				</div>
+				<div id="myTab1_Content3" class="tab1ContBox part2" style="display: block;">
+					<div class="part4 bxShdw">
+						
+					</div>				
+				</div>
+			</div>
+
+
+
+
+		</div>
+	</div>
+	<script>
+		function nTabs(thisObj, Num) {
+			if (thisObj.className == 'active') return;
+			var tabObj = thisObj.parentNode.id;
+			var tabList = document.getElementById(tabObj).getElementsByTagName('li');
+			for (i = 0; i < tabList.length; i++) {
+				if (i == Num) {
+					thisObj.className = 'active';
+					document.getElementById(tabObj + '_Content' + i).style.display = 'block';
+				} else {
+					tabList[i].className = 'normal';
+					document.getElementById(tabObj + '_Content' + i).style.display = 'none';
+				}
+			}
+		}
+	</script>
+</body>
+</html>

@@ -2119,7 +2119,8 @@ a {
 .tar {
   text-align: right; }
 
-body {
-  font: 20px "Helvetica Neue", Helvetica, "Lucida Grande", "Luxi Sans", Arial, "Hiragino Sans GB", STHeiti, "Microsoft YaHei", "Wenquanyi Micro Hei", "WenQuanYi Micro Hei Mono", "WenQuanYi Zen Hei", "WenQuanYi Zen Hei Mono", LiGothicMed; }
+.fl {
+  float: left;}
 
-/*# sourceMappingURL=standard.css.map */
+.cl{
+  clear: both;}
