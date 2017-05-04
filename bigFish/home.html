@@ -125,33 +125,33 @@
 				<div id="myTab1_Content1" class="tab1ContBox part2 none" style="display: none;">
 					<div class="tinyNav">
 						<p>账户余额</p>
-						<h4>234345.00</h4>
+						<h4>234345.00元</h4>
 						<div class="btn">添加订单</div>
 					</div>
 					
 					<div class="bdru5 ovh">
 						<div class="childTab">
 							<div class="childTabTitle">
-								<ul id="myTab2">
-									<li onclick="nTabs(this,0);" class="normal">微信报价单</li>
-									<li onclick="nTabs(this,1);" class="normal">微博报价单</li>
-									<li onclick="nTabs(this,2);" class="active">新闻客户端报价单</li>
-									<li onclick="nTabs(this,3);" class="normal">IOS用户下载报价单</li>
-									<li onclick="nTabs(this,4);" class="normal">投票报价单</li>
+								<ul id="myTab6">
+									<li onclick="nTabs(this,0);" class="normal">微信</li>
+									<li onclick="nTabs(this,1);" class="normal">微博</li>
+									<li onclick="nTabs(this,2);" class="active">新闻客户端</li>
+									<li onclick="nTabs(this,3);" class="normal">IOS用户下载</li>
+									<li onclick="nTabs(this,4);" class="normal">投票</li>
 								</ul>
 							</div>
 						</div>
 						<div class="childTabCont">
-							<div id="myTab2_Content0" style="display: none;"></div>
-							<div id="myTab2_Content1" style="display: none;"></div>
-							<div id="myTab2_Content2" style="display: block;">
+							<div id="myTab6_Content0" style="display: none;"></div>
+							<div id="myTab6_Content1" style="display: none;"></div>
+							<div id="myTab6_Content2" style="display: block;">
 								<div class="noData">
 									<img src="images/noData.png">
 									<p>暂未开放</p>
 								</div>
 							</div>
-							<div id="myTab2_Content3" style="display: none;"></div>
-							<div id="myTab2_Content4" style="display: none;"></div>
+							<div id="myTab6_Content3" style="display: none;"></div>
+							<div id="myTab6_Content4" style="display: none;"></div>
 						</div>
 					</div>
 				</div>
@@ -160,22 +160,41 @@
 				</div>
 				<div id="myTab1_Content3" class="tab1ContBox none" style="display: none;">
 					<div class="part4 bxShdw">
-						<div class="form">
-							<div class="tit">添加用户</div>
-							<div class="formIn">
-								<div class="form-item"><label>用户名</label><input type="text" name=""></div>
-								<div class="form-item"><label>联系人</label><input type="text" name=""></div>
-								<div class="form-item"><label>联系电话</label><input type="text" name=""></div>
+						<div class="lists">
+							<div class="tit relat">用户列表<button>添加用户</button></div>
+							<div class="list">
+								<table>
+									<thead>
+										<tr>
+											<th>用户名</th>
+											<th>联系人</th>
+											<th>联系电话</th>
+											<th>类别</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>123456@qq.com</td>
+											<td>XXXX</td>
+											<td>12345698745</td>
+											<td>投放</td>
+										</tr>
+										<tr>
+											<td>123456@qq.com</td>
+											<td>XXXX</td>
+											<td>12345698745</td>
+											<td>消量</td>
+										</tr>
+										<tr>
+											<td>123456@qq.com</td>
+											<td>XXXX</td>
+											<td>12345698745</td>
+											<td>投放</td>
+										</tr>
+									</tbody>
+								</table>
 							</div>
 						</div>
-						<div class="form">
-							<div class="tit">设置密码</div>
-							<div class="formIn">
-								<div class="form-item"><label>输入密码</label><input type="text" name=""></div>
-								<div class="form-item"><label>确认密码</label><input type="text" name=""></div>
-							</div>
-						</div>
-						<button class="subBtn">提交</button>
 					</div>
 				</div>
 			</div>
@@ -184,67 +203,6 @@
 
 		</div>
 	</div>
-	<script>
-		function nTabs(thisObj, Num) {
-			if (thisObj.className == 'active') return;
-			var tabObj = thisObj.parentNode.id;
-			var tabList = document.getElementById(tabObj).getElementsByTagName('li');
-			for (i = 0; i < tabList.length; i++) {
-				if (i == Num) {
-					thisObj.className = 'active';
-					document.getElementById(tabObj + '_Content' + i).style.display = 'block';
-					activeRadius();
-				} else {
-					tabList[i].className = 'normal';
-					document.getElementById(tabObj + '_Content' + i).style.display = 'none';
-				}
-			}
-		}
-
-		function getPrevElementSibling(el) {
-			do {
-				el = el.previousSbiling || el.previousElementSibling;
-			}while(el && el.nodeType !== 1);
-			return el;
-		}
-
-		function getNextElementSibling(el) {
-			do {
-				el = el.nextSibling;
-			}while(el && el.nodeType !== 1);
-			return el;
-		}
-
-		// window.onload = function() {
-			function activeRadius() {
-				var tab = document.getElementById('myTab1'),
-					tabLi = tab.getElementsByTagName('li'),
-					active = tab.getElementsByClassName('active')[0];
-				// var prev = active.previousElementSibling || active.previousSbiling;
-				// var next = active.nextElementSibling || active.nextSibling;
-				var prev = getPrevElementSibling(active),
-					next = getNextElementSibling(active);
-
-				console.log('active = ');
-				console.log(active);
-				console.log('prev = ');
-				console.log(prev);
-				console.log('next = ');
-				console.log(next);
-
-				for(var x = 0; x < tabLi.length; x++) {
-					tabLi[x].style.borderRadius = 0;
-				}
-
-				if(prev){
-					prev.style.borderBottomRightRadius = '5px';
-				}
-				if (next) {
-					next.style.borderTopRightRadius = '5px';
-				}
-			}
-			activeRadius();
-		// }
-	</script>
+	<script src="js/index.js"></script>
 </body>
 </html>
