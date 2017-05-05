@@ -1,17 +1,22 @@
 'use strict';
+
+var tabTitle = document.querySelector('.tabTitle'),
+	tabContent = document.querySelector('.tabContent');
+
 function getStyle(t,e){return t.currentStyle?t.currentStyle[e]:getComputedStyle(t,!1)[e]}function moveAction(t,e,r){r=parseInt(r),clearInterval(t.timer),t.timer=setInterval(function(){var a=0;a="opacity"==e?100*Math.round(parseFloat(getStyle(t,e))):parseInt(getStyle(t,e));var l=(r-a)/6;l=l>0?Math.ceil(l):Math.floor(l),a==r?clearInterval(t.timer):"opacity"==e?(t.style.filter="alpha(opacity: "+(a+l)+")",t.style.opacity=(a+l)/100,text.value=t.style.opacity):t.style[e]=a+l+"px"},30)}
 
 var fold = document.getElementsByClassName('Amount'),
 		bdHei = null;
-for(var i = 0;i<fold.length;i++){
+for(var i = 0;i < fold.length;i++){
 	var Tit = fold[i].getElementsByClassName('AmountTt')[0];
-	Tit.onclick= function(){
+	Tit.onclick = function(){
 		var bd = this.parentNode.getElementsByClassName('AmountBd')[0];
 
 		if(bd.offsetHeight != 0){
 			bdHei = bd.offsetHeight;
 			moveAction(bd, 'height', 0);
-			this.className = 'AmountTt active';
+			this.className = 'AmountTt active';fsetHeight;
+			changeTabHei(tabContHei);
 		}else{
 			moveAction(bd, 'height', bdHei);
 			this.className = 'AmountTt';
@@ -74,9 +79,6 @@ function activeRadius() {
 activeRadius();
 
 function changeTabHei() {
-	var tabTitle = document.querySelector('.tabTitle'),
-		tabContent = document.querySelector('.tabContent');
-
 	tabTitle.style.height = tabContent.offsetHeight + 'px';
 }
 changeTabHei();

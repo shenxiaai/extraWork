@@ -86,7 +86,7 @@ body{background: #282828;}
 .part4 .formIn{margin: 0 auto;width: 346px;}
 .part4 .formIn .form-item{width: 100%;height: 72px;line-height: 72px;}
 .part4 .form-item label{display: inline-block;width: 132px;text-align: left;font-size: 16px;color: #252525;}
-.part4 .form-item input{width: 212px;border-radius: 5px;border: 1px solid #84919b;height: 42px;line-height: 42px;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;}
+.part4 .form-item input{padding-left: 2px;width: 210px;border-radius: 5px;border: 1px solid #84919b;height: 42px;line-height: 42px;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;}
 .part4 .subBtn{display: block;margin: 0 auto;width: 234px;height: 64px;line-height: 64px;text-align: center;border-radius: 30px;font-size: 20px;border: none;background: #6aa5d1;color: #fff;}
 
 .part4 .lists .tit{width: 100%;height: 86px;}
@@ -142,7 +142,7 @@ body{background: #282828;}
   line-height: 64px;border-radius: 32px;color:#fff;text-align: center;border:none;outline:none;}
 
 /*part3*/
-.tab .part3{-webkit-box-shadow: none;box-shadow: none;}
+.tab .bxShdwNone{-webkit-box-shadow: none;box-shadow: none;overflow: inherit;}
 .ConsumptionNav{padding-top:26px;height: 124px;background: #fff;margin-bottom: 35px;line-height: 1;}
 .ConsumptionNav li{float:left;width:110px;padding-left: 71px;padding-top: 22px;height: 78px;font-size: 16px;color:#252525;}
 .ConsumptionNav p{margin-bottom: 16px;}
