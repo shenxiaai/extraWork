@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1,minimum-scale=1 maximum-scale=1, user-scalable=0">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="format-detection" content="telephone=no">
+	<title>组件demo</title>
+	<link rel="stylesheet" href="css/base.css" />
+	<link rel="stylesheet" href="css/style.css" />
+	<script src="js/reset.js"></script>
+	<style>
+		.demo-block {padding: 1rem;}
+		.dialog-btn,.demo-tip,.demo-tip2 {width: 200px;padding: 20px;margin: 10px auto;border: 1px solid #ccc;background: #fff;}
+	</style>
+</head>
+
+<body ontouchstart="">
+	<div class="ui-wrap">
+		<header class="jie1000-header ui-border-b">
+			<a class="ui-back iconfont iconjlback">&#xe612;</a>
+			<div class="ui-title">填写个人资料</div>
+			<!-- <a href="" class="ui-service iconfont">&#xe619;</a> -->
+		</header>
+		<br />
+
+
+		<!--普通页面按钮-->
+
+		<!--确定按钮-->
+		<div class="ui-btn-wrapper">
+			<div class="ui-btn-normal ui-btn-primary">确定</div>
+		</div>
+
+		<!-- <br /> -->
+
+		<!--取消按钮-->
+		<!-- <div class="ui-btn-cancelWrapper">
+			<div class="ui-btn-lg ui-btn-cancel">取消</div>
+		</div>
+		<br /> -->
+
+		<!--不可用按钮-->
+		<!-- <div class="ui-btn-disabledWrapper">
+			<div class="ui-btn-lg ui-btn-disabled">不可用</div>
+		</div>
+		<br/> -->
+
+		<!--以下三个是弹窗里面的按钮-->
+
+		<!-- <div class="ui-btn-wrapper">
+			<div class="ui-btn-lg ui-btn-dialog-primary">确定</div>
+		</div> -->
+
+		<!-- <br/>
+
+		<div class="ui-btn-group" style="margin-bottom: 20px;">
+			<div class="ui-btn-s-canceldWrapper">
+				<button class="ui-btn-s ui-btn-cancel-s">取消</button>
+			</div>
+			<div class="ui-btn-s-primaryWrapper">
+				<button class="ui-btn-s ui-btn-primary-s">确定</button>
+			</div>
+		</div> -->
+
+		<div class="ui-form-wrap">
+			<div class="ui-form">
+				<form action="#">
+					<div class="ui-form-item ui-form-item-show ui-nowrap-flex flex-between">
+						<label for="#" class="colorLabel">身份证号码</label>
+						<div class="ui-flex-1 tar">
+							<input class="tar" type="text" placeholder="18位身份证号码">
+						</div>
+					</div>
+
+					<div class="ui-form-item ui-form-item-r">
+						<label class="colorLabel colorLabel">手机动态码</label>
+						<input type="text" placeholder="请输入验证码" style="width: 12rem;">
+						<!-- 若按钮不可点击则分别给外层 <div class="ui-btn-getCode">和button添加 disabled 类名 -->
+						<div class="ui-btn-getCode">
+							<button type="button">获取验证码</button>
+						</div>
+						<a href="#" class="ui-icon-close"></a>
+					</div>
+					<div class="ui-form-item ui-form-item-r">
+
+						<input type="text" placeholder="请输入验证码" style="width: 20rem;">
+						<!-- 若按钮不可点击则分别给外层 <div class="ui-btn-getCode">和button添加 disabled 类名 -->
+						<div class="ui-btn-getCode">
+							<button type="button">获取验证码</button>
+						</div>
+						<a href="#" class="ui-icon-close"></a>
+					</div>
+
+
+					<div class="ui-form-item ui-form-item-l">
+						<label class="ui-border-r colorLabel">
+							中国 +86
+						</label>
+						<input type="text" placeholder="请输入手机号码">
+						<a href="#" class="ui-icon-close">
+						</a>
+					</div>
+
+
+					<div class="ui-form-item ui-form-item-show ui-nowrap-flex flex-between">
+						<label for="#" class="colorLabel">学历</label>
+						<div class="ui-flex-1 ui-arrow tar">
+							<a href="#">请选择学历</a>
+						</div>
+					</div>
+					<div class="ui-form-item ui-form-item-show ui-nowrap-flex flex-between">
+						<label for="#" class="colorLabel">学历</label>
+						<div class="ui-flex-1 tar">
+							<em class="iconfont red-color">&#xe620;</em>
+						</div>
+					</div>
+				</form>
+			</div>
+
+		</div>
+
+		<div class="dialog-btn dialog-btn1">弹出框</div>
+
+		<div class="demo-tip">浮层顶部提示</div>
+
+		<!--新增浮层中间提示-->
+		<div class="demo-tip2">浮层中间提示</div>
+
+
+		<!--带输入框的弹出框-->
+		<div class="ui-dialog" id="ui-dialog1">
+			<div class="ui-dialog-cnt">
+				<h1 class="dialog-title">对话框标题栏</h1>
+				<div class="dialog-main-cnt">这是内容这是内容这是内容这是内容这是内容这是内容这是内容这是内容这是内容这是内容</div>
+				<!--只有一个按钮-->
+				<div class="ui-btn-wrapper">
+					<div class="ui-btn-lg ui-btn-dialog-primary" data-role="button">确定</div>
+				</div>
+				<!--有2个按钮-->
+				<div class="ui-dialog-ft">
+					<div class="ui-btn-s-canceldWrapper">
+						<button class="ui-btn-s ui-btn-cancel-s" data-role="button">知道了</button>
+					</div>
+					<div class="ui-btn-s-primaryWrapper">
+						<button class="ui-btn-s ui-btn-primary-s" data-role="button">去官网</button>
+					</div>
+				</div>
+
+				<div class="dialog-close-icon iconfont">&#xe613;</div>
+
+
+
+			</div>
+
+
+		</div>
+	</div>
+	<!--带输入框的弹出框   结束-->
+
+	<!--中间浮层弹出层-->
+	<div class="ui-popcenter">
+		<div class="ui-popcenter-cnt">
+			温馨提示居中弹框温馨提示居中弹框温馨提示居中弹框
+		</div>
+	</div>
+
+
+
+	<!--底部大按钮及同意协议 开始-->
+	<div class="ui-btn-wrap ddh-btn-footer">
+		<p class="ui-deal-box">
+			<input type="checkbox" class="ui-checkbox-round" />同意签署<span class="mintGreen js-diolog-deal">《个人客户扣款授权书》</span></p>
+		<p class="ui-deal-box ui-deal-box2">
+			<input type="checkbox" class="ui-checkbox-round" />同意签署<span class="mintGreen js-diolog-deal">《个人客户扣款授权书》</span>授权书授权书</p>
+
+	</div>
+	<!--底部大按钮及同意协议 结束-->
+	</div>
+
+
+
+
+
+
+
+	<script src="js/zepto.min.js"></script>
+	<script src="js/touch.js"></script>
+	<script src="js/common.js"></script>
+	<script>
+		$(function() {
+
+
+			// 弹窗
+			var dia = null;
+
+			$(".dialog-btn1").on("click", function() {
+				dia = $("#ui-dialog1").dialog("show");
+			});
+			$(".dialog-close-icon").on("click", function() {
+				dia = $("#ui-dialog1").dialog("hide");
+			});
+
+			//浮层提示
+			$(".demo-tip").on("click", function() {
+				var el = $.tips({
+					content: '温馨提示内容',
+					stayTime: 2000,
+					type: "warn"
+				});
+				el.on("tips:hide", function() {
+					console.log("tips hide");
+				});
+			});
+			//浮层居中提示
+			$('.demo-tip2').on("click", function() {
+				$('.ui-popcenter').addClass('show');
+				window.setTimeout(function() {
+					$('.ui-popcenter').removeClass('show');
+				}, 2000);
+			})
+
+		});
+	</script>
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,31 @@
+@charset "UTF-8";
+html,body{background: #fef9d1;}
+
+/*内容部分*/
+.cont{display: -webkit-box;-webkit-box-pack: justify;width: 100%;height: 31.8rem;border-top: #000;border-left: #000;border-right: #000;box-sizing: border-box;}
+.cont .leftNavBox{padding: .4rem .1rem;width: 5.25rem;height: 31.8rem;box-sizing: border-box;}
+.cont .leftNav{background: #f7e3a6;border-radius: 3rem;box-shadow: 1px 2px 4px #ba9d63;width: 100%;height: 100%;}
+
+.cont .rigContBox{-webkit-box-flex: 1;padding: .75rem .9rem;width: 100%;height: 31.8rem;box-sizing: border-box;}
+.cont .rigCont{width: 100%;height: 100%;}
+.cont .rigCont .searchBar{width: 100%;height: 3.5rem;border-bottom: 2px solid #b59b78;box-sizing: border-box;}
+.cont .rigCont .search{position: relative;padding-left: 2rem;border: 1px solid #523e27;border-radius: .7rem;background: #574c37;height: 2rem;width: 28.3rem;line-height: 2rem;box-sizing: border-box;}
+.cont .rigCont .search input{border: none;background: none;height: 100%;}
+.cont .rigCont .search input::placeholder{color: #796449;}
+.cont .rigCont .search img{position: absolute;left: .3rem;top: .2rem;width: 1.5rem;height: 1.5rem;}
+
+.cont .rigCont .part1{padding-top: .7rem;height: 14rem;display: -webkit-box;-webkit-box-pack: justify;}
+.cont .rigCont .part1 .part1-1{margin-right: .35rem;width: 21.8rem;height: 14rem;border-radius: .5rem;}
+.cont .rigCont .part1 .part1-2{margin-right: .9rem;width: 16.3rem;}
+.cont .rigCont .part1 .part1-2 img{height: 6.9rem;width: 16.3rem;}
+.cont .rigCont .part1 .part1-2 img:fisrt-child{margin-bottom: .7rem;}
+.cont .rigCont .part1 .part1-3{padding: .4rem;-webkit-box-flex: 1;background: #ffedad;height: 100%;box-sizing: border-box;}
+.cont .rigCont .part1 .part1-3 h3{font-size: 1.2rem;color: #6c4b3b;}
+.cont .rigCont .part1 .part1-3 li{padding: .4rem 0;border-top: 1px dash #cba375;height: 3rem;width: 100%;display: -webkit-box;-webkit-box-align: center;}
+.cont .rigCont .part1 .part1-3 li .num{height: 1.6rem;width: 2rem;}
+.cont .rigCont .part1 .part1-3 li .num em{display: block;width: 1.6rem;height: 1.6rem;border-radius: 50%;background: #b9540f;color: #fef9d1;font-size: 1.2rem;line-height: 1.6rem;text-align: center;}
+.cont .rigCont .part1 .part1-3 li .words{-webkit-box-flex: 1;font-size: 1.06rem;color: #624130;font-weight: bold;}
+.cont .rigCont .part1 .part1-3 li .words i{color: #d9690f;font-weight: bold;}
+
+/*底部导航*/
+.botBar{position: fixed;left: 0;bottom: 0;width: 100%;height: 4.2rem;line-height: 4.2rem;background: #333;}
