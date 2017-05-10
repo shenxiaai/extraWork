@@ -3,7 +3,7 @@ html,body{background: #fef9d1;}
 
 /*内容部分*/
 .cont{display: -webkit-box;-webkit-box-pack: justify;width: 100%;height: 31.8rem;border-top: #000;border-left: #000;border-right: #000;box-sizing: border-box;}
-.cont .leftNavBox{padding: .4rem .1rem;width: 5.25rem;height: 100%;box-sizing: border-box;}
+.cont .leftNavBox{position: absolute;padding: .4rem .1rem;width: 5.25rem;height: 100%;box-sizing: border-box;}
 .cont .leftNav{background: #f7e3a6;border-radius: 3rem;box-shadow: 1px 2px 4px #ba9d63;width: 100%;height: 100%;}
 .cont .leftNav .icon{display: -webkit-box;-webkit-box-align: center;-webkit-box-pack: center;width: 100%;height: 20%;}
 .cont .leftNav .icon .block{position: relative;width: 4.5rem;height: 4.9rem;border-radius: 1.5rem;line-height: 4.9rem;text-align: center;}
@@ -21,7 +21,16 @@ html,body{background: #fef9d1;}
 .cont .rigCont .search img{position: absolute;left: .3rem;top: .2rem;width: 1.5rem;height: 1.5rem;}
 
 .cont .rigCont .part1{padding-top: .7rem;display: -webkit-box;-webkit-box-pack: justify;overflow: hidden;}
-.cont .rigCont .part1 .part1-1{margin-right: .35rem;width: 21.8rem;height: 16.8rem;border-radius: .5rem;}
+.cont .rigCont .part1-1{margin-right: .35rem;width: 21.8rem;height: 16.8rem;border-radius: .5rem;overflow: hidden;}
+
+.swiper-container{position: relative;}
+.swiper-slide {color: #fff;font-size: 36px;text-align: center;height: 100%;}
+.swiper-slide img{width: 21.8rem;height: 16.8rem;}
+.pagination{position: absolute;left: 0;bottom: 20px;width: 100%;height: 20px;text-align: center;z-index: 20;}
+.swiper-pagination-bullet{margin: 0 5px;display: inline-block;width: 10px;height: 10px;border-radius: 10px;background: #444;margin-right: 5px;opacity: 0.8;cursor: pointer;}
+.swiper-pagination-bullet-active{background: #fff;}
+
+
 .cont .rigCont .part1 .part1-3{padding: .4rem;-webkit-box-flex: 1;height: 100%;box-sizing: border-box;}
 .cont .part1 .part1-3 .part1-3-1{margin-bottom: .5rem;display: -webkit-box;-webkit-box-pack: justify;width: 100%;}
 .cont .part1 .part1-3 .part1-3-1 img{display: inline-block;width: 49%;height: 6.8rem;border-radius: .5rem;}
