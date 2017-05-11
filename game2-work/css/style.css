@@ -13,9 +13,9 @@ input{color: #fff;border:none;outline: none;}
 .cont .leftNav .icon .block.active .light{display: block;}
 .cont .leftNav .icon img{width: 3.5rem;height: 3.5rem;vertical-align: middle;}
 
-.cont .rigContBox{-webkit-box-flex: 1;padding: .75rem .9rem;width: 100%;box-sizing: border-box;}
-.cont .rigCont{width: 100%;}
-.cont .rigCont .searchBar{width: 100%;height: 3.5rem;border-bottom: 2px solid #b59b78;box-sizing: border-box;}
+.cont .rigContBox{-webkit-box-flex: 1;position: relative;padding: .75rem .9rem;width: 100%;box-sizing: border-box;}
+.cont .rigCont{padding-top: 3.5rem;width: 100%;}
+.cont .rigCont .searchBar{position: absolute;left: .9rem;top: 1.3rem;width: 100%;height: 3.5rem;border-bottom: 2px solid #b59b78;box-sizing: border-box;}
 .cont .rigCont .search{position: relative;padding-left: 2rem;border: 1px solid #523e27;border-radius: .7rem;background: #574c37;height: 2rem;width: 28.3rem;line-height: 2rem;box-sizing: border-box;}
 .cont .rigCont .search input{border: none;background: none;height: 100%;}
 .cont .rigCont .search input::placeholder{color: #796449;}
@@ -70,6 +70,12 @@ input{color: #fff;border:none;outline: none;}
 .cont .part4 .part4-1 .vid .tip{position: absolute;bottom: 0;left: 0;width: 100%;height: 2rem;line-height: 2rem;color: rgba(255, 255, 255, .5);font-size: 1rem;}
 .cont .part4 .part4-1 .vid .tip img{display: inline-block;;margin: 0 .5rem;width: 1.15rem;height: 1.15rem;vertical-align: middle}
 .cont .part4 .part4-1 .vid .tip em{margin-left: 1rem;}
+
+.iscroll .swiper-wrapper{display: block;}
+.preloader {position: absolute;left: 0;top: -100px;z-index: 0;color: #fff;text-align: center;line-height: 100px;height: 100px;width: 100%;opacity: 0;font-size: 25px;-webkit-transition: 300ms;-moz-transition: 300ms;-ms-transition: 300ms;-o-transition: 300ms;transition: 300ms;background: rgba(0,0,0,0.1);}
+.preloader.visible {top: 0;opacity: 1;}
+
+
 
 /*底部导航*/
 .botBar{padding: 0 1.4rem;position: fixed;left: 0;bottom: 0;display: -webkit-box;-webkit-box-pack: justify;-webkit-box-align: center;z-index: 999;width: 100%;height: 4.2rem;line-height: 4.2rem;background: #333;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;}
