@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1,minimum-scale=1 maximum-scale=1, user-scalable=0">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="format-detection" content="telephone=no">
+	<title>首页展开</title>
+	<link rel="stylesheet" href="css/standard.css" />
+	<link rel="stylesheet" href="css/style.css" />
+	<script src="js/reset.js"></script>
+	<script src="js/zepto.min.js"></script>
+</head>
+
+<body ontouchstart="">
+			<div class="OpenInfo">
+				<div class="OpenInfoHd">
+					<img class="Avatar1" src="images/Avatar1.png"/>
+					<div class="OpenInfoHd-r">
+						<div class="Avatar1Name">
+							<p>名字最多7个字</p>
+							<p>迷你号：8072358</p>
+						</div>
+						<div class="Detail">
+							<h2>迷你世界1.0.0版本发布，火箭背包已添加</h2>
+							<div class="Time">2016-12-21 &nbsp;&nbsp; 15:34:32 &nbsp;&nbsp; 共<em class="colgreen">88</em>人点赞</div>
+							<img src="images/detail_img.jpg" alt="" />
+							<p>这次更新主要修复了一些错误，这次更新主要修复了一些错误，这次更新主要修复了一些错误，这次更新主要修复了一些错误，</p>
+							<!--点赞选中加类名 on-->
+							<div class="zan"></div>
+						</div>
+					</div>
+				</div>
+				<div class="OpenInfoBd">
+					<div class="NoReply">暂无回复</div>
+					<ul class="ReplyList">
+						<li>
+							<img class="Avatar2" src="images/Avatar2.png"/>
+							<div class="Avatar2Name">
+								<p><span>名字最多7个字</span><span>迷你号：8072358</span></p>
+								<p>告诉我新风格你喜欢不喜欢!告诉我新风格你喜欢不喜欢!<br>告诉我新风格你喜欢不喜欢!告诉我新风格你喜欢不喜欢!</p>
+							</div>
+							<div class="source">
+								<span>来自<em class="colblue">IOS客户端</em></span>
+								<span>1楼</span>
+								<span>2017-05-01 19:45</span>
+							</div>
+						</li>
+						<li>
+							<img class="Avatar2" src="images/Avatar2.png"/>
+							<div class="Avatar2Name">
+								<p><span>名字最多7个字</span><span>迷你号：8072358</span></p>
+								<p>告诉我新风格你喜欢不喜欢!告诉我新风格你喜欢不喜欢!<br>告诉我新风格你喜欢不喜欢!告诉我新风格你喜欢不喜欢!</p>
+							</div>
+							<div class="source">
+								<span>来自<em class="colblue">IOS客户端</em></span>
+								<span>1楼</span>
+								<span>2017-05-01 19:45</span>
+							</div>
+						</li>
+					</ul>
+					<div class="ReplyBox">
+						<img src="images/emo_face.png" alt="" class="EmoFace" />
+						<div class="IptBox"><input type="text" placeholder="点击输入文字发表你的回复信息" /></div>
+						<button class="SendOut"></button>
+					</div>
+				</div>
+			</div>
+		<div class="botBar">
+			<div class="icon lefArr"><img src="images/arr1.png" width="100%"></div>
+			<div class="icon rigArr"><img src="images/arr2.png" width="100%"></div>
+			<div class="icon refresh"><img src="images/fresh.png" width="100%"></div>
+			<div class="icon close"><img src="images/close.png" width="100%"></div>
+		</div>
+		<script type="text/javascript">
+			//点赞
+			$('.zan').on('click',function(){
+				$(this).addClass('on');
+			})
+		</script>
+</body>
+</html>
