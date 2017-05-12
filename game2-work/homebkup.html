@@ -191,11 +191,15 @@
 
 			function Refresh() {
 				setTimeout(function() { // <-- Simulate network congestion, remove setTimeout from production!
-					var el, li, i;
+					var wrapPar = document.getElementById("wrapper"),
+						part2 = document.querySelector('.part2'),
+						el, li, i;
 					el = document.querySelector("#wrapper ul");
 					//这里写你的刷新代码
-					document.getElementById("wrapper").querySelector(".pullDownIcon").style.display = "none";
-					document.getElementById("wrapper").querySelector(".pullDownLabel").innerHTML = "<img src='css/ok.png'/>刷新成功";
+					wrapPar.querySelector(".pullDownIcon").style.display = "none";
+					wrapPar.querySelector(".pullDownLabel").innerHTML = "<img src='images/ok.png' height="100%" />刷新成功";
+					part2.style.height = wrapPar.offsetHeight + part2.offsetHeight + 'px';
+
 					setTimeout(function() {
 						wrapper.refresh();
 						document.getElementById("wrapper").querySelector(".pullDownLabel").innerHTML = "";

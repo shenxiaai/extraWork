@@ -26,30 +26,29 @@
 	text-align: left;
 }
 .scroller li {
-	padding: 5px;
+	padding: .5rem 0;
 }
 .pullDown, .pullUp {
 	text-align: center;
-	height: 40px;
-	line-height: 40px;
-	font-size: 12px;
-	color: #888;
-	font-family: Arial, Microsoft YaHei;
+	height: 1.5rem;
+	line-height: 1.5rem;
+	font-size: 1.2rem;
+	color: #624130;
 }
 .pullDown .pullDownIcon, .pullUp .pullUpIcon {
 	background: url("../images/arrow.png") no-repeat;
-	width: 24px;
-	height: 24px;
+	width: 1.2rem;
+	height: 1.2rem;
 	position: absolute;
-	margin-top: 8px;
-	margin-bottom: 8px;
+	margin-top: .4rem;
+	margin-bottom: .4rem;
 	background-position: center;
 	margin-left: 30%;
-	background-size: auto 100%;
-	-webkit-background-size: auto 100%;
+	background-size:1.2rem;
+	-webkit-background-size:1.2rem;
 	-webkit-transition-property: -webkit-transform;
 	-webkit-transition-duration: 250ms;
-	-moz-background-size: auto 100%;
+	-moz-background-size:1.2rem;
 	-moz-transition-property: -moz-transform;
 	-moz-transition-duration: 250ms;
 }
