@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1,minimum-scale=1 maximum-scale=1, user-scalable=0">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="format-detection" content="telephone=no">
+	<title>视频-最新展开</title>
+	<link rel="stylesheet" href="css/standard.css" />
+	<link rel="stylesheet" href="css/swiper.min.css">
+	<link rel="stylesheet" href="css/pullToRefresh.css">
+	<link rel="stylesheet" href="css/yuanbao.css" />
+	<link rel="stylesheet" href="css/lyn.css" />
+	<script src="js/reset.js"></script>
+	<script src="js/iscroll.js"></script>
+	<script src="js/pullToRefresh.min.js"></script>
+</head>
+
+<body ontouchstart="">
+	<div class="cont">
+		<div class="leftNavBox">
+			<div class="leftNav">
+				<div class="icon">
+					<div class="block"><div class="light"></div><img src="images/home.png" width=""></div>
+				</div>
+				<div class="icon">
+					<div class="block active">
+						<div class="light"></div><img src="images/vedio_light.png" width=""></div>
+				</div>
+				<div class="icon">
+					<div class="block">
+						<div class="light"></div><img src="images/talk.png" width=""></div>
+				</div>
+				<div class="icon">
+					<div class="block">
+						<div class="light"></div><img src="images/fantastic.png" width=""></div>
+				</div>
+				<div class="icon">
+					<div class="block">
+						<div class="light"></div><img src="images/self.png" width=""></div>
+				</div>
+			</div>
+		</div>
+		<div class="rigContBox">
+			<div class="rigCont video">
+				<div class="searchBar">
+					<div class="search">
+						<img src="images/searchIcon.png" alt="">
+						<input type="text" placeholder="请输入关键搜索视频">
+					</div>
+				</div>
+				<div class="part1">
+					<div class="part1-1"><img src="images/img1.jpg" width="100%" alt=""></div>
+					<div class="part1-2">
+						<img src="images/img1.jpg" alt="">
+						<img src="images/img1.jpg" alt="">
+					</div>
+					<div class="part1-3">
+						<h3>精彩视频</h3>
+						<ul>
+							<li>
+								<div class="num"><em>1</em></div>
+								<div class="words">
+									热门跑酷系列，教学视频...<br> 热度：
+									<i>999999999</i>
+								</div>
+							</li>
+							<li>
+								<div class="num"><em>2</em></div>
+								<div class="words">
+									热门跑酷系列，教学视频...<br> 热度：
+									<i>999999999</i>
+								</div>
+							</li>
+							<li>
+								<div class="num"><em>3</em></div>
+								<div class="words">
+									热门跑酷系列，教学视频...<br> 热度：
+									<i>999999999</i>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="part4">
+					<h2><em>new</em>最新视频<b>更多》</b></h2>
+					<div class="part4-1">
+						<div class="vid"><img src="images/img1.jpg" width="100%"><span class="live">实况直播</span>
+							<div class="tip">防辐射服大幅度<em>99999999</em></div>
+							<div class="play"></div>
+						</div>
+						<div class="vid"><img src="images/img2.jpg" width="100%"><span class="live">实况直播</span>
+							<div class="tip">防辐射服大幅度<em>99999999</em></div>
+							<div class="play"></div>
+						</div>
+						<div class="vid"><img src="images/img1.jpg" width="100%"><span class="live">实况直播</span>
+							<div class="tip">防辐射服大幅度<em>99999999</em></div>
+							<div class="play"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="botBar">
+		<div class="icon lefArr"><img src="images/arr1.png" width="100%"></div>
+		<div class="icon rigArr"><img src="images/arr2.png" width="100%"></div>
+		<div class="icon refresh"><img src="images/fresh.png" width="100%"></div>
+		<div class="icon close"><img src="images/close.png" width="100%"></div>
+	</div>
+	<script src="js/swiper.min.js"></script>
+	<script type="text/javascript">
+		window.onload = function() {
+			var swiper1 = new Swiper('.swiperBox1', {
+				pagination: '.pagination1',
+				autoplay: 5000,
+				paginationClickable: true
+			});
+
+			refresher.init({
+				id: "wrapper",
+				pullDownAction: Refresh,
+				pullUpAction: Load
+			});
+
+			function Refresh() {
+				setTimeout(function() { // <-- Simulate network congestion, remove setTimeout from production!
+					var el, li, i;
+					var part2 = document.querySelector('.part2'),
+						wraped = document.getElementById("wrapper");
+					el = document.querySelector("#wrapper ul");
+					//这里写你的刷新代码
+					wraped.querySelector(".pullDownIcon").style.display = "none";
+					wraped.querySelector(".pullDownLabel").innerHTML = "<img src='images/ok.png'/>刷新成功";
+					part2.style.height = wraped.offsetHeight + part2.offsetHeight + 'px';
+					setTimeout(function() {
+						wrapper.refresh();
+						document.getElementById("wrapper").querySelector(".pullDownLabel").innerHTML = "";
+					}, 1000); //模拟qq下拉刷新显示成功效果
+					/****remember to refresh after  action completed！ ---yourId.refresh(); ----| ****/
+				}, 1000);
+			}
+
+			function Load() {
+				setTimeout(function() { // <-- Simulate network congestion, remove setTimeout from production!
+					var el, li, i;
+					el = document.querySelector("#wrapper ul");
+					for (i = 0; i < 2; i++) {
+						li = document.createElement('li');
+						li.innerHTML = "<img src='img/game8.png'><div class='game-info'><h1>华仔超神战记</h1><p>9万次下载     89.18M</p><p>秒杀虚拟摇杆，砸烂手机键盘</p></div><button>下载</button>"
+						el.appendChild(li, el.childNodes[0]);
+					}
+					wrapper.refresh(); /****remember to refresh after action completed！！！   ---id.refresh(); --- ****/
+				}, 2000);
+			}
+
+			var cw = document.documentElement.clientWidth,
+				ch = document.documentElement.clientHeight,
+				botBar = document.querySelector('.botBar'),
+				cont = document.querySelector('.cont');
+		}
+	</script>
+</body>
+
+</html>
