@@ -22,8 +22,8 @@ input::placeholder{color: #796449;}
 .search input::placeholder{color: #796449;}
 .search img{position: absolute;left: .3rem;top: .2rem;width: 1.5rem;height: 1.5rem;}
 
-.cont .rigCont .part1{padding-top: .7rem;display: -webkit-box;-webkit-box-pack: justify;overflow: hidden;}
-.cont .rigCont .part1-1{margin-right: .35rem;width: 21.8rem;height: 14.8rem;border-radius: .5rem;overflow: hidden;}
+.cont .part1{padding-top: 1.2rem;display: -webkit-box;-webkit-box-pack: justify;overflow: hidden;}
+.cont .part1-1{margin-right: .35rem;width: 21.8rem;height: 14.8rem;border-radius: .5rem;overflow: hidden;}
 
 .swiperBox1 .swiper-slide img{width: 21.8rem;height: 16.8rem;}
 .pagination1{position: absolute;left: 0;bottom: 20px;width: 100%;height: 20px;text-align: center;z-index: 20;}
@@ -115,5 +115,6 @@ input::placeholder{color: #796449;}
 .video .part1-3 li .words i{color: #d9690f;font-weight: bold;}
 .video h2{margin-bottom: 1.2rem;color: #6c4b3b;}
 .video h2 em{display: inline-block;margin: 0 .3rem;padding: 0 .6rem;background: #6c4b3b;border-radius: 10px;font-size: .6rem;height: 1.2rem;line-height: 1.2rem;text-align: center;color: #fef9d1;}
+.video h2 b{float: right;font-weight: bold;}
 .video .part4 .tip{height: 2.1rem;line-height: 2.1rem;font-size: 1.2rem;color: #dfdfdf;text-align: center;background: rgba(0,0,0,.5);}
-.cont .part4 .live
+.cont .part4 .live{padding: 0 .5rem;font-size: 1.3rem;color: #175581;font-weight: bold;border-radius: 14px;font-size: 1.2rem;background: rgba(176,226,255,.7);height: 1.8rem;line-height: 1.8rem;text-align: center;}
