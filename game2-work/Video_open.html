@@ -7,7 +7,7 @@
 	<meta name="apple-mobile-web-app-capable" content="yes">
 	<meta name="apple-mobile-web-app-status-bar-style" content="black">
 	<meta name="format-detection" content="telephone=no">
-	<title>首页展开</title>
+	<title>视频展开</title>
 	<link rel="stylesheet" href="css/standard.css" />
 	<link rel="stylesheet" href="css/style.css" />
 	<script src="js/reset.js"></script>
@@ -17,6 +17,10 @@
 <body ontouchstart="">
 			<div class="OpenInfo" style="padding-bottom:8rem;">
 				<div class="OpenInfoHd">
+					<!--删除-->
+					<div class="BtnDelete"></div>
+					<!--举报-->
+					<div class="BtnReport"></div>
 					<img class="Avatar1" src="images/Avatar1.png"/>
 					<div class="OpenInfoHd-r">
 						<div class="Avatar1Name">
@@ -26,8 +30,15 @@
 						<div class="Detail">
 							<h2>迷你世界1.0.0版本发布，火箭背包已添加</h2>
 							<div class="Time">2016-12-21 &nbsp;&nbsp; 15:34:32 &nbsp;&nbsp; 共<em class="colgreen">88</em>人点赞</div>
-							<img src="images/detail_img.jpg" alt="" />
-							<p>这次更新主要修复了一些错误，这次更新主要修复了一些错误，这次更新主要修复了一些错误，这次更新主要修复了一些错误，</p>
+							<div class="VideoDetail">
+								<div class="VideoSmallBox">
+									<!--视频播放器-->
+								</div>
+								<dl class="VideoSmallTxt">
+									<dt>视频简介</dt>
+									<dd>这次更新主要修复了一些错误。这次更新主要修复了一些错误。这次更新主要修复了一些错误。这次更新主要修复了一些错误。这次更新主要修复了一些错误。这次更新主要修复了一些错误。</dd>
+								</dl>
+							</div>
 							<!--点赞选中加类名 on-->
 							<div class="zan"></div>
 						</div>
@@ -68,6 +79,15 @@
 					</div>
 				</div>
 			</div>
+		
+			<!--弹窗-->
+			<div class="Dialog show">
+				<div class="DialogVideo">
+					<!--视频播放器-->
+					<div class="Videoclose"></div>
+				</div>
+			</div>
+
 		<div class="botBar">
 			<div class="icon lefArr"><img src="images/arr1.png" width="100%"></div>
 			<div class="icon rigArr"><img src="images/arr2.png" width="100%"></div>
