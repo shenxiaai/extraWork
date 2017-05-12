@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1,minimum-scale=1 maximum-scale=1, user-scalable=0">
@@ -10,19 +9,37 @@
 	<title>游戏1</title>
 	<link rel="stylesheet" href="css/standard.css" />
 	<link rel="stylesheet" href="css/swiper.min.css">
+	<link rel="stylesheet" href="css/pullToRefresh.css">
 	<link rel="stylesheet" href="css/style.css" />
 	<script src="js/reset.js"></script>
+	<script src="js/iscroll.js"></script>
+	<script src="js/pullToRefresh.min.js"></script>
 </head>
 
 <body ontouchstart="">
 	<div class="cont">
 		<div class="leftNavBox">
 			<div class="leftNav">
-				<div class="icon"><div class="block active"><div class="light"></div><img src="images/home_light.png" width=""></div></div>
-				<div class="icon"><div class="block"><div class="light"></div><img src="images/vedio.png" width=""></div></div>
-				<div class="icon"><div class="block"><div class="light"></div><img src="images/talk.png" width=""></div></div>
-				<div class="icon"><div class="block"><div class="light"></div><img src="images/fantastic.png" width=""></div></div>
-				<div class="icon"><div class="block"><div class="light"></div><img src="images/self.png" width=""></div></div>
+				<div class="icon">
+					<div class="block active">
+						<div class="light"></div><img src="images/home_light.png" width=""></div>
+				</div>
+				<div class="icon">
+					<div class="block">
+						<div class="light"></div><img src="images/vedio.png" width=""></div>
+				</div>
+				<div class="icon">
+					<div class="block">
+						<div class="light"></div><img src="images/talk.png" width=""></div>
+				</div>
+				<div class="icon">
+					<div class="block">
+						<div class="light"></div><img src="images/fantastic.png" width=""></div>
+				</div>
+				<div class="icon">
+					<div class="block">
+						<div class="light"></div><img src="images/self.png" width=""></div>
+				</div>
 			</div>
 		</div>
 		<div class="rigContBox">
@@ -57,22 +74,22 @@
 							<ul>
 								<li>
 									<span>大神</span>
-									<p>邀请密友来帮忙，齐心协力闯江湖  </p>
+									<p>邀请密友来帮忙，齐心协力闯江湖 </p>
 									<p>03-15</p>
 								</li>
 								<li>
 									<span>大神</span>
-									<p>邀请密友来帮忙，齐心协力闯江湖  </p>
+									<p>邀请密友来帮忙，齐心协力闯江湖 </p>
 									<p>03-15</p>
 								</li>
 								<li>
 									<span>大神</span>
-									<p>邀请密友来帮忙，齐心协力闯江湖  </p>
+									<p>邀请密友来帮忙，齐心协力闯江湖 </p>
 									<p>03-15</p>
 								</li>
 								<li>
 									<span>大神</span>
-									<p>邀请密友来帮忙，齐心协力闯江湖  </p>
+									<p>邀请密友来帮忙，齐心协力闯江湖 </p>
 									<p>03-15</p>
 								</li>
 							</ul>
@@ -81,58 +98,25 @@
 				</div>
 				<div class="part2">
 					<h2>精彩推荐</h2>
-					<div class="swiper-container swiperBox2">
-						<div class="swiper-wrapper">
-							<div class="swiper-slide">
+
+					<div id="wrapper">
+						<ul style="width: 100%;">
+							<li>
 								<div class="videoBox">
-									<div class="video">
-										<img src="images/img3.jpg" alt="">
+									<div class="video"><img src="images/img3.jpg" alt="">
 										<p>放松放松放松房贷时</p>
 									</div>
-									<div class="video">
-										<img src="images/img3.jpg" alt="">
+									<div class="video"><img src="images/img3.jpg" alt="">
 										<p>放松放松放松房贷时</p>
 									</div>
-									<div class="video">
-										<img src="images/img3.jpg" alt="">
+									<div class="video"><img src="images/img3.jpg" alt="">
 										<p>放松放松放松房贷时</p>
 									</div>
 								</div>
-							</div>
-							<div class="swiper-slide">
-								<div class="videoBox">
-									<div class="video">
-										<img src="images/img2.jpg" alt="">
-										<p>放松放松放松房贷时</p>
-									</div>
-									<div class="video">
-										<img src="images/img2.jpg" alt="">
-										<p>放松放松放松房贷时</p>
-									</div>
-									<div class="video">
-										<img src="images/img2.jpg" alt="">
-										<p>放松放松放松房贷时</p>
-									</div>
-								</div>
-							</div>
-							<div class="swiper-slide">
-								<div class="videoBox">
-									<div class="video">
-										<img src="images/img1.jpg" alt="">
-										<p>放松放松放松房贷时</p>
-									</div>
-									<div class="video">
-										<img src="images/img1.jpg" alt="">
-										<p>放松放松放松房贷时</p>
-									</div>
-									<div class="video">
-										<img src="images/img1.jpg" alt="">
-										<p>放松放松放松房贷时</p>
-									</div>
-								</div>
-							</div>
-						</div>
+							</li>
+						</ul>
 					</div>
+
 				</div>
 				<div class="part3">
 					<h2>热门讨论</h2>
@@ -170,9 +154,15 @@
 				<div class="part4">
 					<h2>实况直播</h2>
 					<div class="part4-1">
-						<div class="vid"><img src="images/img1.jpg" width="100%"><img class="live" src="images/liveIcon.png"><div class="tip"><img src="images/zhuboIcon.png">防辐射服大幅度<em>99999999</em></div></div>
-						<div class="vid"><img src="images/img2.jpg" width="100%"><img class="live" src="images/liveIcon.png"><div class="tip"><img src="images/zhuboIcon.png">防辐射服大幅度<em>99999999</em></div></div>
-						<div class="vid"><img src="images/img1.jpg" width="100%"><img class="live" src="images/liveIcon.png"><div class="tip"><img src="images/zhuboIcon.png">防辐射服大幅度<em>99999999</em></div></div>
+						<div class="vid"><img src="images/img1.jpg" width="100%"><img class="live" src="images/liveIcon.png">
+							<div class="tip"><img src="images/zhuboIcon.png">防辐射服大幅度<em>99999999</em></div>
+						</div>
+						<div class="vid"><img src="images/img2.jpg" width="100%"><img class="live" src="images/liveIcon.png">
+							<div class="tip"><img src="images/zhuboIcon.png">防辐射服大幅度<em>99999999</em></div>
+						</div>
+						<div class="vid"><img src="images/img1.jpg" width="100%"><img class="live" src="images/liveIcon.png">
+							<div class="tip"><img src="images/zhuboIcon.png">防辐射服大幅度<em>99999999</em></div>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -193,12 +183,39 @@
 				paginationClickable: true
 			});
 
-			var swiper2 = new Swiper('.swiperBox2', {
-				pagination: '.pagination2',
-				autoplay: 3000,
-				paginationClickable: true,
-				direction: 'vertical'
+			refresher.init({
+				id: "wrapper",
+				pullDownAction: Refresh,
+				pullUpAction: Load
 			});
+
+			function Refresh() {
+				setTimeout(function() { // <-- Simulate network congestion, remove setTimeout from production!
+					var el, li, i;
+					el = document.querySelector("#wrapper ul");
+					//这里写你的刷新代码
+					document.getElementById("wrapper").querySelector(".pullDownIcon").style.display = "none";
+					document.getElementById("wrapper").querySelector(".pullDownLabel").innerHTML = "<img src='css/ok.png'/>刷新成功";
+					setTimeout(function() {
+						wrapper.refresh();
+						document.getElementById("wrapper").querySelector(".pullDownLabel").innerHTML = "";
+					}, 1000); //模拟qq下拉刷新显示成功效果
+					/****remember to refresh after  action completed！ ---yourId.refresh(); ----| ****/
+				}, 1000);
+			}
+
+			function Load() {
+				setTimeout(function() { // <-- Simulate network congestion, remove setTimeout from production!
+					var el, li, i;
+					el = document.querySelector("#wrapper ul");
+					for (i = 0; i < 2; i++) {
+						li = document.createElement('li');
+						li.innerHTML = "<img src='img/game8.png'><div class='game-info'><h1>华仔超神战记</h1><p>9万次下载     89.18M</p><p>秒杀虚拟摇杆，砸烂手机键盘</p></div><button>下载</button>"
+						el.appendChild(li, el.childNodes[0]);
+					}
+					wrapper.refresh(); /****remember to refresh after action completed！！！   ---id.refresh(); --- ****/
+				}, 2000);
+			}
 
 			var cw = document.documentElement.clientWidth,
 				ch = document.documentElement.clientHeight,
@@ -207,4 +224,5 @@
 		}
 	</script>
 </body>
+
 </html>
