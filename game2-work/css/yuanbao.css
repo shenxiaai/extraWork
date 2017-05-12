@@ -85,6 +85,12 @@ input::placeholder{color: #796449;}
 .botBar .close{-webkit-box-flex: 1;text-align: right;}
 .botBar .icon img{width: 2.1rem;height: 2.1rem;}
 
+/*话题*/
+.Topic_swiper{position: relative;margin-top:5rem;width:100%;padding: 0 3.2rem;box-sizing: border-box;}
+.Topic_swiper .swiper-slide {background-position: center;background-size: cover;width:80%;height: 10rem;}
+.Topic_swiper .swiper-button-prev{left:0;margin-top:-2.45rem;width:2.4rem;height: 4.9rem;background: url(../images/scrLefArrow.png) no-repeat 0 0;background-size: 2.4rem 4.9rem;}
+.Topic_swiper .swiper-button-next{right:0;margin-top:-2.45rem;width:2.4rem;height: 4.9rem;background: url(../images/scrRigArrow.png) no-repeat 0 0;background-size: 2.4rem 4.9rem;}
+
 /*弹窗*/
 .popForm{position: relative;padding: .7rem .8rem;width: 46.85rem;height: 26.9rem;background: #fef9d1;border: 1px solid #000;border-radius: 17px;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;}
 .popForm .close{position: absolute;top: .6rem;right: .7rem;background: url(../images/Fatclose.png) 0 0 no-repeat;-webkit-background-size: 1.3rem auto;background-size: 1.3rem auto;width: 1.3rem;height: 1.35rem;}
@@ -117,4 +123,5 @@ input::placeholder{color: #796449;}
 .video h2 em{display: inline-block;margin: 0 .3rem;padding: 0 .6rem;background: #6c4b3b;border-radius: 10px;font-size: .6rem;height: 1.2rem;line-height: 1.2rem;text-align: center;color: #fef9d1;}
 .video h2 b{float: right;font-weight: bold;}
 .video .part4 .tip{height: 2.1rem;line-height: 2.1rem;font-size: 1.2rem;color: #dfdfdf;text-align: center;background: rgba(0,0,0,.5);}
-.cont .part4 .live{padding: 0 .5rem;font-size: 1.3rem;color: #175581;font-weight: bold;border-radius: 14px;font-size: 1.2rem;background: rgba(176,226,255,.7);height: 1.8rem;line-height: 1.8rem;text-align: center;}
+.video .part4 .live{padding: 0 .5rem;font-size: 1.3rem;color: #175581;font-weight: bold;border-radius: 14px;font-size: 1.2rem;background: rgba(176,226,255,.7);height: 1.8rem;line-height: 1.8rem;text-align: center;}
+.video .play{position: absolute;left: 0;top: 0;width: 100%;height: 100%;background: url(../images/playBtn.png) center no-repeat;-webkit-background-size: 5.5rem;background-size: 5.5rem;}
