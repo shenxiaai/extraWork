@@ -1,6 +1,7 @@
 @charset "UTF-8";
 html,body{background: #fef9d1;}
 input{color: #fff;border:none;outline: none;}
+input::placeholder{color: #796449;}
 
 /*内容部分*/
 .cont{display: -webkit-box;-webkit-box-pack: justify;padding: 0 0 4.2rem 5.25rem;width: 100%;box-sizing: border-box;}
@@ -22,7 +23,7 @@ input{color: #fff;border:none;outline: none;}
 .search img{position: absolute;left: .3rem;top: .2rem;width: 1.5rem;height: 1.5rem;}
 
 .cont .rigCont .part1{padding-top: .7rem;display: -webkit-box;-webkit-box-pack: justify;overflow: hidden;}
-.cont .rigCont .part1-1{margin-right: .35rem;width: 21.8rem;height: 16.8rem;border-radius: .5rem;overflow: hidden;}
+.cont .rigCont .part1-1{margin-right: .35rem;width: 21.8rem;height: 14.8rem;border-radius: .5rem;overflow: hidden;}
 
 .swiperBox1 .swiper-slide img{width: 21.8rem;height: 16.8rem;}
 .pagination1{position: absolute;left: 0;bottom: 20px;width: 100%;height: 20px;text-align: center;z-index: 20;}
@@ -83,3 +84,34 @@ input{color: #fff;border:none;outline: none;}
 .botBar .lefArr,.botBar .rigArr,.botBar .refresh{width: 5.6rem;}
 .botBar .close{-webkit-box-flex: 1;text-align: right;}
 .botBar .icon img{width: 2.1rem;height: 2.1rem;}
+
+/*弹窗*/
+.popForm{position: relative;padding: .7rem .8rem;width: 46.85rem;height: 26.9rem;background: #fef9d1;border: 1px solid #000;border-radius: 17px;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;}
+.popForm .close{position: absolute;top: .6rem;right: .7rem;background: url(../images/Fatclose.png) 0 0 no-repeat;-webkit-background-size: 1.3rem auto;background-size: 1.3rem auto;width: 1.3rem;height: 1.35rem;}
+.popForm .tit{width: 100%;height: 3.9rem;border-bottom: 1px solid #b59b78;}
+.popForm .tit .ipt{padding-left: 2.5rem;width: 35.7rem;height: 3.25rem;background: url(../images/editPen.png) .7rem .9rem no-repeat #574c37;-webkit-background-size: 1.3rem auto;background-size: 1.3rem auto;border: 1px solid #523e27;border-radius: 18px;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;}
+.popForm .tit input{display: block;height: 100%;width: 100%;background: none;border: none;}
+.popForm .tit input::placeholder{font-weight: bold;}
+.popForm .content{position: relative;margin-top: .5rem;width: 100%;height: 17.2rem;background: #f7e3a6;border-radius: 25px;overflow: hidden;}
+.popForm .content textarea{padding: .8rem;width: 100%;height: 100%;resize: none;border: none;background: none;outline: none;font-size: 1.3rem;color: #c3b288;font-weight: bold;line-height: 2rem;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;}
+.popForm .content textarea::placeholder{color: #c3b288;}
+.popForm .chosseImg{position: absolute;left: .8rem;bottom: .75rem;background: url(../images/imgIcon.png) 0 0 no-repeat;-webkit-background-size: auto 4.3rem;background-size: auto 4.3rem;width: 5.4rem;height: 4.3rem;}
+.popForm .sub{margin-top: 1rem;}
+.popForm .sub .btn{float: left;margin: .3rem .9rem 0 0;width: 6.25rem;height: 2rem;line-height: 2rem;background: #ac8950;border-radius: 13px;font-size: 1.2rem;text-align: center;color: #e4cd91;}
+.popForm .sub .btn.active{background: #f1900f;color: #fef9d1;}
+.popForm .subBtn{float: right;background: url(../images/subBtnBg.png) 0 0 no-repeat;width: 8.3rem;height: 2.6rem;-webkit-background-size: 8.3rem 2.6rem;background-size: 8.3rem 2.6rem;}
+
+/*视频中心*/
+.video .part1-1{margin-right: .35rem;width: 21.8rem;height: 14rem;border-radius: .5rem;}
+.video .part1-2{margin-right: .9rem;width: 16.3rem;}
+.video .part1-2 img{height: 6.9rem;width: 16.3rem;}
+.video .part1-2 img:fisrt-child{margin-bottom: .7rem;}
+.video .part1-3{padding: .4rem;-webkit-box-flex: 1;background: #ffedad;height: 100%;box-sizing: border-box;}
+.video .part1-3 h3{font-size: 1.2rem;color: #6c4b3b;}
+.video .part1-3 li{padding: .4rem 0;border-top: 1px dash #cba375;height: 3rem;width: 100%;display: -webkit-box;-webkit-box-align: center;}
+.video .part1-3 li .num{height: 1.6rem;width: 2rem;}
+.video .part1-3 li .num em{display: block;width: 1.6rem;height: 1.6rem;border-radius: 50%;background: #b9540f;color: #fef9d1;font-size: 1.2rem;line-height: 1.6rem;text-align: center;}
+.video .part1-3 li .words{-webkit-box-flex: 1;font-size: 1.06rem;color: #624130;font-weight: bold;}
+.video .part1-3 li .words i{color: #d9690f;font-weight: bold;}
+.video h2{margin-bottom: 1.2rem;color: #6c4b3b;}
+.video h2 em{display: inline-block;margin: 0 .3rem;padding: 0 .6rem;background: #6c4b3b;border-radius: 10px;font-size: .6rem;height: 1.2rem;line-height: 1.2rem;text-align: center;color: #fef9d1;}
