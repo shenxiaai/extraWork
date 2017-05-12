@@ -35,7 +35,7 @@
 .Tab-Hd{position:relative;display: -webkit-box;-webkit-box-align:center;-webkit-box-pack:center;margin-top:-1rem;margin-bottom: 1.2rem;z-index:1;}
 .Tab-Hd li{width:6.3rem;height: 2rem;font-size: 1.2rem;line-height:2rem;text-align: center;background: #ad8b51;border-radius: 6px;color:#e4cd91;margin:0 .5rem;}
 .Tab-Hd .active{color:#fff;background:#f1910f;}
-.TadLst{position: relative;display: -webkit-box;-webkit-box-pack: center;-webkit-box-align: center;margin-bottom: .5rem;width: 100%;padding-right:3rem;font-size: 1.2rem;line-height:1;background: #f4e2b7;border-radius: 6px;height: 6.05rem;box-sizing: border-box;}
+.TadLst{position: relative;display: -webkit-box;-webkit-box-pack: center;-webkit-box-align: center;margin-bottom: .5rem;width: 100%;padding-right:3rem;color:#6c4b3b;font-size: 1.2rem;line-height:1;background: #f4e2b7;border-radius: 6px;height: 6.05rem;box-sizing: border-box;}
 .TadLst:after{content: '';position:absolute;top:50%;right:.6rem;margin-top:-.6rem;width:1.3rem;height: 1.2rem;background: url(../images/rigDotArr.png) no-repeat 0 0;background-size: 1.3rem auto;}
 .TabBImg{display: block;height: 6.05rem;border-radius:6px;}
 .TabHot{margin-left:3rem;}
