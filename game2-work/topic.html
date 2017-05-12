@@ -13,6 +13,12 @@
 	<link rel="stylesheet" href="css/yuanbao.css" />
 	<link rel="stylesheet" href="css/lyn.css" />
 	<script src="js/reset.js"></script>
+	<style>
+		.Topic_swiper{position: relative;margin-top:5rem;width:100%;height: 8.3rem;padding: 0 3.2rem;box-sizing: border-box;}
+		.Topic_swiper .swiper-slide {background-position: center;background-size: cover;width:80%;height: 8.3rem;}
+		.Topic_swiper .swiper-button-prev{left:0;margin-top:-2.45rem;width:2.4rem;height: 4.9rem;background: url(images/scrLefArrow.png) no-repeat 0 0;background-size: 2.4rem 4.9rem;}
+		.Topic_swiper .swiper-button-next{right:0;margin-top:-2.45rem;width:2.4rem;height: 4.9rem;background: url(images/scrRigArrow.png) no-repeat 0 0;background-size: 2.4rem 4.9rem;}
+	</style>
 </head>
 
 <body ontouchstart="">
@@ -48,6 +54,20 @@
 					<img src="images/searchIcon.png" alt="">
 					<input type="text" placeholder="请输入关键搜索视频">
 				</div>
+			</div>
+			<div class="Topic_swiper">
+					<div class="swiper-container">
+						<div class="swiper-wrapper">
+								<div class="swiper-slide" style="background-image:url(images/img1.jpg)"></div>
+								<div class="swiper-slide" style="background-image:url(images/img2.jpg)"></div>
+								<div class="swiper-slide" style="background-image:url(images/img3.jpg)"></div>
+								<div class="swiper-slide" style="background-image:url(images/img1.jpg)"></div>
+								<div class="swiper-slide" style="background-image:url(images/img2.jpg)"></div>
+						</div>
+				</div>
+				<!-- Add Pagination -->
+				<div class="swiper-button-prev"></div>
+				<div class="swiper-button-next"></div>
 			</div>
 
 			<div class="PersonalC pt50">
@@ -106,28 +126,35 @@
 		<div class="icon refresh"><img src="images/fresh.png" width="100%"></div>
 		<div class="icon close"><img src="images/close.png" width="100%"></div>
 	</div>
+	<script src="js/swiper.min.js"></script>
 	<script type="text/javascript">
 		window.onload = function() {
 			var cw = document.documentElement.clientWidth,
 				ch = document.documentElement.clientHeight,
 				botBar = document.querySelector('.botBar'),
 				cont = document.querySelector('.cont');
+				
+				var swiper = new Swiper('.swiper-container', {
+					effect: 'coverflow',
+					grabCursor: true,
+					centeredSlides: true,
+					slidesPerView: 'auto',
+					initialSlide :2,
+					prevButton:'.swiper-button-prev',
+					nextButton:'.swiper-button-next',
+					loop: true,
+					coverflow: {
+						rotate: 20,
+						stretch: -50,
+						depth: 400,
+						modifier: 1,
+						slideShadows : true
+					}
+				});
 		}
 
-		function nTabs(thisObj, Num) {
-			if (thisObj.className == 'active') return;
-			var tabObj = thisObj.parentNode.id;
-			var tabList = document.getElementById(tabObj).getElementsByTagName('li');
-			for (i = 0; i < tabList.length; i++) {
-				if (i == Num) {
-					thisObj.className = 'active';
-					document.getElementById(tabObj + '_Content' + i).style.display = 'block';
-				} else {
-					tabList[i].className = 'normal';
-					document.getElementById(tabObj + '_Content' + i).style.display = 'none';
-				}
-			}
-		}
+
+
 	</script>
 </body>
 
