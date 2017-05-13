@@ -7,7 +7,7 @@
 	<meta name="apple-mobile-web-app-capable" content="yes">
 	<meta name="apple-mobile-web-app-status-bar-style" content="black">
 	<meta name="format-detection" content="telephone=no">
-	<title>游戏1</title>
+	<title>首页</title>
 	<link rel="stylesheet" href="css/standard.css" />
 	<link rel="stylesheet" href="css/swiper.min.css">
 	<link rel="stylesheet" href="css/pullToRefresh.css">
@@ -88,15 +88,27 @@
 					<div id="wrapper">
 						<ul style="width: 100%;">
 							<li>
-								<div class="videoBox">
-									<div class="video"><img src="images/img3.jpg" alt="">
-										<p>放松放松放松房贷时</p>
+								<div class="videoBox homepart2">
+									<div class="vid">
+										<img src="images/img1.jpg" width="100%">
+										<span class="live">实况直播</span>
+										<div class="tip">防辐射服大幅度<em>99999999</em></div>
+										<div class="play"></div>
+										<p>【对战教程】哦哦哦哦哦哦哦【对战教程】哦哦哦哦哦哦哦【对战教程】哦哦哦哦哦哦哦</p>
 									</div>
-									<div class="video"><img src="images/img3.jpg" alt="">
-										<p>放松放松放松房贷时</p>
+									<div class="vid">
+										<img src="images/img1.jpg" width="100%">
+										<span class="live">实况直播</span>
+										<div class="tip">防辐射服大幅度<em>99999999</em></div>
+										<div class="play"></div>
+										<p>【对战教程】哦哦哦哦哦哦哦</p>
 									</div>
-									<div class="video"><img src="images/img3.jpg" alt="">
-										<p>放松放松放松房贷时</p>
+									<div class="vid">
+										<img src="images/img1.jpg" width="100%">
+										<span class="live">实况直播</span>
+										<div class="tip">防辐射服大幅度<em>99999999</em></div>
+										<div class="play"></div>
+										<p>【对战教程】哦哦哦哦哦哦哦</p>
 									</div>
 								</div>
 							</li>
@@ -138,7 +150,7 @@
 				</div>
 				<div class="part4">
 					<h2>实况直播</h2>
-					<div class="part4-1">
+					<div class="part4-1 homepart4">
 						<div class="vid"><img src="images/img1.jpg" width="100%"><span class="live"></span>
 							<div class="tip"><img src="images/zhuboIcon.png">防辐射服大幅度<em>99999999</em></div>
 						</div>
@@ -177,13 +189,11 @@
 			function Refresh() {
 				setTimeout(function() { // <-- Simulate network congestion, remove setTimeout from production!
 					var el, li, i;
-					var part2 = document.querySelector('.part2'),
-					wraped = document.getElementById("wrapper");
+					var wraped = document.getElementById("wrapper");
 					el = document.querySelector("#wrapper ul");
 					//这里写你的刷新代码
 					wraped.querySelector(".pullDownIcon").style.display = "none";
 					wraped.querySelector(".pullDownLabel").innerHTML = "<img src='images/ok.png'/>刷新成功";
-					part2.style.height = wraped.offsetHeight + part2.offsetHeight + 'px';
 					setTimeout(function() {
 						wrapper.refresh();
 						document.getElementById("wrapper").querySelector(".pullDownLabel").innerHTML = "";
@@ -195,20 +205,23 @@
 			function Load() {
 				setTimeout(function() { // <-- Simulate network congestion, remove setTimeout from production!
 					var el, li, i;
-					el = document.querySelector("#wrapper ul");
-					for (i = 0; i < 2; i++) {
+					var part2 = document.querySelector('.part2'),
+						wraped = document.getElementById("wrapper");
+					el = document.querySelector('#wrapper ul');
+					for (i = 0; i < 1; i++) {
 						li = document.createElement('li');
-						li.innerHTML = "<img src='img/game8.png'><div class='game-info'><h1>华仔超神战记</h1><p>9万次下载     89.18M</p><p>秒杀虚拟摇杆，砸烂手机键盘</p></div><button>下载</button>"
+						li.innerHTML = '<div class="videoBox homepart2"><div class="vid"><img src="images/img1.jpg" width="100%"><span class="live">实况直播</span><div class="tip">防辐射服大幅度<em>99999999</em></div><div class="play"></div><p>【对战教程】哦哦哦哦哦哦哦</p></div><div class="vid"><img src="images/img1.jpg" width="100%"><span class="live">实况直播</span><div class="tip">防辐射服大幅度<em>99999999</em></div><div class="play"></div><p>【对战教程】哦哦哦哦哦哦哦</p></div><div class="vid"><img src="images/img1.jpg" width="100%"><span class="live">实况直播</span><div class="tip">防辐射服大幅度<em>99999999</em></div><div class="play"></div><p>【对战教程】哦哦哦哦哦哦哦</p></div></div>'
 						el.appendChild(li, el.childNodes[0]);
 					}
+					part2.style.height = wraped.offsetHeight + part2.offsetHeight - 10 + 'px';
 					wrapper.refresh(); /****remember to refresh after action completed！！！   ---id.refresh(); --- ****/
 				}, 2000);
 			}
 
 			var cw = document.documentElement.clientWidth,
-			ch = document.documentElement.clientHeight,
-			botBar = document.querySelector('.botBar'),
-			cont = document.querySelector('.cont');
+				ch = document.documentElement.clientHeight,
+				botBar = document.querySelector('.botBar'),
+				cont = document.querySelector('.cont');
 		}
 	</script>
 </body>

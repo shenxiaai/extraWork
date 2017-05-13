@@ -37,18 +37,18 @@
 }
 .pullDown .pullDownIcon, .pullUp .pullUpIcon {
 	background: url("../images/arrow.png") no-repeat;
-	width: 1.2rem;
-	height: 1.2rem;
+	width: 1.5rem;
+	height: 1.5rem;
+	line-height: 1.5rem;
 	position: absolute;
-	margin-top: .4rem;
 	margin-bottom: .4rem;
 	background-position: center;
-	margin-left: 30%;
-	background-size:1.2rem;
-	-webkit-background-size:1.2rem;
+	margin-left: 40%;
+	background-size: 1.5rem;
+	-webkit-background-size: 1.5rem;
 	-webkit-transition-property: -webkit-transform;
 	-webkit-transition-duration: 250ms;
-	-moz-background-size:1.2rem;
+	-moz-background-size: 1.5rem;
 	-moz-transition-property: -moz-transform;
 	-moz-transition-duration: 250ms;
 }
@@ -69,6 +69,7 @@
 	-webkit-transform: rotate(0deg) translateZ(0);
 	-moz-transform: rotate(0deg) translateZ(0);
 }
+.pullDownLabel img{margin-top: -.3rem;;margin-right: .5rem;vertical-align: middle;width: 1.5rem;height: 1.5rem;}
 .pullDown.loading .pullDownIcon, .pullUp.loading .pullUpIcon {
 	background-image: url(../images/loader.png);
 	background-size: 100% auto;
