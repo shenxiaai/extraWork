@@ -126,7 +126,7 @@ input::placeholder{color: #796449;font-weight: bold;}
 .video .part1-2 img:fisrt-child{margin-bottom: .7rem;}
 .video .part1-3{padding: .4rem;-webkit-box-flex: 1;background: #ffedad;height: 100%;box-sizing: border-box;}
 .video .part1-3 h3{font-size: 1.2rem;color: #6c4b3b;text-align: left;}
-.video .part1-3 li{padding: .4rem 0;border-top: 1px dash #cba375;height: 3rem;width: 100%;display: -webkit-box;-webkit-box-align: center;}
+.video .part1-3 li{padding: .4rem 0;border-top: 1px dotted #cba375;height: 3rem;width: 100%;display: -webkit-box;-webkit-box-align: center;}
 .video .part1-3 li .num{height: 1.6rem;width: 2rem;}
 .video .part1-3 li .num em{display: block;width: 1.6rem;height: 1.6rem;border-radius: 50%;background: #b9540f;color: #fef9d1;font-size: 1.2rem;line-height: 1.6rem;text-align: center;}
 .video .part1-3 li .words{-webkit-box-flex: 1;font-size: 1.06rem;color: #624130;font-weight: bold;text-align: left;}
