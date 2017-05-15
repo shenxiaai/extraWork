@@ -113,6 +113,7 @@ input::placeholder{color: #796449;font-weight: bold;}
 .popForm .content textarea{padding: .8rem;width: 100%;height: 100%;resize: none;border: none;background: none;outline: none;font-size: 1.3rem;color: #c3b288;font-weight: bold;line-height: 2rem;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;}
 .popForm .content textarea::placeholder{color: #c3b288;}
 .popForm .chosseImg{position: absolute;left: .8rem;bottom: .75rem;background: url(../images/imgIcon.png) 0 0 no-repeat;-webkit-background-size: auto 4.3rem;background-size: auto 4.3rem;width: 5.4rem;height: 4.3rem;}
+.popForm .chosseImg input{display: block;width: 5.4rem;height: 4.3rem;opacity: 0;filter: alpha(opacity=0);cursor: pointer;}
 .popForm .sub{margin-top: 1rem;}
 .popForm .sub .btn{float: left;margin: .3rem .9rem 0 0;width: 6.25rem;height: 2rem;line-height: 2rem;background: #ac8950;border-radius: .6rem;font-size: 1.2rem;text-align: center;color: #e4cd91;}
 .popForm .sub .btn.active{background: #f1900f;color: #fef9d1;}

@@ -137,7 +137,7 @@
 		<div class="icon close"><img src="images/close.png" width="100%"></div>
 	</div>
 
-	<div class="Dialog">
+	<div class="Dialog show">
 		<div class="popForm">
 			<!--弹窗表格-->
 			<div class="close"></div>
@@ -146,7 +146,7 @@
 			</div>
 			<div class="content">
 				<textarea placeholder="文章介绍内容不少于10个汉字...."></textarea>
-				<div class="chosseImg"></div>
+				<div class="chosseImg"><input type="file" accept="image/*" /></div>
 			</div>
 			<div class="sub">
 				<div class="btn active">教学</div>
@@ -165,7 +165,7 @@
 				ch = document.documentElement.clientHeight,
 				botBar = document.querySelector('.botBar'),
 				cont = document.querySelector('.cont');
-				
+
 				var swiper = new Swiper('.swiper-container', {
 					effect: 'coverflow',
 					grabCursor: true,
