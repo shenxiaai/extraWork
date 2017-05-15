@@ -14,7 +14,7 @@ input::placeholder{color: #796449;font-weight: bold;}
 .cont .leftNav .icon .block.active .light{display: block;}
 .cont .leftNav .icon img{width: 3.5rem;height: 3.5rem;vertical-align: middle;}
 
-.cont h2{font-size: 1.7rem;color: #6c4b3b;font-weight: bold;line-height: 2rem;}
+.cont h2{font-size: 1.7rem;color: #6c4b3b;font-weight: bold;line-height: 2rem;text-align: left;}
 
 .cont .rigContBox{-webkit-box-flex: 1;position: relative;padding: .75rem .9rem;width: 100%;box-sizing: border-box;}
 .cont .rigCont{padding-top: 3.5rem;width: 100%;}
