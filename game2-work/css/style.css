@@ -208,6 +208,13 @@ input::placeholder{color: #796449;font-weight: bold;}
 .ReplyImg{width:100%;height: 9rem;display: -webkit-box;-webkit-box-pack: justify;margin-top: .5rem;}
 .ReplyImg img{-webkit-box-flex:1;display:block;height: 9rem;border-radius: 10px;margin-right: .6rem;}
 .ReplyImg img:last-child{margin-right: 0;}
+.MiniLapLst li{display: block;border-radius: 4px;padding: 0;background: #f4e2b7;font-size: 1rem;font-weight: bold;}
+.MiniLapTt{display: -webkit-box;-webkit-box-align:center;border-radius: 4px;color:#6c4b3b;
+  background: #f7dba1;border-bottom: 1px solid #f7e9bf;padding: .4rem;font-size: 1.1rem;}
+.MiniLapTt-r{-webkit-box-flex:1;margin-left: .6rem;}
+.MiniLapLst .Avatar2Name{padding: .3rem 1.5rem 2.5rem;font-size: 1.2rem;}
+.MiniLapLst .Avatar2Name p{color:#6c4836;}
+.MiniLapLst .source{font-size:1rem;bottom:.5rem;right:.7rem;}
 /*视频展开*/
 .BtnDelete{position: absolute;top:.4rem;right:1.8rem;width:3rem;height: 3.3rem;background: url(../images/delete.png) no-repeat 0 0;background-size: 3rem 3.3rem;}
 .BtnReport{position: absolute;top:.9rem;left:18rem;width:2.5rem;height:2.7rem;background: url(../images/Report.png) no-repeat 0 0;background-size: 2.5rem 2.7rem;}
