@@ -86,9 +86,10 @@
 			<div class="Dialog">
 				<div class="DialogVideo">
 					<!--视频播放器-->
-					<video autoplay="false" controls='controls' width='100%' height="100%">
+					<video id="vidHea" loop="true" width="100%" height="100%">
 						<source src="images/shipin.mp4" type="video/mp4" />
 					</video>
+					<i class="icon-play" id="icon-play"></i>
 					<!-- 关闭按钮 -->
 					<div class="Videoclose"></div>
 					<!-- 视频导航条 -->
@@ -118,6 +119,17 @@
 			$('.Videoclose').on('click',function(){
 				$(this).parents('.Dialog').removeClass('show');
 			})
+
+			var myVideo = document.getElementById("vidHea"),
+				iconPlay = document.querySelector('#icon-play');
+
+			iconPlay.onclick = function () {
+				this.style.display = 'none';
+				myVideo.play();
+			}
+
+			// myVideo.play();
+			// myVideo.pause();
 
 		</script>
 </body>
