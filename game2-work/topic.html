@@ -156,32 +156,31 @@
 				botBar = document.querySelector('.botBar'),
 				cont = document.querySelector('.cont');
 
-				var swiper = new Swiper('.swiper-container', {
-					effect: 'coverflow',
-					grabCursor: true,
-					centeredSlides: true,
-					slidesPerView: 'auto',
-					initialSlide :2,
-					prevButton:'.swiper-button-prev',
-					nextButton:'.swiper-button-next',
-					loop: true,
-					coverflow: {
-						rotate: 20,
-						stretch: -50,
-						depth: 400,
-						modifier: 1,
-						slideShadows : true
-					}
-				});
-		}
+			var swiper = new Swiper('.swiper-container', {
+				effect: 'coverflow',
+				grabCursor: true,
+				centeredSlides: true,
+				slidesPerView: 'auto',
+				initialSlide :2,
+				prevButton:'.swiper-button-prev',
+				nextButton:'.swiper-button-next',
+				loop: true,
+				coverflow: {
+					rotate: 20,
+					stretch: -50,
+					depth: 400,
+					modifier: 1,
+					slideShadows : true
+				}
+			});
 
-		// IE浏览器替换样式表
-		if (!!window.ActiveXObject || "ActiveXObject" in window){
-			console.log('IE浏览器');
-			var cssLink = document.getElementById("mainCss");
-			cssLink.href = 'css/style-ie.css';
+				// IE浏览器替换样式表
+			if (!!window.ActiveXObject || "ActiveXObject" in window){
+				console.log('IE浏览器');
+				var cssLink = document.getElementById("mainCss");
+				cssLink.href = 'css/style-ie.css';
+			}
 		}
-
 	</script>
 </body>
 
