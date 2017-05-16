@@ -90,7 +90,7 @@ input::placeholder{color: #796449;font-weight: bold;}
 
 
 /*底部导航*/
-.botBar{padding: 0 1.4rem;position: fixed;left: 0;bottom: 0;display: box;display: flexbox;display: flex;display: -webkit-flex;display: -ms-flexbox;display: -moz-box;display: -o-box;display: -webkit-box;-webkit-box-pack: justify;box-pack: justify;-ms-box-pack: justify;-webkit-box-align: center;box-align: center;-ms-box-align: center;-moz-box-align: center;-o-box-align: center;z-index: 999;width: 100%;height: 4.2rem;line-height: 4.2rem;background: #333;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;}
+.botBar{padding: 1.1rem 1.4rem 0;position: fixed;left: 0;bottom: 0;display: box;display: flexbox;display: flex;display: -webkit-flex;display: -ms-flexbox;display: -moz-box;display: -o-box;display: -webkit-box;-webkit-box-pack: justify;box-pack: justify;-ms-box-pack: justify;-webkit-box-align: center;box-align: center;-ms-box-align: center;-moz-box-align: center;-o-box-align: center;z-index: 999;width: 100%;height: 4.2rem;line-height: 4.2rem;background: #333;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;}
 .botBar .icon{height: 2.1rem;}
 .botBar .lefArr,.botBar .rigArr,.botBar .refresh{width: 5.6rem;}
 .botBar .close{-webkit-box-flex: 1;-ms-box-flex: 1;-webkit-flex: 1;-ms-flex: 1;flex: 1;text-align: right;}
@@ -190,7 +190,7 @@ input::placeholder{color: #796449;font-weight: bold;}
 .PersonalC .OpenInfoHd{padding: 0 0 1.4rem 0;}
 .Avatar1Name{color:#6c4b3b;font-size: 1.3rem;font-weight: bold;}
 .Tab-Hd{position:relative;display: box;display: flexbox;display: flex;display: -webkit-flex;display: -ms-flexbox;display: -moz-box;display: -o-box;display: -webkit-box;-webkit-box-align:center;-webkit-box-pack:center;margin-top:-1rem;margin-bottom: 1.2rem;z-index:1;}
-.Tab-Hd li{width:6.3rem;height: 2rem;font-size: 1.2rem;line-height:2rem;text-align: center;background: #ad8b51;border-radius: 6px;color:#e4cd91;margin:0 .5rem;}
+.Tab-Hd li{float: left;width:6.3rem;height: 2rem;font-size: 1.2rem;line-height:2rem;text-align: center;background: #ad8b51;border-radius: 6px;color:#e4cd91;margin:0 .5rem;}
 .Tab-Hd .active{color:#fff;background:#f1910f;}
 .TadLst{position: relative;display: box;display: flexbox;display: flex;display: -webkit-flex;display: -ms-flexbox;display: -moz-box;display: -o-box;display: -webkit-box;-webkit-box-pack: center;box-pack: center;-webkit-box-align: center;-moz-box-align: center;-ms-box-align: center;-o-box-align: center;box-align: center;margin-bottom: .5rem;width: 100%;padding-right:3rem;color:#6c4b3b;font-size: 1.2rem;line-height:1;background: #f4e2b7;border-radius: 6px;height: 6.05rem;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;}
 .TadLst:after{content: '';position:absolute;top:50%;right:.6rem;margin-top:-.6rem;width:1.3rem;height: 1.2rem;background: url(../images/rigDotArr.png) no-repeat 0 0;background-size: 1.3rem auto;-webkit-background-size: 1.3rem auto;}
