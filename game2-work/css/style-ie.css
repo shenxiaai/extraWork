@@ -67,7 +67,7 @@ input::placeholder{color: #796449;font-weight: bold;}
 
 .cont .part4{margin-top: 1.6rem;width: 100%;}
 .cont .part4 h2{margin-bottom: .7rem;font-size: 1.7rem;color: #6c4b3b;font-weight: bold;line-height: 2rem;text-align: left;}
-.cont .part4-1{display: box;display: flexbox;display: flex;display: -webkit-flex;display: -ms-flexbox;display: -moz-box;display: -o-box;display: -webkit-box;-webkit-box-pack: justify;-moz-box-pack: justify;-ms-box-pack: justify;-o-box-pack: justify;box-pack: justify;width: 100%;height: 9.6rem;}
+.cont .part4-1{display: box;display: -moz-box;display: -o-box;display: -webkit-box;display: flexbox;display: flex;display: -webkit-flex;display: -ms-flexbox;-webkit-box-pack: justify;-moz-box-pack: justify;-ms-box-pack: justify;-o-box-pack: justify;box-pack: justify;width: 100%;height: 9.6rem;}
 .homepart2 .vid .tip{top: 7.5rem;}
 .homepart4 .vid .tip{bottom: 0;}
 .homepart4 .vid .live,.vidCenter .vid .live{background: url(../images/liveIcon.png) 0 0 no-repeat;-webkit-background-size: 5rem auto;background-size: 5rem auto;}
@@ -181,7 +181,7 @@ input::placeholder{color: #796449;font-weight: bold;}
 .source span{margin-left: 1.2rem;}
 .ReplyBox{position: fixed;left:0;bottom:4.2rem;width:100%;padding: 0 1.9rem 0 2.5rem;background: #f3efca;height: 3.7rem;padding: .3rem .2rem .3rem 1rem;display: box;display: flexbox;display: flex;display: -webkit-flex;display: -ms-flexbox;display: -moz-box;display: -o-box;display: -webkit-box;-webkit-box-pack:center;-webkit-box-align: center;-moz-box-align: center;-ms-box-align: center;-o-box-align: center;box-align: center;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;}
 .EmoFace{display:block;width:2.8rem;height: 3.05rem;margin-right: .3rem;}
-.IptBox{-webkit-box-flex:1;box-flex:1;padding-left:2.5rem;height: 2.05rem;background: #544936 url(../images/pen.png) no-repeat .5rem center;background-size:1.3rem 1.35rem;-webkit-background-size:1.3rem 1.35rem;border:1px solid #503b26;border-radius:5px;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;;overflow: hidden;}
+.IptBox{-webkit-box-flex:1;box-flex:1;width: 100%;;padding-left:2.5rem;height: 2.05rem;background: #544936 url(../images/pen.png) no-repeat .5rem center;background-size:1.3rem 1.35rem;-webkit-background-size:1.3rem 1.35rem;border:1px solid #503b26;border-radius:5px;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;;overflow: hidden;}
 .IptBox input{display:block;width:100%;height: 100%;color: #fff;font-weight: bold;background:none;text-align: center;border:none;outline: none;}
 .IptBox input::-webkit-input-placeholder {color:#796449;}
 .SendOut{display:block;width:6.2rem;height:2.75rem;margin-left:.3rem;background: url(../images/send_btn.png) no-repeat 0 0;background-size:6.2rem 2.75rem;-webkit-background-size:6.2rem 2.75rem;outline: none;border: none;}
@@ -212,7 +212,7 @@ input::placeholder{color: #796449;font-weight: bold;}
 .MiniLapLst li{display: block;border-radius: 4px;padding: 0;background: #f4e2b7;font-size: 1rem;font-weight: bold;}
 .MiniLapTt{display: box;display: flexbox;display: flex;display: -webkit-flex;display: -ms-flexbox;display: -moz-box;display: -o-box;display: -webkit-box;-webkit-box-align:center;border-radius: 4px;color:#6c4b3b;
   background: #f7dba1;border-bottom: 1px solid #f7e9bf;padding: .4rem;font-size: 1.1rem;}
-.MiniLapTt-r{-webkit-box-flex:1;box-flex:1;margin-left: .6rem;}
+.MiniLapTt-r{padding-top: .8rem;-webkit-box-flex:1;box-flex:1;margin-left: .6rem;}
 .MiniLapLst .Avatar2Name{padding: .3rem 1.5rem 2.5rem;font-size: 1.2rem;}
 .MiniLapLst .Avatar2Name p{color:#6c4836;}
 .MiniLapLst .source{font-size:1rem;bottom:.5rem;right:.7rem;}
