@@ -205,14 +205,15 @@
 				setTimeout(function() { // <-- Simulate network congestion, remove setTimeout from production!
 					var el, li, i;
 					var part2 = document.querySelector('.part2'),
-						wraped = document.getElementById("wrapper");
+						wraped = document.getElementById("wrapper"),
+						wrapedLi = wraped.getElementsByTagName('li')[0];
 					el = document.querySelector('#wrapper ul');
 					for (i = 0; i < 1; i++) {
 						li = document.createElement('li');
 						li.innerHTML = '<div class="videoBox homepart2"><div class="vid"><img src="images/img1.jpg" width="100%"><span class="live">实况直播</span><div class="tip">防辐射服大幅度<em>99999999</em></div><div class="play"></div><p>【对战教程】哦哦哦哦哦哦哦</p></div><div class="vid"><img src="images/img1.jpg" width="100%"><span class="live">实况直播</span><div class="tip">防辐射服大幅度<em>99999999</em></div><div class="play"></div><p>【对战教程】哦哦哦哦哦哦哦</p></div><div class="vid"><img src="images/img1.jpg" width="100%"><span class="live">实况直播</span><div class="tip">防辐射服大幅度<em>99999999</em></div><div class="play"></div><p>【对战教程】哦哦哦哦哦哦哦</p></div></div>'
 						el.appendChild(li, el.childNodes[0]);
 					}
-					part2.style.height = wraped.offsetHeight + part2.offsetHeight - 10 + 'px';
+					part2.style.height = part2.offsetHeight + wrapedLi.offsetHeight - 10 + 'px';
 					wrapper.refresh(); /****remember to refresh after action completed！！！   ---id.refresh(); --- ****/
 				}, 2000);
 			}
