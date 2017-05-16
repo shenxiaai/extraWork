@@ -11,7 +11,7 @@
 	<link rel="stylesheet" href="css/standard.css" />
 	<link rel="stylesheet" href="css/swiper.min.css">
 	<link rel="stylesheet" href="css/pullToRefresh.css">
-	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" id="mainCss" href="css/style.css">
 	<script src="js/reset.js"></script>
 	<script src="js/iscroll.js"></script>
 	<script src="js/pullToRefresh.min.js"></script>
@@ -222,6 +222,13 @@
 				ch = document.documentElement.clientHeight,
 				botBar = document.querySelector('.botBar'),
 				cont = document.querySelector('.cont');
+
+			// IE浏览器替换样式表
+			if (!!window.ActiveXObject || "ActiveXObject" in window){
+				console.log('IE浏览器');
+				var cssLink = document.getElementById("mainCss");
+				cssLink.href = 'css/style-ie.css';
+			}
 		}
 	</script>
 </body>

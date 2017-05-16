@@ -193,6 +193,13 @@
 				cont = document.querySelector('.cont');
 		}
 
+		// IE浏览器替换样式表
+		if (!!window.ActiveXObject || "ActiveXObject" in window){
+			console.log('IE浏览器');
+			var cssLink = document.getElementById("mainCss");
+			cssLink.href = 'css/style-ie.css';
+		}
+
 		function nTabs(thisObj, Num) {
 			if (thisObj.className == 'active') return;
 			var tabObj = thisObj.parentNode.id;

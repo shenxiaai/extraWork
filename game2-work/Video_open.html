@@ -130,6 +130,13 @@
 
 		// myVideo.play();
 		// myVideo.pause();
+
+		// IE浏览器替换样式表
+		if (!!window.ActiveXObject || "ActiveXObject" in window){
+			console.log('IE浏览器');
+			var cssLink = document.getElementById("mainCss");
+			cssLink.href = 'css/style-ie.css';
+		}
 	</script>
 </body>
 

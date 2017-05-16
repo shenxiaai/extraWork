@@ -19,12 +19,14 @@
 
 <body ontouchstart="">
 	<div class="cont">
-		<div class="leftNav">
-			<div class="icon"><a href="home.html"><div class="block"><div class="light"></div><img src="images/home.png" width=""></div></a></div>
-			<div class="icon"><a href="video.html"><div class="block active"><div class="light"></div><img src="images/vedio_light.png" width=""></div></a></div>
-			<div class="icon"><a href="topic.html"><div class="block"><div class="light"></div><img src="images/talk.png" width=""></div></a></div>
-			<div class="icon"><a href="MiniLap.html"><div class="block"><div class="light"></div><img src="images/fantastic.png" width=""></div></a></div>
-			<div class="icon"><a href="PersonalCenter.html"><div class="block"><div class="light"></div><img src="images/self.png" width=""></div></a></div>
+		<div class="leftNavBox">
+			<div class="leftNav">
+				<div class="icon"><a href="home.html"><div class="block"><div class="light"></div><img src="images/home.png" width=""></div></a></div>
+				<div class="icon"><a href="video.html"><div class="block active"><div class="light"></div><img src="images/vedio_light.png" width=""></div></a></div>
+				<div class="icon"><a href="topic.html"><div class="block"><div class="light"></div><img src="images/talk.png" width=""></div></a></div>
+				<div class="icon"><a href="MiniLap.html"><div class="block"><div class="light"></div><img src="images/fantastic.png" width=""></div></a></div>
+				<div class="icon"><a href="PersonalCenter.html"><div class="block"><div class="light"></div><img src="images/self.png" width=""></div></a></div>
+			</div>
 		</div>
 		<div class="rigContBox">
 			<div class="rigCont video newestOpen">
@@ -201,10 +203,12 @@
 				}, 2000);
 			}
 
-			var cw = document.documentElement.clientWidth,
-				ch = document.documentElement.clientHeight,
-				botBar = document.querySelector('.botBar'),
-				cont = document.querySelector('.cont');
+			// IE浏览器替换样式表
+			if (!!window.ActiveXObject || "ActiveXObject" in window){
+				console.log('IE浏览器');
+				var cssLink = document.getElementById("mainCss");
+				cssLink.href = 'css/style-ie.css';
+			}
 		}
 	</script>
 </body>
