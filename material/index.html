@@ -36,8 +36,33 @@
 				<p>西安</p>
 				<p class="date">2017-04-21&nbsp;&nbsp;12:31:33</p>
 			</li>
-			<li class="map2">
-				<div class="map2" id="map2"><img src="images/map2.jpg" width="100%" alt=""></div>
+			<li class="map2" id="map2">
+				<div><img src="images/map2.jpg" width="100%" alt=""></div>
+			</li>
+			<li>
+				<p>偏氨酸钒</p>
+				<p>厂家名称</p>
+				<p>2352<img src="images/up.jpg" alt=""></p>
+			</li>
+			<li>
+				<p>偏氨酸钒</p>
+				<p>厂家名称</p>
+				<p>2352<img src="images/up.jpg" alt=""></p>
+			</li>
+			<li>
+				<p>偏氨酸钒</p>
+				<p>厂家名称</p>
+				<p>2352<img src="images/up.jpg" alt=""></p>
+			</li>
+			<li>
+				<p>偏氨酸钒</p>
+				<p>厂家名称</p>
+				<p>2352<img src="images/up.jpg" alt=""></p>
+			</li>
+			<li>
+				<p>偏氨酸钒</p>
+				<p>厂家名称</p>
+				<p>2352<img src="images/up.jpg" alt=""></p>
 			</li>
 			<li>
 				<p>偏氨酸钒</p>
@@ -48,6 +73,7 @@
 	</div>
 	<script>
 		var pullPan = document.querySelector('#pullPan'),
+			pullPanLi = document.querySelector('#pullPan li'),
 			topNav = document.querySelector('#topNav'),
 			tab = topNav.querySelectorAll('.tab'),
 			topNavDialog = document.querySelector('#topNavDialog'),
@@ -56,11 +82,13 @@
 			block = document.querySelector('#block'),
 			cw = document.documentElement.clientWidth,
 			ch = document.documentElement.clientHeight,
-			flag = 1,
+			pullPanShow = 1,
 			topNavDialogShow = 0;
 
+		document.body.style.height = ch + 'px';
 		block.style.height = ch - topNav.offsetHeight + 16 + 'px';
 		block.style.top = '3.5rem';
+		pullPan.style.bottom = 3.3 - pullPan.offsetHeight/20 - 2 + 'rem';
 
 		block.onclick = function () {
 			if (topNavDialogShow) {
@@ -81,13 +109,18 @@
 				topNavDialogShow = 1;
 			}
 		}
+		
 
-		arrow.addEventListener('touchstart', function () {
-			console.log('touch');
-		});
-		arrow.addEventListener('touchmove', function (event) {
-			console.log('event');
-			console.log(event);
+		arrow.addEventListener('click', function () {
+			if(pullPanShow) {
+				map2.style.display = 'block';
+				pullPan.style.bottom = 0;
+				pullPanShow = 0;
+			}else{
+				map2.style.display = 'none';
+				pullPan.style.bottom = 3.3 - pullPan.offsetHeight/20 - 2 + 'rem';
+				pullPanShow = 1;
+			}
 		});
 	</script>
 </body>
