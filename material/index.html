@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0,minimum-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="format-detection" content="telephone=no">
+	<title>金属</title>
+	<link rel="stylesheet" href="css/standard.css">
+	<link rel="stylesheet" href="css/style.css">
+	<script src="js/reset.js"></script>
+</head>
+<body>
+	<div class="topNav">
+		<div class="tab"><span class="active">钒</span></div>
+		<div class="tab"><span>钼</span></div>
+		<div class="tab"><span>钛</span></div>
+		<div class="tab"><span>煤炭</span></div>
+	</div>
+	<div class="map"><img src="images/map.jpg" width="100%" alt=""></div>
+	<div class="pullPan" id="pullPan">
+		<div class="arrow" id="arrow"></div>
+		<ul>
+			<li class="category">
+				<p>西安</p>
+				<p class="date">2017-04-21&nbsp;&nbsp;12:31:33</p>
+			</li>
+			<li class="map2">
+				<div class="map2" id="map2"><img src="images/map2.jpg" width="100%" alt=""></div>
+			</li>
+			<li>
+				<p>偏氨酸钒</p>
+				<p>厂家名称</p>
+				<p>2352<img src="images/up.jpg" alt=""></p>
+			</li>
+		</ul>
+	</div>
+	<script>
+		var pullPan = document.querySelector('#pullPan'),
+			arrow = document.querySelector('#arrow'),
+			map2 = document.querySelector('#map2'),
+			flag = 1;
+
+		arrow.addEventListener('touch', function () {
+			console.log('touch');
+		});
+	</script>
+</body>
+</html>
