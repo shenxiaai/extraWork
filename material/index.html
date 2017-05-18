@@ -13,11 +13,20 @@
 	<script src="js/reset.js"></script>
 </head>
 <body>
-	<div class="topNav">
+	<div class="block" id="block"></div>
+	<div class="topNav" id="topNav">
 		<div class="tab"><span class="active">钒</span></div>
 		<div class="tab"><span>钼</span></div>
 		<div class="tab"><span>钛</span></div>
 		<div class="tab"><span>煤炭</span></div>
+	</div>
+	<div class="topNavDialog" id="topNavDialog">
+		<li>钒氮合金</li>
+		<li>钒铁</li>
+		<li>偏钒酸铵</li>
+		<li>五氧化二钒</li>
+		<li>钒原料</li>
+		<li>钒铝合金</li>
 	</div>
 	<div class="map"><img src="images/map.jpg" width="100%" alt=""></div>
 	<div class="pullPan" id="pullPan">
@@ -39,12 +48,46 @@
 	</div>
 	<script>
 		var pullPan = document.querySelector('#pullPan'),
+			topNav = document.querySelector('#topNav'),
+			tab = topNav.querySelectorAll('.tab'),
+			topNavDialog = document.querySelector('#topNavDialog'),
 			arrow = document.querySelector('#arrow'),
 			map2 = document.querySelector('#map2'),
-			flag = 1;
+			block = document.querySelector('#block'),
+			cw = document.documentElement.clientWidth,
+			ch = document.documentElement.clientHeight,
+			flag = 1,
+			topNavDialogShow = 0;
 
-		arrow.addEventListener('touch', function () {
+		block.style.height = ch - topNav.offsetHeight + 16 + 'px';
+		block.style.top = '3.5rem';
+
+		block.onclick = function () {
+			if (topNavDialogShow) {
+				topNavDialog.style.display = 'none';
+				block.style.display = 'none';
+			}
+		}
+
+		for(var i = 0; i < tab.length; i++) {
+			tab[i].onclick = function () {
+				for(var x = 0; x < tab.length; x++) {
+					var span = tab[x].getElementsByTagName('span')[0];
+					span.className = '';
+				}
+				this.getElementsByTagName('span')[0].className = 'active';
+				topNavDialog.style.display = 'block';
+				block.style.display = 'block';
+				topNavDialogShow = 1;
+			}
+		}
+
+		arrow.addEventListener('touchstart', function () {
 			console.log('touch');
+		});
+		arrow.addEventListener('touchmove', function (event) {
+			console.log('event');
+			console.log(event);
 		});
 	</script>
 </body>
