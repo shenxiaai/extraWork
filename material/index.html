@@ -30,7 +30,7 @@
 	</div>
 	<div class="map">
 		<img src="images/map.jpg" width="100%" alt="">
-		<div class="dateTab">
+		<div class="dateTab" id="dateTab">
 			<li>日</li>
 			<li class="active">周</li>
 			<li>月</li>
@@ -106,6 +106,8 @@
 		var pullPan = document.querySelector('#pullPan'),
 			topNav = document.querySelector('#topNav'),
 			tab = topNav.querySelectorAll('.tab'),
+			dateTab = document.querySelector('#dateTab'),
+			dateTabLi = dateTab.getElementsByTagName('li'),
 			topNavDialog = document.querySelector('#topNavDialog'),
 			topNavDialogLi = document.querySelectorAll('#topNavDialog li'),
 			arrow = document.querySelector('#arrow'),
@@ -145,6 +147,17 @@
 				topNavDialog.style.display = 'block';
 				block.style.display = 'block';
 				topNavDialogShow = 1;
+			}
+		}
+
+		//map tab
+		console.log('dateTabLi.length = ' + dateTabLi.length);
+		for(var u = 0; u < dateTabLi.length; u++) {
+			dateTabLi[u].onclick = function () {
+				for(var x = 0; x < dateTabLi.length; x++) {
+					dateTabLi[x].className = '';
+				}
+				this.className = 'active';
 			}
 		}
 		
