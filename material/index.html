@@ -121,7 +121,7 @@
 		document.body.style.height = ch + 'px';
 		block.style.height = ch - topNav.offsetHeight + 16 + 'px';
 		block.style.top = '3.5rem';
-		pullPan.style.bottom = 3.3 - pullPan.offsetHeight/20 - 1.6 + 'rem';
+		pullPan.style.height = '6.5rem';
 
 		block.onclick = function () {
 			if (topNavDialogShow) {
@@ -166,12 +166,12 @@
 			if(pullPanShow) {
 				block.style.display = 'block';
 				map2.style.display = 'block';
-				pullPan.style.bottom = 0;
+				pullPan.style.height = '34rem';
 				pullPanShow = 0;
 			}else{
 				block.style.display = 'none';
 				map2.style.display = 'none';
-				pullPan.style.bottom = 3.3 - pullPan.offsetHeight/20 - 6.5 + 'rem';
+				pullPan.style.height = '6.5rem';
 				pullPanShow = 1;
 			}
 		});
