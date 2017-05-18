@@ -28,7 +28,14 @@
 		<li>钒原料</li>
 		<li>钒铝合金</li>
 	</div>
-	<div class="map"><img src="images/map.jpg" width="100%" alt=""></div>
+	<div class="map">
+		<img src="images/map.jpg" width="100%" alt="">
+		<div class="dateTab">
+			<li>日</li>
+			<li class="active">周</li>
+			<li>月</li>
+		</div>
+	</div>
 	<div class="pullPan" id="pullPan">
 		<div class="arrow" id="arrow"></div>
 		<ul>
@@ -42,41 +49,65 @@
 			<li>
 				<p>偏氨酸钒</p>
 				<p>厂家名称</p>
-				<p>2352<img src="images/up.jpg" alt=""></p>
+				<p class="red">34534</p>
+				<p><img src="images/up.jpg" alt="">2352</p>
 			</li>
 			<li>
 				<p>偏氨酸钒</p>
 				<p>厂家名称</p>
-				<p>2352<img src="images/up.jpg" alt=""></p>
+				<p class="red">34534</p>
+				<p class="red"><img src="images/up.jpg" alt="">2352</p>
 			</li>
 			<li>
 				<p>偏氨酸钒</p>
 				<p>厂家名称</p>
-				<p>2352<img src="images/up.jpg" alt=""></p>
+				<p>34534</p>
+				<p><img src="images/up.jpg" alt="">2352</p>
 			</li>
 			<li>
 				<p>偏氨酸钒</p>
 				<p>厂家名称</p>
-				<p>2352<img src="images/up.jpg" alt=""></p>
+				<p>34534</p>
+				<p class="red"><img src="images/down.jpg" alt="">2352</p>
 			</li>
 			<li>
 				<p>偏氨酸钒</p>
 				<p>厂家名称</p>
-				<p>2352<img src="images/up.jpg" alt=""></p>
+				<p class="red">34534</p>
+				<p><img src="images/down.jpg" alt="">2352</p>
 			</li>
 			<li>
 				<p>偏氨酸钒</p>
 				<p>厂家名称</p>
-				<p>2352<img src="images/up.jpg" alt=""></p>
+				<p>34534</p>
+				<p><img src="images/up.jpg" alt="">2352</p>
+			</li>
+			<li>
+				<p>偏氨酸钒</p>
+				<p>厂家名称</p>
+				<p>34534</p>
+				<p><img src="images/up.jpg" alt="">2352</p>
+			</li>
+			<li>
+				<p>偏氨酸钒</p>
+				<p>厂家名称</p>
+				<p>34534</p>
+				<p><img src="images/up.jpg" alt="">2352</p>
+			</li>
+			<li>
+				<p>偏氨酸钒</p>
+				<p>厂家名称</p>
+				<p>34534</p>
+				<p><img src="images/up.jpg" alt="">2352</p>
 			</li>
 		</ul>
 	</div>
 	<script>
 		var pullPan = document.querySelector('#pullPan'),
-			pullPanLi = document.querySelector('#pullPan li'),
 			topNav = document.querySelector('#topNav'),
 			tab = topNav.querySelectorAll('.tab'),
 			topNavDialog = document.querySelector('#topNavDialog'),
+			topNavDialogLi = document.querySelectorAll('#topNavDialog li'),
 			arrow = document.querySelector('#arrow'),
 			map2 = document.querySelector('#map2'),
 			block = document.querySelector('#block'),
@@ -88,10 +119,17 @@
 		document.body.style.height = ch + 'px';
 		block.style.height = ch - topNav.offsetHeight + 16 + 'px';
 		block.style.top = '3.5rem';
-		pullPan.style.bottom = 3.3 - pullPan.offsetHeight/20 - 2 + 'rem';
+		pullPan.style.bottom = 3.3 - pullPan.offsetHeight/20 - 1.6 + 'rem';
 
 		block.onclick = function () {
 			if (topNavDialogShow) {
+				topNavDialog.style.display = 'none';
+				block.style.display = 'none';
+			}
+		}
+
+		for (var w = 0; w < topNavDialogLi.length; w++) {
+			topNavDialogLi[w].onclick = function () {
 				topNavDialog.style.display = 'none';
 				block.style.display = 'none';
 			}
@@ -113,12 +151,14 @@
 
 		arrow.addEventListener('click', function () {
 			if(pullPanShow) {
+				block.style.display = 'block';
 				map2.style.display = 'block';
 				pullPan.style.bottom = 0;
 				pullPanShow = 0;
 			}else{
+				block.style.display = 'none';
 				map2.style.display = 'none';
-				pullPan.style.bottom = 3.3 - pullPan.offsetHeight/20 - 2 + 'rem';
+				pullPan.style.bottom = 3.3 - pullPan.offsetHeight/20 - 6.5 + 'rem';
 				pullPanShow = 1;
 			}
 		});
