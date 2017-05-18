@@ -118,7 +118,7 @@
 			pullPanShow = 1,
 			topNavDialogShow = 0;
 
-		// document.body.style.height = ch + 'px';
+		document.body.style.height = ch + 'px';
 		block.style.height = ch - topNav.offsetHeight + 16 + 'px';
 		block.style.top = '3.5rem';
 
@@ -161,7 +161,7 @@
 		}
 		
 
-		arrow.addEventListener('click', function () {
+		arrow.onclick = function () {
 			if(pullPanShow) {
 				block.style.display = 'block';
 				map2.style.display = 'block';
@@ -173,7 +173,7 @@
 				pullPan.style.height = '6.5rem';
 				pullPanShow = 1;
 			}
-		});
+		}
 	</script>
 </body>
 </html>
