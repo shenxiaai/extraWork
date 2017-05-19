@@ -38,14 +38,14 @@
 	</div>
 	<div class="pullPan" id="pullPan">
 		<div class="arrow" id="arrow"></div>
+		<div class="category">
+			<p>西安</p>
+			<p class="date">2017-04-21&nbsp;&nbsp;12:31:33</p>
+		</div>
+		<div class="map2" id="map2">
+			<div><img src="images/map2.jpg" width="100%" alt=""></div>
+		</div>
 		<ul>
-			<li class="category">
-				<p>西安</p>
-				<p class="date">2017-04-21&nbsp;&nbsp;12:31:33</p>
-			</li>
-			<li class="map2" id="map2">
-				<div><img src="images/map2.jpg" width="100%" alt=""></div>
-			</li>
 			<li>
 				<p>偏氨酸钒</p>
 				<p>厂家名称</p>
@@ -165,12 +165,14 @@
 		arrow.onclick = function () {
 			if(pullPanShow) {
 				pullPanUl.style.overflow = 'scroll';
+				pullPan.style.paddingTop = '18rem';
 				block.style.display = 'block';
 				map2.style.display = 'block';
 				pullPan.style.height = '34rem';
 				pullPanShow = 0;
 			}else{
 				pullPanUl.style.overflow = 'hidden';
+				pullPan.style.paddingTop = '3.3rem';
 				block.style.display = 'none';
 				map2.style.display = 'none';
 				pullPan.style.height = '6.5rem';
