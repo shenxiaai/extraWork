@@ -104,6 +104,7 @@
 	</div>
 	<script>
 		var pullPan = document.querySelector('#pullPan'),
+			pullPanUl = pullPan.getElementsByTagName('ul')[0],
 			topNav = document.querySelector('#topNav'),
 			tab = topNav.querySelectorAll('.tab'),
 			dateTab = document.querySelector('#dateTab'),
@@ -163,11 +164,13 @@
 
 		arrow.onclick = function () {
 			if(pullPanShow) {
+				pullPanUl.style.overflow = 'scroll';
 				block.style.display = 'block';
 				map2.style.display = 'block';
 				pullPan.style.height = '34rem';
 				pullPanShow = 0;
 			}else{
+				pullPanUl.style.overflow = 'hidden';
 				block.style.display = 'none';
 				map2.style.display = 'none';
 				pullPan.style.height = '6.5rem';
