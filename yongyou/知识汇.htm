@@ -30,6 +30,23 @@ PNG.fix('*');
 			$(this).parent().parent().parent().parent().parent().find('.inputstyle1').val(s);$(this).parents().find('.dropbox1').hide();
 		});
 		$('.site_wrap1').click(function(){$('.dropbox1').hide();});
+
+		$('#J_category li').on('click', function () {
+			$(this).addClass('active').siblings().removeClass('active');
+		});
+
+
+		$('#J_category li').on('mouseover', function () {
+			$(this).addClass('hover');
+		});
+
+		$('#J_category li').on('mouseout', function () {
+			$(this).removeClass('hover');
+		});
+
+		// $('#J_category li').mouseenter(function(){
+		// 	$(this).addClass('hover');
+		// });
 	});
 </script>
 </head>
@@ -454,244 +471,267 @@ PNG.fix('*');
 				</div>
 				<div class="leftitem">
 					<div id="category" class="category">
-            		<div class="category-bg">
-            		</div>
-            		<h2>
-                		<a href="#">
-                    		品牌规范
-                		</a>
-            		</h2>
-            		<div class="cate-list" style="display:block ">
-                		<ul id="J_category" load="1">
-                    		<li onmouseover="this.className='hover'" onmouseout="this.className=''">
-                        		<div class="cate-item">
-                            		<h3>
-                                		<a href="#"><em></em><s></s>
-                                    		市场洞察<i></i>
-                                		</a>
-                            		</h3>
-                        		</div>
-                        		<div class="cate-list-expand"><s></s>
-									<dl>
-										<dt><a href="#">图片资料</a></dt>
-										<dd><a href="#">用友2015誓师大会</a><a href="#" class="current">&bull;战略规划</a><a href="#">供应商大会 </a><a href="#" class="current"> X86服务器海报 </a><a href="#">战略规划</a></dd>
-									</dl>
-									<dl>
-										<dt><a href="#">视频资料</a></dt>
-										<dd><a href="#">用友2015誓师大会</a><a href="#">&bull;战略规划</a><a href="#">供应商大会 </a><a href="#"> X86服务器海报 </a><a href="#">战略规划</a><a href="#">用友2015誓师大会</a><a href="#">&bull;战略规划</a><a href="#">供应商大会 </a></dd>
-                                        </dd>
-									</dl>
-									<dl>
-										<dt><a href="#">文档资料</a></dt>
-										<dd><a href="#">用友2015誓师大会</a><a href="#">&bull;战略规划</a><a href="#">供应商大会 </a><a href="#"> X86服务器海报 </a><a href="#">战略规划</a></dd>
-									</dl>
-									<dl>
-										<dt><a href="#">PPT资料</a></dt>
-										<dd><a href="#">用友2015誓师大会</a><a href="#">&bull;战略规划</a><a href="#">供应商大会 </a><a href="#"> X86服务器海报 </a><a href="#">战略规划</a></dd>
-									</dl>
-									<dl>
-										<dt><a href="#">其他资料</a></dt>
-										<dd><a href="#">用友2015誓师大会</a><a href="#">&bull;战略规划</a><a href="#">供应商大会 </a><a href="#"> X86服务器海报 </a><a href="#">战略规划</a></dd>
-									</dl>
-								</div>
-                            </li>
-                    		<li onmouseover="this.className='hover'" onmouseout="this.className=''">
-                        		<div class="cate-item">
-                            		<h3>
-                                		<a href="#"><em></em><s></s>
-                                    		战略合作<i></i>
-                                		</a>
-                            		</h3>
-                        		</div>
-                        		<div class="cate-list-expand"><s></s>
-									<dl>
-										<dt><a href="#">图片资料</a></dt>
-										<dd><a href="#">用友2015誓师大会</a><a href="#">&bull;战略规划</a><a href="#">供应商大会 </a><a href="#"> X86服务器海报 </a><a href="#">战略规划</a></dd>
-									</dl>
-									<dl>
-										<dt><a href="#">视频资料</a></dt>
-										<dd><a href="#">用友2015誓师大会</a><a href="#">&bull;战略规划</a><a href="#">供应商大会 </a><a href="#"> X86服务器海报 </a><a href="#">战略规划</a><a href="#">用友2015誓师大会</a><a href="#">&bull;战略规划</a><a href="#">供应商大会 </a></dd>
-                                        </dd>
-									</dl>
-									<dl>
-										<dt><a href="#">文档资料</a></dt>
-										<dd><a href="#">用友2015誓师大会</a><a href="#">&bull;战略规划</a><a href="#">供应商大会 </a><a href="#"> X86服务器海报 </a><a href="#">战略规划</a></dd>
-									</dl>
-									<dl>
-										<dt><a href="#">PPT资料</a></dt>
-										<dd><a href="#">用友2015誓师大会</a><a href="#">&bull;战略规划</a><a href="#">供应商大会 </a><a href="#"> X86服务器海报 </a><a href="#">战略规划</a></dd>
-									</dl>
-									<dl>
-										<dt><a href="#">其他资料</a></dt>
-										<dd><a href="#">用友2015誓师大会</a><a href="#">&bull;战略规划</a><a href="#">供应商大会 </a><a href="#"> X86服务器海报 </a><a href="#">战略规划</a></dd>
-									</dl>
-								</div>
-                            </li>
-                            <li onmouseover="this.className='hover'" onmouseout="this.className=''">
-                        		<div class="cate-item">
-                            		<h3>
-                                		<a href="#"><em></em><s></s>
-                                    		市场活动<i></i>
-                                		</a>
-                            		</h3>
-                        		</div>
-                        		<div class="cate-list-expand"><s></s>
-									<dl>
-										<dt><a href="#">图片资料</a></dt>
-										<dd><a href="#">用友2015誓师大会</a><a href="#">&bull;战略规划</a><a href="#">供应商大会 </a><a href="#"> X86服务器海报 </a><a href="#">战略规划</a></dd>
-									</dl>
-									<dl>
-										<dt><a href="#">视频资料</a></dt>
-										<dd><a href="#">用友2015誓师大会</a><a href="#">&bull;战略规划</a><a href="#">供应商大会 </a><a href="#"> X86服务器海报 </a><a href="#">战略规划</a><a href="#">用友2015誓师大会</a><a href="#">&bull;战略规划</a><a href="#">供应商大会 </a></dd>
-                                        </dd>
-									</dl>
-									<dl>
-										<dt><a href="#">文档资料</a></dt>
-										<dd><a href="#">用友2015誓师大会</a><a href="#">&bull;战略规划</a><a href="#">供应商大会 </a><a href="#"> X86服务器海报 </a><a href="#">战略规划</a></dd>
-									</dl>
-									<dl>
-										<dt><a href="#">PPT资料</a></dt>
-										<dd><a href="#">用友2015誓师大会</a><a href="#">&bull;战略规划</a><a href="#">供应商大会 </a><a href="#"> X86服务器海报 </a><a href="#">战略规划</a></dd>
-									</dl>
-									<dl>
-										<dt><a href="#">其他资料</a></dt>
-										<dd><a href="#">用友2015誓师大会</a><a href="#">&bull;战略规划</a><a href="#">供应商大会 </a><a href="#"> X86服务器海报 </a><a href="#">战略规划</a></dd>
-									</dl>
-								</div>
-                            </li>
-                            <li onmouseover="this.className='hover'" onmouseout="this.className=''">
-                        		<div class="cate-item">
-                            		<h3>
-                                		<a href="#"><em></em><s></s>
-                                    		公共传播<i></i>
-                                		</a>
-                            		</h3>
-                        		</div>
-                        		<div class="cate-list-expand"><s></s>
-									<dl>
-										<dt><a href="#">图片资料</a></dt>
-										<dd><a href="#">用友2015誓师大会</a><a href="#">&bull;战略规划</a><a href="#">供应商大会 </a><a href="#"> X86服务器海报 </a><a href="#">战略规划</a></dd>
-									</dl>
-									<dl>
-										<dt><a href="#">视频资料</a></dt>
-										<dd><a href="#">用友2015誓师大会</a><a href="#">&bull;战略规划</a><a href="#">供应商大会 </a><a href="#"> X86服务器海报 </a><a href="#">战略规划</a><a href="#">用友2015誓师大会</a><a href="#">&bull;战略规划</a><a href="#">供应商大会 </a></dd>
-                                        </dd>
-									</dl>
-									<dl>
-										<dt><a href="#">文档资料</a></dt>
-										<dd><a href="#">用友2015誓师大会</a><a href="#">&bull;战略规划</a><a href="#">供应商大会 </a><a href="#"> X86服务器海报 </a><a href="#">战略规划</a></dd>
-									</dl>
-									<dl>
-										<dt><a href="#">PPT资料</a></dt>
-										<dd><a href="#">用友2015誓师大会</a><a href="#">&bull;战略规划</a><a href="#">供应商大会 </a><a href="#"> X86服务器海报 </a><a href="#">战略规划</a></dd>
-									</dl>
-									<dl>
-										<dt><a href="#">其他资料</a></dt>
-										<dd><a href="#">用友2015誓师大会</a><a href="#">&bull;战略规划</a><a href="#">供应商大会 </a><a href="#"> X86服务器海报 </a><a href="#">战略规划</a></dd>
-									</dl>
-								</div>
-                            </li>
-                            <li onmouseover="this.className='hover'" onmouseout="this.className=''">
-                        		<div class="cate-item">
-                            		<h3>
-                                		<a href="#"><em></em><s></s>
-                                    		营销工具<i></i>
-                                		</a>
-                            		</h3>
-                        		</div>
-                        		<div class="cate-list-expand"><s></s>
-									<dl>
-										<dt><a href="#">图片资料</a></dt>
-										<dd><a href="#">用友2015誓师大会</a><a href="#">&bull;战略规划</a><a href="#">供应商大会 </a><a href="#"> X86服务器海报 </a><a href="#">战略规划</a></dd>
-									</dl>
-									<dl>
-										<dt><a href="#">视频资料</a></dt>
-										<dd><a href="#">用友2015誓师大会</a><a href="#">&bull;战略规划</a><a href="#">供应商大会 </a><a href="#"> X86服务器海报 </a><a href="#">战略规划</a><a href="#">用友2015誓师大会</a><a href="#">&bull;战略规划</a><a href="#">供应商大会 </a></dd>
-                                        </dd>
-									</dl>
-									<dl>
-										<dt><a href="#">文档资料</a></dt>
-										<dd><a href="#">用友2015誓师大会</a><a href="#">&bull;战略规划</a><a href="#">供应商大会 </a><a href="#"> X86服务器海报 </a><a href="#">战略规划</a></dd>
-									</dl>
-									<dl>
-										<dt><a href="#">PPT资料</a></dt>
-										<dd><a href="#">用友2015誓师大会</a><a href="#">&bull;战略规划</a><a href="#">供应商大会 </a><a href="#"> X86服务器海报 </a><a href="#">战略规划</a></dd>
-									</dl>
-									<dl>
-										<dt><a href="#">其他资料</a></dt>
-										<dd><a href="#">用友2015誓师大会</a><a href="#">&bull;战略规划</a><a href="#">供应商大会 </a><a href="#"> X86服务器海报 </a><a href="#">战略规划</a></dd>
-									</dl>
-								</div>
-                            </li>
-                            <li onmouseover="this.className='hover'" onmouseout="this.className=''">
-                        		<div class="cate-item">
-                            		<h3>
-                                		<a href="#"><em></em><s></s>
-                                    		今日用友<i></i>
-                                		</a>
-                            		</h3>
-                        		</div>
-                        		<div class="cate-list-expand"><s></s>
-									<dl>
-										<dt><a href="#">图片资料</a></dt>
-										<dd><a href="#">用友2015誓师大会</a><a href="#">&bull;战略规划</a><a href="#">供应商大会 </a><a href="#"> X86服务器海报 </a><a href="#">战略规划</a></dd>
-									</dl>
-									<dl>
-										<dt><a href="#">视频资料</a></dt>
-										<dd><a href="#">用友2015誓师大会</a><a href="#">&bull;战略规划</a><a href="#">供应商大会 </a><a href="#"> X86服务器海报 </a><a href="#">战略规划</a><a href="#">用友2015誓师大会</a><a href="#">&bull;战略规划</a><a href="#">供应商大会 </a></dd>
-                                        </dd>
-									</dl>
-									<dl>
-										<dt><a href="#">文档资料</a></dt>
-										<dd><a href="#">用友2015誓师大会</a><a href="#">&bull;战略规划</a><a href="#">供应商大会 </a><a href="#"> X86服务器海报 </a><a href="#">战略规划</a></dd>
-									</dl>
-									<dl>
-										<dt><a href="#">PPT资料</a></dt>
-										<dd><a href="#">用友2015誓师大会</a><a href="#">&bull;战略规划</a><a href="#">供应商大会 </a><a href="#"> X86服务器海报 </a><a href="#">战略规划</a></dd>
-									</dl>
-									<dl>
-										<dt><a href="#">其他资料</a></dt>
-										<dd><a href="#">用友2015誓师大会</a><a href="#">&bull;战略规划</a><a href="#">供应商大会 </a><a href="#"> X86服务器海报 </a><a href="#">战略规划</a></dd>
-									</dl>
-								</div>
-                            </li>
-							<li onmouseover="this.className='hover'" onmouseout="this.className=''">
-                        		<div class="cate-item">
-                            		<h3>
-                                		<a href="#"><em></em><s></s>
-                                    		企业荣誉<i></i>
-                                		</a>
-                            		</h3>
-                        		</div>
-                        		<div class="cate-list-expand"><s></s>
-									<dl>
-										<dt><a href="#">图片资料</a></dt>
-										<dd><a href="#">用友2015誓师大会</a><a href="#">&bull;战略规划</a><a href="#">供应商大会 </a><a href="#"> X86服务器海报 </a><a href="#">战略规划</a></dd>
-									</dl>
-									<dl>
-										<dt><a href="#">视频资料</a></dt>
-										<dd><a href="#">用友2015誓师大会</a><a href="#">&bull;战略规划</a><a href="#">供应商大会 </a><a href="#"> X86服务器海报 </a><a href="#">战略规划</a><a href="#">用友2015誓师大会</a><a href="#">&bull;战略规划</a><a href="#">供应商大会 </a></dd>
-                                        </dd>
-									</dl>
-									<dl>
-										<dt><a href="#">文档资料</a></dt>
-										<dd><a href="#">用友2015誓师大会</a><a href="#">&bull;战略规划</a><a href="#">供应商大会 </a><a href="#"> X86服务器海报 </a><a href="#">战略规划</a></dd>
-									</dl>
-									<dl>
-										<dt><a href="#">PPT资料</a></dt>
-										<dd><a href="#">用友2015誓师大会</a><a href="#">&bull;战略规划</a><a href="#">供应商大会 </a><a href="#"> X86服务器海报 </a><a href="#">战略规划</a></dd>
-									</dl>
-									<dl>
-										<dt><a href="#">其他资料</a></dt>
-										<dd><a href="#">用友2015誓师大会</a><a href="#">&bull;战略规划</a><a href="#">供应商大会 </a><a href="#"> X86服务器海报 </a><a href="#">战略规划</a></dd>
-									</dl>
-								</div>
-                            </li>
-                        </ul>
-            		</div>
-        		</div>
-        		
-			</div>
+	            		<div class="cate-list" style="display:block ">
+	                		<ul id="J_category" load="1">
+	                    		<li class="active">
+	                        		<div class="cate-item">
+	                            		<h3>
+	                                		<a href="#"><em></em><s></s>品牌规范<i></i></a>
+	                            		</h3>
+	                        		</div>
+	                        		<div class="cate-list-expand"><s></s>
+										<dl>
+											<dt><a href="#">图片资料</a></dt>
+											<dd><a href="#">用友2015誓师大会</a><a href="#" class="current">&bull;战略规划</a><a href="#">供应商大会 </a><a href="#" class="current"> X86服务器海报 </a><a href="#">战略规划</a></dd>
+										</dl>
+										<dl>
+											<dt><a href="#">视频资料</a></dt>
+											<dd><a href="#">用友2015誓师大会</a><a href="#">&bull;战略规划</a><a href="#">供应商大会 </a><a href="#"> X86服务器海报 </a><a href="#">战略规划</a><a href="#">用友2015誓师大会</a><a href="#">&bull;战略规划</a><a href="#">供应商大会 </a></dd>
+	                                        </dd>
+										</dl>
+										<dl>
+											<dt><a href="#">文档资料</a></dt>
+											<dd><a href="#">用友2015誓师大会</a><a href="#">&bull;战略规划</a><a href="#">供应商大会 </a><a href="#"> X86服务器海报 </a><a href="#">战略规划</a></dd>
+										</dl>
+										<dl>
+											<dt><a href="#">PPT资料</a></dt>
+											<dd><a href="#">用友2015誓师大会</a><a href="#">&bull;战略规划</a><a href="#">供应商大会 </a><a href="#"> X86服务器海报 </a><a href="#">战略规划</a></dd>
+										</dl>
+										<dl>
+											<dt><a href="#">其他资料</a></dt>
+											<dd><a href="#">用友2015誓师大会</a><a href="#">&bull;战略规划</a><a href="#">供应商大会 </a><a href="#"> X86服务器海报 </a><a href="#">战略规划</a></dd>
+										</dl>
+									</div>
+	                            </li>
+	                    		<li>
+	                        		<div class="cate-item">
+	                            		<h3>
+	                                		<a href="#"><em></em><s></s>
+	                                    		市场洞察<i></i>
+	                                		</a>
+	                            		</h3>
+	                        		</div>
+	                        		<div class="cate-list-expand"><s></s>
+										<dl>
+											<dt><a href="#">图片资料</a></dt>
+											<dd><a href="#">用友2015誓师大会</a><a href="#" class="current">&bull;战略规划</a><a href="#">供应商大会 </a><a href="#" class="current"> X86服务器海报 </a><a href="#">战略规划</a></dd>
+										</dl>
+										<dl>
+											<dt><a href="#">视频资料</a></dt>
+											<dd><a href="#">用友2015誓师大会</a><a href="#">&bull;战略规划</a><a href="#">供应商大会 </a><a href="#"> X86服务器海报 </a><a href="#">战略规划</a><a href="#">用友2015誓师大会</a><a href="#">&bull;战略规划</a><a href="#">供应商大会 </a></dd>
+	                                        </dd>
+										</dl>
+										<dl>
+											<dt><a href="#">文档资料</a></dt>
+											<dd><a href="#">用友2015誓师大会</a><a href="#">&bull;战略规划</a><a href="#">供应商大会 </a><a href="#"> X86服务器海报 </a><a href="#">战略规划</a></dd>
+										</dl>
+										<dl>
+											<dt><a href="#">PPT资料</a></dt>
+											<dd><a href="#">用友2015誓师大会</a><a href="#">&bull;战略规划</a><a href="#">供应商大会 </a><a href="#"> X86服务器海报 </a><a href="#">战略规划</a></dd>
+										</dl>
+										<dl>
+											<dt><a href="#">其他资料</a></dt>
+											<dd><a href="#">用友2015誓师大会</a><a href="#">&bull;战略规划</a><a href="#">供应商大会 </a><a href="#"> X86服务器海报 </a><a href="#">战略规划</a></dd>
+										</dl>
+									</div>
+	                            </li>
+	                    		<li>
+	                        		<div class="cate-item">
+	                            		<h3>
+	                                		<a href="#"><em></em><s></s>
+	                                    		战略合作<i></i>
+	                                		</a>
+	                                		<div class="dot">3</div>
+	                            		</h3>
+	                        		</div>
+	                        		<div class="cate-list-expand"><s></s>
+										<dl>
+											<dt><a href="#">图片资料</a></dt>
+											<dd><a href="#">用友2015誓师大会</a><a href="#">&bull;战略规划</a><a href="#">供应商大会 </a><a href="#"> X86服务器海报 </a><a href="#">战略规划</a></dd>
+										</dl>
+										<dl>
+											<dt><a href="#">视频资料</a></dt>
+											<dd><a href="#">用友2015誓师大会</a><a href="#">&bull;战略规划</a><a href="#">供应商大会 </a><a href="#"> X86服务器海报 </a><a href="#">战略规划</a><a href="#">用友2015誓师大会</a><a href="#">&bull;战略规划</a><a href="#">供应商大会 </a></dd>
+	                                        </dd>
+										</dl>
+										<dl>
+											<dt><a href="#">文档资料</a></dt>
+											<dd><a href="#">用友2015誓师大会</a><a href="#">&bull;战略规划</a><a href="#">供应商大会 </a><a href="#"> X86服务器海报 </a><a href="#">战略规划</a></dd>
+										</dl>
+										<dl>
+											<dt><a href="#">PPT资料</a></dt>
+											<dd><a href="#">用友2015誓师大会</a><a href="#">&bull;战略规划</a><a href="#">供应商大会 </a><a href="#"> X86服务器海报 </a><a href="#">战略规划</a></dd>
+										</dl>
+										<dl>
+											<dt><a href="#">其他资料</a></dt>
+											<dd><a href="#">用友2015誓师大会</a><a href="#">&bull;战略规划</a><a href="#">供应商大会 </a><a href="#"> X86服务器海报 </a><a href="#">战略规划</a></dd>
+										</dl>
+									</div>
+	                            </li>
+	                            <li>
+	                        		<div class="cate-item">
+	                            		<h3>
+	                                		<a href="#"><em></em><s></s>
+	                                    		市场活动<i></i>
+	                                		</a>
+	                            		</h3>
+	                        		</div>
+	                        		<div class="cate-list-expand"><s></s>
+										<dl>
+											<dt><a href="#">图片资料</a></dt>
+											<dd><a href="#">用友2015誓师大会</a><a href="#">&bull;战略规划</a><a href="#">供应商大会 </a><a href="#"> X86服务器海报 </a><a href="#">战略规划</a></dd>
+										</dl>
+										<dl>
+											<dt><a href="#">视频资料</a></dt>
+											<dd><a href="#">用友2015誓师大会</a><a href="#">&bull;战略规划</a><a href="#">供应商大会 </a><a href="#"> X86服务器海报 </a><a href="#">战略规划</a><a href="#">用友2015誓师大会</a><a href="#">&bull;战略规划</a><a href="#">供应商大会 </a></dd>
+	                                        </dd>
+										</dl>
+										<dl>
+											<dt><a href="#">文档资料</a></dt>
+											<dd><a href="#">用友2015誓师大会</a><a href="#">&bull;战略规划</a><a href="#">供应商大会 </a><a href="#"> X86服务器海报 </a><a href="#">战略规划</a></dd>
+										</dl>
+										<dl>
+											<dt><a href="#">PPT资料</a></dt>
+											<dd><a href="#">用友2015誓师大会</a><a href="#">&bull;战略规划</a><a href="#">供应商大会 </a><a href="#"> X86服务器海报 </a><a href="#">战略规划</a></dd>
+										</dl>
+										<dl>
+											<dt><a href="#">其他资料</a></dt>
+											<dd><a href="#">用友2015誓师大会</a><a href="#">&bull;战略规划</a><a href="#">供应商大会 </a><a href="#"> X86服务器海报 </a><a href="#">战略规划</a></dd>
+										</dl>
+									</div>
+	                            </li>
+	                            <li>
+	                        		<div class="cate-item">
+	                            		<h3>
+	                                		<a href="#"><em></em><s></s>
+	                                    		公共传播<i></i>
+	                                		</a>
+	                            		</h3>
+	                        		</div>
+	                        		<div class="cate-list-expand"><s></s>
+										<dl>
+											<dt><a href="#">图片资料</a></dt>
+											<dd><a href="#">用友2015誓师大会</a><a href="#">&bull;战略规划</a><a href="#">供应商大会 </a><a href="#"> X86服务器海报 </a><a href="#">战略规划</a></dd>
+										</dl>
+										<dl>
+											<dt><a href="#">视频资料</a></dt>
+											<dd><a href="#">用友2015誓师大会</a><a href="#">&bull;战略规划</a><a href="#">供应商大会 </a><a href="#"> X86服务器海报 </a><a href="#">战略规划</a><a href="#">用友2015誓师大会</a><a href="#">&bull;战略规划</a><a href="#">供应商大会 </a></dd>
+	                                        </dd>
+										</dl>
+										<dl>
+											<dt><a href="#">文档资料</a></dt>
+											<dd><a href="#">用友2015誓师大会</a><a href="#">&bull;战略规划</a><a href="#">供应商大会 </a><a href="#"> X86服务器海报 </a><a href="#">战略规划</a></dd>
+										</dl>
+										<dl>
+											<dt><a href="#">PPT资料</a></dt>
+											<dd><a href="#">用友2015誓师大会</a><a href="#">&bull;战略规划</a><a href="#">供应商大会 </a><a href="#"> X86服务器海报 </a><a href="#">战略规划</a></dd>
+										</dl>
+										<dl>
+											<dt><a href="#">其他资料</a></dt>
+											<dd><a href="#">用友2015誓师大会</a><a href="#">&bull;战略规划</a><a href="#">供应商大会 </a><a href="#"> X86服务器海报 </a><a href="#">战略规划</a></dd>
+										</dl>
+									</div>
+	                            </li>
+	                            <li>
+	                        		<div class="cate-item">
+	                            		<h3>
+	                                		<a href="#"><em></em><s></s>
+	                                    		营销工具<i></i>
+	                                		</a>
+	                            		</h3>
+	                        		</div>
+	                        		<div class="cate-list-expand"><s></s>
+										<dl>
+											<dt><a href="#">图片资料</a></dt>
+											<dd><a href="#">用友2015誓师大会</a><a href="#">&bull;战略规划</a><a href="#">供应商大会 </a><a href="#"> X86服务器海报 </a><a href="#">战略规划</a></dd>
+										</dl>
+										<dl>
+											<dt><a href="#">视频资料</a></dt>
+											<dd><a href="#">用友2015誓师大会</a><a href="#">&bull;战略规划</a><a href="#">供应商大会 </a><a href="#"> X86服务器海报 </a><a href="#">战略规划</a><a href="#">用友2015誓师大会</a><a href="#">&bull;战略规划</a><a href="#">供应商大会 </a></dd>
+	                                        </dd>
+										</dl>
+										<dl>
+											<dt><a href="#">文档资料</a></dt>
+											<dd><a href="#">用友2015誓师大会</a><a href="#">&bull;战略规划</a><a href="#">供应商大会 </a><a href="#"> X86服务器海报 </a><a href="#">战略规划</a></dd>
+										</dl>
+										<dl>
+											<dt><a href="#">PPT资料</a></dt>
+											<dd><a href="#">用友2015誓师大会</a><a href="#">&bull;战略规划</a><a href="#">供应商大会 </a><a href="#"> X86服务器海报 </a><a href="#">战略规划</a></dd>
+										</dl>
+										<dl>
+											<dt><a href="#">其他资料</a></dt>
+											<dd><a href="#">用友2015誓师大会</a><a href="#">&bull;战略规划</a><a href="#">供应商大会 </a><a href="#"> X86服务器海报 </a><a href="#">战略规划</a></dd>
+										</dl>
+									</div>
+	                            </li>
+	                            <li>
+	                        		<div class="cate-item">
+	                            		<h3>
+	                                		<a href="#"><em></em><s></s>
+	                                    		今日用友<i></i>
+	                                		</a>
+	                            		</h3>
+	                        		</div>
+	                        		<div class="cate-list-expand"><s></s>
+										<dl>
+											<dt><a href="#">图片资料</a></dt>
+											<dd><a href="#">用友2015誓师大会</a><a href="#">&bull;战略规划</a><a href="#">供应商大会 </a><a href="#"> X86服务器海报 </a><a href="#">战略规划</a></dd>
+										</dl>
+										<dl>
+											<dt><a href="#">视频资料</a></dt>
+											<dd><a href="#">用友2015誓师大会</a><a href="#">&bull;战略规划</a><a href="#">供应商大会 </a><a href="#"> X86服务器海报 </a><a href="#">战略规划</a><a href="#">用友2015誓师大会</a><a href="#">&bull;战略规划</a><a href="#">供应商大会 </a></dd>
+	                                        </dd>
+										</dl>
+										<dl>
+											<dt><a href="#">文档资料</a></dt>
+											<dd><a href="#">用友2015誓师大会</a><a href="#">&bull;战略规划</a><a href="#">供应商大会 </a><a href="#"> X86服务器海报 </a><a href="#">战略规划</a></dd>
+										</dl>
+										<dl>
+											<dt><a href="#">PPT资料</a></dt>
+											<dd><a href="#">用友2015誓师大会</a><a href="#">&bull;战略规划</a><a href="#">供应商大会 </a><a href="#"> X86服务器海报 </a><a href="#">战略规划</a></dd>
+										</dl>
+										<dl>
+											<dt><a href="#">其他资料</a></dt>
+											<dd><a href="#">用友2015誓师大会</a><a href="#">&bull;战略规划</a><a href="#">供应商大会 </a><a href="#"> X86服务器海报 </a><a href="#">战略规划</a></dd>
+										</dl>
+									</div>
+	                            </li>
+								<li>
+	                        		<div class="cate-item">
+	                            		<h3>
+	                                		<a href="#"><em></em><s></s>
+	                                    		企业荣誉<i></i>
+	                                		</a>
+	                            		</h3>
+	                        		</div>
+	                        		<div class="cate-list-expand"><s></s>
+										<dl>
+											<dt><a href="#">图片资料</a></dt>
+											<dd><a href="#">用友2015誓师大会</a><a href="#">&bull;战略规划</a><a href="#">供应商大会 </a><a href="#"> X86服务器海报 </a><a href="#">战略规划</a></dd>
+										</dl>
+										<dl>
+											<dt><a href="#">视频资料</a></dt>
+											<dd><a href="#">用友2015誓师大会</a><a href="#">&bull;战略规划</a><a href="#">供应商大会 </a><a href="#"> X86服务器海报 </a><a href="#">战略规划</a><a href="#">用友2015誓师大会</a><a href="#">&bull;战略规划</a><a href="#">供应商大会 </a></dd>
+	                                        </dd>
+										</dl>
+										<dl>
+											<dt><a href="#">文档资料</a></dt>
+											<dd><a href="#">用友2015誓师大会</a><a href="#">&bull;战略规划</a><a href="#">供应商大会 </a><a href="#"> X86服务器海报 </a><a href="#">战略规划</a></dd>
+										</dl>
+										<dl>
+											<dt><a href="#">PPT资料</a></dt>
+											<dd><a href="#">用友2015誓师大会</a><a href="#">&bull;战略规划</a><a href="#">供应商大会 </a><a href="#"> X86服务器海报 </a><a href="#">战略规划</a></dd>
+										</dl>
+										<dl>
+											<dt><a href="#">其他资料</a></dt>
+											<dd><a href="#">用友2015誓师大会</a><a href="#">&bull;战略规划</a><a href="#">供应商大会 </a><a href="#"> X86服务器海报 </a><a href="#">战略规划</a></dd>
+										</dl>
+									</div>
+	                            </li>
+	                        </ul>
+	            		</div>
+	        		</div>
+				</div>
 
 				</div>
 			</div>
