@@ -364,8 +364,8 @@ form  label.validate_right{color:#000;font-style:normal;display:none}
 .search_part2 .txt1{margin-left:83px;border:1px solid #cccccc;height:35px;position:relative}
 .search_part2 .txt1 .input1{float:left;margin-left:10px;}
 .search_part2 .txt1 .inputstyle1{font-size:14px;width:78px;border:none;height:35px;line-height:35px;background:none;outline:none;color:#434343;}
-.search_condition dl dt{display:inline-block;width:100%;border-bottom:1px solid #e8e8e8;position:relative;font-size:14px}
-.search_condition dl dt strong{font-weight:400;width:105px;height:16px;line-height:16px;top:50%;margin-top:-8px;position:absolute;text-align:center}
+.search_condition dl dt{display:inline-block;width:100%;min-height: 40px;border-bottom:1px solid #e8e8e8;position:relative;font-size:14px}
+.search_condition dl dt strong{font-weight:400;width:105px;height:16px;line-height:16px;top:50%;margin-top:-8px;position:absolute;text-align:center;color: #434343;}
 .search_condition dl dt .txt1{margin-left:106px;margin-right:16px;position:relative;padding-top:8px;}
 .search_condition dl dt .txt1 ul{margin-right:-30px;height:30px;overflow:hidden}
 .search_condition dl dt .txt1 ul.current{height:auto;overflow:auto;}
@@ -547,3 +547,6 @@ form  label.validate_right{color:#000;font-style:normal;display:none}
 .tjlist ul li .box7 .item-info h2 a{font-size: 18px;}
 .tjlist ul li .box7 .item-info p{color: #8e8e8e;}
 .tjlist ul li .box7 .item-info h3{color: #c2c2c2;}
+
+.search_condition dl dt a.icon_more{position:absolute;right:0;top:6px;width:27px;height:27px;background:url(../images/icon_down5.png) no-repeat;}
+.search_condition dl dt.current{height:auto;overflow:auto;}
