@@ -1,0 +1,127 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>登录</title>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<meta content="zh-cn" http-equiv="content-language" />
+<meta content="" name="copyright" />
+<link rel="stylesheet" type="text/css" href="css/style.css" />
+<link rel="stylesheet" type="text/css" href="css/public.css" />
+<script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+<script type="text/javascript" src="js/jquery.validation.min.js"></script>
+<script>
+$(function(){
+$('#login_form').validate({
+        errorPlacement: function(error, element){
+            var error_td = element.parent();
+			error_td.addClass('erros');
+            error_td.append(error);
+        },
+        success : function(label){
+			label.parent().removeClass('erros');
+            label.addClass('validate_right').text('');
+        },
+        onkeyup: false,
+        rules : {
+            phone : {
+                required : true,
+                minlength: 1,
+				maxlength: 20
+            },
+            password : {
+                required : true,
+                minlength: 4,
+				maxlength: 20
+            }
+        },
+        messages : {
+            phone : {
+                required : '请输入手机号',
+				minlength: '请输入正确的手机号码',
+				maxlength: '请输入正确的手机号码'
+				
+            },
+            password  : {
+                required : '请输入密码',
+                minlength: '密码长度应在6-20个字符之间',
+				maxlength: '密码长度应在6-20个字符之间'
+            }
+        }
+    });
+});
+
+
+</script>
+
+<!--[if lte IE 6]> 
+<script type="text/javascript" src="js/PNG.js"></script> 
+<script> 
+PNG.fix('*'); 
+</script> 
+<![endif]-->
+</head>
+<body>
+<div class="wrap">
+	<div class="header2">
+		<div class="header2_con">
+			<h1>
+				<a href="#"><img src="images/logo.png" /></a>
+			</h1>
+			<div class="header_right">
+				<p>
+					
+				</p>
+			</div>
+		</div>
+	</div>
+	<div class="content">
+		<div class="site_wrap2">
+			<div class="site_wrap2_con">
+				<div class="login_wrap"><s></s>
+					<div class="login_left">
+						<img src="images/login_pic.png" />
+					</div>
+					<div class="login_right">
+						<form  name="" id="login_form" method="post" action="#">
+
+						<div class="login_form">
+							<h1>用友知识库登陆</h1>
+							<dl>
+								<dt>
+									<input type="text" class="inputstyle1" id="phone"  name="phone" placeholder="手机号/邮箱号" />
+									<i class="icon1"></i>
+								</dt>
+								<dt>
+									<input type="password" class="inputstyle1" id="password"  name="password" placeholder="密码" />
+									<i class="icon2"></i>
+								</dt>
+								<div class="jzmm">
+									<label>
+										<i></i>
+										<span>记住密码</span>
+									</label>
+								</div>
+								<dd>
+									<p>
+										<input type="submit" class="inputbtn1" value="登录" />
+									</p>
+								</dd>
+							</dl>
+						</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="footer2">
+		<div class="footer2_con">
+			<p>版权所有：1998-2017用友集团ICP备11035381 京公网安备110108007970号 <a href="#">法律公告</a>|<a href="#">隐私保护</a><br/>Copyright©2017 yongyou.ALL rights reserved</p>
+		</div>
+	</div>
+</div>
+</body>
+</html>

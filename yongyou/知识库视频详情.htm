@@ -1,0 +1,350 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>知识库视频详情</title>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<meta content="zh-cn" http-equiv="content-language" />
+<meta content="" name="copyright" />
+<link rel="stylesheet" type="text/css" href="css/style.css" />
+<link rel="stylesheet" type="text/css" href="css/public.css" />
+<script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+<!--[if lte IE 6]> 
+<script type="text/javascript" src="js/PNG.js"></script> 
+<script> 
+PNG.fix('*'); 
+</script> 
+<![endif]-->
+<script>
+$(function(){
+	$('.icon_share').click(function(){$('#sharebox').toggle();});
+	$('.search_part_con h4 .inputstyle1').click(function(){$('.dropbox1').show();});
+	$('.dropbox1 ul li a').click(function(){
+	var s = $(this).html();
+		$(this).parent().parent().parent().parent().parent().find('.inputstyle1').val(s);$(this).parents().find('.dropbox1').hide();
+	});
+	$('.video_info .left ul li a.a1').click(function(){$(this).toggleClass('current');});
+	$('.video_info .left ul li a.a3').click(function(){$(this).toggleClass('current');});
+ $('.site_wrap1').click(function(){$('.dropbox1').hide();});
+	});
+</script>
+</head>
+<body>
+<div class="overlay" id="sharebox" style="display:none">
+	<div class="fz_box">
+    	<div class="hd">
+        	<h3>复制链接</h3>
+        </div>
+        <div class="bd">
+        	<div class="fz_form">
+            	<input type="text" class="inputstyle1" value="http://ms.lenovo.com.cn/index.php?s=/home/index/index.html" /><input type="button" class="inputbtn1" value="复制链接" />
+            </div>
+        </div>
+    </div>
+</div>
+<div class="wrap">
+	<div class="header">
+		<div class="indexheader">
+			<div class="indexheader_con">
+				<h1>
+					<a href="#">
+						<img src="images/logo.png" />
+					</a>
+				</h1>
+				<div class="header_right">
+					<ul>
+						<li>
+							<a href="#">个人中心<i>1</i></a>
+						</li>
+						<li>
+							<img src="images/user_pic.png" />
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="menu">
+			<div class="menu_con">
+				<div class="left">
+					<ul>
+						<li class="current">
+							<a href="#">首页<i></i></a>
+						</li>
+						<li>
+							<a href="#">知识汇<i></i></a>
+						</li>
+						<li>
+							<a href="#">订阅中心<i></i></a>
+						</li>
+					</ul>
+				</div>
+				<div class="right">
+					<div class="search_part">
+						<div class="search_part_con" >
+                        <h4>
+							<input type="text" class="inputstyle1" placeholder="搜索站内资料" />
+							<input type="button" class="inputbtn1" value="&nbsp;" />
+                            <div class="dropbox1">
+                            	<ul>
+                                	<li>
+                                    	<a href="#">国家信息安全服务资质证</a>
+                                    </li>
+                                    <li>
+                                    	<a href="#">标书</a>
+                                    </li>
+                                    <li>
+                                    	<a href="#">T460</a>
+                                    </li>
+                                    <li>
+                                    	<a href="#">4650文件</a>
+                                    </li>
+                                    <li>
+                                    	<a href="#">联想30</a>
+                                    </li>
+                                    <li>
+                                    	<a href="#">联想30AU</a>
+                                    </li>
+                                    <li>
+                                    	<a href="#">启天环境认证</a>
+                                    </li>
+                                    <li>
+                                    	<a href="#">启天M4600环境认证</a>
+                                    </li>
+                                    <li>
+                                    	<a href="#">环保</a>
+                                    </li>
+                                </ul>
+                            </div></h4>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="content">
+		<div class="site_wrap1">
+			<div class="site_wrap1_con">
+				<div class="pathinfo">
+					<p>
+						<a href="#">知识库</a><span>&gt;</span><a href="#">品牌规范</a><span>&gt;</span><em>相关资料</em>
+					</p>
+				</div>
+				<div class="main2">
+					<div class="leftitem2">
+						<div class="video_part">
+							<h1>用友伙伴大会资料图片集</h1>
+							<div class="video_pic">
+								<img src="images/video_pic.jpg" />
+								<div class="video_info">
+									<div class="left">
+										<ul>
+											<li>
+												<a href="javascript:void(0)" class="a1"><i class="icon1"></i><span>收藏</span><em>32</em></a>
+											</li>
+											<li>
+												<a href="#"><i class="icon2"></i><span>评论</span><em>32</em></a>
+											</li>
+											<li>
+												<a href="javascript:void(0)" class="a3"><i class="icon3"></i><span>喜欢</span><em>32</em></a>
+											</li>
+											<li>
+												<a href="#"><i class="icon4"></i><span>下载</span><em>3342</em></a>
+											</li>
+										</ul>
+									</div>
+									<div class="right">
+										<ul>
+											<li>
+												<a href="#" class="icon_share"></a>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							
+						</div>
+						<div class="video_part2">
+							<div class="video_par2_con">
+								<div class="video_info2"><div class="box12">
+									<div class="pic">
+										<img src="images/smallpic11.jpg" />
+									</div>
+									<div class="item-info">
+										<h2><strong><span>管理员</span>上传到</strong><b>2017年2月23日</b></h2>
+										<p>所属分类：品牌规范</p>
+										
+									</div></div>
+								</div>
+								<div class="video_info3">
+									<div class="hd1">
+										<h3>用友伙伴大会资料图片集</h3>
+									</div>
+									<div class="bd1">
+										<div class="addcomment">
+											<strong>
+												<img src="images/smallpic12.jpg" />
+											</strong>
+											<div class="txt1">
+												<div class="textarea1">
+													<textarea placeholder="添加评论"></textarea>
+												</div>
+												<div class="pl_other">
+													<div class="left">
+														<label>
+															<input type="checkbox" />匿名评论
+														</label>
+													</div>
+													<div class="right">
+														<p>
+															<input type="button" class="inputbtn1" value="添加评论" />
+														</p>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									
+								</div>
+							</div>
+							<div class="comment_list">
+								<ul>
+									<li>
+										<div class="box11"><div class="box11_con">
+											<div class="pic">
+												<img src="images/smallpic13.jpg" />
+											</div>
+											<div class="item-info">
+												<h2>
+													<strong><span>孤独的小白</span>-2017-02-23 说：</strong>
+													<b>
+														<a href="#"><i></i><span>2017</span></a>
+													</b>
+												</h2>
+												<p>这张图很不错，看着就很舒服</p>
+											</div>
+										</div></div>
+									</li>
+									<li>
+										<div class="box11"><div class="box11_con">
+											<div class="pic">
+												<img src="images/smallpic13.jpg" />
+											</div>
+											<div class="item-info">
+												<h2>
+													<strong><span>孤独的小白</span>-2017-02-23 说：</strong>
+													
+												</h2>
+												<p>这张图很不错，看着就很舒服</p>
+											</div>
+										</div></div>
+									</li>
+									<li>
+										<div class="box11"><div class="box11_con">
+											<div class="pic">
+												<img src="images/smallpic13.jpg" />
+											</div>
+											<div class="item-info">
+												<h2>
+													<strong><span>孤独的小白</span>-2017-02-23 说：</strong>
+													
+												</h2>
+												<p>这张图很不错，看着就很舒服</p>
+											</div>
+										</div></div>
+									</li>
+								</ul>
+							</div>
+							<div class="morebtn">
+								<p>
+									<a href="#">展开更多</a>
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="rightitem2">
+					<div class="xgwd">
+						<div class="hd"><i></i>
+							<h3><span>相关资料</span><em></em></h3>
+						</div>
+						<div class="bd">
+							<div class="wd_list">
+								<ul>
+									<li>
+										<a href="#"><i><img src="images/icon_word.png" /></i><span>2015誓师大会总结报告</span></a>
+									</li>
+									<li>
+										<a href="#"><i><img src="images/icon_excel.png" /></i><span>2015誓师大会总结报告</span></a>
+									</li>
+									<li>
+										<a href="#"><i><img src="images/icon_pdf.png" /></i><span>2015誓师大会总结报告</span></a>
+									</li>
+									<li>
+										<a href="#"><i><img src="images/icon_kong.png" /></i><span>2015誓师大会总结报告</span></a>
+									</li>
+									<li>
+										<a href="#"><i><img src="images/icon_word.png" /></i><span>2015誓师大会总结报告</span></a>
+									</li>
+									<li>
+										<a href="#"><i><img src="images/icon_excel.png" /></i><span>2015誓师大会总结报告</span></a>
+									</li>
+									<li>
+										<a href="#"><i><img src="images/icon_pdf.png" /></i><span>2015誓师大会总结报告</span></a>
+									</li>
+									<li>
+										<a href="#"><i><img src="images/icon_kong.png" /></i><span>2015誓师大会总结报告</span></a>
+									</li>
+									<li>
+										<a href="#"><i><img src="images/icon_word.png" /></i><span>2015誓师大会总结报告</span></a>
+									</li>
+									<li>
+										<a href="#"><i><img src="images/icon_excel.png" /></i><span>2015誓师大会总结报告</span></a>
+									</li>
+									<li>
+										<a href="#"><i><img src="images/icon_pdf.png" /></i><span>2015誓师大会总结报告</span></a>
+									</li>
+									<li>
+										<a href="#"><i><img src="images/icon_kong.png" /></i><span>2015誓师大会总结报告</span></a>
+									</li>
+									<li>
+										<a href="#"><i><img src="images/icon_word.png" /></i><span>2015誓师大会总结报告</span></a>
+									</li>
+									<li>
+										<a href="#"><i><img src="images/icon_excel.png" /></i><span>2015誓师大会总结报告</span></a>
+									</li>
+									<li>
+										<a href="#"><i><img src="images/icon_pdf.png" /></i><span>2015誓师大会总结报告</span></a>
+									</li>
+									<li>
+										<a href="#"><i><img src="images/icon_kong.png" /></i><span>2015誓师大会总结报告</span></a>
+									</li>
+									<li>
+										<a href="#"><i><img src="images/icon_word.png" /></i><span>2015誓师大会总结报告</span></a>
+									</li>
+									<li>
+										<a href="#"><i><img src="images/icon_excel.png" /></i><span>2015誓师大会总结报告</span></a>
+									</li>
+									<li>
+										<a href="#"><i><img src="images/icon_pdf.png" /></i><span>2015誓师大会总结报告</span></a>
+									</li>
+									<li>
+										<a href="#"><i><img src="images/icon_kong.png" /></i><span>2015誓师大会总结报告</span></a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="footer">
+		<div class="footer_con">
+			<p>版权所有：1998-2017用友集团ICP备11035381<span></span>京公网安备110108007970号<span></span><a href="#">法律公告</a>|<a href="#">隐私保护</a><br/>Copyright&copy;2017 yongyou.ALL rights reserved</p>
+		</div>
+	</div>
+</div>
+</body>
+</html>
