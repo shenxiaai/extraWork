@@ -9,6 +9,10 @@ label{cursor:pointer}
 .cate-list li{height:50px;vertical-align:middle;border-top:1px solid #e8e8e8;position:relative}
 .cate-list h3{position:relative;font-weight:normal;padding-left:11px;height:50px;line-height:50px;display:block;display:inline-block;width:269px;}
 .cate-list h3 i{position:absolute;right:10px;top:50%;margin-top:-6px;width:8px;height:13px;background:url(../images/icon_right.png) no-repeat;display:block;z-index:9}
+.cate-list li.active{background: #e30920;}
+.cate-list li.active h3{background: #e30920;color: #fff;}
+.cate-list li.active a{color: #fff;}
+.cate-list li.active i{background: url(../images/icon_right3.png) 0 0 no-repeat;}
 #category .hover .cate-item h3 em{position:absolute;left:0;top:0;width:4px;height:50px;background:#e30920;display:block;z-index:99}
 #category .hover .cate-item h3 s{position:absolute;right:0px;top:0;width:5px;height:50px;background:#fff;display:block;z-index:999}
 
