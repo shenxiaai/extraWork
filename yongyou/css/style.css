@@ -90,7 +90,7 @@ body{background:#f4f4f4;}
 .download_list ul li .box2{border:1px solid #e8e8e8;width:264px;height:240px;}
 .download_list ul li .box2 .pic{position:relative;width:264px;height:168px;overflow:hidden;}
 .download_list ul li .box2  .pic:hover strong.icon_video{position:absolute;width:80px;height:80px;left:50%;top:50%;margin-left:-40px;margin-top:-40px;background:url(../images/icon_video.png) no-repeat;}
-.download_list ul li .box2 .pic img{width:264px;height:218px;}
+.download_list ul li .box2 .pic img{width:264px;height:168px;}
 .download_list ul li .box2 .pic span{position:absolute;bottom:0;left:0;height:37px;background:rgba(0,0,0,0.7);font-size:14px;color:#cccccc;line-height:37px;padding-left:11px;width:253px;overflow:hidden;  white-space: nowrap;
   text-overflow: ellipsis;}
 .download_list ul li .box2 .item-info{padding:10px 11px;}
