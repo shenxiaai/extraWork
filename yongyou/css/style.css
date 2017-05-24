@@ -6,7 +6,7 @@ select,button,input,textarea{vertical-align:middle;font-size:12px;font-family:in
 button{cursor:pointer}
 em{font-style:normal}
 img{border:0;vertical-align:middle}
-a{color:#787878;text-decoration:none}
+a{color:#8e8e8e;text-decoration:none}
 a:hover{color:#e71720;text-decoration:none}
 img{border:0}
 .clear{zoom:1}
@@ -352,10 +352,10 @@ form  label.validate_right{color:#000;font-style:normal;display:none}
 .member_info4_con ul li{font-size:14px;margin-bottom:12px;height:17px;line-height:17px;overflow:hidden;  white-space: nowrap;
   text-overflow: ellipsis;}
 
-.download_nav1{height:59px;border-bottom:1px solid #e8e8e8;background:#f8f8f8}
+.download_nav1{height:40px;border-bottom:1px solid #e8e8e8;background:#f8f8f8}
 .download_nav1 .left{float:left}
 .download_nav1 .right{float:right;margin-right:12px;}
-.download_nav1 ul li{float:left;border-right:1px solid #e8e8e8;text-align:center;line-height:59px;font-size:14px;}
+.download_nav1 ul li{float:left;border-right:1px solid #e8e8e8;text-align:center;line-height:40px;font-size:14px;}
 .download_nav1 ul li a{display:block;position:relative;padding:0 15px;}
 .download_nav1 ul li a img{margin-left:5px}
 .download_nav1 ul li.current a{background:#fff;}
@@ -370,7 +370,7 @@ form  label.validate_right{color:#000;font-style:normal;display:none}
 .search_condition dl dt .txt1 ul{margin-right:-30px;height:30px;overflow:hidden}
 .search_condition dl dt .txt1 ul.current{height:auto;overflow:auto;}
 .search_condition dl dt .txt1 ul li{float:left;margin-right:30px;margin-bottom:12px;}
-.search_condition dl dt .txt1 ul li.current a{color:#e5182e}
+.search_condition dl dt .txt1 ul li.current a{color:#e30920}
 .search_condition dl dt .txt1 a.icon_more{position:absolute;right:0;top:6px;width:27px;height:27px;background:url(../images/icon_down5.png) no-repeat;}
 .site_wrap1_con .main2{float:left;width:100%;margin-right:-35em}
 .site_wrap1_con .main2 .leftitem2{float:left;width:780px;}
@@ -548,5 +548,12 @@ form  label.validate_right{color:#000;font-style:normal;display:none}
 .tjlist ul li .box7 .item-info p{color: #8e8e8e;}
 .tjlist ul li .box7 .item-info h3{color: #c2c2c2;}
 
-.search_condition dl dt a.icon_more{position:absolute;right:0;top:6px;width:27px;height:27px;background:url(../images/icon_down5.png) no-repeat;}
+.search_condition dl dt a.icon_more{position:absolute;right:4px;top:4px;padding: 6px;border-radius: 1px;width:106px;font-size: 14px;color: #434343;height:20px;line-height: 20px;background:url(../images/more_arr.jpg) #f3f3f3 100px center no-repeat;}
 .search_condition dl dt.current{height:auto;overflow:auto;}
+.moreTip{display: none;}
+
+.search_condition dl dt .txt1 ul li input[type="radio"]{margin-top: -2px;margin-right: 5px;vertical-align: middle;}
+
+.download_nav1 .right{display: none;}
+
+.search_condition dl dt .diff a{color: #434343;}

@@ -20,7 +20,7 @@ PNG.fix('*');
 <script>
 	$(function(){
 		$('a.icon_more').click(function(){
-			$(this).parent().find('ul').toggleClass('current');
+			$('.moreTip').toggle();
 		});
 
 		$('.icon_share').click(function(){$('#sharebox').toggle();});
@@ -179,9 +179,34 @@ PNG.fix('*');
 											</ul>
 										</div>
 									</dt>
+									<div class="moreTip" >
+										<dt>
+											<strong>更多分类：</strong>
+										</dt>
+										<dt>
+											<strong>关键人物</strong>
+											<div class="txt1">
+												<ul>
+													<li><a href="#">王文京</a></li>
+													<li><a href="#">陈强兵</a></li>
+												</ul>
+											</div>
+										</dt>
+										<dt>
+											<strong>活动项目</strong>
+											<div class="txt1">
+												<ul>
+													<li class="current"><a href="#">外部会议</a></li>
+													<li><a href="#">内部会议</a></li>
+													<li><a href="#">伙伴/生态大会</a></li>
+													<li><a href="#">客户大会</a></li>
+												</ul>
+											</div>
+										</dt>
+									</div>
 									<dt>
 										<strong>资料类型：</strong>
-										<div class="txt1">
+										<div class="txt1 diff">
 											<ul>
 												<li><a href="#"><input type="radio" />全部</a></li>
 												<li><a href="#"><input type="radio" />文档</a></li>
