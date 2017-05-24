@@ -87,7 +87,7 @@ body{background:#f4f4f4;}
 .download_list ul{margin-right:-20px;}
 .download_list{padding:0px 19px 0 19px;display:inline-block;width:840px}
 .download_list ul li{float:left;margin-right:20px;margin-top:20px;}
-.download_list ul li .box2{border:1px solid #e8e8e8;width:264px;height:313px;}
+.download_list ul li .box2{border:1px solid #e8e8e8;width:264px;height:240px;}
 .download_list ul li .box2 .pic{position:relative;width:264px;height:168px;overflow:hidden;}
 .download_list ul li .box2  .pic:hover strong.icon_video{position:absolute;width:80px;height:80px;left:50%;top:50%;margin-left:-40px;margin-top:-40px;background:url(../images/icon_video.png) no-repeat;}
 .download_list ul li .box2 .pic img{width:264px;height:218px;}
@@ -559,3 +559,5 @@ form  label.validate_right{color:#000;font-style:normal;display:none}
 .search_condition dl dt .diff a{color: #434343;}
 .cate-list li h3 .dot{position: absolute;top: 8px;left: 8em;width: 14px;height: 14px;line-height: 14px;text-align: center;background: #e71720;border-radius: 50%;font-size: 8.8px;color: #fff;}
 .cate-list li.active h3 .dot{background: #fff;color: #e30920;}
+.download_list ul li .box2 .item-info h2{height: 20px;}
+.download_list ul li .box2 .item-info h2 a{color: #686868;}
