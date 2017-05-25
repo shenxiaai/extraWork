@@ -249,16 +249,19 @@ form  label.validate_right{color:#000;font-style:normal;display:none}
 .site_wrap1_con .main1{float:left;width:100%;margin-right:-35em;}
 .site_wrap1_con .main1 .leftitem1{float:left;width:880px}
 .site_wrap1_con .rightitem1{float:right;width:280px;}
-.navs{position:absolute;top:0px;right:0px;width:168px;z-index:999;}
+.navs{position:absolute;top: auto;bottom:14px;right:0px;width:100%;height: 18px;z-index:999;text-align: center;}
 .navs a{margin-bottom:10px;display:block;position:relative}
 .navs a img{width:168px;height:103px;}
-.navs a.activeSlide{}
 .navs a.activeSlide img{width:163px;height:97px;border:2px solid #e30920;}
+.navs p{width: 100%;height: 100%;}
+.navs a{margin-right: 11px;display: inline-block;width: 21px;height: 4px;background: #fff;border-radius: 1px;}
+.navs a.activeSlide{width: 31px;background: #dc0418;}
 .picscroll{position:relative;margin-bottom:20px;}
-.picscroll .item{position:relative;width:702px;height:327px;}
-.picscroll .item img{width:702px;height:327px;}
+.picscroll .item{position:relative;width:880px;height:329px;}
+.picscroll .item img{width:880px;height:329px;}
 .picscroll .item span{position:absolute;bottom:0;left:0;width:682px;overflow:hidden;height:52px;background:rgba(0,0,0,0.5);font-size:14px;color:#fff;line-height:52px;padding-left:20px;overflow:hidden;  white-space: nowrap;
   text-overflow: ellipsis;}
+.picscroll .item span{position:absolute;bottom:0;left:0;width:880px;overflow:hidden;height:52px;background:rgba(0,0,0,0.5);font-size:14px;color:#fff;line-height:52px;padding-left:20px;overflow:hidden;  white-space: nowrap;text-overflow: ellipsis;}
 .login_part{border-left:1px solid #dcdcdc;border-right:1px solid #dcdcdc;background:#fff;border-bottom:1px solid #dcdcdc;height:326px;margin-bottom:20px}
 .login_part .hd{height:64px;border-bottom:1px solid #dcdcdc;position:relative;}
 .login_part .hd em{position:absolute;left:-1px;top:0;height:4px;background:#f8969b;width:280px;}
@@ -294,15 +297,15 @@ form  label.validate_right{color:#000;font-style:normal;display:none}
 .tj_part .hd ul li.current a em{position:absolute;bottom:-1px;left:0;width:100%;height:1px;background:#fff;}
 .tj_part .bd{display:inline-block;width:838px;padding:20px;padding-bottom:0;}
 .tjlist ul li{margin-bottom:15px;display:inline-block;width:100%}
-.tjlist ul li .box7 .pic{float:left;width:142px;height:118px;position:relative;overflow:hidden}
+.tjlist ul li .box7 .pic{float:left;width: 184px;height: 118px;position:relative;background-size: cover;overflow:hidden;}
 .tjlist ul li .box7 .pic img{width:142px;height:118px;}
 .tjlist ul li .box7 .pic span{position:absolute;left:10px;top:0;width:14px;height:20px;background:url(../images/num_bg.png) no-repeat;line-height:16px;text-align:center;color:#fff;}
 .tjlist ul li .box7 .item-info{margin-left:164px;padding-top:8px;height:110px;position:relative;}
 .tjlist ul li .box7 .item-info h2{font-size:20px;margin-bottom:15px;line-height:20px;overflow:hidden;height:20px;overflow:hidden;  white-space: nowrap;
   text-overflow: ellipsis;}
-.tjlist ul li .box7 .item-info h2 a{color:#343434;font-weight: normal;}
-.tjlist ul li .box7 .item-info p{color:#888888;font-size:14px;line-height:20px;height:40px;overflow:hidden}
-.tjlist ul li .box7 .item-info h3{font-weight:400;position:absolute;bottom:0;right:0;font-size:14px;color:#908f8f}
+.tjlist ul li .box7 .item-info h2 a{color:#343434;font-weight: normal;font-size: 18px;}
+.tjlist ul li .box7 .item-info p{font-size:14px;line-height:20px;height:40px;overflow:hidden;color: #8e8e8e;}
+.tjlist ul li .box7 .item-info h3{font-weight:400;position:absolute;bottom:0;right:0;font-size:14px;color:#c2c2c2;}
 .tjlist ul li .box7 .item-info h3 span{margin-left:5px}
 .gz_part{display:inline-block;width:278px;border-left:1px solid #dcdcdc;border-right:1px solid #dcdcdc;border-bottom:1px solid #dcdcdc;background:#fff;margin-bottom:20px;}
 .gz_part .hd{height:64px;border-bottom:1px solid #dcdcdc;position:relative;background:#f4f4f4}
@@ -523,19 +526,6 @@ form  label.validate_right{color:#000;font-style:normal;display:none}
 
 
 
-
-.navs{position:absolute;top: auto;bottom:14px;right:0px;width:100%;height: 18px;z-index:999;text-align: center;}
-.navs p{width: 100%;height: 100%;}
-.navs a{margin-right: 11px;display: inline-block;width: 21px;height: 4px;background: #fff;border-radius: 1px;}
-.navs a.activeSlide{width: 31px;background: #dc0418;}
-
-.picscroll{position:relative;margin-bottom:20px;}
-.picscroll .item{position:relative;width:880px;height:329px;}
-.picscroll .item img{width:880px;height:329px;}
-.picscroll .item span{position:absolute;bottom:0;left:0;width:682px;overflow:hidden;height:52px;background:rgba(0,0,0,0.5);font-size:14px;color:#fff;line-height:52px;padding-left:20px;overflow:hidden;  white-space: nowrap;text-overflow: ellipsis;}
-
-.tjlist ul li .box7 .pic {width: 184px;height: 118px;}
-
 .gz_list-new li{width: 100%;height: 21px;line-height: 21px;}
 .gz_list-new .box9{color: #343434;font-size: 14px;}
 .gz_list-new .box9 em{margin-right: 10px;display: inline-block;background: url(../images/noItem.png) 0 0 no-repeat;width: 18px;height: 14px;text-align: center;line-height: 14px;color: #343434;font-size: 12px;text-indent: -2px;}
@@ -543,10 +533,6 @@ form  label.validate_right{color:#000;font-style:normal;display:none}
 .gz_list-new .box9 em.orange{background: url(../images/noItem-orange.png) 0 0 no-repeat;color: #fff;}
 .gz_list-new .box9 em.yellow{background: url(../images/noItem-yellow.png) 0 0 no-repeat;color: #fff;}
 .gz_list-new .box9 i{display: inline-block;float: right;font-size: 14px;color: #9d9d9d;font-style: normal;}
-
-.tjlist ul li .box7 .item-info h2 a{font-size: 18px;}
-.tjlist ul li .box7 .item-info p{color: #8e8e8e;}
-.tjlist ul li .box7 .item-info h3{color: #c2c2c2;}
 
 .search_condition dl dt a.icon_more{position:absolute;right:4px;top:4px;padding: 6px;border-radius: 1px;width:106px;font-size: 14px;color: #434343;height:20px;line-height: 20px;background:url(../images/more_arr.jpg) #f3f3f3 100px center no-repeat;}
 .search_condition dl dt.current{height:auto;overflow:auto;}
@@ -561,4 +547,3 @@ form  label.validate_right{color:#000;font-style:normal;display:none}
 .cate-list li.active h3 .dot{background: #fff;color: #e30920;}
 .download_list ul li .box2 .item-info h2{height: 20px;}
 .download_list ul li .box2 .item-info h2 a{color: #686868;}
-
