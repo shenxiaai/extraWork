@@ -297,8 +297,8 @@ form  label.validate_right{color:#000;font-style:normal;display:none}
 .tj_part .hd ul li.current a em{position:absolute;bottom:-1px;left:0;width:100%;height:1px;background:#fff;}
 .tj_part .bd{display:inline-block;width:838px;padding:20px;padding-bottom:0;}
 .tjlist ul li{margin-bottom:15px;display:inline-block;width:100%}
-.tjlist ul li .box7 .pic{float:left;width: 184px;height: 118px;position:relative;background-size: cover;overflow:hidden;}
-.tjlist ul li .box7 .pic img{width:142px;height:118px;}
+.tjlist ul li .box7 .pic{float:left;margin-right: 10px;width: 184px;height: 118px;position:relative;background-size: cover;overflow:hidden;}
+.tjlist ul li .box7 .pic img{width:184px;height:118px;}
 .tjlist ul li .box7 .pic span{position:absolute;left:10px;top:0;width:14px;height:20px;background:url(../images/num_bg.png) no-repeat;line-height:16px;text-align:center;color:#fff;}
 .tjlist ul li .box7 .item-info{margin-left:164px;padding-top:8px;height:110px;position:relative;}
 .tjlist ul li .box7 .item-info h2{font-size:20px;margin-bottom:15px;line-height:20px;overflow:hidden;height:20px;overflow:hidden;  white-space: nowrap;
@@ -500,7 +500,7 @@ form  label.validate_right{color:#000;font-style:normal;display:none}
 .share_part .hd_con h2 b span{margin-left:20px}
 .share_part .bd{padding:20px;padding-bottom:0;}
 .intro118s{padding:20px;background:#fafafa}
-.intro118{height:850px;overflow-y:auto;}
+.intro118{max-height:850px;overflow-y:auto;}
 .intro118 p{font-size:16px;line-height:30px;margin-bottom:35px;color:#767676}
 
 .intro118::-webkit-scrollbar-track{-webkit-border-radius:5px;border-radius:5px;background-color:#e6e6e6}

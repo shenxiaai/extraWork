@@ -1,0 +1,6 @@
+@charset "UTF-8";
+header{display: -webkit-box;padding: 0 1.5rem;width: 100%;-webkit-box-pack: justify;-webkit-box-align: center;width: 100%;height: 4rem;line-height: 4rem;background: rgba(0, 84, 131, .5);box-sizing: border-box;}
+header .menu{display: block;background: url(../images/menu.png) 0 0 no-repeat;-webkit-background-size: 2.2rem;background-size: 2.2rem;width: 2.2rem;height: 2.2rem;}
+header p{-webkit-box-flex: 1;color: #fff;font-size: 1.6rem;}
+
+.home{width: 100%;background: url(../images/bg_big.jpg) 0 0 no-repeat;-webkit-background-size: cover;background-size: cover;}
