@@ -1,9 +1,12 @@
 @charset "UTF-8";
 body{background: #d8f3ef;}
+.horizontal{margin: 0 auto;}
 .rel{position: relative;}
 .abs{position: absolute;}
 .home{width: 100%;background: url(../images/bg_big.jpg) 0 0 no-repeat;-webkit-background-size: cover;background-size: cover;}
 .main{padding: 0 1.5rem;width: 100%;box-sizing: border-box;}
+
+.big-btn{margin: 0 auto;width: 29rem;height: 4rem;line-height: 4rem;font-size: 1.6rem;font-weight: bold;color: #fff;text-align: center;background: #ff7131;border-radius: 3px;box-shadow: 1px 4px 9px #cb7865;}
 
 header{display: -webkit-box;padding: 0 1.5rem;width: 100%;-webkit-box-pack: justify;-webkit-box-align: center;width: 100%;height: 4rem;line-height: 4rem;background: rgba(0, 84, 131, .5);box-sizing: border-box;}
 header .menu{display: block;background: url(../images/menu.png) 0 0 no-repeat;-webkit-background-size: 2.2rem;background-size: 2.2rem;width: 2.2rem;height: 2.2rem;}
@@ -23,6 +26,7 @@ header p{-webkit-box-flex: 1;color: #fff;font-size: 1.6rem;}
 .actDetail h5{position: relative;font-size: 1rem;color: #464545;line-height: 1.5rem;}
 .actDetail h5 em{position: absolute;left: 0;top: .5rem;display: block;width: 1.1rem;height: 1.1rem;border-radius: 50%;border: 1px solid #464545;text-align: center;line-height: 1.1rem;}
 .actDetail h5 b{font-weight: bold;}
+
 table{margin-top: .4rem;width: 100%;border: 1px solid #5cc1b7;box-sizing: border-box;box-shadow: 1px 1px 10px #697d81;}
 table tr{height: 2rem;line-height: 2rem;background: #e7f7f6;}
 table tr:nth-child(2n){background: #caeeea;}
@@ -40,3 +44,35 @@ table.blue tr{height: 2rem;line-height: 2rem;background: #eff9ff;}
 table.blue tr:nth-child(2n){background: #d5effe;}
 table.blue th{background: #91cfef;font-size: .8rem;color: #464545;font-weight: bold;}
 table.blue th,table.blue td{padding-left: 1.5rem;border-right: 1px solid #6bc3f1;font-size: .8rem;}
+
+.mountain{background: url(../images/bg.jpg) 0 0 no-repeat;background-size: cover;width: 100%;}
+
+.tab{margin: 0 auto;width: 29rem;height: 4rem;line-height: 4rem;border-radius: 3px;box-sizing: border-box;}
+.tab li{float: left;width: 50%;background: #ffa854;text-align: center;color: #fff;font-size: 1.6rem;font-weight: bold;}
+.tab li.active{background: #fe6f2f;color: #fff4b1;}
+.tabCont{padding: 2rem;margin-top: 1px;width: 100%;background: #d6edec;height: 45.5rem;box-sizing: border-box;}
+
+/*考试*/
+.exam h2{font-size: 1.6rem;color: #464545;font-weight: bold;line-height: 2.5rem;}
+.exam label{display: block;width: 100%;height: 3rem;line-height: 3rem;font-size: 1.4rem;color: #464545;}
+.exam input[type="radio"]{margin-right: 1rem;background: url(../images/radio.png) 0 0 no-repeat;width: 1.3rem;height: 1.3rem;background-size: 1.3rem;}
+.exam input[type="radio"]:checked{background: url(../images/radio_checked.png) 0 0 no-repeat;background-size: 1.3rem;}
+.exam p{font-size: .8rem;color: #555;line-height: 1.2rem;}
+.exam p.red{color: #e10e1c;}
+.exam p.green{color: #2fd023;}
+
+/*提交信息*/
+.subInfo{margin: 0 auto;width: 100%;}
+.subInfo .form-item{width: 100%;height: 5rem;}
+.subInfo .form-item.select{position: relative;}
+.subInfo .form-item.select::after{content: "";position: absolute;right: 0;top: 0;background: url(../images/downArr.png) 0 0 no-repeat;background-size: auto 3.9rem;width: 3.9rem;height: 3.9rem;}
+.subInfo select{width: 100%;height: 4rem;line-height: 4rem;font-size: 1.4rem;border: 1px solid #eaaf79;}
+.subInfo input{padding-left: .5rem;display: block;width: 100%;height: 4rem;line-height: 4rem;font-size: 1.4rem;color: #464545;border: 1px solid #eaaf79;box-sizing: border-box;}
+.subInfo p{font-size: 1.2rem;color: #464545;line-height: 1.9rem;}
+.subInfo p.red{font-size: 1rem;color: #ff0000;}
+.subInfo p b{font-weight: bold;}
+
+/*往期回顾*/
+.reback{padding: 0 .6rem;padding-top: 2.8rem;width: 100%;box-sizing: border-box;}
+.reback .part1{padding: 4.2rem .8rem .4rem .8rem;width: 100%;height: 21.5rem;background: #e3f8f4;box-shadow: 0 2px 10px rgba(0,0,0,.3);box-sizing: border-box;}
+.reback .part1 li{width: 11rem;height: 7rem;}

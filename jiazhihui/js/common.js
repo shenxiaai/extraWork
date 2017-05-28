@@ -1,69 +1,19 @@
 'use strict';
-function tabFun (_tab, _list) {        // arguments[3]: which bind active inside tab li
-	var cw = document.documentElement.clientWidth,
-        ch = document.documentElement.clientHeight,
-        header = document.getElementsByTagName('header')[0],
-        tabTit = document.querySelector('.tabTit'),
-        copyRight = document.querySelector('.copyRight'),
-		_span = arguments[2],
-		_tabCont=arguments[4],
-		_cont = arguments[3];
-		
-var objcccc = getChildren(_list);
-_list.style.width=cw*_tab.length+'px';
-	for(var a = 0; a < _tab.length; a++) {
-		_tab[a].index = a;
-		var chh=(objcccc[a].offsetHeight+header.offsetHeight+tabTit.offsetHeight)-ch;
-		
-		//set defalut active shift automatically
-		if((_span ? _tab[a].getElementsByTagName(_span)[0].className : _tab[a].className) == 'active') {
-			moveAction(_list, 'left', -cw*_tab[a].index);
-			if(_tabCont !=null){
-			_tabCont.style.height=objcccc[a].offsetHeight+'px';
-				if(chh>0){
-					copyRight.style.position='static';
-					copyRight.style.margin='3rem 0'
-				}
-			}
-	
-		}
+function nTabs(thisObj, Num) {
+	if (thisObj.className == 'active') return;
+	var tabObj = thisObj.parentNode.id;
+	var tabList = document.getElementById(tabObj).getElementsByTagName('li');
+	for (var i = 0; i < tabList.length; i++) {
+		if (i == Num) {
+			thisObj.className = 'active';
 
-		_tab[a].onclick = function () {	
-			// sibling className set none
-			for(var w = 0; w < _tab.length; w++) {
-                (_span ? _tab[w].getElementsByTagName(_span)[0] : _tab[w]).className = '';
-                if(_tabCont !=null){
-                	    _tabCont.style.height=objcccc[this.index].offsetHeight+'px';
-                }
-            
-			}
-			// current item className set active
-            (_span ? this.getElementsByTagName(_span)[0] : this).className = 'active';
-			moveAction(_list, 'left', -cw*this.index);
-		copyRigPosi(this.index);
+			document.getElementById(tabObj + '_Content' + i).style.display = 'block';
+		} else {
+			tabList[i].className = 'normal';
+			document.getElementById(tabObj + '_Content' + i).style.display = 'none';
 		}
 	}
-
-	//set copyRight position
-	function copyRigPosi (ind) {		
-		copyRight.style.position = 'static';
-		// copyRight.style.padding = '2rem 0';
-		
-		if(_cont && (parseInt(getStyle(_cont[ind], 'height')) < (ch - header.offsetHeight - tabTit.offsetHeight))) {
-			setTimeout(function () {
-				copyRight.style.position = 'fixed';
-				copyRight.style.left = 0;
-				copyRight.style.bottom = '3rem';
-				copyRight.style.width = '100%';
-				copyRight.style.height = '1.8rem';
-			}, 200);
-		}
-	}
-	
-
 }
-
-
 
 function getChildren(obj){
     var objChild = [] ;
@@ -184,5 +134,3 @@ function moveAction (obj, attr, target) {
 		}
 	}, 30);
 }
-/*shujing*/
-
