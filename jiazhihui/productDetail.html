@@ -30,7 +30,7 @@
 					<div class="rig">
 						<h2>启天<em>A8510</em></h2>
 						<h3 class="mt8">超薄旗舰视频会议首选超会议首选</h3>
-						<button class="mt8">辅助资料下载</button>
+						<button class="mt8" id="share">辅助资料下载</button>
 					</div>
 				</div>
 				<div class="proDe2">
@@ -111,6 +111,9 @@
 			<a href="backreword.html"><li><img src="images/icon7.png" alt="">往期回顾</li></a>
 		</ul>
 	</div>
+	<div class="shareTip" id="shareTip">
+		<img src="images/weixinShare.png" alt="">
+	</div>
 
 	<script>
 		window.onload = function () {
@@ -121,7 +124,10 @@
 				block = document.querySelector('#block'),
 				carte = document.querySelector('#carte'),
 				close = document.querySelector('#close'),
-				flag = 1;
+				share = document.querySelector('#share'),
+				shareTip = document.querySelector('#shareTip'),
+				flag = 1,
+				shareBlock = 0;
 
 			block.style.width = cw + 'px';
 			block.style.height = ch + 'px';
@@ -140,6 +146,17 @@
 					flag = 1;
 				}
 			}
+			share.onclick = function () {
+				block.style.display = 'block';
+				shareTip.style.display = 'block';
+				shareBlock = 1;
+			}
+			block.addEventListener('click', function () {
+				if(shareBlock) {
+					shareTip.style.display = 'none';
+					block.style.display = 'none';
+				}
+			});
 		}
 	</script>
 </body>

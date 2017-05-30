@@ -21,48 +21,8 @@
 		<div class="part part1">
 			<div class="cloud">往期回顾</div>
 			<ul id="backShow">
-				<li><a href=""><img src="images/img1.jpg" alt=""></a></li>
-				<li><a href=""><img src="images/img1.jpg" alt=""></a></li>
-				<li><a href=""><img src="images/img1.jpg" alt=""></a></li>
-				<li><a href=""><img src="images/img1.jpg" alt=""></a></li>
-				<li><a href=""><img src="images/img1.jpg" alt=""></a></li>
-				<li><a href=""><img src="images/img1.jpg" alt=""></a></li>
-
-				<li><a href=""><img src="images/img2.jpg" alt=""></a></li>
-				<li><a href=""><img src="images/img2.jpg" alt=""></a></li>
-				<li><a href=""><img src="images/img2.jpg" alt=""></a></li>
-				<li><a href=""><img src="images/img2.jpg" alt=""></a></li>
-				<li><a href=""><img src="images/img2.jpg" alt=""></a></li>
-				<li><a href=""><img src="images/img2.jpg" alt=""></a></li>
-
-				<li><a href=""><img src="images/img3.jpg" alt=""></a></li>
-				<li><a href=""><img src="images/img3.jpg" alt=""></a></li>
-				<li><a href=""><img src="images/img3.jpg" alt=""></a></li>
-				<li><a href=""><img src="images/img3.jpg" alt=""></a></li>
-				<li><a href=""><img src="images/img3.jpg" alt=""></a></li>
-				<li><a href=""><img src="images/img3.jpg" alt=""></a></li>
-
-				<li><a href=""><img src="images/img4.jpg" alt=""></a></li>
-				<li><a href=""><img src="images/img4.jpg" alt=""></a></li>
-				<li><a href=""><img src="images/img4.jpg" alt=""></a></li>
-				<li><a href=""><img src="images/img4.jpg" alt=""></a></li>
-				<li><a href=""><img src="images/img4.jpg" alt=""></a></li>
-				<li><a href=""><img src="images/img4.jpg" alt=""></a></li>
-
-				<li><a href=""><img src="images/img5.jpg" alt=""></a></li>
-				<li><a href=""><img src="images/img5.jpg" alt=""></a></li>
-				<li><a href=""><img src="images/img5.jpg" alt=""></a></li>
-				<li><a href=""><img src="images/img5.jpg" alt=""></a></li>
-				<li><a href=""><img src="images/img5.jpg" alt=""></a></li>
-				<li><a href=""><img src="images/img5.jpg" alt=""></a></li>
-
-				<li><a href=""><img src="images/img6.jpg" alt=""></a></li>
-				<li><a href=""><img src="images/img6.jpg" alt=""></a></li>
-				<li><a href=""><img src="images/img6.jpg" alt=""></a></li>
-				<li><a href=""><img src="images/img6.jpg" alt=""></a></li>
-				<li><a href=""><img src="images/img6.jpg" alt=""></a></li>
-				<li><a href=""><img src="images/img6.jpg" alt=""></a></li>
-
+				<li><a href=""><img src="images/img7.jpg" alt=""></a></li>
+				<li><a href=""><img src="images/img7.jpg" alt=""></a></li>
 				<li><a href=""><img src="images/img7.jpg" alt=""></a></li>
 				<li><a href=""><img src="images/img7.jpg" alt=""></a></li>
 				<li><a href=""><img src="images/img7.jpg" alt=""></a></li>
@@ -77,8 +37,8 @@
 			<div class="cloud">排行榜</div>
 			<div class="ranking">
 				<ul class="rankTab mt15-imp" id="tab2">
-					<li onclick="nTabs(this,0)" class="active">报价单</li>
-					<li onclick="nTabs(this,1)" class="normal">投放管理</li>
+					<li onclick="nTabs(this,0)" class="active">个人排行</li>
+					<li onclick="nTabs(this,1)" class="normal">我的商机</li>
 				</ul>
 				<div class="tabCont">
 					<div id="tab2_Content0" style="display: block;">
@@ -459,7 +419,8 @@
 				showLi = backShow.getElementsByTagName('li'),
 				change = document.querySelector('#change'),
 				flag = 1,
-				showArr = [];
+				changeFlag = 0,
+				turn = 7;	//有几批资源
 
 			block.style.width = cw + 'px';
 			block.style.height = ch + 'px';
@@ -482,6 +443,20 @@
 			// 换一批
 			change.onclick = function () {
 				backShow.innerHTML = '';
+				if(changeFlag < turn) {
+					backShow.innerHTML = creatLi(changeFlag);
+					changeFlag++;
+				}else{
+					changeFlag = 0;
+				}
+			}
+
+			function creatLi (num) {
+				var result = '';
+				for(var m = 0; m < 6; m++) {
+					result += '<li><a href=""><img src="images/img' + (num+1) + '.jpg" alt=""></a></li>';
+				}
+				return result;
 			}
 
 			// 分页

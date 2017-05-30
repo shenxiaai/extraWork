@@ -66,7 +66,7 @@ table.blue th,table.blue td{padding-left: 1.5rem;border-right: 1px solid #6bc3f1
 .subInfo .form-item{width: 100%;height: 5rem;}
 .subInfo .form-item.select{position: relative;}
 .subInfo .form-item.select::after{content: "";position: absolute;right: 0;top: 0;background: url(../images/downArr.png) 0 0 no-repeat;background-size: auto 3.9rem;width: 3.9rem;height: 3.9rem;}
-.subInfo select{width: 100%;height: 4rem;line-height: 4rem;font-size: 1.4rem;border: 1px solid #eaaf79;}
+.subInfo select{padding-left: .5rem;width: 100%;height: 4rem;line-height: 4rem;font-size: 1.4rem;border: 1px solid #eaaf79;box-sizing: border-box;}
 .subInfo input{padding-left: .5rem;display: block;width: 100%;height: 4rem;line-height: 4rem;font-size: 1.4rem;color: #464545;border: 1px solid #eaaf79;box-sizing: border-box;}
 .subInfo p{font-size: 1.2rem;color: #464545;line-height: 1.9rem;}
 .subInfo p.red{font-size: 1rem;color: #ff0000;}
@@ -101,7 +101,7 @@ table.blue th,table.blue td{padding-left: 1.5rem;border-right: 1px solid #6bc3f1
 .reback .myBusCom .info p em{font-weight: normal;font-size: .7rem;}
 .reback .myBusCom table{margin-top: 0;box-shadow: none;border: none;}
 .reback .myBusCom table th{background: #caeeea;}
-.reback .myBusCom table th, table td{border: none;}
+.reback .myBusCom table th,.reback .myBusCom table td{border: none;}
 
 /*首页*/
 .homeBox{padding-top: 27.5rem;}
@@ -133,16 +133,19 @@ table.blue th,table.blue td{padding-left: 1.5rem;border-right: 1px solid #6bc3f1
 /*产品详情*/
 .proDet .tabCont{padding: 1.8rem 2.5rem 0 2.5rem;}
 .proDet .proDe1{display: -webkit-box;-webkit-box-pack: justify;padding: 1rem 2rem;background: #fff;width: 100%;height: 11.5rem;box-sizing: border-box;}
-.proDet .proDe1 .lef{width: 13.1rem;height: 11.5rem;line-height: 11.5rem;}
+.proDet .proDe1 .lef{width: 12rem;line-height: 10rem;}
 .proDet .proDe1 .lef img{width: 9.8rem;height: 6.7rem;}
 .proDet .proDe1 .rig{-webkit-box-flex: 1;text-align: right;}
 .proDet .proDe1 h2{color: #45454a;font-size: 1.6rem;line-height: 2.2rem;text-align: left;}
 .proDet .proDe1 h2 em{margin-left: .5rem;display: inline-block;padding: .1rem .5rem;color: #fff4b1;font-size: 1.6rem;background: #ff7131;}
 .proDet .proDe1 h3{font-size: 1.2rem;color: #45454a;line-height: 1.6rem;text-align: left;}
-.proDet .proDe1 button{padding: .1rem .4rem;display: inline-block;color: #ff7131;background: #ffd9b0;border: 1px solid #ff7131;}
+.proDet .proDe1 button{padding: .2rem .4rem;display: inline-block;color: #ff7131;background: #ffd9b0;border: 1px solid #ff7131;}
 .proDet .proDe2{width: 100%;height: 8.5rem;background: #eee;border-top: 1px solid #ff7131;overflow-y: scroll;}
 .proDet .proDe2 li{position: relative;padding: 0 4rem 0 2.5rem;width: 100%;height: 2.8rem;line-height: 2.8rem;border-bottom: 1px solid #c0c0c0;font-size: 1.2rem;color: #727171;box-sizing: border-box;}
 .proDet .proDe2 li:before{content: "";position: absolute;top: 1.1rem;left: 1.7rem;width: .5rem;height: .5rem;border-radius: 50%;background: #ff7131;}
 .proDet .proDe2 li:after{content: "";position: absolute;top: 1rem;right: 2.5rem;background: url(../images/download.png) 0 0 no-repeat;background-size: 1.3rem auto;width: 1.3rem;height: 1rem;}
 .proDet .proDe2 li.active{color: #ff7131;}
 .proDet .proDe2 li.active:after{background: url(../images/download_act.png) 0 0 no-repeat;background-size: 1.3rem auto;}
+
+.shareTip{position: absolute;top: 0rem;right: 1rem;display: none;}
+.shareTip img{width: 28.8rem;height: 28.2rem;}
