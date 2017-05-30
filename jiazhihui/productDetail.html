@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1,minimum-scale=1 maximum-scale=1, user-scalable=0">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="format-detection" content="telephone=no">
+	<title>产品详情</title>
+	<link rel="stylesheet" type="text/css" href="./css/standard.css">
+	<link rel="stylesheet" type="text/css" href="./css/style.css">
+	<script type="text/javascript" src="./js/reset.js"></script>
+	<script type="text/javascript" src="./js/common.js"></script>
+</head>
+<body ontouchstart="" class="mountain">
+	<header>
+		<p>产品详情</p>
+		<a class="menu" id="menu"></a>
+	</header>
+	<div class="main proDet">
+		<ul class="tab mt15-imp" id="tab1">
+			<li onclick="nTabs(this,0)" class="active">台式机</li>
+			<li onclick="nTabs(this,1)" class="normal">笔记本</li>
+		</ul>
+
+		<div class="tabCont">
+			<div id="tab1_Content0" class="subInfo" style="display: block;">
+				<div class="proDe1">
+					<div class="lef"><img src="images/computer1.jpg" alt=""></div>
+					<div class="rig">
+						<h2>启天<em>A8510</em></h2>
+						<h3 class="mt8">超薄旗舰视频会议首选超会议首选</h3>
+						<button class="mt8">辅助资料下载</button>
+					</div>
+				</div>
+				<div class="proDe2">
+					<ul>
+						<li class="active">昭阳K20-80推荐标底</li>
+						<li>昭阳K20-80推荐标底</li>
+						<li>昭阳K20-80推荐标底</li>
+						<li>昭阳K20-80推荐标底</li>
+						<li>昭阳K20-80推荐标底</li>
+						<li>昭阳K20-80推荐标底</li>
+					</ul>
+				</div>
+				<div class="proDe1 mt15">
+					<div class="lef"><img src="images/computer1.jpg" alt=""></div>
+					<div class="rig">
+						<h2>启天<em>A8510</em></h2>
+						<h3 class="mt8">超薄旗舰视频会议首选超会议首选</h3>
+						<button class="mt8">辅助资料下载</button>
+					</div>
+				</div>
+				<div class="proDe1 mt15">
+					<div class="lef"><img src="images/computer1.jpg" alt=""></div>
+					<div class="rig">
+						<h2>启天<em>A8510</em></h2>
+						<h3 class="mt8">超薄旗舰视频会议首选超会议首选</h3>
+						<button class="mt8">辅助资料下载</button>
+					</div>
+				</div>
+			</div>
+
+			<div id="tab1_Content1" style="display: none;">
+				<div class="proDe1">
+					<div class="lef"><img src="images/computer2.jpg" alt=""></div>
+					<div class="rig">
+						<h2>启天<em>A8510</em></h2>
+						<h3 class="mt8">超薄旗舰视频会议首选超会议首选</h3>
+						<button class="mt8">辅助资料下载</button>
+					</div>
+				</div>
+				<div class="proDe2">
+					<ul>
+						<li class="active">昭阳K20-80推荐标底</li>
+						<li>昭阳K20-80推荐标底</li>
+						<li>昭阳K20-80推荐标底</li>
+						<li>昭阳K20-80推荐标底</li>
+						<li>昭阳K20-80推荐标底</li>
+						<li>昭阳K20-80推荐标底</li>
+					</ul>
+				</div>
+				<div class="proDe1 mt15">
+					<div class="lef"><img src="images/computer2.jpg" alt=""></div>
+					<div class="rig">
+						<h2>启天<em>A8510</em></h2>
+						<h3 class="mt8">超薄旗舰视频会议首选超会议首选</h3>
+						<button class="mt8">辅助资料下载</button>
+					</div>
+				</div>
+				<div class="proDe1 mt15">
+					<div class="lef"><img src="images/computer2.jpg" alt=""></div>
+					<div class="rig">
+						<h2>启天<em>A8510</em></h2>
+						<h3 class="mt8">超薄旗舰视频会议首选超会议首选</h3>
+						<button class="mt8">辅助资料下载</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="block" id="block"></div>
+	<div class="carte" id="carte">
+		<div class="close" id="close"><img src="images/closeArr.png" alt=""></div>
+		<ul>
+			<a href="home.html"><li><img src="images/icon1.png" alt="">首&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;页</li></a>
+			<a href="activityDetail.html"><li><img src="images/icon2.png" alt="">活动详情</li></a>
+			<a href="busiOpportunity.html"><li><img src="images/icon3.png" alt="">商机上报</li></a>
+			<a href="productDetail.html"><li><img src="images/icon4.png" alt="">产品详情</li></a>
+			<a href="backreword.html"><li><img src="images/icon7.png" alt="">往期回顾</li></a>
+		</ul>
+	</div>
+
+	<script>
+		window.onload = function () {
+			var mountain = document.querySelector('.mountain');
+			mountain.style.height = ch + 'px';
+
+			var menu = document.querySelector('#menu'),
+				block = document.querySelector('#block'),
+				carte = document.querySelector('#carte'),
+				close = document.querySelector('#close'),
+				flag = 1;
+
+			block.style.width = cw + 'px';
+			block.style.height = ch + 'px';
+
+			menu.onclick = function () {
+				if(flag) {
+					block.style.display = 'block';
+					moveAction(carte, 'right', 0);
+					flag = 0;
+				}
+			}
+			close.onclick = block.onclick = function () {
+				if (!flag) {
+					block.style.display = 'none';
+					moveAction(carte, 'right', -carte.offsetWidth);
+					flag = 1;
+				}
+			}
+		}
+	</script>
+</body>
+</html>

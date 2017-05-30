@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no">
+	<title>无缝滚动</title>
+	<style type="text/css">
+		/*清除内外边距*/
+		html,body,div,p,h1,h2,h3,h4,h5,h6,blockquote,ul,ol,li,table,th,td,span,img,dl,dd,dt,input,textarea,button{border:medium none;padding:0;margin:0;}
+		/*设置字体*/
+		body,textarea,button,input,select{font:12px/1.5 Verdana, Geneva, sans-serif,'宋体','微软雅黑';color:#333;}
+		h1,h2,h3,h4,h5,h6{font-size:100%;}
+		em{font-style:normal;}
+		/*设置列表*/
+		ul,ol{list-style:none;}
+		/*设置表格*/
+		th,td{border-collapse:collapse;border-spacing:0;}
+		/*设置图片*/
+		img{border:none;}
+		body{font-size: 20px;}
+		.box{position: relative;overflow: hidden;margin: 1rem auto;width: 14rem;height: 328px;color: #444;box-sizing:border-box;}
+		.gallery{position: absolute;width: 1760px;height: 328px;left: 0;top: 0;}
+		.gallery img{float: left;width: 220px;height: 328px;}
+	</style>
+	<script type="text/javascript">
+		window.onload = function() {
+			var box = document.getElementById('box'),
+				gallery = document.getElementById('gallery'),
+				change = document.getElementById('change');
+
+			gallery.innerHTML = gallery.innerHTML + gallery.innerHTML;
+
+			change.onclick = function () {
+				for( var x = 0; x < box.offsetWidth; x++) {
+					setTimeout(function(){
+						if(gallery.offsetLeft < -gallery.offsetWidth/2){
+							gallery.style.left = '0';
+						}
+						gallery.style.left = gallery.offsetLeft - 1 + 'px';
+					}, 1);
+				}
+			}
+		}
+	</script>
+</head>
+<body>
+	<div class="box" id="box">
+		<div class="gallery" id="gallery">
+			<img src="./images/img1.jpg">
+			<img src="./images/img2.jpg">
+			<img src="./images/img3.jpg">
+			<img src="./images/img4.jpg">
+			<img src="./images/img5.jpg">
+			<img src="./images/img6.jpg">
+		</div>
+	</div>
+	<div class="change" id="change">换一批</div>
+</body>
+</html>

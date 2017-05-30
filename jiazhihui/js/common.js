@@ -1,4 +1,7 @@
 'use strict';
+var cw = document.documentElement.clientWidth,
+	ch = document.documentElement.clientHeight;
+	
 function nTabs(thisObj, Num) {
 	if (thisObj.className == 'active') return;
 	var tabObj = thisObj.parentNode.id;
@@ -133,4 +136,85 @@ function moveAction (obj, attr, target) {
 			}
 		}
 	}, 30);
+}
+
+function pagination(Pager) {
+	var $ = function(id){
+		return document.getElementById(id);
+	}
+
+	var cont 		= $(Pager.cont),
+		pageNum 	= Pager.pageNum,
+		pages 		= $(Pager.pages),
+		prev 		= $(Pager.prev),
+		next 		= $(Pager.next),
+		lines 		= cont.children.length,
+		pageList 	= '',
+		pageCount 	= 0,
+		currentPage = 0;
+
+	for(var i = 0; i < cont.children.length; i++){
+		cont.children[i].style.display = 'none';
+	}
+	for(var i = 0; i < pageNum; i++){
+		cont.children[i].style.display = '';
+	}
+
+	//生成翻页页码
+	pageCount = parseInt(lines / pageNum) + (lines % pageNum == 0 ? 0 : 1);
+	for(var i = 0; i < pageCount; i++){
+		pageList += '<li>' + (i + 1) + '</li>';
+	}
+	pages.innerHTML = pageList;
+	pages.children[0].className = Pager.activeName;
+
+	//点击页码
+	for(var i = 0;i < pages.children.length; i++){
+		pages.children[i].index = i;
+		pages.children[i].onclick = function() {
+			showOut(this.index);
+			this.className = Pager.activeName;
+			currentPage = this.index;
+		};
+	}
+
+	//上一页
+	prev.onclick = function() {
+		currentPage--;
+		if(currentPage >= 0){
+			showOut(currentPage);
+		}else{
+			console.warn('已经到第一页了！');
+		}
+	}
+
+	//下一页
+	next.onclick = function() {
+		currentPage++;
+		if(currentPage < pageCount){
+			showOut(currentPage);
+		}else{
+			console.warn('最后一页！');
+		}
+	}
+
+
+	//显示或隐藏内容
+	function showOut(ind) {
+		for(var i = 0; i < pages.children.length; i++) {
+			pages.children[i].className = '';
+		}
+		pages.children[ind].className = Pager.activeName;
+
+		for(var i = 0; i < cont.children.length; i++){
+			cont.children[i].style.display = 'none';
+		}
+
+		for(var i = ind * pageNum; i < (ind + 1) * pageNum; i++) {
+			if(i < cont.children.length){
+				cont.children[i].style.display = '';
+			}
+			continue;
+		}
+	}
 }

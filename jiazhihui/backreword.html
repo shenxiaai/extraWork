@@ -15,94 +15,485 @@
 <body ontouchstart="">
 	<header>
 		<p>往期回顾</p>
-		<a class="menu"></a>
+		<a class="menu" id="menu"></a>
 	</header>
-    <div class="reback pt28">
-        <div class="part part1">
-            <div class="cloud">往期回顾</div>
-            <ul>
-                <li><img src="images/img1.jpg" alt=""></li>
-                <li><img src="images/img1.jpg" alt=""></li>
-                <li><img src="images/img1.jpg" alt=""></li>
-                <li><img src="images/img1.jpg" alt=""></li>
-                <li><img src="images/img1.jpg" alt=""></li>
-                <li><img src="images/img1.jpg" alt=""></li>
-            </ul>
-            <div class="change pt5">
-                <img src="images/load.png" alt="">换一批
-            </div>
-        </div>
+	<div class="reback pt28">
+		<div class="part part1">
+			<div class="cloud">往期回顾</div>
+			<ul id="backShow">
+				<li><a href=""><img src="images/img1.jpg" alt=""></a></li>
+				<li><a href=""><img src="images/img1.jpg" alt=""></a></li>
+				<li><a href=""><img src="images/img1.jpg" alt=""></a></li>
+				<li><a href=""><img src="images/img1.jpg" alt=""></a></li>
+				<li><a href=""><img src="images/img1.jpg" alt=""></a></li>
+				<li><a href=""><img src="images/img1.jpg" alt=""></a></li>
 
-        <div class="part part2 mt30">
-            <div class="cloud">排行榜</div>
-            
-        </div>
+				<li><a href=""><img src="images/img2.jpg" alt=""></a></li>
+				<li><a href=""><img src="images/img2.jpg" alt=""></a></li>
+				<li><a href=""><img src="images/img2.jpg" alt=""></a></li>
+				<li><a href=""><img src="images/img2.jpg" alt=""></a></li>
+				<li><a href=""><img src="images/img2.jpg" alt=""></a></li>
+				<li><a href=""><img src="images/img2.jpg" alt=""></a></li>
 
+				<li><a href=""><img src="images/img3.jpg" alt=""></a></li>
+				<li><a href=""><img src="images/img3.jpg" alt=""></a></li>
+				<li><a href=""><img src="images/img3.jpg" alt=""></a></li>
+				<li><a href=""><img src="images/img3.jpg" alt=""></a></li>
+				<li><a href=""><img src="images/img3.jpg" alt=""></a></li>
+				<li><a href=""><img src="images/img3.jpg" alt=""></a></li>
 
+				<li><a href=""><img src="images/img4.jpg" alt=""></a></li>
+				<li><a href=""><img src="images/img4.jpg" alt=""></a></li>
+				<li><a href=""><img src="images/img4.jpg" alt=""></a></li>
+				<li><a href=""><img src="images/img4.jpg" alt=""></a></li>
+				<li><a href=""><img src="images/img4.jpg" alt=""></a></li>
+				<li><a href=""><img src="images/img4.jpg" alt=""></a></li>
 
+				<li><a href=""><img src="images/img5.jpg" alt=""></a></li>
+				<li><a href=""><img src="images/img5.jpg" alt=""></a></li>
+				<li><a href=""><img src="images/img5.jpg" alt=""></a></li>
+				<li><a href=""><img src="images/img5.jpg" alt=""></a></li>
+				<li><a href=""><img src="images/img5.jpg" alt=""></a></li>
+				<li><a href=""><img src="images/img5.jpg" alt=""></a></li>
 
+				<li><a href=""><img src="images/img6.jpg" alt=""></a></li>
+				<li><a href=""><img src="images/img6.jpg" alt=""></a></li>
+				<li><a href=""><img src="images/img6.jpg" alt=""></a></li>
+				<li><a href=""><img src="images/img6.jpg" alt=""></a></li>
+				<li><a href=""><img src="images/img6.jpg" alt=""></a></li>
+				<li><a href=""><img src="images/img6.jpg" alt=""></a></li>
 
+				<li><a href=""><img src="images/img7.jpg" alt=""></a></li>
+				<li><a href=""><img src="images/img7.jpg" alt=""></a></li>
+				<li><a href=""><img src="images/img7.jpg" alt=""></a></li>
+				<li><a href=""><img src="images/img7.jpg" alt=""></a></li>
+			</ul>
+			<div class="change pt5" id="change">
+				<img src="images/load.png" alt="">换一批
+			</div>
+		</div>
 
+		<div class="part part2 mt30">
+			<div class="cloud">排行榜</div>
+			<div class="ranking">
+				<ul class="rankTab mt15-imp" id="tab2">
+					<li onclick="nTabs(this,0)" class="active">报价单</li>
+					<li onclick="nTabs(this,1)" class="normal">投放管理</li>
+				</ul>
+				<div class="tabCont">
+					<div id="tab2_Content0" style="display: block;">
+						<table>
+							<thead>
+								<tr>
+									<th>排名</th>
+									<th>姓名</th>
+									<th>分区</th>
+									<th>人数</th>
+									<th>销售台数</th>
+								</tr>
+							</thead>
+							<tbody id="pageCont">
+								<tr>
+									<td>1</td>
+									<td>呼浩</td>
+									<td>呼和浩特分区</td>
+									<td>20人</td>
+									<td>120</td>
+								</tr>
+								<tr>
+									<td>1</td>
+									<td>呼浩</td>
+									<td>呼和浩特分区</td>
+									<td>20人</td>
+									<td>120</td>
+								</tr>
+								<tr>
+									<td>1</td>
+									<td>呼浩</td>
+									<td>呼和浩特分区</td>
+									<td>20人</td>
+									<td>120</td>
+								</tr>
+								<tr>
+									<td>1</td>
+									<td>呼浩</td>
+									<td>呼和浩特分区</td>
+									<td>20人</td>
+									<td>120</td>
+								</tr>
+								<tr>
+									<td>1</td>
+									<td>呼浩</td>
+									<td>呼和浩特分区</td>
+									<td>20人</td>
+									<td>120</td>
+								</tr>
+								<tr>
+									<td>1</td>
+									<td>呼浩</td>
+									<td>呼和浩特分区</td>
+									<td>20人</td>
+									<td>120</td>
+								</tr>
+								<tr>
+									<td>1</td>
+									<td>呼浩</td>
+									<td>呼和浩特分区</td>
+									<td>20人</td>
+									<td>120</td>
+								</tr>
+								<tr>
+									<td>1</td>
+									<td>呼浩</td>
+									<td>呼和浩特分区</td>
+									<td>20人</td>
+									<td>120</td>
+								</tr>
+								<tr>
+									<td>1</td>
+									<td>呼浩</td>
+									<td>呼和浩特分区</td>
+									<td>20人</td>
+									<td>120</td>
+								</tr>
+								<tr>
+									<td>1</td>
+									<td>呼浩</td>
+									<td>呼和浩特分区</td>
+									<td>20人</td>
+									<td>120</td>
+								</tr>
+								<tr>
+									<td>2</td>
+									<td>芳芳</td>
+									<td>华东地区</td>
+									<td>20人</td>
+									<td>120</td>
+								</tr>
+								<tr>
+									<td>2</td>
+									<td>芳芳</td>
+									<td>华东地区</td>
+									<td>20人</td>
+									<td>120</td>
+								</tr>
+								<tr>
+									<td>2</td>
+									<td>芳芳</td>
+									<td>华东地区</td>
+									<td>20人</td>
+									<td>120</td>
+								</tr>
+								<tr>
+									<td>2</td>
+									<td>芳芳</td>
+									<td>华东地区</td>
+									<td>20人</td>
+									<td>120</td>
+								</tr>
+								<tr>
+									<td>2</td>
+									<td>芳芳</td>
+									<td>华东地区</td>
+									<td>20人</td>
+									<td>120</td>
+								</tr>
+								<tr>
+									<td>2</td>
+									<td>芳芳</td>
+									<td>华东地区</td>
+									<td>20人</td>
+									<td>120</td>
+								</tr>
+								<tr>
+									<td>2</td>
+									<td>芳芳</td>
+									<td>华东地区</td>
+									<td>20人</td>
+									<td>120</td>
+								</tr>
+								<tr>
+									<td>2</td>
+									<td>芳芳</td>
+									<td>华东地区</td>
+									<td>20人</td>
+									<td>120</td>
+								</tr>
+								<tr>
+									<td>2</td>
+									<td>芳芳</td>
+									<td>华东地区</td>
+									<td>20人</td>
+									<td>120</td>
+								</tr>
+								<tr>
+									<td>2</td>
+									<td>芳芳</td>
+									<td>华东地区</td>
+									<td>20人</td>
+									<td>120</td>
+								</tr>
+								<tr>
+									<td>3</td>
+									<td>呼浩</td>
+									<td>京津翼地区</td>
+									<td>45人</td>
+									<td>410</td>
+								</tr>
+								<tr>
+									<td>3</td>
+									<td>呼浩</td>
+									<td>京津翼地区</td>
+									<td>45人</td>
+									<td>410</td>
+								</tr>
+								<tr>
+									<td>3</td>
+									<td>呼浩</td>
+									<td>京津翼地区</td>
+									<td>45人</td>
+									<td>410</td>
+								</tr>
+								<tr>
+									<td>3</td>
+									<td>呼浩</td>
+									<td>京津翼地区</td>
+									<td>45人</td>
+									<td>410</td>
+								</tr>
+								<tr>
+									<td>3</td>
+									<td>呼浩</td>
+									<td>京津翼地区</td>
+									<td>45人</td>
+									<td>410</td>
+								</tr>
+								<tr>
+									<td>3</td>
+									<td>呼浩</td>
+									<td>京津翼地区</td>
+									<td>45人</td>
+									<td>410</td>
+								</tr>
+								<tr>
+									<td>3</td>
+									<td>呼浩</td>
+									<td>京津翼地区</td>
+									<td>45人</td>
+									<td>410</td>
+								</tr>
+								<tr>
+									<td>3</td>
+									<td>呼浩</td>
+									<td>京津翼地区</td>
+									<td>45人</td>
+									<td>410</td>
+								</tr>
+								<tr>
+									<td>3</td>
+									<td>呼浩</td>
+									<td>京津翼地区</td>
+									<td>45人</td>
+									<td>410</td>
+								</tr>
+								<tr>
+									<td>3</td>
+									<td>呼浩</td>
+									<td>京津翼地区</td>
+									<td>45人</td>
+									<td>410</td>
+								</tr>
+								<tr>
+									<td>4</td>
+									<td>西藏</td>
+									<td>西藏地区</td>
+									<td>20人</td>
+									<td>120</td>
+								</tr>
+								<tr>
+									<td>4</td>
+									<td>西藏</td>
+									<td>西藏地区</td>
+									<td>20人</td>
+									<td>120</td>
+								</tr>
+								<tr>
+									<td>4</td>
+									<td>西藏</td>
+									<td>西藏地区</td>
+									<td>20人</td>
+									<td>120</td>
+								</tr>
+								<tr>
+									<td>4</td>
+									<td>西藏</td>
+									<td>西藏地区</td>
+									<td>20人</td>
+									<td>120</td>
+								</tr>
+								<tr>
+									<td>4</td>
+									<td>西藏</td>
+									<td>西藏地区</td>
+									<td>20人</td>
+									<td>120</td>
+								</tr>
+								<tr>
+									<td>4</td>
+									<td>西藏</td>
+									<td>西藏地区</td>
+									<td>20人</td>
+									<td>120</td>
+								</tr>
+								<tr>
+									<td>4</td>
+									<td>西藏</td>
+									<td>西藏地区</td>
+									<td>20人</td>
+									<td>120</td>
+								</tr>
+								<tr>
+									<td>4</td>
+									<td>西藏</td>
+									<td>西藏地区</td>
+									<td>20人</td>
+									<td>120</td>
+								</tr>
+							</tbody>
+						</table>
+						<div class="pageBox">
+							<button class="prev" id="prev">上一页</button>
+							<ul id="pages" class="pages" style="display: none;"></ul>
+							<button class="next" id="next">下一页</button>
+						</div>
+					</div>
+					<div id="tab2_Content1" class="myBusCom" style="display: none;">
+						<ul class="tinyTab" id="tab3">
+							<li onclick="nTabs(this,0)" class="normal">第一期</li>
+							<li onclick="nTabs(this,1)" class="normal">第二期</li>
+							<li onclick="nTabs(this,2)" class="active">第三期</li>
+						</ul><br>
+						<div class="tabCont">
+							<div id="tab3_Content0" style="display: none;">第一期</div>
+							<div id="tab3_Content1" style="display: none;">第二期</div>
+							<div id="tab3_Content2" style="display: block;">
+								<p><img src="images/icon6.png" alt="">第585名 打败了全国23%的销售人员</p>
+								<div class="mt7" style="border: 1px solid #5cc1b7;">
+									<div class="info">
+										<img src="images/icon5.png" alt="">
+										<p>霍豪情  成功上传2个商机<br><em>赢得0积分</em></p>
+									</div>
+									<table>
+										<thead>
+											<tr>
+												<th>商机编号</th>
+												<th>销售数量</th>
+												<th>对应资源</th>
+												<th>状态</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td>1</td>
+												<td>呼浩</td>
+												<td>呼和浩特分区</td>
+												<td>20人</td>
+											</tr>
+											<tr>
+												<td>1</td>
+												<td>呼浩</td>
+												<td>呼和浩特分区</td>
+												<td>120</td>
+											</tr>
+											<tr>
+												<td>1</td>
+												<td>呼浩</td>
+												<td>20人</td>
+												<td>120</td>
+											</tr>
+											<tr>
+												<td>1</td>
+												<td>呼浩</td>
+												<td>20人</td>
+												<td>120</td>
+											</tr>
+											<tr>
+												<td>1</td>
+												<td>呼浩</td>
+												<td>20人</td>
+												<td>120</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+								<div class="pageBox">
+									<button class="prev">上一页</button>
+									<button class="next">下一页</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 
-        <h2 class="no no1 ptb4 pl20">目&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;的：</h2>
-        <h3 class="ptb4">加速信息传递效率，鼓励合作伙伴推荐推荐h3C优势产品，提升产品竞争力，提高赢单率提升价值产品中小订单销售</p>
-        <h2 class="no no2 ptb4 pl20">政策范围：</h2>
-        <h3 class="ptb4">大客户服务商；客户代理商及经销商sales</h3>
-        <h2 class="no no3 ptb4 pl20">政策时效：</h2>
-        <h3 class="ptb4">2017年2月13日至2017年6月30日</h3>
-        <h2 class="no no4 ptb4 pl20">方案说明：</h2>
-        <h4 class="ptb4">1. 大客户经销商、代理商参与方式及奖励：</h4>
-        <h5 class="ptb4 pl15"><em>1</em><b>奖励方案：</b>合作伙伴sales销售以下任意明星产品均可参与，按立项商机实际销量累计台数排名，视全国排名顺序获得不同的客户开拓奖励。</h5>
-        <table>
-            <thead>
-                <tr>
-                    <th>排名</th>
-                    <th>奖励</th>
-                    <th>数量</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>1-20</td>
-                    <td>迪拜游</td>
-                    <td>20人</td>
-                </tr>
-                <tr>
-                    <td>21-60</td>
-                    <td>泰国游</td>
-                    <td>40人</td>
-                </tr>
-                <tr>
-                    <td>61-140</td>
-                    <td>ThinkPadStack 投影模块</td>
-                    <td>80人</td>
-                </tr>
-                <tr>
-                    <td>141-290</td>
-                    <td>SSD移动硬盘</td>
-                    <td>150人</td>
-                </tr>
-            </tbody>
-        </table>
-
-        <p class="ptb4"><b>注：</b>累积上报销量>=50台即可参加<br>为鼓励上报，凡上报累积数量超过5台，可获得阳光普照奖，此奖与排名奖不可重复获得，先到先得。</p>
-
-        <table>
-            <thead>
-                <tr>
-                    <th>普照奖</th>
-                    <th>奖励</th>
-                    <th>数量</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>累计>5台</td>
-                    <td>100元佳沃礼品卡</td>
-                    <td>500人</td>
-                </tr>
-            </tbody>
-        </table>
+		<div class="block" id="block"></div>
+		<div class="carte" id="carte">
+			<div class="close" id="close"><img src="images/closeArr.png" alt=""></div>
+			<ul>
+				<a href="home.html"><li><img src="images/icon1.png" alt="">首&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;页</li></a>
+				<a href="activityDetail.html"><li><img src="images/icon2.png" alt="">活动详情</li></a>
+				<a href="busiOpportunity.html"><li><img src="images/icon3.png" alt="">商机上报</li></a>
+				<a href="productDetail.html"><li><img src="images/icon4.png" alt="">产品详情</li></a>
+				<a href="backreword.html"><li><img src="images/icon7.png" alt="">往期回顾</li></a>
+			</ul>
+		</div>
 	</div>
+	<script>
+		window.onload = function() {
+			var menu = document.querySelector('#menu'),
+				block = document.querySelector('#block'),
+				carte = document.querySelector('#carte'),
+				close = document.querySelector('#close'),
+				backShow = document.getElementById('backShow'),
+				showLi = backShow.getElementsByTagName('li'),
+				change = document.querySelector('#change'),
+				flag = 1,
+				showArr = [];
+
+			block.style.width = cw + 'px';
+			block.style.height = ch + 'px';
+
+			menu.onclick = function () {
+				if(flag) {
+					block.style.display = 'block';
+					moveAction(carte, 'right', 0);
+					flag = 0;
+				}
+			}
+			close.onclick = block.onclick = function () {
+				if (!flag) {
+					block.style.display = 'none';
+					moveAction(carte, 'right', -carte.offsetWidth);
+					flag = 1;
+				}
+			}
+
+			// 换一批
+			change.onclick = function () {
+				backShow.innerHTML = '';
+			}
+
+			// 分页
+			pagination({
+				cont 		: 'pageCont',
+				pages 		: 'pages',
+				prev 		: 'prev',
+				next 		: 'next',
+				activeName 	: 'active',
+				pageNum 	: 10
+			});
+		}
+	</script>
 </body>
 </html>
