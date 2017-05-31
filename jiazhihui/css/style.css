@@ -57,7 +57,7 @@ table.blue th,table.blue td{padding-left: 1.5rem;border-right: 1px solid #6bc3f1
 .exam label{display: block;width: 100%;height: 3rem;line-height: 3rem;font-size: 1.4rem;color: #464545;}
 .exam input[type="radio"]{margin-right: 1rem;background: url(../images/radio.png) 0 0 no-repeat;width: 1.3rem;height: 1.3rem;background-size: 1.3rem;}
 .exam input[type="radio"]:checked{background: url(../images/radio_checked.png) 0 0 no-repeat;background-size: 1.3rem;}
-.exam p{font-size: .8rem;color: #555;line-height: 1.2rem;}
+.exam p{font-size: 1.2rem;color: #555;line-height: 1.7rem;}
 .exam p.red{color: #e10e1c;}
 .exam p.green{color: #2fd023;}
 
@@ -108,10 +108,9 @@ table.blue th,table.blue td{padding-left: 1.5rem;border-right: 1px solid #6bc3f1
 .homeBox .part1{height: 16rem;font-size: 1.3rem;}
 .homeBox b{font-weight: bold;}
 .homeBox .choose-btn-box{margin-top: 1.2rem;display: -webkit-box;-webkit-box-pack: justify;width: 100%;}
-.homeBox .choose-btn-box button{display: block;-webkit-box-flex: 1;margin-right: 1rem;height: 3rem;line-height: 3rem;text-align: center;font-size: 1.2rem;color: #fff4b1;border-radius: 3px;background: #fe6e2f;box-shadow: 1px 2px 10px #7c8587;}
-.homeBox .choose-btn-box button:last-child{margin-right: 0;}
+.homeBox .choose-btn-box a,.homeBox .choose-btn-box button{display: block;-webkit-box-flex: 1;margin-right: 1rem;height: 3rem;line-height: 3rem;text-align: center;font-size: 1.2rem;color: #fff4b1;border-radius: 3px;background: #fe6e2f;box-shadow: 1px 2px 10px #7c8587;}
 .homeBox .choose-btn-box .btn2{background: #ffa853;color: #fff;}
-.homeBox .choose-btn-box .btn3{background: #fe6f30;}
+.homeBox .choose-btn-box .btn3{margin-right: 0;background: #fe6f30;}
 .homeBox .part2{height: 43rem;}
 .homeBox .part2 li{margin-top: 1.7rem;float: left;display: block;width: 50%;height: 11.8rem;text-align: center;}
 .homeBox .part2 li img{width: 13.8rem;height: 11.8rem;}

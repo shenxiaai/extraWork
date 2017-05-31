@@ -24,9 +24,9 @@
 				<h2 class="no no1 ptb4 pl20 lh20">销售指定明星产品，累计积分，即可获得丰厚大奖：<b>迪拜游、泰国游、ThinkPadStack投影模块、SSD移动硬盘100元佳沃礼品卡。</b></h2>
 				<h2 class="no no2 ptb4 pl20 lh20">参与夺标之星的用户均可参加免费抽奖活动！</h2>
 				<div class="choose-btn-box">
-					<button class="btn1">活动详情</button>
-					<button class="btn2">上报商机</button>
-					<button class="btn3">活动展示</button>
+					<a href="activityDetail.html" class="btn1">活动详情</a>
+					<a href="busiOpportunity.html" class="btn2">上报商机</a>
+					<button id="videoShowBtn" class="btn3">活动展示</button>
 				</div>
 			</div>
 			<div class="part part2 mt50">
@@ -39,7 +39,7 @@
 					<li><img src="images/fruitCard.png"></li>
 				</ul>
 			</div>
-			<div class="part part3 mtb50">
+			<div class="part part3 mtb50" id="endF">
 				<div class="cloud">活动展示</div>
 				<div class="vid pt10"><video src="images/shipin.mp4" width="100%"></video></div>
 			</div>
@@ -55,7 +55,7 @@
 		            <a href="backreword.html"><li><img src="images/icon7.png" alt="">往期回顾</li></a>
 		        </ul>
 			</div>
-			
+
 		</div>
 	</div>
 	<script>
@@ -64,6 +64,7 @@
 				block = document.querySelector('#block'),
 				carte = document.querySelector('#carte'),
 				close = document.querySelector('#close'),
+				videoShowBtn = document.querySelector('#videoShowBtn'),
 				flag = 1;
 
 			block.style.width = cw + 'px';
@@ -82,6 +83,10 @@
 					moveAction(carte, 'right', -carte.offsetWidth);
 					flag = 1;
 				}
+			}
+
+			videoShowBtn.onclick = function () {
+				document.getElementById('endF').scrollIntoView();
 			}
 		}
 	</script>
