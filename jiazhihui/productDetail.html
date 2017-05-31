@@ -181,6 +181,7 @@
 				downldBtn = document.querySelectorAll('.downldBtn'),
 				proDe2 = document.querySelectorAll('.proDe2'),
 				flag = 1,
+				scrollUp = 1,	// 点击展开、收起
 				shareBlock = 0;
 
 			block.style.width = cw + 'px';
@@ -215,10 +216,13 @@
 			});
 			for(var n = 0; n < downldBtn.length; n++) {
 				downldBtn[n].onclick = function() {
-					for(var h = 0; h < proDe2.length; h++) {
-						proDe2[h].style.display = 'none';
+					if(scrollUp) {
+						this.parentNode.parentNode.parentNode.children[1].style.display = 'block';
+						scrollUp = 0;
+					}else {
+						this.parentNode.parentNode.parentNode.children[1].style.display = 'none';
+						scrollUp = 1;
 					}
-					this.parentNode.parentNode.parentNode.children[1].style.display = 'block';
 				}
 			}
 		}

@@ -481,22 +481,9 @@
 
 			// 换一批
 			change.onclick = function () {
-				backShow.innerHTML = '';
-				if(changeFlag < turn) {
-					backShow.innerHTML = creatLi(changeFlag);
-					changeFlag++;
-				}else{
-					changeFlag = 0;
-				}
+
 			}
 
-			function creatLi (num) {
-				var result = '';
-				for(var m = 0; m < 6; m++) {
-					result += '<li><a href=""><img src="images/img' + (num+1) + '.jpg" alt=""></a></li>';
-				}
-				return result;
-			}
 
 			// 分页
 			pagination({
