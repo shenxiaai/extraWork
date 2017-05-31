@@ -21,12 +21,54 @@
 		<div class="part part1">
 			<div class="cloud">往期回顾</div>
 			<ul id="backShow">
+				<li><a href=""><img src="images/img3.jpg" alt=""></a></li>
+				<li><a href=""><img src="images/img3.jpg" alt=""></a></li>
+				<li><a href=""><img src="images/img3.jpg" alt=""></a></li>
+				<li><a href=""><img src="images/img3.jpg" alt=""></a></li>
+				<li><a href=""><img src="images/img6.jpg" alt=""></a></li>
+				<li><a href=""><img src="images/img7.jpg" alt=""></a></li>
+				<li><a href=""><img src="images/img1.jpg" alt=""></a></li>
+				<li><a href=""><img src="images/img1.jpg" alt=""></a></li>
+				<li><a href=""><img src="images/img1.jpg" alt=""></a></li>
+				<li><a href=""><img src="images/img6.jpg" alt=""></a></li>
+				<li><a href=""><img src="images/img7.jpg" alt=""></a></li>
+				<li><a href=""><img src="images/img4.jpg" alt=""></a></li>
+				<li><a href=""><img src="images/img6.jpg" alt=""></a></li>
+				<li><a href=""><img src="images/img1.jpg" alt=""></a></li>
+				<li><a href=""><img src="images/img7.jpg" alt=""></a></li>
+				<li><a href=""><img src="images/img1.jpg" alt=""></a></li>
+				<li><a href=""><img src="images/img4.jpg" alt=""></a></li>
+				<li><a href=""><img src="images/img7.jpg" alt=""></a></li>
+				<li><a href=""><img src="images/img4.jpg" alt=""></a></li>
+				<li><a href=""><img src="images/img7.jpg" alt=""></a></li>
+				<li><a href=""><img src="images/img2.jpg" alt=""></a></li>
+				<li><a href=""><img src="images/img2.jpg" alt=""></a></li>
+				<li><a href=""><img src="images/img7.jpg" alt=""></a></li>
+				<li><a href=""><img src="images/img2.jpg" alt=""></a></li>
+				<li><a href=""><img src="images/img5.jpg" alt=""></a></li>
+				<li><a href=""><img src="images/img2.jpg" alt=""></a></li>
+				<li><a href=""><img src="images/img2.jpg" alt=""></a></li>
+				<li><a href=""><img src="images/img2.jpg" alt=""></a></li>
 				<li><a href=""><img src="images/img7.jpg" alt=""></a></li>
 				<li><a href=""><img src="images/img7.jpg" alt=""></a></li>
 				<li><a href=""><img src="images/img7.jpg" alt=""></a></li>
+				<li><a href=""><img src="images/img4.jpg" alt=""></a></li>
+				<li><a href=""><img src="images/img4.jpg" alt=""></a></li>
+				<li><a href=""><img src="images/img4.jpg" alt=""></a></li>
+				<li><a href=""><img src="images/img4.jpg" alt=""></a></li>
 				<li><a href=""><img src="images/img7.jpg" alt=""></a></li>
+				<li><a href=""><img src="images/img2.jpg" alt=""></a></li>
+				<li><a href=""><img src="images/img4.jpg" alt=""></a></li>
+				<li><a href=""><img src="images/img2.jpg" alt=""></a></li>
+				<li><a href=""><img src="images/img2.jpg" alt=""></a></li>
 				<li><a href=""><img src="images/img7.jpg" alt=""></a></li>
-				<li><a href=""><img src="images/img7.jpg" alt=""></a></li>
+				<li><a href=""><img src="images/img3.jpg" alt=""></a></li>
+				<li><a href=""><img src="images/img3.jpg" alt=""></a></li>
+				<li><a href=""><img src="images/img3.jpg" alt=""></a></li>
+				<li><a href=""><img src="images/img3.jpg" alt=""></a></li>
+				<li><a href=""><img src="images/img5.jpg" alt=""></a></li>
+				<li><a href=""><img src="images/img5.jpg" alt=""></a></li>
+				<li><a href=""><img src="images/img5.jpg" alt=""></a></li>
 			</ul>
 			<div class="change pt5" id="change">
 				<img src="images/load.png" alt="">换一批
@@ -444,20 +486,13 @@
 			change.onclick = function () {
 				backShow.innerHTML = '';
 				if(changeFlag < turn) {
-					backShow.innerHTML = creatLi(changeFlag);
+					// backShow.innerHTML = creatLi(changeFlag);
 					changeFlag++;
 				}else{
 					changeFlag = 0;
 				}
 			}
 
-			function creatLi (num) {
-				var result = '';
-				for(var m = 0; m < 6; m++) {
-					result += '<li><a href=""><img src="images/img' + (num+1) + '.jpg" alt=""></a></li>';
-				}
-				return result;
-			}
 
 			// 分页
 			pagination({
