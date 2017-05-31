@@ -25,38 +25,64 @@
 
 		<div class="tabCont">
 			<div id="tab1_Content0" class="subInfo" style="display: block;">
-				<div class="proDe1">
-					<div class="lef"><img src="images/computer1.jpg" alt=""></div>
-					<div class="rig">
-						<h2>启天<em>A8510</em></h2>
-						<h3 class="mt8">超薄旗舰视频会议首选超会议首选</h3>
-						<button class="mt8" id="share">辅助资料下载</button>
+				<div class="pro1">
+					<div class="proDe1">
+						<div class="lef"><img src="images/computer1.jpg" alt=""></div>
+						<div class="rig">
+							<h2>启天<em>A8510</em></h2>
+							<h3 class="mt8">超薄旗舰视频会议首选超会议首选</h3>
+							<button class="mt8 downldBtn">辅助资料下载</button>
+						</div>
+					</div>
+					<div class="proDe2">
+						<ul>
+							<li class="active share">昭阳K20-80推荐标底1</li>
+							<li class="share">昭阳K20-80推荐标底1</li>
+							<li class="share">昭阳K20-80推荐标底1</li>
+							<li class="share">昭阳K20-80推荐标底1</li>
+							<li class="share">昭阳K20-80推荐标底1</li>
+							<li class="share">昭阳K20-80推荐标底1</li>
+						</ul>
 					</div>
 				</div>
-				<div class="proDe2">
-					<ul>
-						<li class="active">昭阳K20-80推荐标底</li>
-						<li>昭阳K20-80推荐标底</li>
-						<li>昭阳K20-80推荐标底</li>
-						<li>昭阳K20-80推荐标底</li>
-						<li>昭阳K20-80推荐标底</li>
-						<li>昭阳K20-80推荐标底</li>
-					</ul>
-				</div>
-				<div class="proDe1 mt15">
-					<div class="lef"><img src="images/computer1.jpg" alt=""></div>
-					<div class="rig">
-						<h2>启天<em>A8510</em></h2>
-						<h3 class="mt8">超薄旗舰视频会议首选超会议首选</h3>
-						<button class="mt8">辅助资料下载</button>
+				<div class="pro2">
+					<div class="proDe1 mt15" id="doc1">
+						<div class="lef"><img src="images/computer1.jpg" alt=""></div>
+						<div class="rig">
+							<h2>启天<em>A8510</em></h2>
+							<h3 class="mt8">超薄旗舰视频会议首选超会议首选</h3>
+							<button class="mt8 downldBtn">辅助资料下载</button>
+						</div>
+					</div>
+					<div class="proDe2">
+						<ul>
+							<li class="active share">昭阳K20-80推荐标底2</li>
+							<li class="share">昭阳K20-80推荐标底2</li>
+							<li class="share">昭阳K20-80推荐标底2</li>
+							<li class="share">昭阳K20-80推荐标底2</li>
+							<li class="share">昭阳K20-80推荐标底2</li>
+							<li class="share">昭阳K20-80推荐标底2</li>
+						</ul>
 					</div>
 				</div>
-				<div class="proDe1 mt15">
-					<div class="lef"><img src="images/computer1.jpg" alt=""></div>
-					<div class="rig">
-						<h2>启天<em>A8510</em></h2>
-						<h3 class="mt8">超薄旗舰视频会议首选超会议首选</h3>
-						<button class="mt8">辅助资料下载</button>
+				<div class="pro3">
+					<div class="proDe1 mt15">
+						<div class="lef"><img src="images/computer1.jpg" alt=""></div>
+						<div class="rig">
+							<h2>启天<em>A8510</em></h2>
+							<h3 class="mt8">超薄旗舰视频会议首选超会议首选</h3>
+							<button class="mt8 downldBtn">辅助资料下载</button>
+						</div>
+					</div>
+					<div class="proDe2">
+						<ul>
+							<li class="active share">昭阳K20-80推荐标底3</li>
+							<li class="share">昭阳K20-80推荐标底3</li>
+							<li class="share">昭阳K20-80推荐标底3</li>
+							<li class="share">昭阳K20-80推荐标底3</li>
+							<li class="share">昭阳K20-80推荐标底3</li>
+							<li class="share">昭阳K20-80推荐标底3</li>
+						</ul>
 					</div>
 				</div>
 			</div>
@@ -124,8 +150,10 @@
 				block = document.querySelector('#block'),
 				carte = document.querySelector('#carte'),
 				close = document.querySelector('#close'),
-				share = document.querySelector('#share'),
+				share = document.querySelectorAll('.share'),
 				shareTip = document.querySelector('#shareTip'),
+				downldBtn = document.querySelectorAll('.downldBtn'),
+				proDe2 = document.querySelectorAll('.proDe2'),
 				flag = 1,
 				shareBlock = 0;
 
@@ -146,10 +174,12 @@
 					flag = 1;
 				}
 			}
-			share.onclick = function () {
-				block.style.display = 'block';
-				shareTip.style.display = 'block';
-				shareBlock = 1;
+			for(var g = 0; g < share.length; g++) {
+				share[g].onclick = function () {
+					block.style.display = 'block';
+					shareTip.style.display = 'block';
+					shareBlock = 1;
+				}
 			}
 			block.addEventListener('click', function () {
 				if(shareBlock) {
@@ -157,6 +187,14 @@
 					block.style.display = 'none';
 				}
 			});
+			for(var n = 0; n < downldBtn.length; n++) {
+				downldBtn[n].onclick = function() {
+					for(var h = 0; h < proDe2.length; h++) {
+						proDe2[h].style.display = 'none';
+					}
+					this.parentNode.parentNode.parentNode.children[1].style.display = 'block';
+				}
+			}
 		}
 	</script>
 </body>

@@ -45,7 +45,7 @@ table.blue tr:nth-child(2n){background: #d5effe;}
 table.blue th{background: #91cfef;font-size: .8rem;color: #464545;font-weight: bold;}
 table.blue th,table.blue td{padding-left: 1.5rem;border-right: 1px solid #6bc3f1;font-size: .8rem;}
 
-.mountain{background: url(../images/bg.jpg) 0 0 no-repeat;background-size: cover;width: 100%;}
+.mountain{background: url(../images/bg.jpg) #d8f3ef center bottom no-repeat;background-size: cover;width: 100%;}
 
 .tab{margin: 0 auto;width: 29rem;height: 4rem;line-height: 4rem;border-radius: 3px;box-sizing: border-box;}
 .tab li{float: left;width: 50%;background: #ffa854;text-align: center;color: #fff;font-size: 1.6rem;font-weight: bold;}
@@ -55,8 +55,8 @@ table.blue th,table.blue td{padding-left: 1.5rem;border-right: 1px solid #6bc3f1
 /*考试*/
 .exam h2{font-size: 1.6rem;color: #464545;font-weight: bold;line-height: 2.5rem;}
 .exam label{display: block;width: 100%;height: 3rem;line-height: 3rem;font-size: 1.4rem;color: #464545;}
-.exam input[type="radio"]{margin-right: 1rem;background: url(../images/radio.png) 0 0 no-repeat;width: 1.3rem;height: 1.3rem;background-size: 1.3rem;}
-.exam input[type="radio"]:checked{background: url(../images/radio_checked.png) 0 0 no-repeat;background-size: 1.3rem;}
+.exam input{margin-right: 1rem;background: url(../images/radio.png) 0 0 no-repeat;width: 1.3rem;height: 1.3rem;background-size: 1.3rem;}
+.exam input:checked{background: url(../images/radio_checked.png) 0 0 no-repeat;background-size: 1.3rem;}
 .exam p{font-size: 1.2rem;color: #555;line-height: 1.7rem;}
 .exam p.red{color: #e10e1c;}
 .exam p.green{color: #2fd023;}
@@ -64,9 +64,9 @@ table.blue th,table.blue td{padding-left: 1.5rem;border-right: 1px solid #6bc3f1
 /*提交信息*/
 .subInfo{margin: 0 auto;width: 100%;}
 .subInfo .form-item{width: 100%;height: 5rem;}
-.subInfo .form-item.select{position: relative;}
-.subInfo .form-item.select::after{content: "";position: absolute;right: 0;top: 0;background: url(../images/downArr.png) 0 0 no-repeat;background-size: auto 3.9rem;width: 3.9rem;height: 3.9rem;}
-.subInfo select{padding-left: .5rem;width: 100%;height: 4rem;line-height: 4rem;font-size: 1.4rem;border: 1px solid #eaaf79;box-sizing: border-box;}
+.subInfo .form-item.select{margin-bottom: 1rem;position: relative;z-index: 0;background: #fff;height: 4rem;}
+.subInfo .form-item.select:after{content: "";position: absolute;right: 0;top: 0;background: url(../images/downArr.png) 0 0 no-repeat;background-size: auto 3.9rem;width: 3.9rem;height: 3.9rem;}
+.subInfo select{position: absolute;background: none;padding-left: .5rem;width: 100%;height: 4rem;line-height: 4rem;z-index: 1;font-size: 1.4rem;border: 1px solid #eaaf79;box-sizing: border-box;}
 .subInfo input{padding-left: .5rem;display: block;width: 100%;height: 4rem;line-height: 4rem;font-size: 1.4rem;color: #464545;border: 1px solid #eaaf79;box-sizing: border-box;}
 .subInfo p{font-size: 1.2rem;color: #464545;line-height: 1.9rem;}
 .subInfo p.red{font-size: 1rem;color: #ff0000;}
@@ -82,7 +82,7 @@ table.blue th,table.blue td{padding-left: 1.5rem;border-right: 1px solid #6bc3f1
 .reback .part1 li img{width: 11rem;height: 7rem;}
 .reback .part1 .change{width: 100%;text-align: center;font-size: 1.2rem;color: #ff7131;font-weight: bold;}
 .reback .part1 .change img{margin-right: .3rem;width: 1.45rem;height: 1.6rem;}
-.reback .part2{height: 38rem;}
+.reback .part2{height: 40.5rem;}
 .reback .rankTab{width: 100%;height: 3rem;}
 .reback .rankTab li{float: left;width: 50%;background: #8bd6cc;height: 3rem;line-height: 3rem;text-align: center;color: #fff;font-size: 1.5rem;font-weight: bold;}
 .reback .rankTab li.active{background: #5abfb3;color: #fff4b1;}
@@ -90,9 +90,9 @@ table.blue th,table.blue td{padding-left: 1.5rem;border-right: 1px solid #6bc3f1
 .reback .tabCont .pageBox{display: -webkit-box;-webkit-box-pack: justify;margin: 0 auto;margin-top: 2.5rem;width: 23.2rem;}
 .reback .tabCont .pageBox button{display: block;width: 10rem;height: 3rem;line-height: 3rem;text-align: center;background: #5abfb3;font-size: 1.2rem;color: #fff4b1;font-weight: bold;border-radius: 3px;}
 .reback .tabCont .pageBox button:last-child{color: #fff;background: #8ed8cf;}
-.reback .myBusCom .tinyTab{margin-top: .3rem;}
-.reback .myBusCom .tinyTab li{float: left;margin-right: .6rem;background: #8fdad2;width: 4.1rem;height: 1.5rem;line-height: 1.5rem;border-radius: 3px;font-size: .9rem;color: #fff;text-align: center;}
-.reback .myBusCom .tinyTab li.active{background: #52bcb1;box-shadow: 0px 1px 8px #4c7272;}
+.reback .tinyTab{margin-top: .3rem;}
+.reback .tinyTab li{float: left;margin-right: .6rem;background: #8fdad2;width: 4.1rem;height: 1.5rem;line-height: 1.5rem;border-radius: 3px;font-size: .9rem;color: #fff;text-align: center;}
+.reback .tinyTab li.active{background: #52bcb1;box-shadow: 0px 1px 8px #4c7272;}
 .reback .myBusCom p{margin-top: 1rem;font-size: 1rem;color: #5abeb2;}
 .reback .myBusCom p img{margin-right: .4rem;width: .8rem;height: 1.6rem;vertical-align: middle;}
 .reback .myBusCom .info{display: -webkit-box;-webkit-box-align: center;width: 100%;height: 5.2rem;background: #a1dcd6;}
@@ -130,7 +130,7 @@ table.blue th,table.blue td{padding-left: 1.5rem;border-right: 1px solid #6bc3f1
 .carte li img{width: 2rem;height: 2rem;margin-right: 1.5rem;}
 
 /*产品详情*/
-.proDet .tabCont{padding: 1.8rem 2.5rem 0 2.5rem;}
+.proDet .tabCont{padding: 1.8rem 2.5rem;height: auto;}
 .proDet .proDe1{display: -webkit-box;-webkit-box-pack: justify;padding: 1rem 2rem;background: #fff;width: 100%;height: 11.5rem;box-sizing: border-box;}
 .proDet .proDe1 .lef{width: 12rem;line-height: 10rem;}
 .proDet .proDe1 .lef img{width: 9.8rem;height: 6.7rem;}
@@ -139,7 +139,7 @@ table.blue th,table.blue td{padding-left: 1.5rem;border-right: 1px solid #6bc3f1
 .proDet .proDe1 h2 em{margin-left: .5rem;display: inline-block;padding: .1rem .5rem;color: #fff4b1;font-size: 1.6rem;background: #ff7131;}
 .proDet .proDe1 h3{font-size: 1.2rem;color: #45454a;line-height: 1.6rem;text-align: left;}
 .proDet .proDe1 button{padding: .2rem .4rem;display: inline-block;color: #ff7131;background: #ffd9b0;border: 1px solid #ff7131;}
-.proDet .proDe2{width: 100%;height: 8.5rem;background: #eee;border-top: 1px solid #ff7131;overflow-y: scroll;}
+.proDet .proDe2{width: 100%;height: 8.5rem;background: #eee;border-top: 1px solid #ff7131;overflow-y: scroll;display: none;}
 .proDet .proDe2 li{position: relative;padding: 0 4rem 0 2.5rem;width: 100%;height: 2.8rem;line-height: 2.8rem;border-bottom: 1px solid #c0c0c0;font-size: 1.2rem;color: #727171;box-sizing: border-box;}
 .proDet .proDe2 li:before{content: "";position: absolute;top: 1.1rem;left: 1.7rem;width: .5rem;height: .5rem;border-radius: 50%;background: #ff7131;}
 .proDet .proDe2 li:after{content: "";position: absolute;top: 1rem;right: 2.5rem;background: url(../images/download.png) 0 0 no-repeat;background-size: 1.3rem auto;width: 1.3rem;height: 1rem;}
