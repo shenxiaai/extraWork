@@ -53,6 +53,11 @@ function bubbleSort (arr){
 	return arr;
 }
 
+// 随机排序
+function randomsort(a, b) {
+	return Math.random()>.5 ? -1 : 1; //	通过随机产生0到1的数，然后判断是否大于0.5从而影响排序，产生随机性的效果。
+}
+
 
 function getElementTop (ele) {
 　　var eleTop = ele.offsetTop;	//获得ele元素距相对定位的父元素的top
