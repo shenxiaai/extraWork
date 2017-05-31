@@ -55,8 +55,10 @@ table.blue th,table.blue td{padding-left: 1.5rem;border-right: 1px solid #6bc3f1
 /*考试*/
 .exam h2{font-size: 1.6rem;color: #464545;font-weight: bold;line-height: 2.5rem;}
 .exam label{display: block;width: 100%;height: 3rem;line-height: 3rem;font-size: 1.4rem;color: #464545;}
-.exam input{margin-right: 1rem;background: url(../images/radio.png) 0 0 no-repeat;width: 1.3rem;height: 1.3rem;background-size: 1.3rem;}
-.exam input:checked{background: url(../images/radio_checked.png) 0 0 no-repeat;background-size: 1.3rem;}
+/*.exam input{margin-right: 1rem;background: url(../images/radio.png) 0 0 no-repeat;width: 1.3rem;height: 1.3rem;background-size: 1.3rem;}
+.exam input:checked{background: url(../images/radio_checked.png) 0 0 no-repeat;background-size: 1.3rem;}*/
+input[type="checkbox"] {appearance: checkbox;-webkit-appearance: checkbox;}
+.exam input{margin-right: 1rem;width: 1.3rem;height: 1.3rem;}
 .exam p{font-size: 1.2rem;color: #555;line-height: 1.7rem;}
 .exam p.red{color: #e10e1c;}
 .exam p.green{color: #2fd023;}
