@@ -3,7 +3,11 @@
 .clearfix:after{clear:both}
 .fl{float:left;}
 .fr{float:right;}
+a,a:hover{text-decoration: none;}
 
 body{background:#fff;color:#000;}
 .container{width:1700px;margin:0 auto;}
 .header{position:absolute;top:0;left:0;width:100%;height: 97px;background: url(../images/bg_hd.png) repeat-x 0 0;color:#fff;}
+.logo{width:145px;height: 59px;margin:21px 60px 0 42px;}
+.nav-l{padding-top: 15px;}
+.nav-l a{float:left;height:82px;line-height: 82px;padding: 0 15px;color:#fff;}
