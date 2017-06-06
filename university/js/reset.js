@@ -4,11 +4,11 @@
 		recalc = function() {
 			var clientWidth = docEl.clientWidth;
 			if (!clientWidth) return;
-			if (clientWidth <= 1700) {
+			// if (clientWidth <= 1700) {
 				docEl.style.fontSize = 20 * (clientWidth / 1700) + 'px';
-			} else {
-				docEl.style.fontSize = '20px';
-			}
+			// } else {
+			// 	docEl.style.fontSize = '20px';
+			// }
 
 		};
 
