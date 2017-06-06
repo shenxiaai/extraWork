@@ -5,29 +5,525 @@
 	<title>大学</title>
 	<link rel="stylesheet" type="text/css" href="css/standard-pc.min.css">
 	<link rel="stylesheet" type="text/css" href="css/all.css">
+	<script src="js/common.js"></script>
 </head>
 <body>
-	<!-- 头部 -->
-	<div class="header">
-		<div class="container">
+
+	<!-- 内容 -->
+	<div class="container">
+		<!-- 头部 -->
+		<div id="header" class="clearfix">
 			<img src="images/logo.png" alt="" class="logo fl">
-			<div class="nav-l fl">
+			<div class="nav_l fl">
 				<a href="#">Why CCN</a>
-				<a href="#">IFP</a>
+				<a class="curr" href="#">IFP</a>
 				<a href="#">CAP</a>
 				<a href="#">Partner Us</a>
 			</div>
-			<div class="nav-r fr">
-				<a href="">English</a>
-				<a href="">Log in</a>
+			<div class="nav_r fr">
+				<a class="language" href="">English</a>
+				<a class="login" href="">Log in</a>
 			</div>
 		</div>
+		<!--中间-->
+		<div class="banner">
+			<b>IFP UG DETAILS</b>
+		</div>
+		<div class="content1">
+			<h2 class="purple tac">CCN-IFP UG STREAMS</h2>
+			<p class="tac font20">3 Streams leading towards successful postgraduate study, <br>special scholarships & a successful global career.</p>
+			<div class="cont1_img">
+				<em class="cont1_1">BUSINESS</em>
+				<em class="cont1_2">SCIENCE & ENGINEERING</em>
+				<em class="cont1_3">HUMANITIES</em>
+			</div>
+			<ul class="title_bg tab_hd clearfix" id="tab1">
+				<li class="active" onclick='nTabs(this, 0)'>Business <br> Stream Courses</li>
+				<li onclick='nTabs(this, 1)'>Science & Engineering <br> Stream Courses</li>
+				<li onclick='nTabs(this, 2)'>Humanities <br> Stream Courses</li>
+			</ul>
+			<div class="tab_bd" id="tab1_Content0">
+				<table>
+					<tr>
+						<th>1CHINESE FOR <br> ACADEMIC PURPOSES</th>
+						<th>CORE CONTENT <br> SUBJECTS</th>
+						<th>UNIVERSITY <br> SUBJECTS</th>
+					</tr>
+					<tr><td style="height:48px;background:#fff;" colspan="3">&nbsp;</td></tr>
+					<tr>
+						<td>
+							<p class="iconL_1 mb50">To develop students’ Chinese for Academic and Professional study purposes </p>
+							<p class="iconL_2">To enhance the Chinese proficiency through understanding Chinese culture</p>
+						</td>
+						<td>
+							<p class="iconL_1 mb50">To fill the gaps between high school and Chinese universities</p>
+							<p class="iconL_1">To enhance students’knowledge in Core Content Subjects based on theYear 1 Curriculum of Chinese Universities</p>
+						</td>
+						<td>
+							<p class="iconL_1">To frontload some professional subjects in Year 1 of Chinese universities</p>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<p class="iconL_3 mb15">GC: General Chinese</p>
+							<p class="iconL_3 mb15">CSP: Chinese for Special Purposes</p>
+							<p class="iconL_3">CSS: Culture & Study Skills</p>
+						</td>
+						<td>
+							<p class="iconL_3">Mathematics</p>
+						</td>
+						<td>
+							<p class="iconL_3 mb15">Economics</p>
+							<p class="iconL_3">Business Studies</p>
+						</td>
+					</tr>
+					<tr><td style="height:48px;background:#ebebeb;" colspan="3">&nbsp;</td></tr>
+				</table>
+			</div>
+			<div class="tab_bd" id="tab1_Content1" style="display: none;">
+				<table>
+					<tr>
+						<th>2CHINESE FOR <br> ACADEMIC PURPOSES</th>
+						<th>CORE CONTENT <br> SUBJECTS</th>
+						<th>UNIVERSITY <br> SUBJECTS</th>
+					</tr>
+					<tr><td style="height:48px;background:#fff;" colspan="3">&nbsp;</td></tr>
+					<tr>
+						<td>
+							<p class="iconL_1 mb50">To develop students’ Chinese for Academic and Professional study purposes </p>
+							<p class="iconL_2">To enhance the Chinese proficiency through understanding Chinese culture</p>
+						</td>
+						<td>
+							<p class="iconL_1 mb50">To fill the gaps between high school and Chinese universities</p>
+							<p class="iconL_1">To enhance students’knowledge in Core Content Subjects based on theYear 1 Curriculum of Chinese Universities</p>
+						</td>
+						<td>
+							<p class="iconL_1">To frontload some professional subjects in Year 1 of Chinese universities</p>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<p class="iconL_3 mb15">GC: General Chinese</p>
+							<p class="iconL_3 mb15">CSP: Chinese for Special Purposes</p>
+							<p class="iconL_3">CSS: Culture & Study Skills</p>
+						</td>
+						<td>
+							<p class="iconL_3">Mathematics</p>
+						</td>
+						<td>
+							<p class="iconL_3 mb15">Economics</p>
+							<p class="iconL_3">Business Studies</p>
+						</td>
+					</tr>
+					<tr><td style="height:48px;background:#ebebeb;" colspan="3">&nbsp;</td></tr>
+				</table>
+			</div>
+			<div class="tab_bd" id="tab1_Content2" style="display: none;">
+				<table>
+					<tr>
+						<th>3CHINESE FOR <br> ACADEMIC PURPOSES</th>
+						<th>CORE CONTENT <br> SUBJECTS</th>
+						<th>UNIVERSITY <br> SUBJECTS</th>
+					</tr>
+					<tr><td style="height:48px;background:#fff;" colspan="3">&nbsp;</td></tr>
+					<tr>
+						<td>
+							<p class="iconL_1 mb50">To develop students’ Chinese for Academic and Professional study purposes </p>
+							<p class="iconL_2">To enhance the Chinese proficiency through understanding Chinese culture</p>
+						</td>
+						<td>
+							<p class="iconL_1 mb50">To fill the gaps between high school and Chinese universities</p>
+							<p class="iconL_1">To enhance students’knowledge in Core Content Subjects based on theYear 1 Curriculum of Chinese Universities</p>
+						</td>
+						<td>
+							<p class="iconL_1">To frontload some professional subjects in Year 1 of Chinese universities</p>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<p class="iconL_3 mb15">GC: General Chinese</p>
+							<p class="iconL_3 mb15">CSP: Chinese for Special Purposes</p>
+							<p class="iconL_3">CSS: Culture & Study Skills</p>
+						</td>
+						<td>
+							<p class="iconL_3">Mathematics</p>
+						</td>
+						<td>
+							<p class="iconL_3 mb15">Economics</p>
+							<p class="iconL_3">Business Studies</p>
+						</td>
+					</tr>
+					<tr><td style="height:48px;background:#ebebeb;" colspan="3">&nbsp;</td></tr>
+				</table>
+			</div>
+		</div>
+		<div class="content2">
+			<div class="title_bg">CCN - IFP Routes</div>
+			<div class="cont2">
+				<div class="bar_cont">
+					<div class="bar_cont_tt">Routes for Business and Science & Engineering Streams</div>
+					<ul class="bar_cont_bd">
+						<li class="Bar_A">
+							<div class="Bar_info">
+								<span class="icon_A">A</span>
+								<div class="clearfix Bar_info_Hd">
+									<div class="fl">36 Weeks/1080 Hours/Sep – Next Jul </div>
+									<div class="fr">IFP PG Graduation</div>
+								</div>
+								<div class="clearfix Bar_info_Bd">
+									<div class="fl Bar_block1"><span>Chinese for <br> Academic Purposes</span></div>
+									<div class="fl Bar_block2"><span>Core Content <br> Subjects</span></div>
+									<div class="fl Bar_block3"><span>University <br> Subjects</span></div>
+								</div>
+							</div>
+							<span class="icon_label">Entry into University</span>
+						</li>
+						<li class="Bar_B">
+							<div class="Bar_info">
+								<span class="icon_B">B<i style="position:absolute;left:86px;font-size:32px;line-height:1;top:50%;margin-top:-48px;">1<br>/<br>2</i></span>
+								<div class="clearfix Bar_info_Hd">
+									<div class="fl">18 Weeks/540 Hours/May – Sep </div>
+									<div class="fr">IFP PG Graduation</div>
+								</div>
+								<div class="clearfix Bar_info_Bd">
+									<div class="fl Bar_block1"><span>Chinese for <br> Academic Purposes</span></div>
+									<div class="fl Bar_block2"><span>Core Content <br> Subjects</span></div>
+								</div>
+							</div>
+							<span class="icon_label">Entry into University</span>
+						</li>
+						<li class="Bar_C">
+							<div class="Bar_info">
+								<span class="icon_C">C</span>
+								<div class="clearfix Bar_info_Hd">
+									<div class="fl"><span style="display:inline-block;line-height:1.2;vertical-align:middle;">11 Weeks/330 Hours <br>Jun – Sep </span></div>
+									<div class="fr">IFP PG Graduation</div>
+								</div>
+								<div class="clearfix Bar_info_Bd">
+									<div class="fl Bar_block1"><span>Chinese for <br> Academic Purposes</span></div>
+									<div class="fl Bar_block2"><span>Core Content Subjects</span></div>
+								</div>
+							</div>
+							<span class="icon_label">Entry into University</span>
+						</li>
+					</ul>
+					<div class="bar_cont_Notes">Notes: <br>
+					Chinese universities usually start from September<br>
+					The detailed schedule is subject to change according to the centre operation
+					</div>
+				</div>
+				<div class="bar_cont bar-cont2">
+					<div class="bar_cont_tt">Routes for Humanities Stream</div>
+					<ul class="bar_cont_bd">
+						<li class="Bar_A">
+							<div class="Bar_info">
+								<span class="icon_A">A</span>
+								<div class="clearfix Bar_info_Hd">
+									<div class="fl">36 Weeks/1080 Hours/Sep – Next Jul </div>
+									<div class="fr">IFP PG Graduation</div>
+								</div>
+								<div class="clearfix Bar_info_Bd">
+									<div class="fl Bar_block2"><span>Chinese for <br> Academic Purposes</span></div>
+									<div class="fl Bar_block3"><span>University <br> Subjects</span></div>
+								</div>
+							</div>
+							<span class="icon_label">Entry into University</span>
+						</li>
+						<li class="Bar_B">
+							<div class="Bar_info">
+								<span class="icon_B">B</span>
+								<div class="clearfix Bar_info_Hd">
+									<div class="fl">18 Weeks/540 Hours/May – Sep </div>
+									<div class="fr">IFP PG Graduation</div>
+								</div>
+								<div class="clearfix Bar_info_Bd">
+									<div class="fl Bar_block2"><span>Chinese for <br> Academic Purposes</span></div>
+								</div>
+							</div>
+							<span class="icon_label">Entry into University</span>
+						</li>
+						<li class="Bar_C">
+							<div class="Bar_info">
+								<span class="icon_C">C</span>
+								<div class="clearfix Bar_info_Hd">
+									<div class="fl"><span style="display:inline-block;line-height:1.2;vertical-align:middle;">11 Weeks/330 Hours <br>Jun – Sep </span></div>
+									<div class="fr">IFP PG Graduation</div>
+								</div>
+								<div class="clearfix Bar_info_Bd">
+									<div class="fl Bar_block2"><span>Chinese for <br> Academic Purposes</span></div>
+								</div>
+							</div>
+							<span class="icon_label">Entry into University</span>
+						</li>
+					</ul>
+					<div class="bar_cont_Notes">Notes: <br>
+					Chinese universities usually start from September<br>
+					The detailed schedule is subject to change according to the centre operation
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="content3">
+			<!--cont3之表格一-->
+			<h3 class="title_bg93">ENTRY REQUIREMENTS FOR BUSINESS STREAM</h3>
+			<div class="cont3">
+				<dl>
+					<dt>GENERAL REQUIREMENTS</dt>
+					<dd><span>1</span>The student is a qualified graduate of upper secondary education </dd>
+					<dd style="line-height:1.3;"><span>2</span>The student holds the transcripts of all subjects during upper secondary education,<br> with "Pass" in all IFP stream-relevant subjects (math)</dd>
+					<dd><span>3</span>Additional requirements as below:            </dd>
+				</dl>
+				<div class="table-hd clearfix">
+					<span class="th1">ROUTE</span>
+					<span class="th2">SPEDIFIC REQUIREMENT</span>
+					<span class="th3">CHINESE LANGUAGE</span>
+					<span class="th4">AGE RANGE</span>
+				</div>
+				<table class="table-bd">
+					<tr>
+						<td style="width:222px;">ROUTE A</td>
+						<td style="width:431px;">SPECIFIC REQUIREMENT ON MATH</td>
+						<td style="width:394px;">--</td>
+						<td>15-34</td>
+					</tr>
+					<tr>
+						<td>ROUTE B1</td>
+						<td>SPECIFIC REQUIREMENT ON MATH</td>
+						<td>HSK 3 OR EQUIVALENT</td>
+						<td>16-35</td>
+					</tr>
+					<tr>
+						<td>ROUTE B2</td>
+						<td>SPECIFIC REQUIREMENT ON MATH</td>
+						<td>HSK 4 OR EQUIVALENT</td>
+						<td>16-35</td>
+					</tr>
+					<tr>
+						<td>ROUTE C</td>
+						<td>SPECIFIC REQUIREMENT ON MATH</td>
+						<td>HSK 4 OR EQUIVALENT</td>
+						<td>16-35</td>
+					</tr>
+				</table>
+				<p class="Note"><b>Note:</b> The Entry Requirement could be changed after discussion with local Marketing team.</p>
+			</div>
+			<!--cont3之表格二-->
+			<h3 class="title_bg93">ENTRY REQUIREMENTS FOR BUSINESS & ENGINEERING STREAMS</h3>
+			<div class="cont3">
+				<dl>
+					<dt>GENERAL REQUIREMENTS</dt>
+					<dd><span>1</span>The student is a qualified graduate of upper secondary education </dd>
+					<dd style="line-height:1.3;"><span>2</span>The student holds the transcripts of all subjects during upper secondary education,<br> with "Pass" in all IFP stream-relevant subjects (math)</dd>
+					<dd><span>3</span>Additional requirements as below:            </dd>
+				</dl>
+				<div class="table-hd clearfix">
+					<span class="th1">ROUTE</span>
+					<span class="th2">SPEDIFIC REQUIREMENT</span>
+					<span class="th3">CHINESE LANGUAGE</span>
+					<span class="th4">AGE RANGE</span>
+				</div>
+				<table class="table-bd">
+					<tr>
+						<td style="width:222px;">ROUTE A</td>
+						<td style="width:431px;">SPECIFIC REQUIREMENT ON MATH PHYSICS AND CHEMISTRY</td>
+						<td style="width:394px;">--</td>
+						<td>15-34</td>
+					</tr>
+					<tr>
+						<td>ROUTE B1</td>
+						<td>SPECIFIC REQUIREMENT ON MATH PHYSICS AND CHEMISTRY</td>
+						<td>HSK 3 OR EQUIVALENT</td>
+						<td>16-35</td>
+					</tr>
+					<tr>
+						<td>ROUTE B2</td>
+						<td>SPECIFIC REQUIREMENT ON MATH PHYSICS AND CHEMISTRY</td>
+						<td>HSK 4 OR EQUIVALENT</td>
+						<td>16-35</td>
+					</tr>
+					<tr>
+						<td>ROUTE C</td>
+						<td>SPECIFIC REQUIREMENT ON MATH PHYSICS AND CHEMISTRY</td>
+						<td>HSK 4 OR EQUIVALENT</td>
+						<td>16-35</td>
+					</tr>
+				</table>
+				<p class="Note"><b>Note:</b> The Entry Requirement could be changed after discussion with local Marketing team.</p>
+			</div>
+			<!--cont3之表格三-->
+			<h3 class="title_bg93">ENTRY REQUIREMENTS FOR HUMANITIES</h3>
+			<div class="cont3">
+				<dl>
+					<dt>GENERAL REQUIREMENTS</dt>
+					<dd><span>1</span>The student is a qualified graduate of upper secondary education </dd>
+					<dd><span>2</span>The student holds the transcripts of all subjects during upper secondary education</dd>
+					<dd><span>3</span>Additional requirements as below:            </dd>
+				</dl>
+				<div class="table-hd clearfix">
+					<span class="th1">ROUTE</span>
+					<span class="th2">SPEDIFIC REQUIREMENT</span>
+					<span class="th3">CHINESE LANGUAGE</span>
+					<span class="th4">AGE RANGE</span>
+				</div>
+				<table class="table-bd">
+					<tr>
+						<td style="width:222px;">ROUTE A</td>
+						<td style="width:431px;">--</td>
+						<td style="width:394px;">--</td>
+						<td>15-34</td>
+					</tr>
+					<tr>
+						<td>ROUTE B</td>
+						<td>--</td>
+						<td>HSK 2 OR EQUIVALENT</td>
+						<td>16-35</td>
+					</tr>
+					<tr>
+						<td>ROUTE C</td>
+						<td>--</td>
+						<td>HSK 4 OR EQUIVALENT</td>
+						<td>16-35</td>
+					</tr>
+				</table>
+				<p class="Note"><b>Note:</b> The Entry Requirement could be changed after discussion with local Marketing team.</p>
+			</div>
+		</div>
+		<div class="content4">
+			<div class="title_bg">COMP ARISON</div>
+			<div class="cont4 clearfix">
+				<div class="fl cont4_1">
+					<div class="cont4_tt">regular route</div>
+					<div class="cont4_txt">
+						<div class="cont4_txt1"><span>Career</span></div>
+						<div class="cont4_txt2 bold"><span>General Chinese</span></div>
+						<div class="cont4_txt3"><span>Chinese for Special Purposes</span></div>
+						<div class="cont4_txt4"><span>SUBJECT</span></div>
+						<div class="cont4_txt5"><span>STUDY <br> SKILLS</span></div>
+						<div class="cont4_txt6"><span>CULTURE</span></div>
+					</div>
+				</div>
+				<div class="fl cont4_2"></div>
+				<div class="fl cont4_3">
+					<div class="cont4_tt">IFP route</div>
+					<div class="cont4_txt">
+						<div class="cont4_txt1 bold"><span>Career</span></div>
+						<div class="cont4_txt2 bold"><span>General Chinese</span></div>
+						<div class="cont4_txt3 bold"><span>Chinese for Special Purposes</span></div>
+						<div class="cont4_txt4 bold"><span>SUBJECT</span></div>
+						<div class="cont4_txt5 bold"><span>STUDY <br> SKILLS</span></div>
+						<div class="cont4_txt6 bold"><span>CULTURE</span></div>
+					</div>
+				</div>
+			</div>
+			<div class="table-hd clearfix">
+				<span class="th1">PROGRAM ELEMENTS</span>
+				<span class="th2">REGULAR ROUTE</span>
+				<span class="th3">IFP ROUTE</span>
+			</div>
+			<table class="table-bd">
+				<tr>
+					<td style="width:575px;">HSK 4~5 or equivalent</td>
+					<td style="width:252px;"><img class="img_yes" src="images/yes.png" alt=""></td>
+					<td style="width:305px;"><img class="img_yes" src="images/yes.png" alt=""></td>
+				</tr>
+				<tr>
+					<td>Career awareness and planning</td>
+					<td>&nbsp;</td>
+					<td><img class="img_yes" src="images/yes.png" alt=""></td>
+				</tr>
+				<tr>
+					<td>Career skills and cultural  competencies in workplace</td>
+					<td>&nbsp;</td>
+					<td><img class="img_yes" src="images/yes.png" alt=""></td>
+				</tr>
+				<tr>
+					<td>Career development and network opportunities</td>
+					<td>&nbsp;</td>
+					<td><img class="img_yes" src="images/yes.png" alt=""></td>
+				</tr>
+				<tr>
+					<td>Over 2,500 general Chinese Words for Balanced LSRW skills</td>
+					<td>&nbsp;</td>
+					<td><img class="img_yes" src="images/yes.png" alt=""></td>
+				</tr>
+				<tr>
+					<td>Over 5,00 Chinese words and related structure for Subject Study</td>
+					<td>&nbsp;</td>
+					<td><img class="img_yes" src="images/yes.png" alt=""></td>
+				</tr>
+				<tr>
+					<td>Accustomed to the Learning Environment of Chinese Universities</td>
+					<td>&nbsp;</td>
+					<td><img class="img_yes" src="images/yes.png" alt=""></td>
+				</tr>
+				<tr>
+					<td>Feeling Free in Communicating with Chinese Faculty</td>
+					<td>&nbsp;</td>
+					<td><img class="img_yes" src="images/yes.png" alt=""></td>
+				</tr>
+				<tr>
+					<td>Familiar with Chinese Academic Culture</td>
+					<td>&nbsp;</td>
+					<td><img class="img_yes" src="images/yes.png" alt=""></td>
+				</tr>
+				<tr>
+					<td>Bound with Essential Study Skills</td>
+					<td>&nbsp;</td>
+					<td><img class="img_yes" src="images/yes.png" alt=""></td>
+				</tr>
+				<tr>
+					<td>Gaps between homeland and China have been filled</td>
+					<td>&nbsp;</td>
+					<td><img class="img_yes" src="images/yes.png" alt=""></td>
+				</tr>
+				<tr>
+					<td>Enhanced subjects knowledge fully prepared for University study</td>
+					<td>&nbsp;</td>
+					<td><img class="img_yes" src="images/yes.png" alt=""></td>
+				</tr>
+				<tr>
+					<td>Frontloaded subjects for Year 1 of degree study</td>
+					<td>&nbsp;</td>
+					<td><img class="img_yes" src="images/yes.png" alt=""></td>
+				</tr>
+			</table>
+		</div>
+		<!-- 底部 -->
+		<div id="footer">
+			<div class="clearfix">
+				<img src="images/logo_ft.png" alt="" class="logo_ft fl">
+				<ul class="fl">
+					<li class="ft_links">
+						<a href="">CCN News</a>
+						<a href="">IFP System Login</a>
+						<a href="">IFP Centers</a>
+					</li>
+					<li class="ft_contact">
+						<div>Contact Us</div>
+						<div>
+							<span>TEL:<a href="tel:021-50470060">021-50470060</a></span>
+							<span>Email:<a href="email:GM@hschinese.com">GM@hschinese.com</a></span>
+							<span>Add:  401, Bld.7, 690 Bibo Rd., Shanghai, China</span>
+						</div>
+					</li>
+				</ul>
+				<dl class="fl ft_ewm">
+					<dt>CCN app for students</dt>
+					<dd class="clearfix">
+						<div class="fl">
+							<img src="images/ewm_ios.png" alt="">
+							<p>CCN(ios)</p>
+						</div>
+						<div class="fl">
+							<img src="images/ewm_android.png" alt="">
+							<p>CCN(Android)</p>
+						</div>
+					</dd>
+				</dl>
+			</div>
+			<p class="recordTxt tac">© 2017 上海汉声信息技术有限公司 沪ICP备12041177号-7</p>
+		</div>
 	</div>
-	<!-- 内容 -->
-	<div class="container"></div>
-	<!-- 底部 -->
-	<div class="footer">
-		<div class="container"></div>
-	</div>
+
 </body>
 </html>
