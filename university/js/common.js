@@ -143,11 +143,11 @@ function moveAction (obj, attr, target) {
 	}, 30);
 }
 
-window.onload = function() {
-	var resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize';
 
-	window.addEventListener(resizeEvt, function(event){
-		location.reload();
-	});
-}
+var resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize';
+
+window.addEventListener(resizeEvt, function(event){
+	window.location.reload(location.href);
+	// window.location.href = window.location.href;
+});
 
