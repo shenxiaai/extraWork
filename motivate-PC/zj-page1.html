@@ -8,7 +8,32 @@
 	<script src="./js/reset.js"></script>
 	<script src="./js/common.js"></script>
 </head>
-<body>
-	
+<body class="login">
+	<div class="loginFormBox">
+		<div class="form-item">
+			<input type="radio" name="rad" checked="">专家
+			<input type="radio" name="rad">医生
+		</div>
+		<div class="form-item">
+			<input type="text" placeholder="请输入姓名">
+		</div>
+		<div class="form-item">
+			<input type="text" placeholder="请输入手机号">
+		</div>
+		<div class="form-item">
+			<button class="lightBtn">登录</button>
+		</div>
+		<div class="form-item pt5">
+			<a href="" class="fl">专家注册</a>
+			<a href="" class="fr">医生注册</a>
+		</div>
+	</div>
+
+	<script>
+		window.onload = function() {
+			var login = document.querySelector('.login');
+			login.style.height = ch + 'px';
+		}
+	</script>
 </body>
 </html>
