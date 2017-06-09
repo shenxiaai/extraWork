@@ -1,4 +1,47 @@
 @charset "UTF-8";
+input[placeholder], [placeholder], *[placeholder] { 
+	color: #919191 !important; 
+}
+*::-webkit-input-placeholder { 
+	color: #919191; 
+} 
+
+.colorf{color: #fff;}
+.color91{color: #919191;}
+.rel{position: relative;}
+.bgNone{background: none!important;}
+
 body{background: #00a3ab;}
-.login{padding-top: 12.3rem;background: url(../images/bg1.jpg) 0 0 no-repeat;-webkit-background-size: cover;width: 100%;height: 100%;background-size: cover;box-sizing: border-box;}
-.login .form{margin: 0 auto;background: url(../images/form1Bg.png) #fff 0 0 no-repeat;border-radius: 0 0 3rem 3rem;width: 29rem;height: 30rem;}
+.login{padding-top: 12.3rem;background: url(../images/bg1.jpg) #00a3ab center top no-repeat;width: 100%;height: 100%;background-size: cover;box-sizing: border-box;}
+.login .form-item{position: relative;margin: 0 auto;width: 29rem;}
+.login .formHead{position: absolute;left: 0;top: 0;background: url(../images/form1Bg.png) 0 0 no-repeat;background-size: 100% auto;width: 100%;height: 5.5rem;}
+.login .form-item h2{position: relative;width: 100%;height: 4.9rem;line-height: 4.9rem;text-align: center;font-size: 2.2rem;font-weight: bold;color: #00a7af;}
+.login .formCont{padding: 2rem;border-radius: 0 0 1.5rem 1.5rem;background: #fff;width: 29rem;font-size: 1.3rem;color: #919191;line-height: 2rem;box-sizing: border-box;}
+.login .form-item input[type="checkbox"]{display: inline-block;vertical-align: bottom;width: 1.7rem;height: 1.7rem;background: #fff;}
+.login .form-item input[type="checkbox"]:checked{background: url(../images/checked.jpg) 0 0 no-repeat;background-size: 1.7rem;}
+
+.form-item .bigBtn{margin-top: 1rem;display: inline-block;background: url(../images/registerBtnBg.jpg) 0 0 repeat-x;background-size: auto 100%;width: 100%;height: 4.3rem;line-height: 4.3rem;border-radius: .8rem;font-size: 1.4rem;font-weight: bold;text-align: center;color: #00a7af;}
+
+.login .formHead2{background: url(../images/form2Bg.png) center 0 no-repeat;background-size: 100% auto;width: 100%;height: 9.5rem;}
+.login .form-ipt{display: -webkit-box;-webkit-box-align: center;-webkit-box-pack: justify;position: relative;width: 100%;height: 4.1rem;line-height: 4.1rem;background: #fff;border-bottom: 1px solid #abbac3;}
+.login .form-ipt:before{content: "";position: absolute;left: 0;top: 0;background: url(../images/inputShadow.png) center 0 no-repeat;background-size: 100% auto;width: 100%;height: .6rem;}
+.login .form-ipt label{display: block;padding: 0 1.6rem;font-size: 1.3rem;width: 8.5rem;color: #00a7af;box-sizing: border-box;}
+.login .form-ipt.colorf label,.login .form-ipt.colorf input{color: #fff;}
+.login .form-ipt input{display: block;-webkit-box-flex: 1;height: 100%;font-size: 1.3rem;}
+.login .form-ipt .uploadImg{display: block;background: url(../images/uploadImgBg.png) center 0 no-repeat;width: 7.1rem;height: 2.6rem;line-height: 2.6rem;text-align: center;font-size: 1.2rem;color: #fff;font-weight: bold;border-radius: .4rem;}
+
+/*病历*/
+.seriousLine{background: url(../images/page5Bg.jpg) center 0 no-repeat;background-size: cover;}
+.serious{padding: 2.5rem;width: 100%;box-sizing: border-box;}
+.serious .serious-item-box{display: -webkit-box;-webkit-box-align: center;-webkit-box-pack: justify;width: 100%;height: 2.3rem;line-height: 2.3rem;box-sizing: border-box;}
+.serious .serious-item{margin-right: 1rem;-webkit-box-flex: 1;display: -webkit-box;-webki-box-align: center;-webkit-box-pack: justify;box-sizing: border-box;}
+.serious .serious-item:last-child{margin-right: 0;}
+.serious .serious-item label{display: block;color: #fff;font-size: 1.3rem;}
+.serious .serious-item input{margin-left: .3rem;display: block;-webkit-box-flex: 1;border-bottom: 1px solid #88cacd;background: none;color: #fff;font-size: 1.3rem;border-radius: 0;}
+
+.serious .serious-item2{margin-top: 1rem;}
+.serious .serious-item2 p{width: 100%;color: #fff;font-size: 1.3rem;line-height: 1.5rem;}
+.serious .serious-item2 textarea{margin: .4rem 0;display: block;background: #fff;border-radius: .5rem;width: 100%;height: 4.5rem;line-height: 2.25rem;border: none;}
+.serious .serious-item2 .radioBox{width: 100%;height: 3rem;line-height: 3rem;color: #fff;font-size: 1.3rem;}
+.serious .serious-item2 .radioBox input[type="radio"]{margin-right: .5rem;;background: #fff;border-radius: 50%;width: 1.7rem;height: 1.7rem;}
+.serious .serious-item2 .radioBox input[type="radio"]:checked{background: url(../images/radioChecked.png) center no-repeat;background-size: 1.7rem;}
