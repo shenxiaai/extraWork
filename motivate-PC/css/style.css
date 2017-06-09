@@ -1,0 +1,8 @@
+@charset "UTF-8";
+.topNav{padding: 26px 0 0 67px;height: 127px;background: url(../images/topNavBg.jpg) center 0 no-repeat;}
+.box{position: relative;padding-left: 285px;}
+.box .leftNav{position: absolute;left: 0;top: 0;width: 285px;height: 100%;background: #efefef;}
+.box .cont{width: 100%;height: 1000px;background: #444;}
+
+/*zj-page2*/
+.zj-page2{}
