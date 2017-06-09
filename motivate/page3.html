@@ -6,16 +6,17 @@
 	<meta name="apple-mobile-web-app-capable" content="yes">
 	<meta name="apple-mobile-web-app-status-bar-style" content="black">
 	<meta name="format-detection" content="telephone=no">
-	<title>专家注册登录</title>
+	<title>医生注册登录</title>
 	<link rel="stylesheet" type="text/css" href="./css/standard.css">
 	<link rel="stylesheet" type="text/css" href="./css/style.css">
 	<script type="text/javascript" src="./js/reset.js"></script>
 	<script type="text/javascript" src="./js/common.js"></script>
 </head>
 <body ontouchstart="" class="login">
+	<img src="images/logo.png" class="logo">
 	<div class="form-item mt15-imp">
 		<div class="formHead formHead2"></div>
-		<h2>专家注册登录</h2>
+		<h2>医生注册登录</h2>
 		<div class="form-ipt bgNone colorf">
 			<label for="">城市</label>
 			<input class="bgNone" type="text" name="" value="北京">
@@ -45,12 +46,20 @@
 
 	<div class="form-item">
 		<div class="form-ipt">
+			<label for="" class="lh16">执业医师资格证</label>
+			<input class="bgNone" type="text" name="" placeholder="请填写证件号码">
+			<button class="uploadImgSucc mr8">上传照片</button>
+		</div>
+	</div>
+
+	<div class="form-item">
+		<div class="form-ipt">
 			<label for="">手机号</label>
 			<input class="bgNone" type="text" name="" placeholder="请填写手机号码">
 		</div>
 	</div>
 	
-	<div class="form-item pt40">
+	<div class="form-item">
 		<button class="bigBtn">注册</button>
 	</div>
 	<script>
