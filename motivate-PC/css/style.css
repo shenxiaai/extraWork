@@ -12,7 +12,8 @@ body{background: #f7f8f8;}
 
 /*login*/
 .login{position: relative;background: url(../images/loginBg2.jpg) center 0 no-repeat;width: 100%;height: 100%;overflow: hidden;}
-.loginFormBox{padding: 10px 33px 20px;position: absolute;left: 63%;top: 30%;width: 354px;background: rgba(255, 255, 255, .8);border-radius: 15px;}
+.login .loginLogo{position: absolute;left: 10%;top: 40%;}
+.loginFormBox{padding: 10px 33px 20px;position: absolute;right: 5%;top: 30%;width: 354px;background: rgba(255, 255, 255, .8);border-radius: 15px;}
 .login .form-item{margin-top: 10px;width: 100%;}
 .login .form-item input[type="radio"]{margin-right: 10px;width: 21px;height: 21px;border: 1px solid #e2e4e5;background: #fff;border-radius: 50%;vertical-align: bottom;}
 .login .form-item input[type="radio"]:checked{background: url(../images/radioChecked.png);background-size: 100%;}
@@ -23,7 +24,7 @@ body{background: #f7f8f8;}
 .widthCont{margin: 0 auto;width: 80%;}
 .widthCont h3{text-align: center;font-size: 26px;font-weight: bold;color: #00a7af;line-height: 35px;}
 .widthCont p{font-size: 22px;line-height: 28px;color: #595757;}
-.checkBox{width: 100%;text-align: center;}
-.checkBox input[type="checkbox"]{margin-right: 10px;vertical-align: middle;width: 20px;height: 20px;background: #fff;}
+.checkBox{margin-top: 10px;width: 100%;text-align: center;font-size: 22px;}
+.checkBox input[type="checkbox"]{margin-right: 10px;vertical-align: middle;width: 20px;height: 20px;background: #fff;border: 1px solid #f2f2f2;}
 .checkBox input[type="checkbox"]:checked{background: url(../images/checked.png) center no-repeat;background-size: 100%;}
 .checkBox .lightBtn{display: inline-block;width: 357px;}
