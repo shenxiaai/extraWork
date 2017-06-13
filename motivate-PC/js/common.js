@@ -146,11 +146,17 @@ function moveAction (obj, attr, target) {
 
 var resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize';
 
-var dialog = document.querySelector('.dialog');
+
+var topNav = document.querySelector('.topNav'),
+	topNavBg = document.querySelector('.topNavBg'),
+	dialog = document.querySelector('.dialog');
+
+topNav.style.height = topNavBg.offsetHeight + 'px';
 dialog.style.top = (ch - dialog.offsetHeight)/2 + 'px';
 dialog.style.left = (cw - dialog.offsetWidth)/2 + 'px';
 
 window.addEventListener(resizeEvt, function(event){
 	window.location.reload(location.href);
 	// window.location.href = window.location.href;
+	topNav.style.height = topNavBg.offsetHeight + 'px';
 });
