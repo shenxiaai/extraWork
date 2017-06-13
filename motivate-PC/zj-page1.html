@@ -55,9 +55,11 @@
 		window.onload = function() {
 			var login = document.querySelector('.login'),
 				closeDialog = document.querySelector('#closeDialog'),
+				loginWordsBg = document.querySelector('.loginWordsBg'),
 				block = document.querySelector('.block'),
 				dialog = document.getElementById('dialog');
 
+			loginWordsBg.style.width = cw + 'px';
 			login.style.height = ch + 'px';
 			block.onclick = function () {
 				dialog.style.display = 'none';
