@@ -10,7 +10,8 @@
 <body class="bgfff">
 	<div class="wrap">
 		<div class="topNav">
-			<img src="images/navLogo.png">
+			<img src="./images/topNavBg.jpg" alt="" width="100%" class="topNavBg">
+			<img src="images/loginLogo.png" alt="" height="80%" style="position: relative;">
 		</div>
 		<div class="box">
 			<div class="leftNav">
@@ -147,14 +148,16 @@
 			}
 
 
-			if(navigator.appName == "Microsoft Internet Explorer" && navigator.appVersion .split(";" )[1].replace(/[ ]/g,"")== "MSIE8.0") {
-				console.log( "IE 8.0");
-				dialog.style.top = (ch - dialog.offsetHeight)/2 + 'px';
-				dialog.style.left = (cw - dialog.offsetWidth)/2 + 'px';
-			} else {
-				console.log( 'IE的其他版本' );
-			}
+			// if(navigator.appName == "Microsoft Internet Explorer" && navigator.appVersion .split(";" )[1].replace(/[ ]/g,"")== "MSIE8.0") {
+			// 	console.log( "IE 8.0");
+			// 	dialog.style.top = (ch - dialog.offsetHeight)/2 + 'px';
+			// 	dialog.style.left = (cw - dialog.offsetWidth)/2 + 'px';
+			// } else {
+			// 	console.log( 'IE的其他版本' );
+			// }
 
+			dialog.style.top = (ch - dialog.offsetHeight)/2 + 'px';
+			dialog.style.left = (cw - dialog.offsetWidth)/2 + 'px';
 
 		}
 	</script>

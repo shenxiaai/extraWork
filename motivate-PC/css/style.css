@@ -13,7 +13,8 @@ select::expand{display: none;}
 .dib-img{display: inline-block!important;}
 
 body{background: #f7f8f8;font-family: "微软雅黑";}
-.topNav{padding: 26px 0 0 67px;height: 127px;background: url(../images/topNavBg.jpg) center no-repeat;}
+.topNav{padding: 26px 0 0 67px;height: 127px;}
+.topNav .topNavBg{position: absolute;top: 0;left: 0;}
 .lightBtn{display: block;background: url(../images/agreeBtn.png) center no-repeat;width: 100%;height: 64px;line-height: 64px;color: #fff;font-size: 22px;font-weight: bold;border: none;border-radius: 6px;-webkit-background-size: cover;-ms-background-size: cover;-moz-background-size: cover;-o-background-size: cover;background-size: cover;}
 .pureBtn{background: url(../images/registerBtnBg.jpg) repeat-x;color: #00a7af;}
 .block{position: fixed;left: 0;top: 0;width: 100%;height: 100%;background: #000;opacity: .7;filter:alpha(opacity=70);/*This works in IE 8 & 9 too*/-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";/*IE4-IE9*/filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=70);z-index: 1;}
