@@ -78,5 +78,21 @@
 		</div>
 
 	</div>
+	<script>
+		window.onload = function() {
+			var sel = document.querySelectorAll('.sel');
+			if(navigator.appName == "Microsoft Internet Explorer" && navigator.appVersion .split(";" )[1].replace(/[ ]/g,"")== "MSIE8.0") {
+				console.log( "IE 8.0");
+				for(var i = 0; i < sel.length; i++) {
+					var ss = sel[i].getElementsByTagName('select')[0];
+					ss.style.filter = 'alpha(opacity: 0)';
+					ss.style.opacity = 0;
+				}
+			} else {
+				console.log( 'IE的其他版本' );
+			}
+
+		}
+	</script>
 </body>
 </html>

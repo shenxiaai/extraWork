@@ -17,6 +17,8 @@ input[type=range]:focus{outline: none;}
 .ti0-imp{text-indent: 0!important;}
 
 body{background: #fff;font-size: 1.3rem;}
+
+
 .login{padding-top: 4.8rem;background: url(../images/bg1.jpg) #00a3ab center top no-repeat;width: 100%;height: 100%;background-size: cover;box-sizing: border-box;}
 .login .logo{margin: 0 auto;display: block;width: 7.1rem;height: 5.9rem;}
 .login .form-item{position: relative;margin: 0 auto;width: 29rem;}
@@ -39,6 +41,13 @@ body{background: #fff;font-size: 1.3rem;}
 .login .form-ipt input{display: block;-webkit-box-flex: 1;height: 100%;font-size: 1.3rem;}
 .login .form-ipt .uploadImg{display: block;background: url(../images/uploadImgBg.png) center 0 no-repeat;background-size: 7.1rem auto;width: 7.1rem;height: 2.6rem;line-height: 2.6rem;text-align: center;font-size: 1.2rem;color: #fff;font-weight: bold;border-radius: .4rem;}
 .login .form-ipt .uploadImgSucc{background: url(../images/uploadImgSuccBg.png) center 0 no-repeat;background-size: 7.1rem auto;text-align: left;text-indent: .5em;}
+.login .regiSucc{padding-top: 1rem;color: #fff;text-align: center;}
+
+/*page0*/
+.gongao{background: url(../images/gongao.jpg) no-repeat center 0;width: 100%;height: 100%;background-size: 100% auto;box-sizing: border-box;}
+.gongao .formCont{height: 52rem;}
+.gongao .formCont .cont{height: 48rem;}
+.gongao .formCont .cont p{text-indent: 2em;}
 
 .wrap{padding: 0 2.5rem;width: 100%;box-sizing: border-box;}
 /*page5*/
@@ -61,10 +70,16 @@ body{background: #fff;font-size: 1.3rem;}
 .page6{display: -webkit-box;-webkit-box-align: center;-webkit-box-pack: justify;width: 100%;height: 4.3rem;line-height: 4.3rem;box-sizing: border-box;}
 .page6 .cutLine{margin: 0 .5rem;width: 1px;height: 3.5rem;background: #fff;}
 .page6 .midBtn{width: 13.7rem;}
-.page6 .pp-unp{padding: .5rem;width: 13.7rem;background: #fff;border-radius: .5rem;text-align: center;box-sizing: border-box;}
+.page6 .midBtn2{-webkit-box-flex: 1;padding: 0 1.5rem;}
+.page6:last-child{display: block;}
+.page6 .pp-unp{float: left;margin: .9rem .9rem 0 0;padding: .5rem;width: 13.7rem;min-height: 18.5rem;background: #fff;border-radius: .5rem;text-align: center;box-sizing: border-box;}
+.page6 .pp-unp:nth-child(2n){margin-right: 0;}
 .page6 .pp-unp img{display: inline-block;margin-bottom: 1.2rem;width: 4.8rem;height: 5.9rem;}
 .page6 .pp-unp p{font-size: 1.2rem;line-height: 1.8rem;text-align: left;color: #898989;}
 .page6 .pp-unp p em{color: #00a7af;}
+
+.page6 .pp-unp.addMore{display: -webkit-box;-webkit-box-align: center;}
+.page6 .pp-unp.addMore p{margin: 0 auto;width: 8.8rem;height: 7.9rem;line-height: 7.9rem;font-size: 3rem;color: #00A6AE;text-align: center;border: 2px dotted #231815;border-radius: .5rem;box-sizing: border-box;}
 
 /*page7*/
 .page7 .tit{margin: .9rem 0;text-align: center;color: #fff;font-size: 2rem;font-weight: bold;}

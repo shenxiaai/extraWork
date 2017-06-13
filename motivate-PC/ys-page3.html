@@ -72,11 +72,29 @@
 			</div>
 			<div class="form-item tar">
 				<button class="lightBtn">注册</button>
+			</div>
+			<div class="form-item tar">
 				<button class="lightBtn pureBtn mt15">返回</button>
 			</div>
-
+			<div class="form-item tac ti5 ml40" style="color: #00A7AF;font-size: 17px;">*注册成功*</div>
 		</div>
 
 	</div>
+	<script>
+		window.onload = function() {
+			var sel = document.querySelectorAll('.sel');
+			if(navigator.appName == "Microsoft Internet Explorer" && navigator.appVersion .split(";" )[1].replace(/[ ]/g,"")== "MSIE8.0") {
+				console.log( "IE 8.0");
+				for(var i = 0; i < sel.length; i++) {
+					var ss = sel[i].getElementsByTagName('select')[0];
+					ss.style.filter = 'alpha(opacity: 0)';
+					ss.style.opacity = 0;
+				}
+			} else {
+				console.log( 'IE的其他版本' );
+			}
+
+		}
+	</script>
 </body>
 </html>

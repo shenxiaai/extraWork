@@ -27,11 +27,13 @@
 				<div class="cont">
 					<div class="tabCont">
 						<div id="tab2_Content0" style="display: block;">
-							<div class="tits">
+							<!--  <divclass="tits">
 								<div class="tit"><label for="">实践题目</label><input type="text"></div>
 								<div class="tit"><label for="">实践简介</label><input type="text"></div>
-							</div>
-							<h4 class="mt20 mb25">MOTIVATE临床实践与讨论</h4>
+							</div> -->
+							<h4 class="mt40 mb25">MOTIVATE临床实践与讨论</h4>
+							<h5>实践题目</h5>
+							<textarea name="" id=""></textarea>
 							<h5>1、一般资料及主诉</h5>
 							<textarea name="" id=""></textarea>
 							<h5>2、现病史</h5>
@@ -71,7 +73,9 @@
 						</div>
 						<div id="tab2_Content1" style="display: none;">
 							<div class="checkBox ac ptb40">
-								<button class="lightBtn">下载</button>
+								<button class="lightBtn">返回修改</button>
+								<button class="lightBtn">下载PDF</button>
+								<button class="lightBtn">提交</button>
 								<button class="lightBtn">查看评审信息</button>
 							</div>
 							<h4>实践简介</h4>
@@ -83,7 +87,7 @@
 									<span>医生：王芳</span>
 								</p>
 								<p>实践题目：XXXXX</p>
-								<p>实践简介：带动地方法规规范风电规划月份道德的让人仿佛官方公布发发发发发少时诵诗书时尚时尚</p>
+								<!-- <p>实践简介：带动地方法规规范风电规划月份道德的让人仿佛官方公布发发发发发少时诵诗书时尚时尚</p> -->
 							</div>
 							<h4>实践详情</h4>
 							<div class="part">
@@ -136,10 +140,22 @@
 			var closeDialog = document.querySelector('#closeDialog'),
 				block = document.querySelector('.block'),
 				dialog = document.querySelector('.dialog');
+
 			closeDialog.onclick = function () {
 				dialog.style.display = 'none';
 				block.style.display = 'none';
 			}
+
+
+			if(navigator.appName == "Microsoft Internet Explorer" && navigator.appVersion .split(";" )[1].replace(/[ ]/g,"")== "MSIE8.0") {
+				console.log( "IE 8.0");
+				dialog.style.top = (ch - dialog.offsetHeight)/2 + 'px';
+				dialog.style.left = (cw - dialog.offsetWidth)/2 + 'px';
+			} else {
+				console.log( 'IE的其他版本' );
+			}
+
+
 		}
 	</script>
 </body>

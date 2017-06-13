@@ -146,8 +146,8 @@ function moveAction (obj, attr, target) {
 
 var resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize';
 
-window.addEventListener(resizeEvt, function(event){
-	window.location.reload(location.href);
-	// window.location.href = window.location.href;
-});
+// window.addEventListener(resizeEvt, function(event){
+// 	window.location.reload(location.href);
+// 	// window.location.href = window.location.href;
+// });
 

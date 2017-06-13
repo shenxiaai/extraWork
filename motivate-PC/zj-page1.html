@@ -6,33 +6,78 @@
 	<link rel="stylesheet" type="text/css" href="./css/standard-pc.min.css">
 	<link rel="stylesheet" type="text/css" href="./css/style.css">
 	<script src="./js/common.js"></script>
+	<script src="./js/jquery1.12.4.min.js"></script>
+	<!--[if IE 8]>
+	<link rel="stylesheet " href=" osoa/css /styleIE8.css" type="text/css" />
+	<![endif]-->
 </head>
-<body class="login">
-	<img class="loginLogo" src="images/loginLogo.png" alt="" width="48%">
-	<div class="loginFormBox">
-		<div class="form-item">
-			<input type="radio" name="rad" checked="">专家
-			<input type="radio" name="rad">医生
+<body style="position: relative;">
+	<div class="login">
+		<img src="./images/loginBg6.jpg" width="100%" class="loginBg">
+		<img class="loginLogo" src="images/loginLogo.png" alt="" width="48%">
+		<div class="loginFormBox">
+			<div class="form-item">
+				<input type="radio" name="rad" checked="">专家
+				<input type="radio" name="rad">医生
+			</div>
+			<div class="form-item">
+				<input type="text" placeholder="请输入姓名">
+			</div>
+			<div class="form-item">
+				<input type="text" placeholder="请输入手机号">
+			</div>
+			<div class="form-item">
+				<button class="lightBtn">登录</button>
+			</div>
+			<div class="form-item pt5">
+				<a href="" class="fl">专家注册</a>
+				<a href="" class="fr">医生注册</a>
+			</div>
 		</div>
-		<div class="form-item">
-			<input type="text" placeholder="请输入姓名">
-		</div>
-		<div class="form-item">
-			<input type="text" placeholder="请输入手机号">
-		</div>
-		<div class="form-item">
-			<button class="lightBtn">登录</button>
-		</div>
-		<div class="form-item pt5">
-			<a href="" class="fl">专家注册</a>
-			<a href="" class="fr">医生注册</a>
+		<!-- <div style="clear: both;"></div>
+		<div class="bottomTip">
+			<p>发起单位：中国医疗保健国际交流促进会</p>
+			<p>学术指导单位：中华医学会精神病学分会抑郁学组</p>
+			<p>项目时间：2017年6月至2017年10月</p>
+		</div> -->
+
+		<div class="block"></div>
+		<div class="dialog gongao">
+			<img src="./images/gonggaoBg.png" width="100%" class="gongaoBg">
+			<h4>公告</h4>
+			<div class="content">
+				<p>世界卫生组织研究显示，全球抑郁症的年患病率约为11%。从疾病负担看，目前抑郁症已经成为世界第四大疾病，预计到2020年可能将成为仅次于冠心病的人类第二大疾患。而据不完全统计，目前我国抑郁症发病率高达5%-6%。另据一项流行病学调查估算， 中国抑郁患者已达9000万人。而75%-80% 抑郁症患者会多次复发，给患病个体家庭和社会带来严重影响。如何优化抑郁焦虑的临床诊疗实践，使患者的长期治疗获益，是当前精神健康领域面临的关键问题。</p>
+				<p>为了促进广大临床医生对临床诊疗进行优化，达到快速持续改善患者抑郁焦虑症状、提高临床治愈率、并有效降低复燃复发风险的目标，从而帮助更多的抑郁焦虑患者更早达到临床治愈，尽早回归工作、社会和家庭。</p>
+				<p>中国医疗保健国际交流促进会特发起“中国抑郁焦虑诊疗优化实践项目”，通过基于问题的学习方式（PBL），就如何优化抑郁焦虑疾病诊疗的临床实践，开展相关领域专家及临床医生进行线上交流与分享。</p>
+				<p>我们鼓励医生积极参与“中国抑郁焦虑诊疗实践优化项目”线上平台交流，从而得到提高。临床医学需要经验，直接经验是通过自己临床工作获取，而间接经验，通过交流与分享，吸取别人的直接经验作为自己的间接经验，从而提高水平。</p>
+			</div>
 		</div>
 	</div>
+	
 
 	<script>
 		window.onload = function() {
-			var login = document.querySelector('.login');
+			var login = document.querySelector('.login'),
+				closeDialog = document.querySelector('#closeDialog'),
+				block = document.querySelector('.block'),
+				dialog = document.querySelector('.dialog');
+
 			login.style.height = ch + 'px';
+
+			block.onclick = function () {
+				dialog.style.display = 'none';
+				block.style.display = 'none';
+			}
+
+			if(navigator.appName == "Microsoft Internet Explorer" && navigator.appVersion .split(";" )[1].replace(/[ ]/g,"")== "MSIE8.0") {
+				console.log( "IE 8.0");
+				dialog.style.top = (ch - dialog.offsetHeight)/2 + 'px';
+				dialog.style.left = (cw - dialog.offsetWidth)/2 + 'px';
+			} else {
+				console.log( 'IE的其他版本' );
+			}
+
+
 		}
 	</script>
 </body>
