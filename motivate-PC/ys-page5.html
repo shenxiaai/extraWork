@@ -5,7 +5,6 @@
 	<title>医生-page5</title>
 	<link rel="stylesheet" type="text/css" href="./css/standard-pc.min.css">
 	<link rel="stylesheet" type="text/css" href="./css/style.css">
-	<script src="./js/common.js"></script>
 </head>
 <body class="bgfff">
 	<div class="wrap">
@@ -136,6 +135,7 @@
 			<button class="lightBtn" id="closeDialog">关闭</button>
 		</div>
 	</div>
+	<script src="./js/common.js"></script>
 	<script>
 		window.onload = function() {
 			var closeDialog = document.querySelector('#closeDialog'),
@@ -146,19 +146,6 @@
 				dialog.style.display = 'none';
 				block.style.display = 'none';
 			}
-
-
-			// if(navigator.appName == "Microsoft Internet Explorer" && navigator.appVersion .split(";" )[1].replace(/[ ]/g,"")== "MSIE8.0") {
-			// 	console.log( "IE 8.0");
-			// 	dialog.style.top = (ch - dialog.offsetHeight)/2 + 'px';
-			// 	dialog.style.left = (cw - dialog.offsetWidth)/2 + 'px';
-			// } else {
-			// 	console.log( 'IE的其他版本' );
-			// }
-
-			// dialog.style.top = (ch - dialog.offsetHeight)/2 + 'px';
-			// dialog.style.left = (cw - dialog.offsetWidth)/2 + 'px';
-
 		}
 	</script>
 </body>

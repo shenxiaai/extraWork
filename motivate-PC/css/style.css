@@ -132,6 +132,6 @@ body{background: #f7f8f8;font-family: "微软雅黑";}
 .box .cont #tab2_Content1 .part p span:first-child{margin-left: 0;}
 .box .cont #tab2_Content1 .part h5{margin-top: 10px;border-bottom: 1px solid #b5b5b6;width: 100%;color: #595757;}
 
-.dialog{position: fixed;padding-top: 30px;left: 50%;top: 50%;transform: translate(-50%,-50%);-webkit-transform: translate(-50%,-50%);-moz-transform: translate(-50%,-50%);-ms-transform: translate(-50%,-50%);-o-transform: translate(-50%,-50%);margin: 0 auto;width: 823px;height: 559px;background: #fff;z-index: 10;text-align: center;}
+.dialog{position: fixed;padding-top: 30px;left: 50%;top: 50%;margin: 0 auto;width: 823px;height: 559px;background: #fff;z-index: 10;text-align: center;}
 .dialog img{width: 306px;height: 306px;border: 1px solid #747272;}
 .dialog .lightBtn{margin-top: 40px;display: inline-block;width: 186px;}

@@ -151,15 +151,6 @@ dialog.style.top = (ch - dialog.offsetHeight)/2 + 'px';
 dialog.style.left = (cw - dialog.offsetWidth)/2 + 'px';
 
 window.addEventListener(resizeEvt, function(event){
-	if(navigator.appName == "Microsoft Internet Explorer" && navigator.appVersion .split(";" )[1].replace(/[ ]/g,"")== "MSIE8.0") {
-		alert( "IE 8.0");
-		dialog.style.top = (ch - dialog.offsetHeight)/2 + 'px';
-		dialog.style.left = (cw - dialog.offsetWidth)/2 + 'px';
-	} else {
-		console.log( 'IE的其他版本' );
-	}
 	window.location.reload(location.href);
 	// window.location.href = window.location.href;
 });
-
-
