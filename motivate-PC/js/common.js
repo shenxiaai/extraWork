@@ -164,11 +164,8 @@ window.addEventListener(resizeEvt, function(event){
 
 if(navigator.appName == "Microsoft Internet Explorer" && navigator.appVersion .split(";" )[1].replace(/[ ]/g,"")== "MSIE8.0") {
 	alert( "IE 8.0");
-	var style = document.creatElement('style');
-	document.head.appendChild(style);
-	sheet = style.sheet;
-	sheet.addRule('.zj-page3Form .form-item .sel:after','background:none');
-	sheet.insertRule('.zj-page3Form .form-item .sel:after{background:none}',0);
+	var sel = document.querySelector('.sel');
+	sel.className = 'sel selie8';
 } else {
 	console.log( 'IE的其他版本' );
 }
