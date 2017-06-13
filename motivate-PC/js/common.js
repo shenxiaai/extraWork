@@ -165,7 +165,7 @@ window.addEventListener(resizeEvt, function(event){
 if(navigator.appName == "Microsoft Internet Explorer" && navigator.appVersion .split(";" )[1].replace(/[ ]/g,"")== "MSIE8.0") {
 	alert( "IE 8.0");
 	var sel = document.querySelector('.sel');
-	sel.className = 'sel selie8';
+	sel.className = 'ipt sel selie8';
 } else {
 	console.log( 'IE的其他版本' );
 }
