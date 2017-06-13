@@ -37,7 +37,7 @@
 		</div> -->
 
 		<div class="block"></div>
-		<div class="dialog gongao">
+		<div class="dialog gongao" id="dialog">
 			<img src="./images/gonggaoBg.png" width="100%" class="gongaoBg">
 			<h4>公告</h4>
 			<div class="content">
@@ -55,7 +55,7 @@
 			var login = document.querySelector('.login'),
 				closeDialog = document.querySelector('#closeDialog'),
 				block = document.querySelector('.block'),
-				dialog = document.querySelector('.dialog');
+				dialog = document.getElementById('dialog');
 
 			login.style.height = ch + 'px';
 			block.onclick = function () {

@@ -144,28 +144,28 @@ function moveAction (obj, attr, target) {
 }
 
 
-var resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize';
+	var resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize';
 
+	var topNav = document.querySelector('.topNav'),
+		topNavBg = document.querySelector('.topNavBg'),
+		dialog = document.getElementById('dialog');
 
-var topNav = document.querySelector('.topNav'),
-	topNavBg = document.querySelector('.topNavBg'),
-	dialog = document.querySelector('.dialog');
-
-topNav.style.height = topNavBg.offsetHeight + 'px';
-dialog.style.top = (ch - dialog.offsetHeight)/2 + 'px';
-dialog.style.left = (cw - dialog.offsetWidth)/2 + 'px';
-
-window.addEventListener(resizeEvt, function(event){
-	window.location.reload(location.href);
-	// window.location.href = window.location.href;
+	dialog.style.top = (ch - dialog.offsetHeight)/2 + 'px';
+	dialog.style.left = (cw - dialog.offsetWidth)/2 + 'px';
+	
+	topNav.style.height = '127px';
 	topNav.style.height = topNavBg.offsetHeight + 'px';
-});
+
+	window.addEventListener(resizeEvt, function(event){
+		window.location.reload(location.href);
+		// window.location.href = window.location.href;
+	});
 
 
-if(navigator.appName == "Microsoft Internet Explorer" && navigator.appVersion .split(";" )[1].replace(/[ ]/g,"")== "MSIE8.0") {
-	alert( "IE 8.0");
-	var sel = document.querySelector('.sel');
-	sel.className = 'ipt sel selie8';
-} else {
-	console.log( 'IE的其他版本' );
-}
+	// if(navigator.appName == "Microsoft Internet Explorer" && navigator.appVersion .split(";" )[1].replace(/[ ]/g,"")== "MSIE8.0") {
+	// 	alert( "IE 8.0");
+	// 	var sel = document.querySelector('.sel');
+	// 	sel.className = 'ipt sel selie8';
+	// } else {
+	// 	console.log( 'IE的其他版本' );
+	// }
