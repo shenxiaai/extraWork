@@ -153,7 +153,7 @@ function moveAction (obj, attr, target) {
 	dialog.style.top = (ch - dialog.offsetHeight)/2 + 'px';
 	dialog.style.left = (cw - dialog.offsetWidth)/2 + 'px';
 	
-	topNav.style.height = '127px';
+	topNav.style.height = '140px';
 	topNav.style.height = topNavBg.offsetHeight + 'px';
 
 	window.addEventListener(resizeEvt, function(event){
