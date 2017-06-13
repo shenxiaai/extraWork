@@ -6,10 +6,6 @@
 	<link rel="stylesheet" type="text/css" href="./css/standard-pc.min.css">
 	<link rel="stylesheet" type="text/css" href="./css/style.css">
 	<script src="./js/common.js"></script>
-	<script src="./js/jquery1.12.4.min.js"></script>
-	<!--[if IE 8]>
-	<link rel="stylesheet " href=" osoa/css /styleIE8.css" type="text/css" />
-	<![endif]-->
 </head>
 <body style="position: relative;">
 	<div class="login">
@@ -76,7 +72,8 @@
 			} else {
 				console.log( 'IE的其他版本' );
 			}
-
+			dialog.style.top = (ch - dialog.offsetHeight)/2 + 'px';
+			dialog.style.left = (cw - dialog.offsetWidth)/2 + 'px';
 
 		}
 	</script>
