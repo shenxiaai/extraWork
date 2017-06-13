@@ -163,7 +163,7 @@ window.addEventListener(resizeEvt, function(event){
 
 
 if(navigator.appName == "Microsoft Internet Explorer" && navigator.appVersion .split(";" )[1].replace(/[ ]/g,"")== "MSIE8.0") {
-	console.log( "IE 8.0");
+	alert( "IE 8.0");
 	var style = document.creatElement('style');
 	document.head.appendChild(style);
 	sheet = style.sheet;
