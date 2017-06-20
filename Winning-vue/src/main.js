@@ -7,9 +7,9 @@ import Mint from 'mint-ui'
 import router from './router'
 
 import 'mint-ui/lib/style.css'
-import './assets/css/tools-m.css'
-require('./assets/js/reset.js')
-require('./assets/js/common.js')
+import '../static/css/tools-m.css'
+require('../static/js/reset.js')
+require('../static/js/common.js')
 
 Vue.config.productionTip = false
 Vue.prototype.axios = axios
