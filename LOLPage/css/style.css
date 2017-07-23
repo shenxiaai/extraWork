@@ -15,9 +15,9 @@ html,body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,
 .nav .count{position: relative;padding-left: 40px;font-size: 12px;color: #7b7d77;}
 .nav .count:before{content: "";position: absolute;left: 20px;top: 13px;background: #463714;width: 1px;height: 14px;}
 .nav .rest{padding-left: 2px;margin-right: 10px;font-size: 12px;font-weight: bold;color: #cdbe91;}
-.nav .infoBox{float: left;margin: 10px 0 0 20px;padding-left: 7px;width: 580px;height: 25px;background: url(../img/infoBoxBg.png) center no-repeat;}
-.nav .infoBox .info{font-size: 12px;color: #ccbc92;height: 25px;line-height: 25px;width: 555px;overflow: hidden;text-overflow:ellipsis;white-space: nowrap;}
-.nav .infoBox .info p{color: #ccbc92;}
+.nav .infoBox{position: relative;float: left;margin: 10px 0 0 20px;width: 587px;height: 25px;background: url(../img/infoBoxBg.png) center no-repeat;overflow: hidden;}
+.nav .infoBox .info{position: absolute;top: 0;left: 7px;width: 555px;}
+.nav .infoBox .info p{color: #ccbc92;line-height: 25px;text-overflow:ellipsis;white-space: nowrap;font-size: 12px;color: #ccbc92;overflow: hidden;}
 .nav .infoBox .btn{float: left;width: 25px;height: 25px;}
 
 .cont{width: 100%;overflow: hidden;}

@@ -195,6 +195,20 @@ $(function() {
 		}
 	}
 
+	// 公告滚动效果实现
+	var info = document.getElementById('info'),
+		infoTimer = null;
+	info.innerHTML = info.innerHTML + info.innerHTML;
+	function infoScroll(){		// 滚动抽奖
+		clearTimeout(infoTimer);
+		if(info.offsetTop < -info.offsetHeight/2){
+			info.style.top = '0';
+		}
+		info.style.top = info.offsetTop - 1 + 'px';
+		infoTimer = setTimeout(infoScroll, 100);
+	}
+	infoScroll();
+
 
 	// 数据请求封装方法
 	function getAjaxData() { // url, data, doneFun, type
@@ -213,20 +227,15 @@ $(function() {
 
 	function startGame () {
 		gallery.innerHTML = gallery.innerHTML + gallery.innerHTML;
-		function scroll(){		// 滚动抽奖
+		function gameScroll(){		// 滚动抽奖
 			clearTimeout(timer);
 			if(gallery.offsetLeft < -gallery.offsetWidth/2){
 				gallery.style.left = '0';
 			}
 			gallery.style.left = gallery.offsetLeft - 30 + 'px';
-			timer = setTimeout(scroll, 10);
+			timer = setTimeout(gameScroll, 10);
 		}
-		scroll();
-		setTimeout(function () {
-			start.innerHTML = '停止';
-			flag = 1;
-		}, 500);
-
+		gameScroll();
 		setTimeout(function () {
 			startBtn.innerHTML = '停止';
 		}, 300);
