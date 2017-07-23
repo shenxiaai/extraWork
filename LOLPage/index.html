@@ -1,0 +1,1469 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>LOL</title>
+	<link rel="stylesheet" href="./css/style.css">
+	<script type="text/javascript" src="./js/jquery-1.8.3.js"></script>
+	<script type="text/javascript" src="./js/index.js"></script>
+</head>
+<body>
+	<div class="wrap">
+		<div class="nav">
+			<img src="./img/logo.png" alt="" class="logo dialog" data-show=".login-box">
+			<div class="userName">
+				<h6>好大一只鸡</h6>
+				<p>ID：5050580</p>
+			</div>
+			<button class="bindPhone dialog" data-show=".mobile-bind">绑定手机</button>
+			<span class="count">账户余额：</span>
+			<span class="rest">￥989.88</span>
+			<button class="dialog" data-show=".recharge-box">充值</button>
+			<button class="dialog" data-show=".withdrawals-box">提现</button>
+			<button class="dialog" data-show=".account-details">明细</button>
+			<button>我的奖励仓库</button>
+			<div class="infoBox">
+				<p class="info">好大一只鸡刚刚获得了海克斯皮肤      好大一只鸡刚刚获得了海克斯皮肤      好大一只鸡刚刚获得了海</p>
+				<div class="btn"></div>
+			</div>
+		</div>
+		<div class="cont">
+			<div class="gameBan">
+				<div class="banTit">游戏规则</div>
+				<div class="rules">
+					<p>1.点击立即夺宝，即可开始抽奖。</p>
+					<p>2.图标所指示的结果，即为奖励。</p>
+					<p>3.海克斯的仅为娱乐，有一定风险性，请理性参与。</p>
+					<a href="">中奖概率公示&gt;</a>
+				</div>
+			</div>
+			<div class="gameCenter">
+				<div class="scrollBox">
+					<div class="scrollCont">
+						<div class="gallery" id="gallery">
+							<img src="./img/img1.jpg">
+							<img src="./img/img2.jpg">
+							<img src="./img/img3.jpg">
+							<img src="./img/img4.jpg">
+							<img src="./img/img5.jpg">
+							<img src="./img/img6.jpg">
+						</div>
+					</div>
+					<div class="scrollCover"></div>
+					<div class="start dialog" id="start" data-show=".start-game">开始夺宝<!--<img src="./img/char.png" alt="">--></div>
+				</div>
+				<div class="prizeTit">海克斯的藏品奖励</div>
+				<div class="prizeList">
+					<ul>
+						<li>
+							<img src="./img/img1.jpg" width="100%" height="100%" data="1">
+							<div class="cover">
+								<h5>源计划：林逸</h5>
+								<p>价值：￥99.00</p>
+							</div>
+						</li>
+						<li>
+							<img src="./img/img1.jpg" width="100%" height="100%" data="2">
+							<div class="cover">
+								<h5>源计划：林逸</h5>
+								<p>价值：￥99.00</p>
+							</div>
+						</li>
+						<li>
+							<img src="./img/img1.jpg" width="100%" height="100%" data="3">
+							<div class="cover">
+								<h5>源计划：林逸</h5>
+								<p>价值：￥99.00</p>
+							</div>
+						</li>
+						<li>
+							<img src="./img/img1.jpg" width="100%" height="100%" data="4">
+							<div class="cover">
+								<h5>源计划：林逸</h5>
+								<p>价值：￥99.00</p>
+							</div>
+						</li>
+						<li>
+							<img src="./img/img1.jpg" width="100%" height="100%" data="5">
+							<div class="cover">
+								<h5>源计划：林逸</h5>
+								<p>价值：￥99.00</p>
+							</div>
+						</li>
+						<li>
+							<img src="./img/img1.jpg" width="100%" height="100%" data="6">
+							<div class="cover">
+								<h5>源计划：林逸</h5>
+								<p>价值：￥99.00</p>
+							</div>
+						</li>
+						<li>
+							<img src="./img/img1.jpg" width="100%" height="100%" data="7">
+							<div class="cover">
+								<h5>源计划：林逸</h5>
+								<p>价值：￥99.00</p>
+							</div>
+						</li>
+						<li>
+							<img src="./img/img1.jpg" width="100%" height="100%" data="8">
+							<div class="cover">
+								<h5>源计划：林逸</h5>
+								<p>价值：￥99.00</p>
+							</div>
+						</li>
+						<li>
+							<img src="./img/img1.jpg" width="100%" height="100%" data="9">
+							<div class="cover">
+								<h5>源计划：林逸</h5>
+								<p>价值：￥99.00</p>
+							</div>
+						</li>
+						<li>
+							<img src="./img/img1.jpg" width="100%" height="100%" data="10">
+							<div class="cover">
+								<h5>源计划：林逸</h5>
+								<p>价值：￥99.00</p>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!--弹窗背景-->
+	<div class="pop-bg"></div>
+
+	<!--loading-->
+	<div class="loading">
+		<img src="img/loading.gif" alt="">
+	</div>
+
+	<!--登录-->
+	<div class="pop-box medium-box login-box">
+		<div class="top-frame"></div>
+		<div class="close-btn"></div>
+		<div class="pop-content">
+			<div class="pop-title">登录</div>
+			<div class="loginStyle">
+				<div class="login-item">
+					<a href="###">
+						<dl>
+							<dt class="item-pic"></dt>
+							<dd>QQ登录</dd>
+						</dl>
+					</a>
+				</div>
+			</div>
+			<div class="login-info">
+				<lable>
+					<input id="checkLogin" type="checkbox" checked>
+					我已阅读并同意<a href="###" data-show=".user-agreement-box" class="dialog">《企鹅夺宝用户协议》</a>，愿意承担风险。
+				</lable>
+			</div>
+		</div>
+	</div>
+
+	<!--用户协议-->
+	<div class="pop-box big-box user-agreement-box">
+		<div class="top-frame"></div>
+		<div class="close-btn"></div>
+		<div class="bottom-frame"></div>
+		<div class="pop-content">
+			<div class="pop-title">企鹅夺宝用户协议</div>
+			<div class="user-agreement-con mCustomScrollbar">
+				<p>欢迎访问“企鹅夺宝”（以下简称为“平台”），为明确您（以下简称为“用户”）通过平台购买商家（以下简称为“发起方”）所提供商品的权利义务，保护用户的合法权益，特制定本协议。申请使用乐山七网科技有限公司提供的平台服务（包括企鹅夺宝的各类活动及商城服务），请用户仔细阅读以下全部内容（特别是粗体下划线标注的内容）。如用户不同意本服务条款任意内容，请勿注册或使用平台服务。如用户通过进入注册程序并勾选“我同意平台服务协议”，即表示用户与乐山七网科技有限公司已达成协议，自愿接受本服务条款的所有内容。此后，用户不得以未阅读本服务条款内容作任何形式的抗辩。</p>
+				<h3>一、用户使用平台服务的前提条件</h3>
+				<h4>1、用户拥有乐山七网科技有限公司认可的帐号，包括但不限于：</h4>
+				<p>（1）第三方帐号，用户可使用QQ帐号、微信帐号、微博帐号等其他乐山七网科技有限公司认可的帐号在同意本服务条款后使用平台服务。</p>
+				<p>（2）自行通过平台进行注册的账号，包括使用手机，自定义个性账号，邮箱等注册的账号。</p>
+				<h4>2、用户在使用平台服务时须具备相应的权利能力和行为能力，能够独立承担法律责任，如果用户在18周岁以下，必须在父母或监护人的监护参与下才能使用本站。</h4>
+				<h4>3、平台仅为用户和发起方之间的交易行为提供平台网络空间、技术服务等中介服务。平台并不是用户或发起方的任何一方，所有交易仅存在于用户和发起方之间，产生的法律后果由用户和发起方自行承担。</h4>
+				<h3>二、用户管理</h3>
+				<h4>1、用户ID</h4>
+				<p>用户首次登录平台时，平台会为每位用户生成一个帐户ID，作为其使用平台服务的唯一身份标识，用户需要对其帐户项下发生的所有行为负责。</p>
+				<h4>2、用户资料完善</h4>
+				<p>用户应当在使用平台服务时完善个人资料，用户资料包括但不限于个人手机号码、收货地址、帐号昵称、头像、密码等平台帐号时输入的所有信息。</p>
+				<p>用户在完善个人资料时承诺遵守法律法规、社会主义制度、国家利益、公民合法权益、公共秩序、社会道德风尚和信息真实性等七条底线，不得在资料中出现违法和不良信息，且用户保证其在完善个人资料和使用帐号时，不得有以下情形：</p>
+				<p>（1）违反宪法或法律法规规定的；</p>
+				<p>（2）危害国家安全，泄露国家秘密，颠覆国家政权，破坏国家统一的；</p>
+				<p>（3）损害国家荣誉和利益的，损害公共利益的；</p>
+				<p>（4）煽动民族仇恨、民族歧视，破坏民族团结的；</p>
+				<p>（5）破坏国家宗教政策，宣扬邪教和封建迷信的；</p>
+				<p>（6）散布谣言，扰乱社会秩序，破坏社会稳定的</p>
+				<p>（7）散布淫秽、色情、赌博、暴力、凶杀、恐怖或者教唆犯罪的；</p>
+				<p>（8）侮辱或者诽谤他人，侵害他人合法权益的；</p>
+				<p>（9）含有法律、行政法规禁止的其他内容的。</p>
+				<p>若用户提供给乐山七网科技有限公司的资料不准确，不真实，含有违法或不良信息的，乐山七网科技有限公司有权不予完善，并保留终止用户使用平台服务的权利。若用户以虚假信息骗取帐号ID或帐号头像、个人简介等注册资料存在违法和不良信息的，乐山七网科技有限公司有权采取通知限期改正、暂停使用、注销登记等措施。对于冒用关联机构或社会名人注册帐号名称的，乐山七网科技有限公司有权注销该帐号，并向政府主管部门进行报告。</p>
+				<p>根据相关法律、法规规定以及考虑到平台服务的重要性，用户同意：</p>
+				<p>（1）提供及时、详尽及准确的用户资料；</p>
+				<p>（2）不断更新用户资料，符合及时、详尽准确的要求。</p>
+				<p>（3）用户有证明该帐号为本人所有的义务，需能提供平台资料或第三方平台注册资料以证明该帐号为本人所有，否则乐山七网科技有限公司有权暂缓向用户交付其所获得的商品及账户余额。</p>
+				<h4>3、用户账户财产</h4>
+				<h5>a.账户余额</h5>
+				<p>（1）用户可通过平台公示认可的方式充值的账户余额。账户余额的有效期自获得之日起永久生效。</p>
+				<p>（2）账户余额必须通过乐山七网科技有限公司提供或认可的平台获得，从非乐山七网科技有限公司提供或认可的平台所获得的账户余额将被认定为来源不符合本服务协议，乐山七网科技有限公司有权拒绝从非乐山七网科技有限公司提供或认可的平台所获得的账户余额在平台中使用。</p>
+				<p>（3）账户余额不能在平台之外使用或者转移给其他用户。</p>
+				<h5>b.Q币</h5>
+				<p>（1）平台通过公开透明的程序为用户提供的娱乐服务功能，通过参与游戏，获得Q币的奖励。本平台的Q币可通过转让给其他用户或者提货至腾讯账号内使用。</p>
+				<p>（2）本平台Q币与腾讯Q币一致，在腾讯公司具备同样的功能效力。</p>
+				<h5>c.话费</h5>
+				<p>（1）平台通过公开透明的程序为用户提供的娱乐服务功能，通过参与游戏，获得话费的奖励。本平台的话费可通过转让给其他用户或者提货至运营商手机号内使用。</p>
+				<p>（2）本平台话费与各大通信运营商一致，在各大通信运营商系统内具备同样的功能效力。</p>
+				<h4>4、用户应当保证在使用平台服务的过程中遵守诚实信用原则，不扰乱平台的正常秩序，不得通过使用他人帐户、一人注册多个帐户、使用程序自动处理等非法方式损害他人或乐山七网科技有限公司的利益。</h4>
+				<h4>5、若用户存在任何违法或违反本服务协议约定的行为，乐山七网科技有限公司有权视用户的违法或违规情况适用以下一项或多项处罚措施：</h4>
+				<p>（1）责令用户改正违法或违规行为；</p>
+				<p>（2）中止、终止部分或全部服务；</p>
+				<p>（3）取消用户商品订单并取消商品发放， 且用户已获得的奖励及账户余额不予退回；</p>
+				<p>（4）冻结或注销用户账户及其账户中的所有账户财产（如有）;</p>
+				<p>（5）其他乐山七网科技有限公司认为合适在符合法律法规规定的情况下的处罚措施。</p>
+				<p>若用户的行为造成乐山七网科技有限公司及其关联公司损失的，用户还应承担赔偿责任。</p>
+				<h4>6、若用户发表侵犯他人权利或违反法律规定的言论，乐山七网科技有限公司有权停止传输并删除其言论、禁止该用户发言、注销用户帐号及其帐号中的金币（如有），同时，乐山七网科技有限公司保留根据国家法律法规、相关政策向有关机关报告的权利。</h4>
+				<h3>三、企鹅夺宝的规则</h3>
+				<h4>1、释义</h4>
+				<p>（1）账户余额：指用户在平台上参与各类活动的资金的呈现方式。</p>
+				<p>（2）幸运码：指用户使用金币参与幸运夺宝时所获取的随机分配号码。</p>
+				<p>（3）幸运号码：指与某期夺宝活动的全部号码分配完毕后，根据计算规则（详见夺宝详情页面的计算结果选项）计算出的一个号码。持有该幸运号码的用户可直接获得当期虚拟奖励。</p>
+				<p>（4）Q币：指用户通过平台获得的奖励，Q币与腾讯公司的Q币属于同一种虚拟资产。</p>
+				<p>（5）话费：指用户通过平台获得的奖励，话费与各大运营商（移动，联通，电信等）属于同一种虚拟资产。</p>
+				<h4>2、乐山七网科技有限公司承诺遵循公平、公正、公开的原则运营平台，确保所有用户在平台中享受同等的权利与义务，所有结果向所有用户公示。</h4>
+				<h4>3、用户知悉，除本协议另有约定外，无论是否获得虚拟奖励，用户已用于参与平台活动的付费额不能退回；其完全了解并充分认识到参与平台活动存在的风险，乐山七网科技有限公司不保证用户参与活动一定会获得商品或奖励。</h4>
+				<h4>4、用户购买商品或获得奖励后，因收货地址错误，联系方式错误等因用户原因造成的损失，乐山七网科技有限公司不承担任何责任。商品由乐山七网科技有限公司或经乐山七网科技有限公司确认的第三方商家提供及发货。</h4>
+				<h4>5、用户通过平台购买的商品或获得的奖励，享受该商品生产厂家提供的三包服务，具体三包规定以该商品生产厂家公布的为准。</h4>
+				<h4>6、如果下列情形发生，乐山七网科技有限公司有权取消用户商品订单：</h4>
+				<p>（1）因不可抗力、平台系统发生故障或遭受第三方攻击，或发生其他乐山七网科技有限公司无法控制的情形；</p>
+				<p>（2）根据乐山七网科技有限公司已经发布的或将来可能发布或更新的各类规则、公告的规定，乐山七网科技有限公司有权取消用户订单的情形。</p>
+				<p>乐山七网科技有限公司有权取消用户的订单时，用户可申请退还账户余额，所退账户余额将在不少于7个工作日内退还至用户帐户中。</p>
+				<h4>7、服务的变更或中止</h4>
+				<p>乐山七网科技有限公司始终在不断变更和改进服务。乐山七网科技有限公司可能会增加或删除功能，也可能暂停或彻底停止某项服务。用户同意乐山七网科技有限公司有权行使上述权利且不需对用户或第三方承担任何责任。</p>
+				<h3>四、本服务协议的修改</h3>
+				<p>用户知晓乐山七网科技有限公司不时公布或修改的与本服务协议有关的其他规则、条款及公告等是本服务协议的组成部分。乐山七网科技有限公司有权在必要时通过在平台内发出公告等合理方式修改本服务协议，用户在享受各项服务时，应当及时查阅了解修改的内容，并自觉遵守本服务协议。用户如继续使用本服务协议涉及的服务，则视为对修改内容的同意，当发生有关争议时，以最新的服务协议为准；用户在不同意修改内容的情况下，有权停止使用本服务协议涉及的服务。</p>
+				<h3>五、郑重声明</h3>
+				<p>为了避免不必要的纠纷，应用内（企鹅夺宝）的所有活动与苹果公司、腾讯公司、各大通信运营商（移动，联通，电信等）等无关，出现任何法律纠纷全部由本公司承担。</p>
+				<h3>六、法律</h3>
+				<p>本条款适用中华人民共和国的法律，并且排除一切冲突法规定的适用。用户和乐山七网科技有限公司一致同意：凡因本协议引起的或与本协议有关的任何争议，均应提交中国国际经济贸易仲裁委员会，按照申请仲裁时该会现行有效的仲裁规则进行仲裁，仲裁裁决是终局的，对双方均有约束力。</p>
+			</div>
+		</div>
+	</div>
+
+	<!--绑定手机-->
+	<div class="pop-box medium-box mobile-bind">
+		<div class="top-frame"></div>
+		<div class="close-btn"></div>
+		<div class="bottom-frame"></div>
+		<div class="pop-content">
+			<div class="pop-title">绑定保密手机</div>
+			<div class="transaction-box">
+				<table>
+					<tr style="height:10px;"></tr>
+					<tr>
+						<td class="align-right">手机号：</td>
+						<td colspan="2"><input class="transaction-input" type="text" placeholder="请输入您要绑定的手机号码" style="width:310px;"></td>
+					</tr>
+					<tr style="height:10px;"></tr>
+					<tr>
+						<td class="align-right">验证码：</td>
+						<td><input type="text" class="transaction-input" placeholder="请输入您的验证码" style="width:160px;"></td>
+						<td><button class="getCode-btn">获取验证码</button></td>
+					</tr>
+				</table>
+			</div>
+		</div>
+		<button class="pop-confirm-btn">确定</button>
+	</div>
+
+	<!--修改手机-->
+	<div class="pop-box medium-box mobile-updata">
+		<div class="top-frame"></div>
+		<div class="close-btn"></div>
+		<div class="bottom-frame"></div>
+		<div class="pop-content">
+			<div class="pop-title">修改保密手机</div>
+			<div class="transaction-box">
+				<table>
+					<tr>
+						<td class="align-right">原手机号：</td>
+						<td colspan="2"><input class="transaction-input" data-validate="mobile" type="text" placeholder="请输入您原绑定的手机号码" style="width:310px;"></td>
+					</tr>
+					<tr style="height:10px;"></tr>
+					<tr>
+						<td class="align-right">新手机号：</td>
+						<td colspan="2"><input class="transaction-input" type="text" placeholder="请输入您要重新绑定的手机号码" style="width:310px;"></td>
+					</tr>
+					<tr style="height:10px;"></tr>
+					<tr>
+						<td class="align-right">验证码：</td>
+						<td><input type="text" class="transaction-input" placeholder="请输入您的验证码" style="width:160px;"></td>
+						<td><button class="getCode-btn">获取验证码</button></td>
+					</tr>
+				</table>
+			</div>
+		</div>
+		<button class="pop-confirm-btn">确定</button>
+	</div>
+
+	<!--中奖-->
+	<div id="winning-box" class="pop-box winning-box">
+		<img src="img/winning.png" alt="">
+		<div class="winning-info">
+			<dl>
+				<dd>恭喜获得了87655期</dd>
+				<dt>100Q币奖励</dt>
+			</dl>
+		</div>
+		<div class="winning-operation">
+			<p><button class="blue-btn">出售获取￥85.00元（可提现）</button></p>
+			<p><button class="golden-btn">算了，自己使用</button></p>
+		</div>
+	</div>
+
+	<!--确认订单-->
+	<div class="pop-box medium-box confirm-order">
+		<div class="top-frame"></div>
+		<div class="close-btn"></div>
+		<div class="bottom-frame"></div>
+		<div class="pop-content">
+			<div class="pop-title">确认订单</div>
+			<div class="order-details">
+				<p>订单类别：<span>话费夺宝</span></p>
+				<p>参与人次：<span>5</span>人次</p>
+				<p>订单金额：￥<span>5.00</span></p>
+				<p>账户余额：￥<span>50.00</span></p>
+			</div>
+			<div class="pop-title">选择支付方式</div>
+			<div class="payment-method">
+				<div class="payment-item">
+					<div class="payment">
+						<img src="img/yue.png" alt="">
+					</div>
+					<p>余额支付</p>
+				</div>
+				<div class="payment-item active">
+					<div class="payment">
+						<img src="img/weixin.png" alt="">
+					</div>
+					<p>微信支付</p>
+				</div>
+				<div class="payment-item">
+					<div class="payment">
+						<img src="img/zhifubao.png" alt="">
+					</div>
+					<p>支付宝支付</p>
+				</div>
+			</div>
+		</div>
+
+		<button id="confirmOrderBtn" data-show=".OR-code" class="pop-confirm-btn">确定</button>
+	</div>
+
+	<!--开始游戏-确认订单-->
+	<div class="pop-box medium-box start-game">
+		<div class="top-frame"></div>
+		<div class="close-btn"></div>
+		<div class="bottom-frame"></div>
+		<div class="pop-content">
+			<div class="pop-title">确认订单</div>
+			<div class="select-money-list">
+				<p class="popGoldColor lh28">订单类别：海克斯的宝藏</p>
+				<p class="popGoldColor lh28">订单金额：￥10.00</p>
+			</div>
+			<div class="pop-title">支付方式</div>
+			<div class="payment-method">
+				<div class="payment-item active">
+					<div class="payment">
+						<img src="img/weixin.png" alt="">
+					</div>
+					<p>微信支付</p>
+				</div>
+				<div class="payment-item">
+					<div class="payment">
+						<img src="img/zhifubao.png" alt="">
+					</div>
+					<p>支付宝支付</p>
+				</div>
+			</div>
+		</div>
+		<button id="paymentBtn" data-show=".OR-code" class="pop-confirm-btn">支付</button>
+	</div>
+
+	<!--充值-->
+	<div class="pop-box medium-box recharge-box">
+		<div class="top-frame"></div>
+		<div class="close-btn"></div>
+		<div class="bottom-frame"></div>
+		<div class="pop-content">
+			<div class="pop-title">充值</div>
+			<div class="select-money-list">
+				<ul>
+					<li data-value="10" class="active">10元</li>
+					<li data-value="20">20元</li>
+					<li data-value="50">50元</li>
+					<li data-value="100">100元</li>
+					<li data-value="10">10元</li>
+					<li data-value="20">20元</li>
+					<li data-value="50">50元</li>
+					<li data-value="100">100元</li>
+				</ul>
+			</div>
+			<div class="pop-title">选择支付方式</div>
+			<div class="payment-method">
+				<div class="payment-item active">
+					<div class="payment">
+						<img src="img/weixin.png" alt="">
+					</div>
+					<p>微信支付</p>
+				</div>
+				<div class="payment-item">
+					<div class="payment">
+						<img src="img/zhifubao.png" alt="">
+					</div>
+					<p>支付宝支付</p>
+				</div>
+			</div>
+		</div>
+		<button id="paymentBtn" data-show=".OR-code" class="pop-confirm-btn">确定</button>
+	</div>
+
+	<!--支付二维码-->
+	<div class="pop-box medium-box OR-code">
+		<div class="top-frame"></div>
+		<div class="close-btn"></div>
+		<div class="bottom-frame"></div>
+		<div class="pop-content">
+			<div class="pop-title">支付订单</div>
+			<div class="payment-money">
+				订单金额：<span class="money">￥5.00</span>
+			</div>
+			<div class="qrcode-box">
+				<img src="img/qrcode.png" alt="">
+			</div>
+			<div class="payment-info">微信扫一扫</div>
+		</div>
+		<button class="pop-confirm-btn close-btn-bottom">确定</button>
+	</div>
+
+	<!--支付成功-->
+	<div class="pop-box medium-box payment-success">
+		<div class="top-frame"></div>
+		<div class="close-btn"></div>
+		<div class="bottom-frame"></div>
+		<div class="pop-content">
+			<div class="pop-title">支付成功</div>
+			<div class="payment-success-img">
+				<img src="img/success.png" alt="">
+			</div>
+			<div class="success-info1">
+				<p>参与成功啦~~等待幸运降临吧！</p>
+				<p>祝你好运哦!</p>
+			</div>
+			<div class="success-info2">
+				<p>如果遇到什么问题，您可以通过以下客服方式进行服务投诉！</p>
+				<p>投诉QQ：25842555</p>
+			</div>
+		</div>
+		<button class="pop-confirm-btn close-btn-bottom">确定</button>
+	</div>
+
+	<!--计算详情-->
+	<div class="pop-box big-box calculation-details">
+		<div class="top-frame"></div>
+		<div class="close-btn"></div>
+		<div class="bottom-frame"></div>
+		<div class="pop-content">
+			<div class="pop-title">计算详情</div>
+			<div class="calculation-formula">
+				<ul>
+					<li class="hasborder" style="width:90px;">
+						<div class="hasborder-bg">
+							<p>计算</p>
+							<p>结果</p>
+						</div>
+					</li>
+					<li>=</li>
+					<li class="hasborder" style="width:270px;">
+						<div class="hasborder-bg">
+							<p>最新100个购买记录总和</p>
+							<p>15212321555665</p>
+						</div>
+					</li>
+					<li class="special">%<p class="small-text">（取余）</p></li>
+					<li class="hasborder" style="width:166px;">
+						<div class="hasborder-bg">
+							<p>总参与人次</p>
+							<p>200</p>
+						</div>
+					</li>
+					<li>+</li>
+					<li class="hasborder" style="width:180px;">
+						<div class="hasborder-bg">
+							<p>固定数值</p>
+							<p>1000000001</p>
+						</div>
+					</li>
+					<li>=</li>
+					<li class="hasborder" style="width:160px;">
+						<div class="hasborder-bg">
+							<p>幸运号码</p>
+							<p>10052585</p>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<div class="buy-list">
+				<ul>
+					<li>
+						<span class="float-right">58415期100Q币</span>
+						<span class="no1">001</span>
+						<span class="no2">2017-05-28 21:41:58.235</span>
+						<span class="icon"></span>
+						<span class="no4">150217552</span>
+						<span class="no5">好大一只鸡</span>
+						<span class="no6">40人次</span>
+					</li>
+					<li>
+						<span class="float-right">58415期100Q币</span>
+						<span class="no1">001</span>
+						<span class="no2">2017-05-28 21:41:58.235</span>
+						<span class="icon"></span>
+						<span class="no4">150217552</span>
+						<span class="no5">好大一只鸡</span>
+						<span class="no6">40人次</span>
+					</li>
+					<li>
+						<span class="float-right">58415期100Q币</span>
+						<span class="no1">001</span>
+						<span class="no2">2017-05-28 21:41:58.235</span>
+						<span class="icon"></span>
+						<span class="no4">150217552</span>
+						<span class="no5">好大一只鸡</span>
+						<span class="no6">40人次</span>
+					</li>
+					<li>
+						<span class="float-right">58415期100Q币</span>
+						<span class="no1">001</span>
+						<span class="no2">2017-05-28 21:41:58.235</span>
+						<span class="icon"></span>
+						<span class="no4">150217552</span>
+						<span class="no5">好大一只鸡</span>
+						<span class="no6">40人次</span>
+					</li>
+					<li>
+						<span class="float-right">58415期100Q币</span>
+						<span class="no1">001</span>
+						<span class="no2">2017-05-28 21:41:58.235</span>
+						<span class="icon"></span>
+						<span class="no4">150217552</span>
+						<span class="no5">好大一只鸡</span>
+						<span class="no6">40人次</span>
+					</li>
+					<li>
+						<span class="float-right">58415期100Q币</span>
+						<span class="no1">001</span>
+						<span class="no2">2017-05-28 21:41:58.235</span>
+						<span class="icon"></span>
+						<span class="no4">150217552</span>
+						<span class="no5">好大一只鸡</span>
+						<span class="no6">40人次</span>
+					</li>
+					<li>
+						<span class="float-right">58415期100Q币</span>
+						<span class="no1">001</span>
+						<span class="no2">2017-05-28 21:41:58.235</span>
+						<span class="icon"></span>
+						<span class="no4">150217552</span>
+						<span class="no5">好大一只鸡</span>
+						<span class="no6">40人次</span>
+					</li>
+					<li>
+						<span class="float-right">58415期100Q币</span>
+						<span class="no1">001</span>
+						<span class="no2">2017-05-28 21:41:58.235</span>
+						<span class="icon"></span>
+						<span class="no4">150217552</span>
+						<span class="no5">好大一只鸡</span>
+						<span class="no6">40人次</span>
+					</li>
+					<li>
+						<span class="float-right">58415期100Q币</span>
+						<span class="no1">001</span>
+						<span class="no2">2017-05-28 21:41:58.235</span>
+						<span class="icon"></span>
+						<span class="no4">150217552</span>
+						<span class="no5">好大一只鸡</span>
+						<span class="no6">40人次</span>
+					</li>
+					<li>
+						<span class="float-right">58415期100Q币</span>
+						<span class="no1">001</span>
+						<span class="no2">2017-05-28 21:41:58.235</span>
+						<span class="icon"></span>
+						<span class="no4">150217552</span>
+						<span class="no5">好大一只鸡</span>
+						<span class="no6">40人次</span>
+					</li>
+					<li>
+						<span class="float-right">58415期100Q币</span>
+						<span class="no1">001</span>
+						<span class="no2">2017-05-28 21:41:58.235</span>
+						<span class="icon"></span>
+						<span class="no4">150217552</span>
+						<span class="no5">好大一只鸡</span>
+						<span class="no6">40人次</span>
+					</li>
+					<li>
+						<span class="float-right">58415期100Q币</span>
+						<span class="no1">001</span>
+						<span class="no2">2017-05-28 21:41:58.235</span>
+						<span class="icon"></span>
+						<span class="no4">150217552</span>
+						<span class="no5">好大一只鸡</span>
+						<span class="no6">40人次</span>
+					</li>
+					<li>
+						<span class="float-right">58415期100Q币</span>
+						<span class="no1">001</span>
+						<span class="no2">2017-05-28 21:41:58.235</span>
+						<span class="icon"></span>
+						<span class="no4">150217552</span>
+						<span class="no5">好大一只鸡</span>
+						<span class="no6">40人次</span>
+					</li>
+					<li>
+						<span class="float-right">58415期100Q币</span>
+						<span class="no1">001</span>
+						<span class="no2">2017-05-28 21:41:58.235</span>
+						<span class="icon"></span>
+						<span class="no4">150217552</span>
+						<span class="no5">好大一只鸡</span>
+						<span class="no6">40人次</span>
+					</li>
+					<li>
+						<span class="float-right">58415期100Q币</span>
+						<span class="no1">001</span>
+						<span class="no2">2017-05-28 21:41:58.235</span>
+						<span class="icon"></span>
+						<span class="no4">150217552</span>
+						<span class="no5">好大一只鸡</span>
+						<span class="no6">40人次</span>
+					</li>
+					<li>
+						<span class="float-right">58415期100Q币</span>
+						<span class="no1">001</span>
+						<span class="no2">2017-05-28 21:41:58.235</span>
+						<span class="icon"></span>
+						<span class="no4">150217552</span>
+						<span class="no5">好大一只鸡</span>
+						<span class="no6">40人次</span>
+					</li>
+				</ul>
+			</div>
+			<div style=""></div>
+		</div>
+	</div>
+
+	<!--查看他的号码-->
+	<div class="pop-box big-box7 order-list-box">
+		<div class="top-frame"></div>
+		<div class="close-btn"></div>
+		<div class="bottom-frame"></div>
+		<div class="pop-content">
+			<div class="pop-title">Ta拥有的号码</div>
+			<div class="order-list">
+				<ul>
+					<li>
+						<span>10000587</span>
+						<span>10000587</span>
+						<span>10000587</span>
+						<span>10000587</span>
+						<span>10000587</span>
+						<span>10000587</span>
+					</li>
+					<li>
+						<span>10000587</span>
+						<span>10000587</span>
+						<span>10000587</span>
+						<span>10000587</span>
+						<span>10000587</span>
+						<span>10000587</span>
+					</li>
+					<li>
+						<span>10000587</span>
+						<span>10000587</span>
+						<span>10000587</span>
+						<span>10000587</span>
+						<span>10000587</span>
+						<span>10000587</span>
+					</li>
+					<li>
+						<span>10000587</span>
+						<span>10000587</span>
+						<span>10000587</span>
+						<span>10000587</span>
+						<span>10000587</span>
+						<span>10000587</span>
+					</li>
+					<li>
+						<span>10000587</span>
+						<span>10000587</span>
+						<span>10000587</span>
+						<span>10000587</span>
+						<span>10000587</span>
+						<span>10000587</span>
+					</li>
+					<li>
+						<span>10000587</span>
+						<span>10000587</span>
+						<span>10000587</span>
+						<span>10000587</span>
+						<span>10000587</span>
+						<span>10000587</span>
+					</li>
+					<li>
+						<span>10000587</span>
+						<span>10000587</span>
+						<span>10000587</span>
+						<span>10000587</span>
+						<span>10000587</span>
+						<span>10000587</span>
+					</li>
+					<li>
+						<span>10000587</span>
+						<span>10000587</span>
+						<span>10000587</span>
+						<span>10000587</span>
+						<span>10000587</span>
+						<span>10000587</span>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<!--Q币出售-->
+	<div class="pop-box medium-box sell-box">
+		<div class="top-frame"></div>
+		<div class="close-btn"></div>
+		<div class="bottom-frame"></div>
+		<div class="pop-content">
+			<div class="pop-title">Q币出售</div>
+			<div class="transaction-box">
+				<table>
+					<tr>
+						<td class="align-right">账户Q币：</td>
+						<td colspan="2">500个</td>
+					</tr>
+					<tr style="height:10px;"></tr>
+					<tr>
+						<td class="align-right">出售数量：</td>
+						<td class="transaction-input"><input type="text" placeholder="请输入您想出售的数量"></td>
+						<td class="transaction-btn"><button>出售全部</button></td>
+					</tr>
+					<tr style="height:10px;"></tr>
+					<tr>
+						<td class="align-right">出售价格：</td>
+						<td colspan="2">￥0.85/个</td>
+						<!--                        <td class="transaction-btn"><button>匹配目前价格</button></td>-->
+					</tr>
+				</table>
+			</div>
+		</div>
+		<button class="pop-confirm-btn">出售</button>
+	</div>
+
+	<!--购买-->
+	<div class="pop-box medium-box buy-box">
+		<div class="top-frame"></div>
+		<div class="close-btn"></div>
+		<div class="bottom-frame"></div>
+		<div class="pop-content">
+			<div class="pop-title">Q币购买</div>
+			<div class="transaction-box">
+				<table>
+					<tr>
+						<td class="align-right">账户Q币：</td>
+						<td colspan="4">500个</td>
+					</tr>
+					<tr style="height:10px;"></tr>
+					<tr>
+						<td class="align-right">购买数量：</td>
+						<td colspan="4"><input type="text" class="transaction-input" style="width:312px;"></td>
+					</tr>
+					<tr style="height:10px;"></tr>
+					<tr>
+						<td></td>
+						<td><span class="select-num">50个</span></td>
+						<td><span class="select-num">100个</span></td>
+						<td><span class="select-num">200个</span></td>
+						<td><span class="select-num">500个</span></td>
+					</tr>
+					<tr style="height:10px;"></tr>
+					<tr>
+						<td class="align-right">目前价格：</td>
+						<td colspan="4">￥<span>0.85</span>/个</td>
+					</tr>
+					<tr style="height:10px;"></tr>
+					<tr>
+						<td class="align-right">价格总计：</td>
+						<td colspan="4">￥<span>700.85</span></td>
+					</tr>
+				</table>
+			</div>
+		</div>
+		<button class="pop-confirm-btn">购买</button>
+	</div>
+
+	<!--提货-->
+	<div class="pop-box medium-box take-goods-box">
+		<div class="top-frame"></div>
+		<div class="close-btn"></div>
+		<div class="bottom-frame"></div>
+		<div class="pop-content">
+			<div class="pop-title">Q币提货</div>
+			<div class="transaction-box">
+				<table>
+					<tr>
+						<td class="align-right">账户Q币：</td>
+						<td colspan="2">500个</td>
+					</tr>
+					<tr style="height:10px;"></tr>
+					<tr>
+						<td class="align-right">提货数量：</td>
+						<td><input type="text" placeholder="请输入您想提货的数量" class="transaction-input"></td>
+						<td class="transaction-btn"><button>全部提货</button></td>
+					</tr>
+					<tr style="height:10px;"></tr>
+					<tr>
+						<td class="align-right">提货QQ号：</td>
+						<td colspan="2"><input type="text" placeholder="请输入您提货的QQ号" class="transaction-input" style="width:312px;"></td>
+					</tr>
+					<tr style="height:10px;"></tr>
+					<tr>
+						<td class="align-right">确认QQ号：</td>
+						<td colspan="2"><input type="text" placeholder="再次输入您提货的QQ号" class="transaction-input" style="width:312px;"></td>
+					</tr>
+					<tr style="height:10px;"></tr>
+					<tr>
+						<td></td>
+						<td colspan="2" class="red">*Q币提货将直接充值至您所提货的QQ号</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+		<button class="pop-confirm-btn">确定</button>
+	</div>
+
+	<!--提现-->
+	<div class="pop-box medium-box withdrawals-box">
+		<div class="top-frame"></div>
+		<div class="close-btn"></div>
+		<div class="bottom-frame"></div>
+		<div class="pop-content">
+			<div class="pop-title">账户提现</div>
+			<div class="transaction-box">
+				<table>
+					<tr>
+						<td class="align-right">账户余额：</td>
+						<td colspan="2">￥<span>9854.00</span></td>
+					</tr>
+					<tr style="height:10px;"></tr>
+					<tr>
+						<td class="align-right">提现金额：</td>
+						<td><input type="text" placeholder="请输入您想提现的金额" class="transaction-input" style="width:300px;"></td>
+					</tr>
+					<tr style="height:10px;"></tr>
+					<tr>
+						<td class="align-right">支付宝姓名：</td>
+						<td><input type="text" placeholder="请输入您支付宝的姓名" class="transaction-input" style="width:300px;"></td>
+					</tr>
+					<tr style="height:10px;"></tr>
+					<tr>
+						<td class="align-right">支付宝帐号：</td>
+						<td><input type="text" placeholder="请输入您的支付宝帐号" class="transaction-input" style="width:300px;"></td>
+					</tr>
+					<tr style="height:10px;"></tr>
+					<tr>
+						<td class="align-right">联系方式：</td>
+						<td><input type="text" placeholder="请输入您的联系方式" class="transaction-input" style="width:300px;"></td>
+					</tr>
+					<tr style="height:10px;"></tr>
+					<tr>
+						<td class="align-right">手续费：</td>
+						<td colspan="2">￥<span>1.00</span></td>
+					</tr>
+				</table>
+			</div>
+		</div>
+		<button class="pop-confirm-btn">确定</button>
+	</div>
+
+	<!--夺宝记录-->
+	<div class="pop-box big-box7 indiana-records">
+		<div class="top-frame"></div>
+		<div class="close-btn"></div>
+		<div class="bottom-frame"></div>
+		<div class="pop-content">
+			<div class="pop-title">夺宝记录</div>
+			<div>
+				<ul class="pop-toggle">
+					<li class="toggle-item active">全部</li>
+					<li class="toggle-item">进行中</li>
+					<li class="toggle-item">已揭晓</li>
+					<li class="toggle-item">已中奖</li>
+				</ul>
+				<div class="pop-list-box">
+					<div class="pop-toggle-box">
+						<table>
+							<tr>
+								<th>订单号</th>
+								<th>夺宝时间</th>
+								<th>夺宝类别</th>
+								<th>夺宝人次</th>
+								<th>状态</th>
+							</tr>
+							<tr>
+								<td>5479857857477</td>
+								<td>2017-05-29 21：45：56.235</td>
+								<td>Q币夺宝</td>
+								<td>2</td>
+								<td>进行中</td>
+							</tr>
+							<tr>
+								<td>5479857857477</td>
+								<td>2017-05-29 21：45：56.235</td>
+								<td>Q币夺宝</td>
+								<td>2</td>
+								<td>已揭晓</td>
+							</tr>
+							<tr>
+								<td>5479857857477</td>
+								<td>2017-05-29 21：45：56.235</td>
+								<td>Q币夺宝</td>
+								<td>2</td>
+								<td>进行中</td>
+							</tr>
+							<tr>
+								<td>5479857857477</td>
+								<td>2017-05-29 21：45：56.235</td>
+								<td>Q币夺宝</td>
+								<td>2</td>
+								<td>进行中</td>
+							</tr>
+							<tr>
+								<td>5479857857477</td>
+								<td>2017-05-29 21：45：56.235</td>
+								<td>Q币夺宝</td>
+								<td>2</td>
+								<td>已揭晓</td>
+							</tr>
+							<tr>
+								<td>5479857857477</td>
+								<td>2017-05-29 21：45：56.235</td>
+								<td>Q币夺宝</td>
+								<td>2</td>
+								<td>进行中</td>
+							</tr>
+							<tr>
+								<td>5479857857477</td>
+								<td>2017-05-29 21：45：56.235</td>
+								<td>Q币夺宝</td>
+								<td>2</td>
+								<td>进行中</td>
+							</tr>
+							<tr>
+								<td>5479857857477</td>
+								<td>2017-05-29 21：45：56.235</td>
+								<td>Q币夺宝</td>
+								<td>2</td>
+								<td>已揭晓</td>
+							</tr>
+						</table>
+					</div>
+					<div class="pop-toggle-page">
+						<span class="page-btn">上一页</span>
+						<span class="page-btn active">1</span>
+						<span class="page-btn">2</span>
+						<span class="page-btn">3</span>
+						<span class="page-btn">4</span>
+						<span class="page-btn">5</span>
+						<span class="page-btn">下一页</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!--交易记录-->
+	<div class="pop-box big-box transaction-records">
+		<div class="top-frame"></div>
+		<div class="close-btn"></div>
+		<div class="bottom-frame"></div>
+		<div class="pop-content">
+			<div class="pop-title">交易记录</div>
+			<div>
+				<ul class="pop-toggle">
+					<li class="toggle-item active">出售记录</li>
+					<li class="toggle-item">购买记录</li>
+				</ul>
+				<div class="pop-list-box">
+					<div class="pop-toggle-box">
+						<table>
+							<tr>
+								<th>订单号</th>
+								<th>交易时间</th>
+								<th>交易种类</th>
+								<th>交易类别</th>
+								<th>交易数量</th>
+								<th>交易单价</th>
+								<th>交易总价</th>
+								<th>佣金</th>
+								<th>状态</th>
+								<th>操作</th>
+							</tr>
+							<tr>
+								<td>5479857857477</td>
+								<td>2017-05-29 21：45：56.235</td>
+								<td>Q币夺宝</td>
+								<td>出售</td>
+								<td>2</td>
+								<td>￥0.85</td>
+								<td>￥1.90</td>
+								<td>￥0.20</td>
+								<td>交易中</td>
+								<td class="operation"><button>撤单</button></td>
+							</tr>
+							<tr>
+								<td>5479857857477</td>
+								<td>2017-05-29 21：45：56.235</td>
+								<td>Q币夺宝</td>
+								<td>出售</td>
+								<td>2</td>
+								<td>￥0.85</td>
+								<td>￥1.90</td>
+								<td>￥0.20</td>
+								<td>已成交</td>
+								<td class="operation">已完成</td>
+							</tr>
+							<tr>
+								<td>5479857857477</td>
+								<td>2017-05-29 21：45：56.235</td>
+								<td>Q币夺宝</td>
+								<td>出售</td>
+								<td>2</td>
+								<td>￥0.85</td>
+								<td>￥1.90</td>
+								<td>￥0.20</td>
+								<td>交易中</td>
+								<td class="operation"><button>撤单</button></td>
+							</tr>
+							<tr>
+								<td>5479857857477</td>
+								<td>2017-05-29 21：45：56.235</td>
+								<td>Q币夺宝</td>
+								<td>出售</td>
+								<td>2</td>
+								<td>￥0.85</td>
+								<td>￥1.90</td>
+								<td>￥0.20</td>
+								<td>已成交</td>
+								<td class="operation">已完成</td>
+							</tr>
+							<tr>
+								<td>5479857857477</td>
+								<td>2017-05-29 21：45：56.235</td>
+								<td>Q币夺宝</td>
+								<td>出售</td>
+								<td>2</td>
+								<td>￥0.85</td>
+								<td>￥1.90</td>
+								<td>￥0.20</td>
+								<td>交易中</td>
+								<td class="operation"><button>撤单</button></td>
+							</tr>
+							<tr>
+								<td>5479857857477</td>
+								<td>2017-05-29 21：45：56.235</td>
+								<td>Q币夺宝</td>
+								<td>出售</td>
+								<td>2</td>
+								<td>￥0.85</td>
+								<td>￥1.90</td>
+								<td>￥0.20</td>
+								<td>已成交</td>
+								<td class="operation">已完成</td>
+							</tr>
+							<tr>
+								<td>5479857857477</td>
+								<td>2017-05-29 21：45：56.235</td>
+								<td>Q币夺宝</td>
+								<td>出售</td>
+								<td>2</td>
+								<td>￥0.85</td>
+								<td>￥1.90</td>
+								<td>￥0.20</td>
+								<td>交易中</td>
+								<td class="operation"><button>撤单</button></td>
+							</tr>
+							<tr>
+								<td>5479857857477</td>
+								<td>2017-05-29 21：45：56.235</td>
+								<td>Q币夺宝</td>
+								<td>出售</td>
+								<td>2</td>
+								<td>￥0.85</td>
+								<td>￥1.90</td>
+								<td>￥0.20</td>
+								<td>已成交</td>
+								<td class="operation">已完成</td>
+							</tr>
+						</table>
+					</div>
+					<div class="pop-toggle-page">
+						<span class="page-btn">上一页</span>
+						<span class="page-btn active">1</span>
+						<span class="page-btn">2</span>
+						<span class="page-btn">3</span>
+						<span class="page-btn">4</span>
+						<span class="page-btn">5</span>
+						<span class="page-btn">下一页</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!--账户明细-->
+	<div class="pop-box big-box7 account-details">
+		<div class="top-frame"></div>
+		<div class="close-btn"></div>
+		<div class="bottom-frame"></div>
+		<div class="pop-content">
+			<div class="pop-title">交易记录</div>
+			<div>
+				<div class="pop-list-box">
+					<div class="pop-toggle-box">
+						<table>
+							<tr>
+								<th>时间</th>
+								<th>类别</th>
+								<th class="align-right">金额</th>
+							</tr>
+							<tr>
+								<td>2017-05-29 21：45：56</td>
+								<td>夺宝消费</td>
+								<td class="align-right">￥20.00</td>
+							</tr>
+							<tr>
+								<td>2017-05-29 21：45：56</td>
+								<td>夺宝消费</td>
+								<td class="align-right">￥20.00</td>
+							</tr>
+							<tr>
+								<td>2017-05-29 21：45：56</td>
+								<td>夺宝消费</td>
+								<td class="align-right">￥20.00</td>
+							</tr>
+							<tr>
+								<td>2017-05-29 21：45：56</td>
+								<td>夺宝消费</td>
+								<td class="align-right">￥20.00</td>
+							</tr>
+							<tr>
+								<td>2017-05-29 21：45：56</td>
+								<td>夺宝消费</td>
+								<td class="align-right">￥20.00</td>
+							</tr>
+							<tr>
+								<td>2017-05-29 21：45：56</td>
+								<td>夺宝消费</td>
+								<td class="align-right">￥20.00</td>
+							</tr>
+							<tr>
+								<td>2017-05-29 21：45：56</td>
+								<td>夺宝消费</td>
+								<td class="align-right">￥20.00</td>
+							</tr>
+							<tr>
+								<td>2017-05-29 21：45：56</td>
+								<td>夺宝消费</td>
+								<td class="align-right">￥20.00</td>
+							</tr>
+						</table>
+					</div>
+					<div class="pop-toggle-page">
+						<span class="page-btn">上一页</span>
+						<span class="page-btn active">1</span>
+						<span class="page-btn">2</span>
+						<span class="page-btn">3</span>
+						<span class="page-btn">4</span>
+						<span class="page-btn">5</span>
+						<span class="page-btn">下一页</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!--诱导弹框1-->
+	<div class="pop-box big-box7 induce induce1">
+		<div class="top-frame"></div>
+		<div class="close-btn"></div>
+		<div class="bottom-frame"></div>
+		<div class="induce-bg"></div>
+		<div class="pop-content">
+			<div class="induce-con-item" style="margin:0 50px 0 23px;">
+				<img src="img/zhao_qq.jpg" alt="">
+			</div>
+
+			<div class="induce-con-item">
+				<img src="img/zhao_hua.jpg" alt="">
+			</div>
+
+			<div class="induce-info">
+				<p>恭喜您获得海克斯的礼遇~</p>
+				<p>一元参与即有机会获得丰厚奖励~，也可将奖励出售兑换为现金噢！</p>
+			</div>
+
+			<div class="select-num-submit">
+				<span>立即领取</span>
+			</div>
+		</div>
+	</div>
+
+	<!--诱导弹框2-->
+	<div class="pop-box big-box7 induce induce2">
+		<div class="top-frame"></div>
+		<div class="close-btn"></div>
+		<div class="bottom-frame"></div>
+		<div class="induce-bg2"></div>
+		<div class="pop-content">
+			<div class="count-down">
+				<span class="second">1</span>
+				<span class="second">2</span>
+				<span class="second">0</span>
+				<span>秒</span>
+			</div>
+			<div class="induce-con-item" style="margin:0 50px 0 23px;">
+				<img src="img/zhao_qq.jpg" alt="">
+				<div class="progress">
+					<div class="progress-info">
+						<div class="surplus">剩余人次：<span>100</span></div>
+
+						<div class="progress-num">揭晓进度：<span>82%</span></div>
+					</div>
+
+					<div class="progress-bar">
+						<div data-value="82" class="bar-body">
+							<img src="img/bar-img.png" alt="" class="bar-img">
+							<img src="img/bar-bg.png" alt="" class="bar-bg">
+							<img src="img/high_light.png" alt="" class="high-light">
+						</div>
+					</div>
+				</div>
+				<div class="select-num-submit" style="clear:both;">
+					<span>一元夺Q币</span>
+				</div>
+			</div>
+
+			<div class="induce-con-item">
+				<img src="img/zhao_hua.jpg" alt="">
+				<div class="progress">
+					<div class="progress-info">
+						<div class="surplus">剩余人次：<span>100</span></div>
+
+						<div class="progress-num">揭晓进度：<span>60%</span></div>
+					</div>
+
+					<div class="progress-bar">
+						<div data-value="60" class="bar-body">
+							<img src="img/bar-img.png" alt="" class="bar-img">
+							<img src="img/bar-bg.png" alt="" class="bar-bg">
+							<img src="img/high_light.png" alt="" class="high-light">
+						</div>
+					</div>
+				</div>
+				<div class="select-num-submit" style="clear:both;">
+					<span>一元夺话费</span>
+				</div>
+			</div>
+			<div class="induce-info">
+				<p>*可出售给其他用户换取现金（一元参与获得概率1%，10元参与获得概率10%）</p>
+			</div>
+		</div>
+	</div>
+
+	<!--投诉服务-->
+	<div class="pop-box medium-box complaint-box">
+		<div class="top-frame"></div>
+		<div class="close-btn"></div>
+		<div class="pop-content">
+			<div class="pop-title">投诉服务</div>
+			<div class="transaction-box">
+				<div class="complaint-pic"></div>
+				<div class="pop-title">投诉QQ：25552225</div>
+				<p>尊敬的用户：</p>
+				<p>您在使用企鹅夺宝产生的任何疑问及支付遇到的任何问题，请不着急，请您立即使用投诉QQ专线向我们投诉，我们在接收到投诉后的24小时内，将为您快速解决问题。</p>
+			</div>
+		</div>
+	</div>
+
+	<!--引导页-->
+	<div class="pop-box boot-page">
+		<div class="close-btn"></div>
+		<div class="boot-con step1" style="display:block;">
+			<div class="step-con">
+				<img src="img/step_1.png" alt="">
+				<div class="next-step-btn">下一步<span class="icon"></span></div>
+			</div>
+		</div>
+		<div class="boot-con step2">
+			<div class="step-con">
+				<img src="img/step_2.png" alt="">
+				<div class="next-step-btn">下一步<span class="icon"></span></div>
+			</div>
+		</div>
+		<div class="boot-con step3">
+			<div class="step-con">
+				<img src="img/step_3.png" alt="">
+				<div class="next-step-btn">下一步<span class="icon"></span></div>
+			</div>
+		</div>
+		<div class="boot-con step4">
+			<div class="step-con">
+				<img src="img/step_4.png" alt="">
+				<div class="next-step-btn"></div>
+			</div>
+		</div>
+	</div>
+
+	<!--确认弹框-->
+	<div class="confirm-box">
+		<div class="confirm-con">
+			<div class="top-frame"></div>
+			<div class="bottom-frame"></div>
+			<div class="confirm-info">您确定要撤销订单吗？</div>
+			<div class="btn-box">
+				<button class="close-confirm-btn">确定</button>
+				<button class="close-confirm-btn">取消</button>
+			</div>
+		</div>
+	</div>
+
+	<div class="alert-box">
+		<div class="alert-con">
+			<div class="top-frame"></div>
+			<div class="bottom-frame"></div>
+			<div class="alert-info">您确定要撤销订单吗？</div>
+			<button class="close-alert-btn">确定</button>
+		</div>
+	</div>
+
+
+	<!--<script type="text/javascript">
+		window.onload = function() {
+			var gallery = document.getElementById('gallery'),
+			galleryImg = gallery.getElementsByTagName('img'),
+			start = document.getElementById('start'),
+			flag = 0,
+			timer = null;
+
+			start.onclick = function () {
+				if(flag) {
+					stopGame();
+				}else {
+					this.innerHTML = '正在夺宝...';
+					startGame();
+				}
+				// Lottery.start();
+			}
+
+			function startGame () {
+				gallery.innerHTML = gallery.innerHTML + gallery.innerHTML;
+				function scroll(){		// 滚动抽奖
+					clearTimeout(timer);
+					if(gallery.offsetLeft < -gallery.offsetWidth/2){
+						gallery.style.left = '0';
+					}
+					gallery.style.left = gallery.offsetLeft - 30 + 'px';
+					timer = setTimeout(scroll, 10);
+				}
+				scroll();
+				setTimeout(function () {
+					start.innerHTML = '停止';
+					flag = 1;
+				}, 500);
+			}
+
+			function stopGame () {
+				var ind = Math.abs(gallery.offsetLeft)+568,
+					beforeInd;
+				// console.log('ind000: ', ind/182);
+				beforeInd = Math.round(ind/182);
+				// console.log('beforeInd: ', beforeInd);
+				galleryImg[beforeInd-1].className = 'active';
+				ind = (Math.abs(gallery.offsetLeft)+568)>1092 ? Math.abs(gallery.offsetLeft)+568-1092 : Math.abs(gallery.offsetLeft)+568;
+				ind = Math.ceil(ind/182);
+				console.log('这是最终获奖的那个的序列号：', ind);
+				clearTimeout(timer);
+			}
+
+
+			$('body').on('click', '.dialog', function(){
+				var dom = $(this).attr('data-show');
+				console.log('dom: ', dom);
+				// obj.stepIndex = 0;
+				// $('.boot-con').hide().eq(obj.stepIndex).show();
+				showDialog(dom);
+			});
+
+			function showDialog(dom){
+				$('.pop-bg').show();
+				$('.pop-box').hide();
+				$(dom).show();
+			}
+
+			$('.close-btn, .close-btn-bottom').on('click',function(){
+				$('.pop-box, .pop-bg').hide();
+			});
+
+			$('#checkLogin').on('click',function(){
+				$(this).prop('checked') ? $('.login-item').show() : $('.login-item').hide();
+			});
+
+			$('#paymentBtn').on('click', function(){
+				var dom = $(this).attr('data-show');
+				$('.pop-box').hide();
+				$(dom + ', .pop-bg').show();
+				// if(obj.selectedPayment){
+					$('.payment-info').text('支付扫一扫');	//支付宝
+				// }else{
+				// 	//微信
+				// 	$('.payment-info').text('微信扫一扫');
+				// }
+			});
+
+			$('.select-money-list').on('click','li',function(){
+				$(this).addClass('active').siblings('li').removeClass('active');
+				obj.selectedPaymentNum = $(this).attr('data-value');
+			});
+
+			$('.payment-item').on('click',function(){
+				obj.selectedPayment = $(this).index();
+				$(this).addClass('active').siblings().removeClass('active');
+			});
+
+			$('body').on('click','.next-step-btn',function(){
+				obj.stepIndex++;
+				obj.stepIndex < 4 ? $('.boot-con').hide().eq(obj.stepIndex).show() : $('.pop-box, .pop-bg').hide();
+
+			});
+		}
+
+		function RandomNumBoth(Min, Max){
+			var Range = Max - Min;
+			var Rand = Math.random();
+			var num = Min + Math.round(Rand * Range); //四舍五入
+			return num;
+		}
+	</script>-->
+</body>
+</html>
