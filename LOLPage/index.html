@@ -10,6 +10,7 @@
 </head>
 
 <body>
+<div class="main">
 	<div class="wrap">
 		<div class="nav">
 			<img src="./img/logo.png" alt="" class="logo dialog" data-show=".login-box">
@@ -783,21 +784,6 @@
 		<button class="pop-confirm-btn">出售</button>
 	</div>
 
-	<!--奖励仓库出售-->
-	<div class="pop-box medium-box reward-sell-box" style="display: block;">
-		<div class="top-frame"></div>
-		<div class="close-btn"></div>
-		<div class="bottom-frame"></div>
-		<div class="pop-content">
-			<div class="pop-title">出售奖励</div>
-			<div class="transaction-box">
-				<p class="tac">有用户以￥60元购买此商品，您愿意出售吗？</p>
-			</div>
-		</div>
-		<button class="pop-confirm-btn cancelConfirm">出售给Ta</button>
-		<button class="pop-cancel-btn close-btn-bottom">算了，自己使用</button>
-	</div>
-
 	<!--购买-->
 	<div class="pop-box medium-box buy-box">
 		<div class="top-frame"></div>
@@ -874,6 +860,37 @@
 						<td></td>
 						<td colspan="2" class="red">*Q币提货将直接充值至您所提货的QQ号</td>
 					</tr>
+				</table>
+			</div>
+		</div>
+		<button class="pop-confirm-btn">确定</button>
+	</div>
+
+	<!--填写收货地址-->
+	<div class="pop-box medium-box get-goods-box">
+		<div class="top-frame"></div>
+		<div class="close-btn"></div>
+		<div class="bottom-frame"></div>
+		<div class="pop-content">
+			<div class="pop-title">填写收货地址</div>
+			<div class="transaction-box">
+				<table>
+					<tr style="height:10px;"></tr>
+					<tr>
+						<td class="align-right" style="width: 111px;">收货地址/账号：</td>
+						<td colspan="2"><input type="text" placeholder="请输入您提货的QQ号" class="transaction-input" style="width:270px;"></td>
+					</tr>
+					<tr style="height:10px;"></tr>
+					<tr>
+						<td class="align-right">收件人：</td>
+						<td colspan="2"><input type="text" placeholder="请输入您提货的QQ号" class="transaction-input" style="width:270px;"></td>
+					</tr>
+					<tr style="height:10px;"></tr>
+					<tr>
+						<td class="align-right">手机号码：</td>
+						<td colspan="2"><input type="text" placeholder="再次输入您提货的QQ号" class="transaction-input" style="width:270px;"></td>
+					</tr>
+					<tr style="height:10px;"></tr>
 				</table>
 			</div>
 		</div>
@@ -1171,57 +1188,57 @@
 					<div class="pop-toggle-box">
 						<table>
 							<tr>
-								<th>物品号</th>
-								<th>价值</th>
+								<th class="tal ti4">物品号</th>
+								<th class="ti1">价值</th>
 								<th colspan="2" class="tac-imp">操作</th>
 							</tr>
 							<tr>
-								<td>2017-05-29 21：45：56</td>
-								<td>夺宝消费</td>
-								<td class="popGoldColor" style="width: 70px;">出售</td>
-								<td class="popGoldColor" style="width: 70px;">提货</td>
+								<td class="tal-imp prizeOrder">00004345465756</td>
+								<td class="tal-imp">夺宝消费</td>
+								<td class="popGoldColor curPoi warehouseSale dialog" data-show=".reward-sell-box" style="width: 70px;">出售</td>
+								<td class="popGoldColor curPoi warehouseCatch dialog" data-show=".get-goods-box" style="width: 70px;">提货</td>
 							</tr>
 							<tr>
-								<td>2017-05-29 21：45：56</td>
-								<td>夺宝消费</td>
-								<td class="popGoldColor" style="width: 70px;">出售</td>
-								<td class="popGoldColor" style="width: 70px;">提货</td>
+								<td class="tal-imp prizeOrder">11114355465756</td>
+								<td class="tal-imp">夺宝消费</td>
+								<td class="popGoldColor curPoi warehouseSale dialog" data-show=".reward-sell-box" style="width: 70px;">出售</td>
+								<td class="popGoldColor curPoi warehouseCatch dialog" data-show=".get-goods-box" style="width: 70px;">提货</td>
 							</tr>
 							<tr>
-								<td>2017-05-29 21：45：56</td>
-								<td>夺宝消费</td>
-								<td class="popGoldColor" style="width: 70px;">出售</td>
-								<td class="popGoldColor" style="width: 70px;">提货</td>
+								<td class="tal-imp prizeOrder">33355465756</td>
+								<td class="tal-imp">夺宝消费</td>
+								<td class="popGoldColor curPoi warehouseSale dialog" data-show=".reward-sell-box" style="width: 70px;">出售</td>
+								<td class="popGoldColor curPoi warehouseCatch dialog" data-show=".get-goods-box" style="width: 70px;">提货</td>
 							</tr>
 							<tr>
-								<td>2017-05-29 21：45：56</td>
-								<td>夺宝消费</td>
-								<td class="popGoldColor" style="width: 70px;">出售</td>
-								<td class="popGoldColor" style="width: 70px;">提货</td>
+								<td class="tal-imp prizeOrder">8888355465756</td>
+								<td class="tal-imp">夺宝消费</td>
+								<td class="popGoldColor curPoi warehouseSale dialog" data-show=".reward-sell-box" style="width: 70px;">出售</td>
+								<td class="popGoldColor curPoi warehouseCatch dialog" data-show=".get-goods-box" style="width: 70px;">提货</td>
 							</tr>
 							<tr>
-								<td>2017-05-29 21：45：56</td>
-								<td>夺宝消费</td>
-								<td class="popGoldColor" style="width: 70px;">出售</td>
-								<td class="popGoldColor" style="width: 70px;">提货</td>
+								<td class="tal-imp prizeOrder">5555546ff5756</td>
+								<td class="tal-imp">夺宝消费</td>
+								<td class="popGoldColor curPoi warehouseSale dialog" data-show=".reward-sell-box" style="width: 70px;">出售</td>
+								<td class="popGoldColor curPoi warehouseCatch dialog" data-show=".get-goods-box" style="width: 70px;">提货</td>
 							</tr>
 							<tr>
-								<td>2017-05-29 21：45：56</td>
-								<td>夺宝消费</td>
-								<td class="popGoldColor" style="width: 70px;">出售</td>
-								<td class="popGoldColor" style="width: 70px;">提货</td>
+								<td class="tal-imp prizeOrder">777755465756</td>
+								<td class="tal-imp">夺宝消费</td>
+								<td class="popGoldColor curPoi warehouseSale dialog" data-show=".reward-sell-box" style="width: 70px;">出售</td>
+								<td class="popGoldColor curPoi warehouseCatch dialog" data-show=".get-goods-box" style="width: 70px;">提货</td>
 							</tr>
 							<tr>
-								<td>2017-05-29 21：45：56</td>
-								<td>夺宝消费</td>
-								<td class="popGoldColor" style="width: 70px;">出售</td>
-								<td class="popGoldColor" style="width: 70px;">提货</td>
+								<td class="tal-imp prizeOrder">4444785465756</td>
+								<td class="tal-imp">夺宝消费</td>
+								<td class="popGoldColor curPoi warehouseSale dialog" data-show=".reward-sell-box" style="width: 70px;">出售</td>
+								<td class="popGoldColor curPoi warehouseCatch dialog" data-show=".get-goods-box" style="width: 70px;">提货</td>
 							</tr>
 							<tr>
-								<td>2017-05-29 21：45：56</td>
-								<td>夺宝消费</td>
-								<td class="popGoldColor" style="width: 70px;">出售</td>
-								<td class="popGoldColor" style="width: 70px;">提货</td>
+								<td class="tal-imp prizeOrder">9994355465756</td>
+								<td class="tal-imp">夺宝消费</td>
+								<td class="popGoldColor curPoi warehouseSale dialog" data-show=".reward-sell-box" style="width: 70px;">出售</td>
+								<td class="popGoldColor curPoi warehouseCatch dialog" data-show=".get-goods-box" style="width: 70px;">提货</td>
 							</tr>
 						</table>
 					</div>
@@ -1237,6 +1254,35 @@
 				</div>
 			</div>
 		</div>
+	</div>
+
+	<!--奖励仓库出售-->
+	<div class="pop-box medium-box reward-sell-box">
+		<div class="top-frame"></div>
+		<div class="close-btn"></div>
+		<div class="bottom-frame"></div>
+		<div class="pop-content">
+			<div class="pop-title">出售奖励</div>
+			<div class="transaction-box">
+				<p class="tac">有用户以￥60元购买此商品，您愿意出售吗？</p>
+			</div>
+		</div>
+		<button class="pop-confirm-btn cancelConfirm dialog" data-show=".reward-sell-succ-box">出售给Ta</button>
+		<button class="pop-cancel-btn close-btn-bottom">算了，自己使用</button>
+	</div>
+
+	<!--奖励仓库出售成功-->
+	<div class="pop-box medium-box reward-sell-succ-box">
+		<div class="top-frame"></div>
+		<div class="close-btn"></div>
+		<div class="bottom-frame"></div>
+		<div class="pop-content">
+			<div class="pop-title">出售成功</div>
+			<div class="transaction-box">
+				<p class="tac">出售的货款已经给您存入余额</p>
+			</div>
+		</div>
+		<button class="pop-confirm-btn close-btn-bottom">确定</button>
 	</div>
 
 	<!--账户明细-->
@@ -1465,6 +1511,7 @@
 		</div>
 	</div>
 
+</div>
 </body>
 
 </html>

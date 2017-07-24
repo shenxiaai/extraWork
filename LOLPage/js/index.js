@@ -16,6 +16,16 @@ $(function() {
 	};
 	init();
 
+	// 弹窗水平居中(似乎用不上了)
+	function dialogAlign () {
+		var cw = document.documentElement.clientWidth,
+			mediumBox = document.querySelectorAll('.medium-box');
+
+		for(var x = 0; x < mediumBox.length; x++) {
+			mediumBox[x].style.left = cw/2 - mediumBox[x].offsetWidth/2 + 'px';
+		}
+	}
+
 	function init() {
 		// $(".toggle-box").mCustomScrollbar();
 		// $('.buy-list').mCustomScrollbar();
@@ -23,6 +33,7 @@ $(function() {
 		initProgressBar();
 		obj.closeAlert();
 	}
+
 	//倒计时
 	function countDown() {
 		var n = 120;
@@ -43,7 +54,6 @@ $(function() {
 		for (var i = 0; i < l; i++) {
 			$('.second').eq(i).text(n[i]);
 		}
-
 	}
 
 	$('body').on('click', '.toggle-item', function(e) {
@@ -157,6 +167,7 @@ $(function() {
 			startBtn.className = 'start';
 			startGame();
 		}
+		flag = 1;
 	});
 
 	// 停止滚动，开奖
@@ -201,14 +212,23 @@ $(function() {
 	info.innerHTML = info.innerHTML + info.innerHTML;
 	function infoScroll(){		// 滚动抽奖
 		clearTimeout(infoTimer);
-		if(info.offsetTop < -info.offsetHeight/2){
-			info.style.top = '0';
+		if(info.offsetLeft < -info.offsetWidth/2){
+			info.style.left = '0';
 		}
-		info.style.top = info.offsetTop - 1 + 'px';
+		info.style.left = info.offsetLeft - 3 + 'px';
 		infoTimer = setTimeout(infoScroll, 100);
 	}
 	infoScroll();
 
+	// 奖励仓库-出售
+	$('.warehouseSale').on('click', function () {
+		$(this).siblings().
+	});
+
+	// 奖励仓库-提货
+	$('.warehouseCatch').on('click', function () {
+		alert('warehouseCatch');
+	});
 
 	// 数据请求封装方法
 	function getAjaxData() { // url, data, doneFun, type
