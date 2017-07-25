@@ -222,7 +222,7 @@ $(function() {
 
 	// 奖励仓库-出售
 	$('.warehouseSale').on('click', function () {
-		$(this).siblings().
+		// $(this).siblings().
 	});
 
 	// 奖励仓库-提货
