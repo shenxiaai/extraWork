@@ -230,18 +230,30 @@ $(function() {
 		alert('warehouseCatch');
 	});
 
+	// 点击登录item icon
+	var loginItem = document.getElementById('loginItem');
+	loginItem.onclick = function() {
+		getAjaxData('https://api.douban.com/v2/book/1220562', function(res) {
+			// 登录请求-回调
+			if(res) {
+				$('.unLogin').hide();
+				$('.logined').show();
+			}
+		});
+	}
+
 	// 数据请求封装方法
-	function getAjaxData() { // url, data, doneFun, type
+	function getAjaxData() { // url, doneFun, data, type
 		$.ajax({
 			url: arguments[0],
 			type: arguments[3] || 'POST',
 			async: true,
-			dataType: 'json',
-			data: arguments[1]
+			dataType: 'jsonp',		// 此处是测试跨域链接，项目中使用时使用'json'
+			data: arguments[2]
 		}).done(
-		arguments[2]
+			arguments[1]
 		).fail(function() {
-			console.log('Ajax request failed !');
+			console.log('Ajax Request Failed !');
 		});
 	}
 

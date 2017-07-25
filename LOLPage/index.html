@@ -14,11 +14,16 @@
 	<div class="wrap">
 		<div class="nav">
 			<img src="./img/logo.png" alt="" class="logo dialog" data-show=".login-box">
-			<div class="userName">
-				<h6>好大一只鸡</h6>
-				<p>ID：5050580</p>
+			<div class="unLogin">
+				<button class="bindPhone dialog" data-show=".login-box">登录</button>
 			</div>
-			<button class="bindPhone dialog" data-show=".mobile-bind">绑定手机</button>
+			<div class="logined" style="display: none;">
+				<div class="userName">
+					<h6>好大一只鸡</h6>
+					<p>ID：5050580</p>
+				</div>
+				<button class="bindPhone dialog" data-show=".mobile-bind">绑定手机</button>
+			</div>
 			<span class="count">账户余额：</span>
 			<span class="rest">￥989.88</span>
 			<button class="dialog" data-show=".recharge-box">充值</button>
@@ -157,8 +162,8 @@
 		<div class="pop-content">
 			<div class="pop-title">登录</div>
 			<div class="loginStyle">
-				<div class="login-item">
-					<a href="###">
+				<div class="login-item close-btn-bottom" id="loginItem">
+					<a href="###" onclick="return -1;">
 						<dl>
 							<dt class="item-pic"></dt>
 							<dd>QQ登录</dd>
