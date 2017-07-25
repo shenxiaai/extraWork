@@ -20,7 +20,7 @@ html,body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,
 .nav .count:before{content: "";position: absolute;left: 20px;top: 13px;background: #463714;width: 1px;height: 14px;}
 .nav .rest{padding-left: 2px;margin-right: 10px;font-size: 12px;font-weight: bold;color: #cdbe91;}
 .nav .infoBox{position: relative;float: left;margin: 10px 0 0 20px;width: 587px;height: 25px;background: url(../img/infoBoxBg.png) center no-repeat;overflow: hidden;}
-.nav .infoBox .info{position: absolute;top: 0;left: 7px;width: 5550px;height: 25px;z-index: 10;}
+.nav .infoBox .info{position: absolute;top: 0;left: 7px;width: 5550px;height: 25px;z-index: 3;}
 .nav .infoBox .info p{float: left;color: #ccbc92;width: 555px;line-height: 25px;text-overflow:ellipsis;white-space: nowrap;font-size: 12px;color: #ccbc92;overflow: hidden;}
 .nav .infoBox .btn{position: absolute;right: 0;top: 0;width: 25px;height: 25px;background: url(../img/upArrBtn.png) right 0 no-repeat;z-index: 20;}
 
@@ -55,7 +55,7 @@ html,body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,
 
 
 /*弹窗*/
-.pop-bg{ width:1280px; height:650px; background:#000; filter:alpha(opacity=70); opacity:0.7; position:absolute; top:0; left:0; display:none; }
+.pop-bg{ width:1280px; height:650px; background:#000; filter:alpha(opacity=70); opacity:0.7; position:absolute; top:0; left:0; display:none;z-index: 5;}
 .loading{ width:1280px; height:650px; background:#000; filter:alpha(opacity=70); opacity:0.7; position:absolute; top:0; left:0; display:none; }
 .loading img{ width:80px; height:80px; position:absolute; top:285px; left:600px; }
 .pop-box{ position:absolute; top:50px; display:none; z-index: 100;}

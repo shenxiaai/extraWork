@@ -318,21 +318,6 @@
 		<button class="pop-confirm-btn">确定</button>
 	</div>
 
-	<!--中奖-->
-	<div id="winning-box" class="pop-box winning-box">
-		<img src="img/winning.png" alt="">
-		<div class="winning-info">
-			<dl>
-				<dd>恭喜获得了87655期</dd>
-				<dt>100Q币奖励</dt>
-			</dl>
-		</div>
-		<div class="winning-operation">
-			<p><button class="blue-btn">出售获取￥85.00元（可提现）</button></p>
-			<p><button class="golden-btn">算了，自己使用</button></p>
-		</div>
-	</div>
-
 	<!--确认订单-->
 	<div class="pop-box medium-box confirm-order">
 		<div class="top-frame"></div>
@@ -1564,14 +1549,33 @@
 		</div>
 	</div>
 
-	<div class="alert-box">
+	<!-- 中奖 -->
+	<div id="winning-box" class="pop-box winning-box">
+		<img src="http://oss.qulegou.com/web/img/winning.png" alt="">
+		<div class="winning-info">
+			<dl>
+				<dd>恭喜获得了<span class="win-box-phase"></span>期</dd>
+				<dt><span class="win-box-name"></span>奖励</dt>
+			</dl>
+		</div>
+		<div class="winning-operation">
+			<p>
+				<button class="blue-btn" id="sell-wins-btn" data-target=".win-box-sell-result">出售获取￥<span class="win-box-sell-result"></span>元（可提现）</button>
+			</p>
+			<p>
+				<button class="golden-btn" id="belongPrizeToSelfBtn">算了，自己使用</button>
+			</p>
+		</div>
+	</div>
+
+	<!-- <div class="alert-box">
 		<div class="alert-con">
 			<div class="top-frame"></div>
 			<div class="bottom-frame"></div>
 			<div class="alert-info">您确定要撤销订单吗？</div>
 			<button class="close-alert-btn">确定</button>
 		</div>
-	</div>
+	</div> -->
 
 </div>
 </body>

@@ -34,6 +34,13 @@ $(function() {
 		obj.closeAlert();
 	}
 
+	// 中奖后，保留自己用
+	var belongPrizeToSelfBtn = document.getElementById('belongPrizeToSelfBtn');
+	belongPrizeToSelfBtn.onclick = function () {
+		this.parentNode.parentNode.parentNode.style.display = 'none';
+		$('.pop-bg').hide();
+	}
+
 	//倒计时
 	function countDown() {
 		var n = 120;
@@ -132,7 +139,7 @@ $(function() {
 	});
 
 	$('#checkLogin').on('click', function() {
-		$(this).prop('checked') ? $('.login-item').show() : $('.login-item').hide();
+		$(this).attr('checked') ? $('.login-item').show() : $('.login-item').hide();
 	});
 
 	$('#paymentBtn').on('click', function() {
@@ -165,7 +172,7 @@ $(function() {
 		if(!flag) {
 			startBtn.innerHTML = '正在夺宝...';
 			startBtn.className = 'start';
-			startGame(300);
+			startGame(100);
 		}
 		flag = 1;
 	});
@@ -261,6 +268,7 @@ $(function() {
 				gallery.style.left = gallery.offsetLeft - (flag < limitTime/2 ? flag : limitTime-flag) + 'px';
 			}else {
 				startBtn.innerHTML = '停止';
+				showDialog('.winning-box');
 			}
 			timer = setTimeout(gameScroll, 10);
 			flag++;
