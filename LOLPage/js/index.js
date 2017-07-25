@@ -165,17 +165,9 @@ $(function() {
 		if(!flag) {
 			startBtn.innerHTML = '正在夺宝...';
 			startBtn.className = 'start';
-			startGame();
+			startGame(300);
 		}
 		flag = 1;
-	});
-
-	// 停止滚动，开奖
-	startBtn.addEventListener('click', function () {
-		if(flag) {
-			flag = 0;
-			stopGame();
-		}
 	});
 
 	$('.select-money-list').on('click', 'li', function() {
@@ -222,12 +214,12 @@ $(function() {
 
 	// 奖励仓库-出售
 	$('.warehouseSale').on('click', function () {
-		// $(this).siblings().
+		return $(this).siblings('.prizeOrder').html();
 	});
 
 	// 奖励仓库-提货
 	$('.warehouseCatch').on('click', function () {
-		alert('warehouseCatch');
+		return $(this).siblings('.prizeOrder').html();
 	});
 
 	// 点击登录item icon
@@ -257,20 +249,23 @@ $(function() {
 		});
 	}
 
-	function startGame () {
+	function startGame (limitTime) {
+		var flag = 1;
 		gallery.innerHTML = gallery.innerHTML + gallery.innerHTML;
 		function gameScroll(){		// 滚动抽奖
 			clearTimeout(timer);
 			if(gallery.offsetLeft < -gallery.offsetWidth/2){
 				gallery.style.left = '0';
 			}
-			gallery.style.left = gallery.offsetLeft - 30 + 'px';
+			if(flag < limitTime) {
+				gallery.style.left = gallery.offsetLeft - (flag < limitTime/2 ? flag : limitTime-flag) + 'px';
+			}else {
+				startBtn.innerHTML = '停止';
+			}
 			timer = setTimeout(gameScroll, 10);
+			flag++;
 		}
 		gameScroll();
-		setTimeout(function () {
-			startBtn.innerHTML = '停止';
-		}, 300);
 	}
 
 	function stopGame () {

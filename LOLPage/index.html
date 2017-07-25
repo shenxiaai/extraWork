@@ -49,7 +49,7 @@
 					<p>1.点击立即夺宝，即可开始抽奖。</p>
 					<p>2.图标所指示的结果，即为奖励。</p>
 					<p>3.海克斯的仅为娱乐，有一定风险性，请理性参与。</p>
-					<a href="">中奖概率公示&gt;</a>
+					<span class="dialog" data-show=".winning-probability">中奖概率公示&gt;</span>
 				</div>
 			</div>
 			<div class="gameCenter">
@@ -876,27 +876,18 @@
 		<div class="top-frame"></div>
 		<div class="close-btn"></div>
 		<div class="bottom-frame"></div>
-		<div class="pop-content">
+		<div class="pop-content" style="position: static;padding-left: 23px;">
 			<div class="pop-title">填写收货地址</div>
 			<div class="transaction-box">
-				<table>
-					<tr style="height:10px;"></tr>
-					<tr>
-						<td class="align-right" style="width: 111px;">收货地址/账号：</td>
-						<td colspan="2"><input type="text" placeholder="请输入您提货的QQ号" class="transaction-input" style="width:270px;"></td>
-					</tr>
-					<tr style="height:10px;"></tr>
-					<tr>
-						<td class="align-right">收件人：</td>
-						<td colspan="2"><input type="text" placeholder="请输入您提货的QQ号" class="transaction-input" style="width:270px;"></td>
-					</tr>
-					<tr style="height:10px;"></tr>
-					<tr>
-						<td class="align-right">手机号码：</td>
-						<td colspan="2"><input type="text" placeholder="再次输入您提货的QQ号" class="transaction-input" style="width:270px;"></td>
-					</tr>
-					<tr style="height:10px;"></tr>
-				</table>
+				<div class="fullWidthPop">收货地址/账号</div>
+				<div class="fullWidthPop"><textarea name="" placeholder="请填写您的收货地址（QQ账号，家里地址等），Q币，皮肤等奖励，请填写你哪的英雄联盟账号（QQ号等），实物类奖励，如手机等，请填写您的家庭地址。"></textarea></div>
+				<div class="fullWidthPop">收件人</div>
+				<div class="fullWidthPop"><input type="text" placeholder="请填写收件人"></div>
+				<div class="fullWidthPop">手机号码</div>
+				<div class="fullWidthPop"><input type="text" placeholder="13334565656"></div>
+				<div class="fullWidthPop">大区/角色选择</div>
+				<div class="fullWidthPop"><input type="text" placeholder="请选择大区/角色"></div>
+				<div style="width: 100%;height: 30px;"></div>
 			</div>
 		</div>
 		<button class="pop-confirm-btn">确定</button>
@@ -1269,7 +1260,7 @@
 		<div class="pop-content">
 			<div class="pop-title">出售奖励</div>
 			<div class="transaction-box">
-				<p class="tac">有用户以￥60元购买此商品，您愿意出售吗？</p>
+				<p class="popGoldColor fs18 pt13 tac">有用户以￥60元购买此商品<br>您愿意出售吗？</p>
 			</div>
 		</div>
 		<button class="pop-confirm-btn cancelConfirm dialog" data-show=".reward-sell-succ-box">出售给Ta</button>
@@ -1284,7 +1275,7 @@
 		<div class="pop-content">
 			<div class="pop-title">出售成功</div>
 			<div class="transaction-box">
-				<p class="tac">出售的货款已经给您存入余额</p>
+				<p class="popGoldColor fs18 pt13 tac">出售的货款已经给您存入余额</p>
 			</div>
 		</div>
 		<button class="pop-confirm-btn close-btn-bottom">确定</button>
@@ -1356,6 +1347,72 @@
 						<span class="page-btn">4</span>
 						<span class="page-btn">5</span>
 						<span class="page-btn">下一页</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!--中奖概率-->
+	<div class="pop-box medium-box winning-probability">
+		<div class="top-frame"></div>
+		<div class="close-btn"></div>
+		<div class="bottom-frame"></div>
+		<div class="pop-content">
+			<div class="pop-title">中奖概率公示</div>
+			<div>
+				<div class="pop-list-box">
+					<div class="pop-toggle-box">
+						<table>
+							<tr>
+								<th class="tac">奖品名称</th>
+								<th class="tac">概率</th>
+							</tr>
+							<tr>
+								<td>夺宝消费</td>
+								<td>99%</td>
+							</tr>
+							<tr>
+								<td>夺宝消费</td>
+								<td>99%</td>
+							</tr>
+							<tr>
+								<td>夺宝消费</td>
+								<td>99%</td>
+							</tr>
+							<tr>
+								<td>夺宝消费</td>
+								<td>99%</td>
+							</tr>
+							<tr>
+								<td>夺宝消费</td>
+								<td>99%</td>
+							</tr>
+							<tr>
+								<td>夺宝消费</td>
+								<td>99%</td>
+							</tr>
+							<tr>
+								<td>夺宝消费</td>
+								<td>99%</td>
+							</tr>
+							<tr>
+								<td>夺宝消费</td>
+								<td>99%</td>
+							</tr>
+							<tr>
+								<td>夺宝消费</td>
+								<td>99%</td>
+							</tr>
+							<tr>
+								<td>夺宝消费</td>
+								<td>99%</td>
+							</tr>
+							<tr>
+								<td>夺宝消费</td>
+								<td>99%</td>
+							</tr>
+						</table>
 					</div>
 				</div>
 			</div>
