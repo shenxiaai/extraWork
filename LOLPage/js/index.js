@@ -173,7 +173,6 @@ $(function() {
 	start.addEventListener('click', function () {
 		if(!flag) {
 			startBtn.innerHTML = '正在夺宝...';
-			startBtn.className = 'start';
 			startGame(100);
 		}
 		flag = 1;
@@ -272,7 +271,7 @@ $(function() {
 				flag++;
 			}else {
 				clearTimeout(timer);
-				startBtn.innerHTML = '停止';
+				startBtn.innerHTML = '开始夺宝';
 				showDialog('.winning-box');
 				return;
 			}
