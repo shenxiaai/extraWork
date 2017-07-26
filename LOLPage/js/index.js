@@ -35,11 +35,14 @@ $(function() {
 	}
 
 	// 中奖后，保留自己用
-	var belongPrizeToSelfBtn = document.getElementById('belongPrizeToSelfBtn');
-	belongPrizeToSelfBtn.onclick = function () {
-		this.parentNode.parentNode.parentNode.style.display = 'none';
-		$('.pop-bg').hide();
-	}
+	// var belongPrizeToSelfBtn = document.getElementById('belongPrizeToSelfBtn');
+	// belongPrizeToSelfBtn.addEventListener('click', function () {
+	// 	// this.parentNode.parentNode.parentNode.style.display = 'none';
+	// 	console.log('ffffffff');
+	// 	$('#winning-box').hide();
+	// 	$('.pop-bg').hide();
+	// }, false);
+
 
 	//倒计时
 	function countDown() {
@@ -166,8 +169,7 @@ $(function() {
 		galleryImg = gallery.getElementsByTagName('img'),
 		startBtn = document.getElementById('startBtn'),
 		start = document.getElementById('startGame'),
-		flag = 0,
-		timer = null;
+		flag = 0;
 	start.addEventListener('click', function () {
 		if(!flag) {
 			startBtn.innerHTML = '正在夺宝...';
@@ -256,8 +258,9 @@ $(function() {
 		});
 	}
 
-	function startGame (limitTime) {
-		var flag = 1;
+	function startGame(limitTime) {
+		var flag = 1,
+			timer = null;
 		gallery.innerHTML = gallery.innerHTML + gallery.innerHTML;
 		function gameScroll(){		// 滚动抽奖
 			clearTimeout(timer);
@@ -266,12 +269,14 @@ $(function() {
 			}
 			if(flag < limitTime) {
 				gallery.style.left = gallery.offsetLeft - (flag < limitTime/2 ? flag : limitTime-flag) + 'px';
+				flag++;
 			}else {
+				clearTimeout(timer);
 				startBtn.innerHTML = '停止';
 				showDialog('.winning-box');
+				return;
 			}
 			timer = setTimeout(gameScroll, 10);
-			flag++;
 		}
 		gameScroll();
 	}
