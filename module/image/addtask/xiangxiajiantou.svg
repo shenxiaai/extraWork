@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="14px" height="10px" viewBox="0 0 14 10" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 45.2 (43514) - http://www.bohemiancoding.com/sketch -->
+    <title>向下箭头</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="注册" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="接包方签约引导" transform="translate(-525.000000, -567.000000)" fill="#01BFAD">
+            <g id="Group-10" transform="translate(0.000000, 517.000000)">
+                <path d="M538.804666,51.2111768 L532.863607,59.5645203 C532.450711,60.1451599 531.555593,60.1451599 531.142697,59.5645203 L525.201569,51.2111768 C524.81879,50.6730175 524.972359,50 525.737987,50 L538.246319,50 C539.010767,50 539.187514,50.6730175 538.804666,51.2111768" id="向下箭头"></path>
+            </g>
+        </g>
+    </g>
+</svg>
