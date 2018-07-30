@@ -1,0 +1,417 @@
+/* .fp-tableCell{
+  vertical-align:normal !important;
+} */
+.page1{
+  background: url('../images/page1.jpg') no-repeat;
+  background-size: 100% 100%;
+}
+.page2{
+  background: url('../images/page2.jpg') no-repeat;
+  background-size: 100% 100%;
+}
+.page3{
+  background: url('../images/page3.jpg') no-repeat;
+  background-size: 100% 100%;
+}
+.page4{
+  background: url('../images/page4.jpg') no-repeat;
+  background-size: 100% 100%;
+}
+.page5{
+  background: url('../images/page5.jpg') no-repeat;
+  background-size: 100% 100%;
+}
+.page6{
+  background: url('../images/page6.jpg') no-repeat;
+  background-size: 100% 100%;
+}
+.sheader{
+  padding: 0.58rem;
+}
+body img{
+  max-width: 100%;
+  display: block;
+}
+.sheader{
+  width:100%;
+  position: fixed;
+}
+.logo1{
+  width: 1.4rem;
+}
+.logo2{
+  width: 4.1rem;
+}
+.title {
+  position: relative;
+  top: -120%;
+  padding-right: 0.58rem;
+}
+.title .tbox{
+  margin-top: 1.67rem;
+  width: 6.84rem;
+}
+/* 汽车动画及兼容性代码 */
+@-webkit-keyframes carling{
+    0%{left:-100%;bottom:50px;}
+    100%{left:0;bottom:0;}
+}
+@-moz-keyframes carling{
+    0%{left:-100%;bottom:50px;}
+    100%{left:0;bottom:0;}
+}
+@-ms-keyframes carling{
+    0%{left:-100%;bottom:50px;}
+    100%{left:0;bottom:0;}
+}
+@-o-keyframes carling{
+    0%{left:-100%;bottom:50px;}
+    100%{left:0;bottom:0;}
+}
+@keyframes carling{
+    0%{left:-100%;bottom:50px;}
+    100%{left:0;bottom:0;}
+}
+
+/* 车灯动画及兼容性代码 */
+@-webkit-keyframes lampling{    /*透明度由0到1*/
+    0%{opacity:0; }
+    100%{opacity:1;}
+}
+@-moz-keyframes lampling{    /*透明度由0到1*/
+    0%{opacity:0; }
+    100%{opacity:1;}
+}
+@-ms-keyframes lampling{    /*透明度由0到1*/
+    0%{opacity:0; }
+    100%{opacity:1;}
+}
+@-o-keyframes lampling{    /*透明度由0到1*/
+    0%{opacity:0; }
+    100%{opacity:1;}
+}
+@keyframes lampling{    /*透明度由0到1*/
+    0%{opacity:0; }
+    100%{opacity:1;}
+}
+/* 箭头动画及兼容性代码 */
+@-webkit-keyframes arrowlink{
+    0%{bottom:0.7rem; }
+    50%{bottom:0.8rem;}
+    100%{bottom:0.7rem;}
+}
+@-moz-keyframes arrowlink{
+    0%{bottom:0.7rem; }
+    50%{bottom:0.8rem;}
+    100%{bottom:0.7rem;}
+}
+@-ms-keyframes arrowlink{
+    0%{bottom:0.7rem; }
+    50%{bottom:0.8rem;}
+    100%{bottom:0.7rem;}
+}
+@-o-keyframes arrowlink{
+    0%{bottom:0.7rem; }
+    50%{bottom:0.8rem;}
+    100%{bottom:0.7rem;}
+}
+@keyframes arrowlink{
+    0%{bottom:0.7rem; }
+    50%{bottom:0.8rem;}
+    100%{bottom:0.7rem;}
+}
+
+.car .cbox{
+  margin:3rem auto 0;
+  width:8.9rem;
+  position: relative;
+  left:0;
+  bottom:0;
+  -webkit-animation: carling 2s ease-in-out;
+  -moz-animation: carling 2s ease-in-out;
+  -ms-animation: carling 2s ease-in-out;
+  -o-animation: carling 2s ease-in-out;
+  animation: carling 2s ease-in-out;
+}
+.lamp{
+  width: 4.5rem;
+  position: absolute;
+  right: 0.3rem;
+  bottom: 1.83rem;
+  -webkit-animation: lampling 1s infinite ease-in-out;
+  -moz-animation:  lampling 1s infinite ease-in-out;
+  -ms-animation: lampling 1s infinite ease-in-out;
+  -o-animation: lampling 1s infinite ease-in-out;
+  animation: lampling 1s infinite ease-in-out;
+}
+.arrow{
+  width: 0.7rem;
+  position: absolute;
+  bottom: 0.7rem;
+  left: 48%;
+  -webkit-animation: arrowlink 2s infinite ease-in-out;
+  -moz-animation: arrowlink 2s infinite ease-in-out;
+  -ms-animation: arrowlink 2s infinite ease-in-out;
+  -o-animation: arrowlink 2s infinite ease-in-out;
+  animation: arrowlink 2s infinite ease-in-out;
+}
+/* 汽车及车灯位置媒体查询代码 */
+@media screen and (min-width: 550px) {
+  .car .cbox{
+    margin:5.2rem auto 0;
+    width:9.7rem;
+  }
+  .lamp{
+    width: 5rem;
+    position: absolute;
+    right: 0.3rem;
+    bottom: 2rem;
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 1024px){
+  .car .cbox{
+    margin:1.5rem auto 0;
+  }
+}
+.page4-car {
+  position: relative;
+  padding-top: 3rem;
+  height: 8.7rem;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+.page4 .left-car-4 {
+  position: absolute;
+  width: 6.266667rem;
+  left: -120%;
+}
+.page4 .right-car-4 {
+  position: absolute;
+  width: 6.386667rem;
+  right: -120%;
+}
+.page5-car {
+  padding-top: 7rem;
+}
+.page5 .left-car-5 {
+  position: relative;
+  width: 90%;
+  margin: 0 auto;
+  left: -120%;
+}
+.page5 .right-car-5 {
+  position: relative;
+  width: 90%;
+  margin: 0 auto;
+  right: -120%;
+}
+.page6 {
+  padding-top: 2.506667rem;
+  color: #FFF;
+}
+.page6 h2 {
+  font-size: .64rem;
+  text-align: center;
+  color: #FFF;
+}
+.ui-form {
+  margin-top: .933333rem;
+  padding: 0 .866667rem;
+}
+.ui-form-item {
+  position: relative;
+  height: .933333rem;
+  line-height: .933333rem;
+  margin-bottom: .266667rem;
+  font-size: .426667rem;
+}
+.ui-form-item label{
+  display: inline-block;
+  width: 2rem;
+}
+input,button,textarea,select,optgroup,option {
+  font-family: inherit;
+  font-size: inherit;
+  font-style: inherit;
+  font-weight: inherit;
+  outline: 0;
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  -webkit-appearance: none;
+  border: 0;
+  background: 0 0;
+}
+.ui-form-item input[type=text],.ui-form-item input[type=datetime-local],.ui-select select {
+  width: 6.146667rem;
+  height: 100%;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-appearance: none;
+  border: 1px solid #FFF;
+  background: 0 0;
+  padding-left: .3125rem;
+  border-radius: .106667rem;
+  color: #FFF;
+}
+.item-v input[type=text] {
+  width: 3.733333rem;
+}
+.item-v .btn-v {
+  position: absolute;
+  right: 0;
+  top: 0;
+  display: inline-block;
+  width: 2.186667rem;
+  height: .933333rem;
+  line-height: .933333rem;
+  text-align: center;
+  border: 1px solid #FFF;
+  border-radius: .106667rem;
+  margin-left: .266667rem;
+  font-size: .373333rem;
+}
+.ui-radio {
+  line-height: .373333rem;
+  display: inline-block;
+}
+.ui-radio input {
+  display: inline-block;
+  width: .373333rem;
+  height: .373333rem;
+  position: relative;
+  overflow: visible;
+  border: 0;
+  background: 0 0;
+  -webkit-appearance: none;
+  outline: 0;
+  margin-left: .2rem;
+  vertical-align: middle
+}
+.ui-radio input:before {
+  content: '';
+  display: block;
+  width: .373333rem;
+  height: .373333rem;
+  background: url(../images/radio.png) no-repeat;
+  background-size: 100% auto;
+  position: absolute;
+  left: 0;
+  top: -2px;
+}
+
+.ui-radio input:checked:after {
+  content: '';
+  display: block;
+  width: .373333rem;
+  height: .373333rem;
+  background: url(../images/selected.png) no-repeat;
+  background-size: 100% auto;
+  position: absolute;
+  left: 0;
+  top: -2px;
+}
+.ui-select {
+  position: relative;
+  display: inline-block;
+  height: 100%;
+}
+.ui-select:after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 50%;
+  right: .333333rem;
+  margin-top: -.086667rem;
+  width: .293333rem;
+  height: .173333rem;
+  background: url(../images/arrow.png) no-repeat;
+  background-size: 100% auto;
+}
+.ui-btn-group {
+  display: -webkit-box;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-box-align: center
+}
+
+.ui-btn-group button {
+  display: block;
+  -webkit-box-flex: 1;
+  margin-right: .666667rem;
+}
+.ui-btn-group button:last-child {
+  margin-right: 0;
+}
+.ui-btn-lg {
+  font-size: 16px;
+  height: 1.066667rem;
+  line-height: 1.066667rem;
+  display: block;
+  width: 100%;
+  border-radius: .106667rem;
+  text-align: center;
+  color: #FFF;
+  border: 1px solid #FFF;
+}
+.mt100 {
+  margin-top: 1.333333rem;
+}
+.popup {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  background: rgba(0, 0, 0, .8);
+  display: -webkit-box;
+  display: box;
+  -webkit-box-orient: horizontal;
+  -webkit-box-pack: center;
+  -webkit-box-align: center;
+}
+.popup .popup-cnt {
+  width: 80%;
+  text-align: center;
+}
+.popup .popup-cnt .popup-hd {
+  font-size: 24px;
+  margin-bottom: .933333rem;
+}
+.popup .popup-cnt .popup-bd {
+  position: relative;
+  height: 9.56rem;
+  padding-top: 1.093333rem;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  background: url(../images/popup_bg.png) no-repeat;
+  background-size: 100% auto;
+}
+.popup .popup-cnt .popup-bd img{
+  margin: 0 auto;
+  margin-top: .333333rem;
+  width: 3.506667rem;
+}
+.popup .close-btn {
+  position: absolute;
+  top: .266667rem;
+  right: .266667rem;
+  display: block;
+  width: .253333rem;
+  height: .24rem;
+  background: url(../images/close.png) no-repeat;
+  background-size: 100% auto;
+}
+.none {
+  display: none!important;
+}
+::-webkit-input-placeholder {
+    color: #d0d1d3;
+    font-size: .373333rem;
+}

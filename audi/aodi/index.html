@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="keywords" content="一汽大众">
+  <meta name="description" content="一汽大众奥迪">
+  <meta name="author" content="空心科技">
+  <meta http-equiv="content-language" content="zh-CN" />
+  <meta charset="utf-8">
+  <title>一汽大众·奥迪</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no,minimal-ui">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <!-- <link rel="stylesheet" type="text/css" href="css/font-awesome.css"> -->
+  <link rel="stylesheet" type="text/css" href="css/common.css">
+  <link rel="stylesheet" href="css/jquery.fullPage.css">
+  <link rel="stylesheet" href="css/index.css">
+
+</head>
+
+<body>
+  <!-- 公共头部以及导航 -->
+  <div class="public-header"></div>
+  <!-- 公共头部以及导航 -->
+
+  <!-- 此处开发页面内容 (除了公共部分之外的一律在此以内开发) -->
+  <div class="body-wrap">
+    <!-- 此处是空心平台开发规则，实际开发过程中请删除 -->
+    <div id="fullpage">
+      <!-- logo -->
+      <div class="sheader clearfix">
+        <div class="logo1 fl">
+          <img src="images/logo.png" alt="一汽大众">
+        </div>
+        <div class="logo2 fr">
+          <img src="images/logo2.png" alt="奥迪宣传语">
+        </div>
+      </div>
+      <!-- 页面1 -->
+      <div class="section page1 ">
+
+        <!-- 标题内容 -->
+        <div class="title clearfix">
+          <div class="tbox fr">
+            <img src="images/title.png" alt="标题">
+          </div>
+        </div>
+        <!-- 奥迪车 -->
+        <div class="car">
+          <div class="cbox">
+            <img src="images/car.png" alt="奥迪车">
+            <div class="lamp">
+              <img src="images/lamp.png" alt="闪烁车灯">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="section page2">
+      </div>
+      <div class="section page3">
+      </div>
+      <div class="section page4">
+        <div class="page4-car">
+          <div class="left-car-4">
+            <img src="images/left_car_4.png" alt="奥迪车">
+          </div>
+          <div class="right-car-4">
+            <img src="images/right_car_4.png" alt="奥迪车">
+          </div>
+        </div>
+        <div class="line-light"><img width="100%" src="images/light.png" alt=""></div>
+      </div>
+      <div class="section page5">
+        <div class="page5-car">
+          <div class="left-car-5">
+            <img src="images/left_car_5.png" alt="奥迪车">
+          </div>
+          <div class="line-light"><img width="100%" src="images/light.png" alt=""></div>
+          <div class="right-car-5">
+            <img src="images/right_car_5.png" alt="奥迪车">
+          </div>
+        </div>
+      </div>
+      <div class="section page6">
+        <h2>预约信息</h2>
+        <div class="ui-form">
+          <div class="ui-form-item">
+            <label>姓名</label>
+            <input type="text">
+          </div>
+          <div class="ui-form-item">
+            <label>姓别</label>
+            <div class="ui-radio">
+              <label for="radio">
+                <input type="radio" name="radio" checked>
+                男
+              </label>
+              <label for="radio">
+                <input type="radio" name="radio">
+                女
+              </label>
+            </div>
+          </div>
+          <div class="ui-form-item">
+            <label>手机号码</label>
+            <input type="text">
+          </div>
+          <div class="ui-form-item item-v">
+            <label>验证码</label>
+            <input type="text" placeholder="请输入验证码">
+            <span class="btn-v">获取验证码</span>
+          </div>
+          <!-- <div class="ui-form-item">
+            <label>预约时间</label>
+            <input type="datetime-local" placeholder="请选择">
+          </div> -->
+          <div class="ui-form-item">
+            <label>地区</label>
+            <div class="ui-select">
+              <select name="" id="">
+                <option value="">省</option>
+              </select>
+            </div>
+          </div>
+          <div class="ui-form-item">
+            <label>经销商</label>
+            <div class="ui-select">
+              <select name="" id="">
+                <option value="">1</option>
+              </select>
+            </div>
+          </div>
+          <div class="ui-btn-group mt100">
+            <button class="ui-btn-lg" onclick="showPopup()">提交资料</button>
+            <button class="ui-btn-lg">返回</button>
+          </div>
+        </div>
+        <div class="popup none" id="popup-submit">
+          <div class="popup-cnt">
+              <div class="popup-hd">信息已提交，谢谢！</div>
+              <div class="popup-bd">
+                <span class="close-btn" onclick="closePopup()"></span>
+                <p>扫描二维码</p>
+                <p>分享活动体验照片</p>
+                <img src="images/ewm.png" alt="">
+              </div>
+          </div>
+        </div>
+      </div>
+      <div class="arrow">
+        <img src="images/arrow-top.png" alt="上箭头">
+      </div>
+    </div>
+
+
+
+    <!-- 此处是空心平台开发规则，实际开发过程中请删除 -->
+  </div>
+  <!-- 此处开发页面内容 (除了公共部分之外的一律在此以内开发) -->
+
+
+
+  <!-- 公共尾部 -->
+  <div class="public-footer"></div>
+  <!-- 公共尾部 -->
+  <script type="text/javascript" src="js/jquery-2.2.4.min.js"></script>
+  <script type="text/javascript" src="js/flexible.js"></script>
+  <!-- <script type="text/javascript" src="js/common.js"></script> -->
+  <script type="text/javascript" src="js/jquery.fullPage.min.js"></script>
+  <script type="text/javascript" src="js/index.js"></script>
+  <script type="text/javascript">
+  function closePopup() {
+    $('#popup-submit').addClass('none');
+  }
+  function showPopup() {
+    $('#popup-submit').removeClass('none');
+  }
+  </script>
+</body>
+
+</html>
