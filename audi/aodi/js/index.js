@@ -14,7 +14,13 @@ $(
 
         top: '0'
 
-      }, 500, 'linear');  
+      }, 500, 'easeOutExpo');  
+
+      $('.car').find('.cbox').delay(1000).animate({
+
+        left: '0'
+
+      }, 500, 'easeOutExpo');  
     },
     afterLoad: function (anchorLink, index) {
       if (index == 1) {
@@ -22,23 +28,84 @@ $(
         $('.page1').find('.title').delay(500).animate({
 
           top: '0'
+  
+        }, 500, 'easeOutExpo');  
+  
+        $('.page1').find('.cbox').delay(1000).animate({
+  
+          left: '0'
+  
+        }, 500, 'easeOutExpo'); 
 
-        }, 500, 'linear');
+      }
+      if (index == 2) {
+        //第2屏
+        $('.page2').find('.title').delay(500).animate({
+
+          top: '0'
+
+        }, 500, 'easeOutExpo');
+
+        $('.page2').find('.page2-txt').delay(1000).animate({
+  
+          left: '0'
+  
+        }, 500, 'easeOutExpo'); 
+
+        $('.page2').find('.cbox').delay(1500).animate({
+  
+          left: '0'
+  
+        }, 500, 'easeOutExpo'); 
+
+      }
+      if (index == 3) {
+        //第3屏
+        $('.page3').find('.title').delay(500).animate({
+
+          top: '0'
+
+        }, 500, 'easeOutExpo');
+
+        $('.page3').find('.page3-city').delay(1000).animate({
+
+          opacity: 1
+
+        }, 500, 'easeOutExpo');
 
       }
       if (index == 4) {
         //第4屏
-        $('.page4').find('.left-car-4').delay(500).animate({
+        $('.page4').find('.title').delay(500).animate({
+
+          top: '0'
+
+        }, 500, 'easeOutExpo');
+
+        $('.page4').find('.left-car-4').delay(1000).animate({
 
           left: '0'
 
-        }, 500, 'linear');
+        }, 500, 'easeOutExpo');
 
-        $('.page4').find('.right-car-4').delay(500).animate({
+        $('.page4').find('.right-car-4').delay(1000).animate({
 
           right: '0'
 
-        }, 500, 'linear');
+        }, 500, 'easeOutExpo');
+
+        $('.page4').find('.line-light').delay(1500).animate({
+
+          bottom: '0'
+
+        }, 500, 'easeOutExpo');
+
+        $('.page4').find('.page4-txt').delay(2000).animate({
+
+          bottom: '0'
+
+        }, 500, 'easeOutExpo');
+        
       }
 
       if (index == 5) {
@@ -47,13 +114,19 @@ $(
 
           left: '0'
 
-        }, 500, 'linear');
+        }, 500, 'easeOutExpo');
 
-        $('.page5').find('.right-car-5').delay(500).animate({
+        $('.page5').find('.right-car-5').delay(1500).animate({
 
           right: '0'
 
-        }, 500, 'linear');
+        }, 500, 'easeOutExpo');
+
+        $('.page5').find('.line-light').delay(1000).animate({
+
+          bottom: '0'
+
+        }, 500, 'easeOutExpo');
       }
 
     },
@@ -62,24 +135,85 @@ $(
 
         $('.page1').find('.title').delay(500).animate({
 
+          top: '-120%',
+
+        }, 500, 'easeOutExpo');
+
+        $('.page1').find('.cbox').delay(1000).animate({
+
+          left: '-120%'
+  
+        }, 500, 'easeOutExpo');
+
+      }
+      if (index == 2) {
+        //第2屏
+        $('.page2').find('.title').delay(500).animate({
+
+          top: '-120%',
+
+        }, 500, 'easeOutExpo');
+
+        $('.page2').find('.page2-txt').delay(1000).animate({
+  
+          left: '-120%'
+  
+        }, 500, 'easeOutExpo'); 
+
+        $('.page2').find('.cbox').delay(1500).animate({
+  
+          left: '-120%'
+  
+        }, 500, 'easeOutExpo'); 
+
+      }
+      if (index == 3) {
+        //第3屏
+        $('.page3').find('.title').delay(500).animate({
+
           top: '-120%'
 
-        }, 500, 'linear');
+        }, 500, 'easeOutExpo');
+
+        $('.page3').find('.page3-city').delay(1000).animate({
+
+          opacity: 0
+
+        }, 500, 'easeOutExpo');
 
       }
       if (index == 4) {
         //第4屏
-        $('.page4').find('.left-car-4').delay(500).animate({
+        $('.page4').find('.title').delay(500).animate({
+
+          top: '-120%'
+
+        }, 500, 'easeOutExpo');
+
+        $('.page4').find('.left-car-4').delay(1000).animate({
 
           left: '-120%'
 
-        }, 500, 'linear');
+        }, 500, 'easeOutExpo');
 
-        $('.page4').find('.right-car-4').delay(500).animate({
+        $('.page4').find('.right-car-4').delay(1000).animate({
 
           right: '-120%'
 
-        }, 500, 'linear');
+        }, 500, 'easeOutExpo');
+
+        $('.page4').find('.line-light').delay(1500).animate({
+
+          bottom: '-120%'
+
+        }, 500, 'easeOutExpo');
+
+        $('.page4').find('.page4-txt').delay(2000).animate({
+
+          bottom: '-120%'
+
+        }, 500, 'easeOutExpo');
+
       }
       if (index == 5) {
         //第5屏
@@ -87,13 +221,19 @@ $(
 
           left: '-120%'
 
-        }, 500, 'linear');
+        }, 500, 'easeOutExpo');
 
-        $('.page5').find('.right-car-5').delay(500).animate({
+        $('.page5').find('.right-car-5').delay(1500).animate({
 
           right: '-120%'
 
-        }, 500, 'linear');
+        }, 500, 'easeOutExpo');
+
+        $('.page5').find('.line-light').delay(1000).animate({
+
+          bottom: '-120%'
+
+        }, 500, 'easeOutExpo');
       }
 
     }

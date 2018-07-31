@@ -125,13 +125,13 @@ body img{
   margin:3rem auto 0;
   width:8.9rem;
   position: relative;
-  left:0;
+  left:-120%;
   bottom:0;
-  -webkit-animation: carling 2s ease-in-out;
+  /* -webkit-animation: carling 2s ease-in-out;
   -moz-animation: carling 2s ease-in-out;
   -ms-animation: carling 2s ease-in-out;
   -o-animation: carling 2s ease-in-out;
-  animation: carling 2s ease-in-out;
+  animation: carling 2s ease-in-out; */
 }
 .lamp{
   width: 4.5rem;
@@ -174,23 +174,23 @@ body img{
   }
 }
 .page4-car {
+  margin-top: -.333333rem;
   position: relative;
-  padding-top: 3rem;
-  height: 8.7rem;
-  box-sizing: border-box;
-  -webkit-box-sizing: border-box;
+  height: 5.68rem;
 }
 .page4 .left-car-4 {
   position: absolute;
   width: 6.266667rem;
+  top: 0;
   left: -120%;
 }
 .page4 .right-car-4 {
   position: absolute;
   width: 6.386667rem;
+  top: 0;
   right: -120%;
 }
-.page5-car {
+.page5 {
   padding-top: 7rem;
 }
 .page5 .left-car-5 {
@@ -225,7 +225,7 @@ body img{
   margin-bottom: .266667rem;
   font-size: .426667rem;
 }
-.ui-form-item label{
+.ui-form-item>label{
   display: inline-block;
   width: 2rem;
 }
@@ -299,7 +299,7 @@ button {
   background-size: 100% auto;
   position: absolute;
   left: 0;
-  top: -2px;
+  top: -3px;
 }
 
 .ui-radio input:checked:after {
@@ -311,7 +311,7 @@ button {
   background-size: 100% auto;
   position: absolute;
   left: 0;
-  top: -2px;
+  top: -3px;
 }
 .ui-select {
   position: relative;
@@ -414,4 +414,36 @@ button {
 ::-webkit-input-placeholder {
     color: #d0d1d3;
     font-size: .373333rem;
+}
+.page3 .title .tbox,.page4 .title .tbox {
+  width: 4.986667rem;
+  margin-top: 1.52rem;
+}
+.page3-city {
+  margin-top: 1.066667rem;
+  text-align: center;
+  opacity: 0;
+}
+.page3-city img {
+  display: inline-block;
+  width: 8.893333rem;
+}
+.line-light {
+  position: relative;
+  bottom: -120%;
+}
+.page4-txt {
+  position: relative;
+  bottom: -120%;
+}
+.section {
+  overflow: hidden;
+}
+
+.page2 .car .cbox {
+  margin-top: 1rem; 
+}
+.page2-txt {
+  position: relative;
+  left: -120%;
 }
