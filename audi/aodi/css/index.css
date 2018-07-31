@@ -2,27 +2,27 @@
   vertical-align:normal !important;
 } */
 .page1{
-  background: url('../images/page1.jpg') no-repeat;
+  background: #000 url('../images/page1.jpg') no-repeat;
   background-size: 100% 100%;
 }
 .page2{
-  background: url('../images/page2.jpg') no-repeat;
+  background: #000 url('../images/page2.jpg') no-repeat;
   background-size: 100% 100%;
 }
 .page3{
-  background: url('../images/page3.jpg') no-repeat;
+  background: #000 url('../images/page3.jpg') no-repeat;
   background-size: 100% 100%;
 }
 .page4{
-  background: url('../images/page4.jpg') no-repeat;
+  background: #000 url('../images/page4.jpg') no-repeat;
   background-size: 100% 100%;
 }
 .page5{
-  background: url('../images/page5.jpg') no-repeat;
+  background: #000 url('../images/page5.jpg') no-repeat;
   background-size: 100% 100%;
 }
 .page6{
-  background: url('../images/page6.jpg') no-repeat;
+  background: #000 url('../images/page6.jpg') no-repeat;
   background-size: 100% 100%;
 }
 .sheader{
