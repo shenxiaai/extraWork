@@ -2,7 +2,7 @@ $(
   $("#fullpage").fullpage({
     verticalCentered: false,
     css3: true,
-    fixedElements: '.sheader, .arrow',//默认值：null，定义的某个元素是否在网页的固定位置，元素将被关闭的插件是必要的时候，使用CSS3的选项保持滚动结构固定。它需要对这些元素的jQuery选择器字符串。例如：fixedElements: ‘#element1, .element2’。
+    //fixedElements: '.sheader, .arrow, .music',//默认值：null，定义的某个元素是否在网页的固定位置，元素将被关闭的插件是必要的时候，使用CSS3的选项保持滚动结构固定。它需要对这些元素的jQuery选择器字符串。例如：fixedElements: ‘#element1, .element2’。
     afterRender: function () {
       $('.page1').find('.title').delay(500).animate({
 

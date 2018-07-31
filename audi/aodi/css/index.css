@@ -32,9 +32,12 @@ body img{
   max-width: 100%;
   display: block;
 }
-.sheader{
-  width:100%;
-  position: fixed;
+.music-wrap{
+  padding-right: 0.58rem;  
+}
+.music-wrap img{
+  width: .853333rem;
+  display: inline-block;
 }
 .logo1{
   width: 1.4rem;
@@ -46,9 +49,10 @@ body img{
   position: relative;
   top: -120%;
   padding-right: 0.58rem;
+  margin-top: .266667rem;
 }
 .title .tbox{
-  margin-top: 1.67rem;
+  
   width: 6.84rem;
 }
 /* 汽车动画及兼容性代码 */
@@ -190,13 +194,11 @@ body img{
   top: 0;
   right: -120%;
 }
-.page5 {
-  padding-top: 7rem;
-}
 .page5 .left-car-5 {
   position: relative;
   width: 90%;
   margin: 0 auto;
+  margin-top: 4.5rem;
   left: -120%;
 }
 .page5 .right-car-5 {
@@ -206,7 +208,6 @@ body img{
   right: -120%;
 }
 .page6 {
-  padding-top: 2.506667rem;
   color: #FFF;
 }
 .page6 h2 {
@@ -417,7 +418,6 @@ button {
 }
 .page3 .title .tbox,.page4 .title .tbox {
   width: 4.986667rem;
-  margin-top: 1.52rem;
 }
 .page3-city {
   margin-top: 1.066667rem;
@@ -441,9 +441,31 @@ button {
 }
 
 .page2 .car .cbox {
-  margin-top: 1rem; 
+  margin-top: 0; 
 }
 .page2-txt {
   position: relative;
   left: -120%;
 }
+.ani-rotate {
+  -webkit-transition-property: -webkit-transform;
+  -webkit-transition-duration: 1s;
+  -moz-transition-property: -moz-transform;
+  -moz-transition-duration: 1s;
+  -webkit-animation: rotate 3s linear infinite;
+  -moz-animation: rotate 3s linear infinite;
+  -o-animation: rotate 3s linear infinite;
+  animation: rotate 3s linear infinite;
+}
+ @-webkit-keyframes rotate{from{-webkit-transform: rotate(0deg)}
+     to{-webkit-transform: rotate(360deg)}
+ }
+ @-moz-keyframes rotate{from{-moz-transform: rotate(0deg)}
+     to{-moz-transform: rotate(359deg)}
+ }
+ @-o-keyframes rotate{from{-o-transform: rotate(0deg)}
+     to{-o-transform: rotate(359deg)}
+ }
+ @keyframes rotate{from{transform: rotate(0deg)}
+     to{transform: rotate(359deg)}
+ }
